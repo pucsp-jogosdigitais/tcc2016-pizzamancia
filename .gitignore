@@ -6,6 +6,7 @@ Pizzamancia/Temp/*
 Pizzamancia/obj/
 Pizzamancia/obj/*
 Pizzamancia/.vs/
-Pizzamancia/*.csproj
-Pizzamancia/*.sln
-Pizzamancia/*.userprefs
+Pizzamancia/.vs/*
+Pizzamancia/*.csproj/
+Pizzamancia/*.sln/
+Pizzamancia/*.userprefs/
