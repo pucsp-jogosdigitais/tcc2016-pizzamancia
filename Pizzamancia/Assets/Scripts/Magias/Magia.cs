@@ -4,15 +4,10 @@ using System.Collections;
 using System.Threading;
 
 public class Magia : MonoBehaviour {
+	#region atributos
 	//identificacao
 	public string nome;
 	public Image icone;
-
-	//animacao
-	public Animator animadorMagia;
-
-	//jogador
-	private Jogador conjurador;
 
 	//variaveis mecanicas
 	public int custoMana;
@@ -22,6 +17,7 @@ public class Magia : MonoBehaviour {
 
 	//preco
 	public int preco;
+	#endregion
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +28,7 @@ public class Magia : MonoBehaviour {
 	void Update () {
 	}
 
+	#region getters e setters
 	public string Nome
 	{
 		get { return nome; } 
@@ -42,17 +39,6 @@ public class Magia : MonoBehaviour {
 	{
 		get { return icone; }
 		set { icone = value; }
-	}
-
-	public Animator AnimadorMagia
-	{
-		get { return animadorMagia; } 
-		set { animadorMagia = value; }
-	}
-
-	public Jogador Conjurador {
-		get { return conjurador; }
-		set { conjurador = value; }
 	}
 
 	public int CustoMana
@@ -84,7 +70,10 @@ public class Magia : MonoBehaviour {
 		get { return preco; } 
 		set { preco = value; }
 	}
+	#endregion
 
+	#region metodo para conjurar
 	public virtual void conjurar () {
 	}
+	#endregion
 }

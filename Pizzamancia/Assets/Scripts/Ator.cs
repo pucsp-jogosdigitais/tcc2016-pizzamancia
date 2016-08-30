@@ -13,7 +13,7 @@ public class Ator : MonoBehaviour
     public Animator animadorAtor; //animator do ator
 
     //Rigidbody e colisao
-    public Rigidbody2D rdb; //rigidbody do ator
+    public Rigidbody2D rdbAtor; //rigidbody do ator
 
     //movimentacao
 	float metadeLargura;
@@ -31,12 +31,17 @@ public class Ator : MonoBehaviour
     //vida
     public int vidaTotal; //quantos pontos de vida o ator tem no total
     public int vidaAtual; //quantos pontos de vida o ator tem no momento
+
+	//ataque melee
+	public int danoAtaque;
+	public float delayAtaque;
+	public float forcaRecuo;
     #endregion
 
 	void Awake () {
 		animadorAtor = this.GetComponent<Animator> ();
 
-		rdb = this.GetComponent<Rigidbody2D> ();
+		rdbAtor = this.GetComponent<Rigidbody2D> ();
 
 		metadeLargura = this.GetComponent<Renderer> ().bounds.size.x / 2;
 		distanciaCentroChao = (this.GetComponent<Renderer> ().bounds.size.y / 2) + 0.5f;
@@ -82,10 +87,10 @@ public class Ator : MonoBehaviour
         set { animadorAtor = value; }
     }
 
-    public Rigidbody2D Rdb
+    public Rigidbody2D RdbAtor
     {
-        get { return rdb; }
-        set { rdb = value; }
+        get { return rdbAtor; }
+        set { rdbAtor = value; }
     }
 
     public float MovimentoX
@@ -123,6 +128,24 @@ public class Ator : MonoBehaviour
         get { return vidaAtual; }
         set { vidaAtual = value; }
     }
+
+	public int DanoAtaque
+	{
+		get { return danoAtaque; }
+		set { danoAtaque = value; }
+	}
+
+	public float DelayAtauqe
+	{
+		get { return delayAtaque; }
+		set { delayAtaque = value; }
+	}
+
+	public float ForcaRecuo
+	{
+		get { return forcaRecuo; }
+		set { forcaRecuo = value; }
+	}
     #endregion
 
     #region acoes
@@ -141,7 +164,7 @@ public class Ator : MonoBehaviour
             this.transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 180, transform.rotation.eulerAngles.z);
         }
 
-        rdb.velocity = new Vector2(movimentoX * velocidade, rdb.velocity.y);
+        rdbAtor.velocity = new Vector2(movimentoX * velocidade, rdbAtor.velocity.y);
     }
 
 	//faz o ator pular
@@ -150,9 +173,13 @@ public class Ator : MonoBehaviour
         if (isPular && isNoChao)
         {
             //animadorAtor.SetTrigger ("pular");
-            rdb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
+            rdbAtor.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
         }
     }
+
+	public void atacar (bool isAtacar) {
+	
+	}
     #endregion
 
     #region alteracao de status
@@ -177,9 +204,8 @@ public class Ator : MonoBehaviour
     }
 
 	//mata (destroi) o ator
-    public void morrer()
-    { 
-        DestroyObject(this);
+    public virtual void morrer()
+    {
     }
     #endregion
 }

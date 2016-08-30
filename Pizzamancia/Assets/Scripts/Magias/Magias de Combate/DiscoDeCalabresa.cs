@@ -2,15 +2,14 @@
 using System.Collections;
 
 public class DiscoDeCalabresa : MagiaCombate {
+	#region atributos
 	public GameObject ataqueMagico;
+	#endregion
 
 	// Use this for initialization
 	void Start () {
 		this.Nome = "Disco de Calabresa";
 		//this.Icone;
-
-		//this.SpriteMagia;
-		//this.AnimadorMagia;
 
 		this.CustoMana = 10;
 		this.Cooldown = 5;
@@ -27,15 +26,13 @@ public class DiscoDeCalabresa : MagiaCombate {
 
 	// Update is called once per frame
 	void Update () {
-
 	}
 
 	public override void conjurar () {
-		ataqueMagico.GetComponent<MagiaAtaque> ().Conjurador = this.Conjurador;
-		ataqueMagico.GetComponent <MagiaAtaque> ().Dano = this.Dano;
-		ataqueMagico.GetComponent <MagiaAtaque> ().PosicaoInicial = new Vector3 (0.3f, 0f, 0f);
-		ataqueMagico.GetComponent <MagiaAtaque> ().Velocidade = this.Velocidade;
-		ataqueMagico.GetComponent <MagiaAtaque> ().DuracaoAtaque = this.DuracaoAtaque;
+		ataqueMagico.GetComponent <AtaqueMagico> ().Dano = this.Dano;
+		ataqueMagico.GetComponent <AtaqueMagico> ().PosicaoRelativaInicial = new Vector3 (0.3f, 0f, 0f);
+		ataqueMagico.GetComponent <AtaqueMagico> ().Velocidade = this.Velocidade;
+		ataqueMagico.GetComponent <AtaqueMagico> ().DuracaoAtaque = this.DuracaoAtaque;
     
         Instantiate (ataqueMagico, ataqueMagico.transform.position, new Quaternion());
 	}

@@ -8,7 +8,7 @@ public class Inimigo : Ator
 	//movimentacao em relacao ao jogador
 	public float raioPercepcao;
 	public bool isDetectou;
-	public Jogador jogador;
+	Jogador jogador;
 	public float distanciaInimigoJogador;
 	//public Vector3 posicaoInicial;
 	//public float distanciaPosicaoInicial;
@@ -86,7 +86,8 @@ public class Inimigo : Ator
 	public void voltarPosicaoInicial () {
 	}
 
-    public void atacar()
-    {
-    }
+	public void morrer()
+	{
+		Destroy (gameObject);
+	}
 }

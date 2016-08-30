@@ -39,11 +39,13 @@ public class GameManager : MonoBehaviour {
 	//parada e continuacao do jogo
 	//para o jogo
 	public void pararJogo () {
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<Jogador> ().IsControlavel = false;
 		Time.timeScale = 0;
 	}
 
 	//continua o jogo
 	public void continuarJogo () {
+		GameObject.FindGameObjectWithTag ("Player").GetComponent<Jogador> ().IsControlavel = true;
 		Time.timeScale = 1;
 	}
 

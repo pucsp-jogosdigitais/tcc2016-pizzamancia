@@ -7,6 +7,8 @@ using System.Threading;
 public class Jogador : Ator
 {
     #region atributos
+	bool isControlavel;
+
     //vida
     public int chances; //quantas chances o jogador tem no momento
 
@@ -31,6 +33,8 @@ public class Jogador : Ator
     // Use this for initialization
     void Start()
     {
+		isControlavel = true;
+
         this.Velocidade = 2;
         this.ForcaPulo = 4;
 
@@ -52,7 +56,7 @@ public class Jogador : Ator
 
         foreach (KeyValuePair<int, Magia> m in magias)
         {
-            m.Value.Conjurador = this;
+            //m.Value.Conjurador = this;
         }
 
         posicaoMagiaSelecionada = 0;
@@ -68,10 +72,18 @@ public class Jogador : Ator
         regenerarMana();
         carregarMagias();
 
-        obterInput();
+		if (isControlavel) {
+			obterInput ();
+		}
     }
 
     #region getters e setters
+	public bool IsControlavel
+	{
+		get { return isControlavel; }
+		set { isControlavel = value; }
+	}
+
     public int Chances
     {
         get { return chances; }
@@ -173,6 +185,7 @@ public class Jogador : Ator
     { 
         this.MovimentoX = InputControle.getInstance().MovePad.x;
         this.pular(InputControle.getInstance().BtnPular);
+		this.atacar (InputControle.getInstance().BtnAtacar);
 
         alterarMagia();
         tentarConjurar();

@@ -2,15 +2,14 @@
 using System.Collections;
 
 public class RajadaDeAzeitonas : MagiaCombate {
+	#region atributos
 	public GameObject ataqueMagico;
+	#endregion
 
 	// Use this for initialization
 	void Start () {
 		this.Nome = "Rajada de Azeitonas";
 		//this.Icone;
-
-		//this.SpriteMagia;
-		//this.AnimadorMagia;
 
 		this.CustoMana = 5;
 		this.Cooldown = 1;
@@ -25,20 +24,17 @@ public class RajadaDeAzeitonas : MagiaCombate {
 	
 	// Update is called once per frame
 	void Update () {
-	
 	}
 
 	public override void conjurar () {
-		ataqueMagico.GetComponent<MagiaAtaque> ().Conjurador = this.Conjurador;
-		ataqueMagico.GetComponent <MagiaAtaque> ().Dano = this.Dano;
-		//
-		ataqueMagico.GetComponent <MagiaAtaque> ().Velocidade = this.Velocidade;
-		ataqueMagico.GetComponent <MagiaAtaque> ().DuracaoAtaque = this.DuracaoAtaque;
+		ataqueMagico.GetComponent <AtaqueMagico> ().Dano = this.Dano;
+		ataqueMagico.GetComponent <AtaqueMagico> ().Velocidade = this.Velocidade;
+		ataqueMagico.GetComponent <AtaqueMagico> ().DuracaoAtaque = this.DuracaoAtaque;
 
 		for (int qtdAtq = 0; qtdAtq < this.NumeroAtaques; qtdAtq++) {
 			float distanciaAtaque = qtdAtq * 0.1f;
 
-			ataqueMagico.GetComponent <MagiaAtaque> ().PosicaoInicial = new Vector3 (0.3f + distanciaAtaque, 0f, 0f);
+			ataqueMagico.GetComponent <AtaqueMagico> ().PosicaoRelativaInicial = new Vector3 (0.3f + distanciaAtaque, 0f, 0f);
 
 			Instantiate (ataqueMagico, ataqueMagico.transform.position, new Quaternion());
 		}
