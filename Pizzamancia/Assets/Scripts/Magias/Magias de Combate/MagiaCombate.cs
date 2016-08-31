@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MagiaCombate : Magia {
 	#region atributos
+	//public GameObject ataqueMagico;
 	public int numeroAtaques; //numero de ataques (projeteis) lancados
 	public int dano; //dano causado por cada ataque
 	public float velocidade; //velocidade de cada ataque

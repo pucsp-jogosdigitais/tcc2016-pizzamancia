@@ -14,13 +14,15 @@ public class ChanceExtra : PowerUp {
 	
 	}
 
-	public void OnCollisionEnter2D (Collision2D colisor) {
-		if (colisor.gameObject.tag == "Player") {
-			var player = colisor.gameObject.GetComponent<Jogador> ();
+	public void OnTriggerEnter2D(Collider2D collider)
+	{
+		if (collider.gameObject.tag == "Player")
+		{
+			var player = collider.gameObject.GetComponent<Jogador>();
 
-			player.Chances++;
+			player.alterarChances(1);
+
+			Destroy(gameObject);
 		}
-
-		Destroy (gameObject);
 	}
 }

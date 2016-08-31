@@ -3,12 +3,13 @@ using System.Collections;
 
 public class Objeto : MonoBehaviour
 {
+	#region atributos
 	//animacao
-	public Sprite spriteObjeto;
 	public Animator animadorObjeto;
 	//funcionamento
 	public float tempoVida;
 	public float velocidade;
+	#endregion
 
 	// Use this for initialization
 	void Start () {
@@ -19,15 +20,9 @@ public class Objeto : MonoBehaviour
 
 	// Update is called once per frame
 	void Update () {
-
 	}
-
-	public Sprite SpriteObjeto
-	{
-		get { return spriteObjeto; } 
-		set { spriteObjeto = value; }
-	}
-
+		
+	#region getters e setters
 	public Animator AnimadorObjeto
 	{
 		get { return animadorObjeto; } 
@@ -45,4 +40,5 @@ public class Objeto : MonoBehaviour
 		get { return velocidade; } 
 		set { velocidade = value; }
 	}
+	#endregion
 }

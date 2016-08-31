@@ -5,12 +5,14 @@ public class Camera : MonoBehaviour {
 	public Transform alvo;
 	float posicaoCamera = 0;
 	float posicaoAlvo = 0;
-	public float velocidade = 10;
+	public float velocidade;
 
 	// Use this for initialization
 	void Start () {
+		alvo = GameObject.FindGameObjectWithTag ("Player").transform;
 		posicaoCamera = transform.position.z;
-		posicaoAlvo = alvo.position.z;	
+		posicaoAlvo = alvo.position.z;
+		velocidade = 10;
 	}
 
 	// Update is called once per frame

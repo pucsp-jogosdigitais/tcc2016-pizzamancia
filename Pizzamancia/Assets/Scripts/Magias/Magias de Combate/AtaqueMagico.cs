@@ -94,39 +94,46 @@ public class AtaqueMagico : MonoBehaviour {
 	}
 	#endregion
 
-	#region acoes
-	public void mover () {
-		rdbMagiaAtaque.velocity = new Vector2(direcao.x * velocidade, rdbMagiaAtaque.velocity.y);
+	#region eventos
+	public void OnCollisionEnter2D (Collision2D colisor) {
+		switch (colisor.gameObject.tag.ToString ()) {
+		default:
+			break;
+		case "AtaqueMagico":
+			var ataqueMagico = colisor.gameObject.GetComponent<AtaqueMagico> ();
+
+			Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor.gameObject.GetComponent<Collider2D> ());
+
+			return;
+			break;
+		case "Inimigo":
+			var inimigo = colisor.gameObject.GetComponent<Inimigo> ();
+
+			inimigo.alterarVida (-dano);
+			break;
+		case "Obstaculo":
+			var obstaculo = colisor.gameObject.GetComponent<Obstaculo> ();
+
+			if (obstaculo.VidaTotal != 0) {
+				obstaculo.alterarVida (-dano);
+			}
+			break;
+		case "PowerUp":
+			var powerUp = colisor.gameObject.GetComponent<PowerUp> ();
+
+			Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor.gameObject.GetComponent<Collider2D> ());
+
+			return;
+			break;
+		}
+
+		Destroy(gameObject);
 	}
 	#endregion
 
-	#region colisao
-	public void OnCollisionEnter2D (Collision2D colisor) {
-		switch (colisor.gameObject.tag.ToString ()) {
-			default:
-					break;
-			case "AtaqueMagico":
-				var ataqueMagico = colisor.gameObject.GetComponent<AtaqueMagico> ();
-
-				Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor.gameObject.GetComponent<Collider2D> ());
-
-				return;
-					break;
-			case "Inimigo":
-				var inimigo = colisor.gameObject.GetComponent<Inimigo> ();
-
-				inimigo.alterarVida (-dano);
-					break;
-			case "Obstaculo":
-				var obstaculo = colisor.gameObject.GetComponent<Obstaculo> ();
-
-				if (obstaculo.VidaTotal != 0) {
-					obstaculo.alterarVida (-dano);
-				}
-					break;
-		} 
-
-		Destroy(gameObject);
+	#region acoes
+	public void mover () {
+		rdbMagiaAtaque.velocity = new Vector2(direcao.x * velocidade, rdbMagiaAtaque.velocity.y);
 	}
 	#endregion
 }
