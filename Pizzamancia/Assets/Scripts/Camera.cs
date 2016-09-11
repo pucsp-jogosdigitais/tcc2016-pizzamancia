@@ -16,12 +16,12 @@ public class Camera : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 		//Vector3 vetorCamera = new Vector3(transform.position.x, transform.position.y, posicaoCamera);
 		//Vector3 vetorAlvo = new Vector3(alvo.position.x, alvo.position.y, posicaoAlvo);
 		Vector3 vetorCamera = new Vector3(transform.position.x, transform.position.y, posicaoCamera);
 		Vector3 vetorAlvo = new Vector3(alvo.position.x, alvo.position.y, posicaoAlvo);
 
-		transform.position = Vector3.Lerp (vetorCamera, vetorAlvo, Time.deltaTime * velocidade);
+		transform.position = Vector3.Lerp (vetorCamera, vetorAlvo, Time.smoothDeltaTime * velocidade);
 	}
 }

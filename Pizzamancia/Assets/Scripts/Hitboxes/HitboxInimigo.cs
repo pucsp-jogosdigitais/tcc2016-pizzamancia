@@ -1,33 +1,40 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HitboxInimigo : Hitbox {
-	// Use this for initialization
-	void Start () {	
-	}
+public class HitboxInimigo : Hitbox
+{
+    // Use this for initialization
+    void Start()
+    {
+    }
 
-	// Update is called once per frame
-	void Update () {
-	}
+    // Update is called once per frame
+    void Update()
+    {
+    }
 
-	#region eventos
-	public void OnTriggerEnter2D (Collider2D colisor) {
-		switch (colisor.gameObject.tag.ToString ()) {
-		default:
-			break;
-		case "Player":
-			var jogador = colisor.gameObject.GetComponent<Jogador> ();
+    public override void atingir()
+    {
+        if (this.ObjetoAtingido != null)
+        {
+            switch (this.ObjetoAtingido.gameObject.tag.ToString())
+            {
+                default:
+                    break;
+                case "Player":
+                    Jogador jogador = this.ObjetoAtingido.GetComponent<Jogador>();
 
-			jogador.alterarVida (-Dano);
-			break;
-		case "Obstaculo":
-			var obstaculo = colisor.gameObject.GetComponent<Obstaculo> ();
+                    jogador.alterarVida(-this.Dano);
+                    break;
+                case "Obstaculo":
+                    Obstaculo obstaculo = this.ObjetoAtingido.GetComponent<Obstaculo>();
 
-			if (obstaculo.VidaTotal != 0) {
-				obstaculo.alterarVida (-Dano);
-			}
-			break;
-		}
-	}
-	#endregion
+                    if (obstaculo.VidaTotal != 0)
+                    {
+                        obstaculo.alterarVida(-this.Dano);
+                    }
+                    break;
+            }
+        }
+    }
 }

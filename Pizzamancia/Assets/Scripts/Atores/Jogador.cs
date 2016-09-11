@@ -7,7 +7,7 @@ using System.Threading;
 public class Jogador : Ator
 {
     #region atributos
-	public bool isControlavel;
+    public bool isControlavel;
 
     //vida
     public int chances; //quantas chances o jogador tem no momento
@@ -29,14 +29,14 @@ public class Jogador : Ator
     // Use this for initialization
     void Start()
     {
-		isControlavel = true;
+        isControlavel = true;
 
         this.Velocidade = 2;
         this.ForcaPulo = 4;
 
-		this.HitboxAtor.Dano = 2;
-		this.DemoraAtaque = 0.25f;
-		this.DuracaoAtaque = 0.25f;
+        this.HitboxAtor.Dano = 2;
+        this.DemoraAtaque = 0.25f;
+        this.DuracaoAtaque = 0.25f;
 
         chances = 3;
 
@@ -69,17 +69,18 @@ public class Jogador : Ator
         regenerarMana();
         carregarMagias();
 
-		if (isControlavel) {
-			obterInput ();
-		}
+        if (isControlavel)
+        {
+            obterInput();
+        }
     }
 
     #region getters e setters
-	public bool IsControlavel
-	{
-		get { return isControlavel; }
-		set { isControlavel = value; }
-	}
+    public bool IsControlavel
+    {
+        get { return isControlavel; }
+        set { isControlavel = value; }
+    }
 
     public int Chances
     {
@@ -131,7 +132,7 @@ public class Jogador : Ator
     #endregion
 
     #region acoes automaticas
-	//restaura pontos de mana gastos
+    //restaura pontos de mana gastos
     public void regenerarMana()
     {
         if (tempoPassadoRegeneracao < tempoRegeneracaoMana && manaAtual < manaTotal)
@@ -145,9 +146,9 @@ public class Jogador : Ator
         }
     }
 
-	//recarrega magias para que possam ser reutilizadas
+    //recarrega magias para que possam ser reutilizadas
     public void carregarMagias()
-    { 
+    {
         foreach (KeyValuePair<int, Magia> m in magias)
         {
             if (m.Value.TempoPassado < m.Value.Cooldown)
@@ -159,20 +160,19 @@ public class Jogador : Ator
     #endregion
 
     #region obtencao de input
-	//obtem input do controle do jogador
     public void obterInput()
-    { 
+    { //obtem input do controle do jogador
         this.MovimentoX = InputControle.getInstance().MovePad.x;
         this.pular(InputControle.getInstance().BtnPular);
-		this.comecarAtaque (InputControle.getInstance().BtnAtacar);
+        this.comecarAtaque(InputControle.getInstance().BtnAtacar);
 
         alterarMagia();
         tentarConjurar();
     }
 
-	//seleciona magia para ser utilizada
+    //seleciona magia para ser utilizada
     public void alterarMagia()
-    { 
+    {
         if (InputControle.getInstance().BtnSelectPrev)
         {
             posicaoMagiaSelecionada--;
@@ -194,9 +194,9 @@ public class Jogador : Ator
 
         magiaSelecionada = magias[posicaoMagiaSelecionada];
     }
-		
+
     public void tentarConjurar()
-	{ //tenta usar a magia
+    { //tenta usar a magia
         if (InputControle.getInstance().BtnConjurar)
         {
             if ((manaAtual >= magiaSelecionada.CustoMana) && (magiaSelecionada.tempoPassado >= magiaSelecionada.Cooldown))
@@ -210,12 +210,13 @@ public class Jogador : Ator
     #endregion
 
     #region alteracao de status
-	public void alterarChances (int valor) {
-		chances += valor;
-	}
+    public void alterarChances(int valor)
+    {
+        chances += valor;
+    }
 
     public void alterarMana(int valor)
-	{ //aumenta ou diminui os pontos de mana atual
+    { //aumenta ou diminui os pontos de mana atual
         int resultadoFinal = manaAtual + valor;
 
         if (resultadoFinal > manaTotal)
@@ -232,12 +233,18 @@ public class Jogador : Ator
         }
     }
 
-	public override void morrer () {
-		alterarChances (-1);
+    public override void morrer()
+    {
+        alterarChances(-1);
 
-		if (chances >= 0) {
-			this.transform.position = this.PosicaoSpawn;
-		}
-	}
+        if (chances >= 0)
+        {
+            this.transform.position = this.PosicaoSpawn;
+            this.VidaAtual = this.VidaTotal;
+            this.ManaAtual = this.ManaTotal;
+
+            GameManager.getInstance().continuarJogo();
+        }
+    }
     #endregion
 }

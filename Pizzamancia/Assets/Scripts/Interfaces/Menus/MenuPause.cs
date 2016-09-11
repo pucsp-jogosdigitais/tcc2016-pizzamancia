@@ -10,7 +10,7 @@ public class MenuPause : MonoBehaviour
 
     bool isPaused; //informa se o jogo está pausado ou nao
 
-	Jogador jogador;
+    Jogador jogador;
 
     // Use this for initialization
     void Start()
@@ -20,7 +20,7 @@ public class MenuPause : MonoBehaviour
         painelSelecLevel.SetActive(false);
         painelSairJogo.SetActive(false);
         isPaused = false;
-		jogador = GameObject.FindGameObjectWithTag ("Player").GetComponent<Jogador> ();
+        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
     }
 
     // Update is called once per frame
@@ -58,7 +58,7 @@ public class MenuPause : MonoBehaviour
     public void pausarJogo()
     {
         isPaused = true;
-		jogador.IsControlavel = false;
+        jogador.IsControlavel = false;
 
         GameManager.getInstance().pararJogo();
         menuDePause.SetActive(true);
@@ -68,28 +68,29 @@ public class MenuPause : MonoBehaviour
     public void retomarJogo()
     {
         isPaused = false;
-		jogador.IsControlavel = true;
+        jogador.IsControlavel = true;
 
-        GameManager.getInstance().continuarJogo();
         menuDePause.SetActive(false);
         painelReiniciarLevel.SetActive(false);
         painelSelecLevel.SetActive(false);
         painelSairJogo.SetActive(false);
+
+        GameManager.getInstance().continuarJogo();
     }
 
     public void reiniciarLevel()
     {
-		isPaused = false;
+        isPaused = false;
 
-        GameManager.getInstance().recarregarLevel();
         GameManager.getInstance().continuarJogo();
+        GameManager.getInstance().recarregarLevel();
     }
 
     public void retornarSelecLevel()
     {
-		isPaused = false;
+        isPaused = false;
 
-        GameManager.getInstance().carregarTela("MenuSelecLevel");
         GameManager.getInstance().continuarJogo();
+        GameManager.getInstance().carregarTela("MenuSelecLevel");
     }
 }
