@@ -35,8 +35,9 @@ public class Jogador : Ator
         this.ForcaPulo = 4;
 
         this.HitboxAtor.Dano = 2;
-        this.DemoraAtaque = 0.25f;
-        this.DuracaoAtaque = 0.25f;
+		this.HitboxAtor.ForcaRecuo = 0;
+        this.DemoraAntesAtaque = 0.25f;
+        this.DemoraDepoisAtaque = 0.25f;
 
         chances = 3;
 

@@ -14,8 +14,8 @@ public class GolemMussarela : Inimigo
 		this.ForcaPulo = 2;
 
 		this.HitboxAtor.Dano = 10;
-		this.DemoraAtaque = 1f;
-		this.DuracaoAtaque = 1f;
+		this.DemoraAntesAtaque = 1f;
+		this.DemoraDepoisAtaque = 1f;
 		this.AlcanceAtaque = 0.22f;
 
 		this.VidaTotal = 20;

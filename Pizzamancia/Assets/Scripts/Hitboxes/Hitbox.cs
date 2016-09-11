@@ -13,6 +13,7 @@ public class Hitbox : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+		objetoAtingido = null;
     }
 
     // Update is called once per frame
@@ -48,10 +49,6 @@ public class Hitbox : MonoBehaviour
             (colisor.gameObject.tag.ToString() == "Obstaculo"))
         {
             objetoAtingido = colisor.gameObject;
-        }
-        else
-        {
-            objetoAtingido = null;
         }
     }
 

@@ -29,8 +29,8 @@ public class Inimigo : Ator
         this.ForcaPulo = 4;
 
 		this.HitboxAtor.Dano = 5;
-		this.DemoraAtaque = 1f;
-		this.DuracaoAtaque = 0.5f;
+		this.DemoraAntesAtaque = 1f;
+		this.DemoraDepoisAtaque = 0.5f;
 		this.alcanceAtaque = 0.2f;
 
 		this.VidaTotal = 10;
@@ -42,6 +42,8 @@ public class Inimigo : Ator
     // Update is called once per frame
     void Update()
     {
+		distanciaInimigoJogador = Vector2.Distance(alvo.transform.position, this.transform.position);
+
         vigiar();
 
 		if (isDetectou) {
@@ -94,8 +96,6 @@ public class Inimigo : Ator
 	//acoes automaticas
     public void vigiar ()
     {
-		distanciaInimigoJogador = Vector2.Distance(alvo.transform.position, this.transform.position);
-
 		if (distanciaInimigoJogador <= raioPercepcao)
         {
             isDetectou = true;

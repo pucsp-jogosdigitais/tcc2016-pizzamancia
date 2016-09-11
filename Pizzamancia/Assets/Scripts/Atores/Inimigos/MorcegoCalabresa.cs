@@ -14,8 +14,8 @@ public class MorcegoCalabresa : Inimigo
 		this.ForcaPulo = 4;
 
 		this.HitboxAtor.Dano = 5;
-		this.DemoraAtaque = 0.5f;
-		this.DuracaoAtaque = 0.5f;
+		this.DemoraAntesAtaque = 0.5f;
+		this.DemoraDepoisAtaque = 0.5f;
 		this.AlcanceAtaque = 0.16f;
 
 		this.VidaTotal = 5;

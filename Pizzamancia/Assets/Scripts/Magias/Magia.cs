@@ -23,10 +23,6 @@ public class Magia : MonoBehaviour {
 	void Start () {
 		tempoPassado = cooldown;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
 
 	#region getters e setters
 	public string Nome
