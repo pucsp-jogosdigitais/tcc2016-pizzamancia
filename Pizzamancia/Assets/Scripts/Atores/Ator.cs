@@ -17,20 +17,20 @@ public class Ator : MonoBehaviour
 
     //movimentacao
 	public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
-    float metadeLargura; //distancia entre as bordas verticais do ator e o seu centro
-	public float metadeAltura; //distancia entre as bordas horizontais do ator e o seu centro
+	float metadeLargura; //distancia entre as bordas verticais do ator e o seu centro
+	float metadeAltura; //distancia entre as bordas horizontais do ator e o seu centro
     Vector2 ladoEsq; //local do ponto-medio da borda horizontal esquerda do ator
 	Vector2 ladoDir; //local do ponto-medio da borda horizontal direita do ator
     RaycastHit2D raycastEsq; //linha tracada entre o ladoEsq e o chao
-	//RaycastHit2D raycastCentro; //linha tracada entre o centro do ator e o chao
+	RaycastHit2D raycastCentro; //linha tracada entre o centro do ator e o chao
 	RaycastHit2D raycastDir; //linha tracada entre o ladoDir e o chao
     float movimentoX; //movimento do ator no eixo X
     public float velocidade; //velocidade com a qual o ator se move
     public bool isNoChao; //booleana que mostra se ator esta colidindo com o chao ou nao
     public float forcaPulo; //forca do pulo
-	public float distanciaLadoEsqChao = 0;
-	public float distanciaCentroChao = 0;
-	public float distanciaLadoDirChao = 0;
+	float distanciaLadoEsqChao;
+	float distanciaCentroChao;
+	float distanciaLadoDirChao;
 
     //ataque melee
     public bool isComecouAtaque; //booleana que indica se o ator comecou o processo de ataque ou nao
@@ -52,8 +52,8 @@ public class Ator : MonoBehaviour
         rdbAtor = this.GetComponent<Rigidbody2D>();
 
         posicaoSpawn = this.transform.position;
-        metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 2;
-		metadeAltura = (this.GetComponent<Renderer>().bounds.size.y / 2) + 0.005f;
+		metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 4;
+		metadeAltura = (this.GetComponent<Renderer>().bounds.size.y / 2) + 0.1f;
 
         isComecouAtaque = false;
 		isAtacou = false;
@@ -65,16 +65,16 @@ public class Ator : MonoBehaviour
         ladoEsq = new Vector2(this.transform.position.x - metadeLargura, this.transform.position.y);
         ladoDir = new Vector2(this.transform.position.x + metadeLargura, this.transform.position.y);
         raycastEsq = Physics2D.Raycast(ladoEsq, Vector2.down);
-		//raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
+		raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
         raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
 		Debug.DrawRay(ladoEsq, Vector2.down);
-		//Debug.DrawRay(this.transform.position, Vector2.down);
+		Debug.DrawRay(this.transform.position, Vector2.down);
 		Debug.DrawRay(ladoDir, Vector2.down);
 		distanciaLadoEsqChao = raycastEsq.distance;
-		//distanciaCentroChao = raycastCentro.distance;
+		distanciaCentroChao = raycastCentro.distance;
 		distanciaLadoDirChao = raycastDir.distance;
 
-        if ((raycastEsq.distance <= metadeAltura) || (raycastDir.distance <= metadeAltura))
+		if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) || (raycastDir.distance <= metadeAltura))
         {
             isNoChao = true;
         }

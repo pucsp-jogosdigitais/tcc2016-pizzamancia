@@ -1,0 +1,871 @@
+fileFormatVersion: 2
+guid: fdea7b7c54ca17548990d533d6f4a364
+timeCreated: 1473478370
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Props_Level_01 - Blocos Cinza-Verde_0
+    21300002: Props_Level_01 - Blocos Cinza-Verde_1
+    21300004: Props_Level_01 - Blocos Cinza-Verde_2
+    21300006: Props_Level_01 - Blocos Cinza-Verde_3
+    21300008: Props_Level_01 - Blocos Cinza-Verde_4
+    21300010: Props_Level_01 - Blocos Cinza-Verde_5
+    21300012: Props_Level_01 - Blocos Cinza-Verde_6
+    21300014: Props_Level_01 - Blocos Cinza-Verde_7
+    21300016: Props_Level_01 - Blocos Cinza-Verde_8
+    21300018: Props_Level_01 - Blocos Cinza-Verde_9
+    21300020: Props_Level_01 - Blocos Cinza-Verde_10
+    21300022: Props_Level_01 - Blocos Cinza-Verde_11
+    21300024: Props_Level_01 - Blocos Cinza-Verde_12
+    21300026: Props_Level_01 - Blocos Cinza-Verde_13
+    21300028: Props_Level_01 - Blocos Cinza-Verde_14
+    21300030: Props_Level_01 - Blocos Cinza-Verde_15
+    21300032: Props_Level_01 - Blocos Cinza-Verde_16
+    21300034: Props_Level_01 - Blocos Cinza-Verde_17
+    21300036: Props_Level_01 - Blocos Cinza-Verde_18
+    21300038: Props_Level_01 - Blocos Cinza-Verde_19
+    21300040: Props_Level_01 - Blocos Cinza-Verde_20
+    21300042: Props_Level_01 - Blocos Cinza-Verde_21
+    21300044: Props_Level_01 - Blocos Cinza-Verde_22
+    21300046: Props_Level_01 - Blocos Cinza-Verde_23
+    21300048: Props_Level_01 - Blocos Cinza-Verde_24
+    21300050: Props_Level_01 - Blocos Cinza-Verde_25
+    21300052: Props_Level_01 - Blocos Cinza-Verde_26
+    21300054: Props_Level_01 - Blocos Cinza-Verde_27
+    21300056: Props_Level_01 - Blocos Cinza-Verde_28
+    21300058: Props_Level_01 - Blocos Cinza-Verde_29
+    21300060: Props_Level_01 - Blocos Cinza-Verde_30
+    21300062: Props_Level_01 - Blocos Cinza-Verde_31
+    21300064: Props_Level_01 - Blocos Cinza-Verde_32
+    21300066: Props_Level_01 - Blocos Cinza-Verde_33
+    21300068: Props_Level_01 - Blocos Cinza-Verde_34
+    21300070: Props_Level_01 - Blocos Cinza-Verde_35
+    21300072: Props_Level_01 - Blocos Cinza-Verde_36
+    21300074: Props_Level_01 - Blocos Cinza-Verde_37
+    21300076: Props_Level_01 - Blocos Cinza-Verde_38
+    21300078: Props_Level_01 - Blocos Cinza-Verde_39
+    21300080: Props_Level_01 - Blocos Cinza-Verde_40
+    21300082: Props_Level_01 - Blocos Cinza-Verde_41
+    21300084: Props_Level_01 - Blocos Cinza-Verde_42
+    21300086: Props_Level_01 - Blocos Cinza-Verde_43
+    21300088: Props_Level_01 - Blocos Cinza-Verde_44
+    21300090: Props_Level_01 - Blocos Cinza-Verde_45
+    21300092: Props_Level_01 - Blocos Cinza-Verde_46
+    21300094: Props_Level_01 - Blocos Cinza-Verde_47
+    21300096: Props_Level_01 - Blocos Cinza-Verde_48
+    21300098: Props_Level_01 - Blocos Cinza-Verde_49
+    21300100: Props_Level_01 - Blocos Cinza-Verde_50
+    21300102: Props_Level_01 - Blocos Cinza-Verde_51
+    21300104: Props_Level_01 - Blocos Cinza-Verde_52
+    21300106: Props_Level_01 - Blocos Cinza-Verde_53
+    21300108: Props_Level_01 - Blocos Cinza-Verde_54
+    21300110: Props_Level_01 - Blocos Cinza-Verde_55
+    21300112: Props_Level_01 - Blocos Cinza-Verde_56
+    21300114: Props_Level_01 - Blocos Cinza-Verde_57
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_5
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_6
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_8
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_9
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_10
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_11
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_12
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_13
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_14
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_15
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_16
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_17
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_18
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_19
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_20
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_21
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_22
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_23
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_24
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_25
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_26
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_27
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_28
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_29
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_30
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_31
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_32
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_33
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 38
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_34
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_35
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_36
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_38
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_39
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_40
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_41
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_42
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_43
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_44
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_45
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_46
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_47
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_48
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_49
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_50
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_51
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_52
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_53
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_54
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_55
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_56
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Props_Level_01 - Blocos Cinza-Verde_57
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 1
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
