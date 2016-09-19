@@ -5,25 +5,28 @@ public class HitboxInimigo : Hitbox
 {
     public override void atingir()
     {
-        if (this.ObjetoAtingido != null)
+        foreach (GameObject objetoAtingido in this.ObjetosAtingidos)
         {
-            switch (this.ObjetoAtingido.gameObject.tag.ToString())
+            if (objetoAtingido != null)
             {
-                default:
-                    break;
-                case "Player":
-                    Jogador jogador = this.ObjetoAtingido.GetComponent<Jogador>();
+                switch (objetoAtingido.gameObject.tag.ToString())
+                {
+                    default:
+                        break;
+                    case "Player":
+                        Jogador jogador = objetoAtingido.GetComponent<Jogador>();
 
-                    jogador.alterarVida(-this.Dano);
-                    break;
-                case "Obstaculo":
-                    Obstaculo obstaculo = this.ObjetoAtingido.GetComponent<Obstaculo>();
+                        jogador.alterarVida(-this.Dano);
+                        break;
+                    case "Obstaculo":
+                        Obstaculo obstaculo = objetoAtingido.GetComponent<Obstaculo>();
 
-                    if (obstaculo.VidaTotal != 0)
-                    {
-                        obstaculo.alterarVida(-this.Dano);
-                    }
-                    break;
+                        if (obstaculo.VidaTotal != 0)
+                        {
+                            obstaculo.alterarVida(-this.Dano);
+                        }
+                        break;
+                }
             }
         }
     }

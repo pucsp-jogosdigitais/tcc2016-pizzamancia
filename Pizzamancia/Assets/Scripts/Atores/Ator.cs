@@ -28,9 +28,9 @@ public class Ator : MonoBehaviour
     public float velocidade; //velocidade com a qual o ator se move
     public bool isNoChao; //booleana que mostra se ator esta colidindo com o chao ou nao
     public float forcaPulo; //forca do pulo
-	float distanciaLadoEsqChao;
-	float distanciaCentroChao;
-	float distanciaLadoDirChao;
+	//float distanciaLadoEsqChao;
+	//float distanciaCentroChao;
+	//float distanciaLadoDirChao;
 
     //ataque melee
     public bool isComecouAtaque; //booleana que indica se o ator comecou o processo de ataque ou nao
@@ -67,12 +67,12 @@ public class Ator : MonoBehaviour
         raycastEsq = Physics2D.Raycast(ladoEsq, Vector2.down);
 		raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
         raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
-		Debug.DrawRay(ladoEsq, Vector2.down);
-		Debug.DrawRay(this.transform.position, Vector2.down);
-		Debug.DrawRay(ladoDir, Vector2.down);
-		distanciaLadoEsqChao = raycastEsq.distance;
-		distanciaCentroChao = raycastCentro.distance;
-		distanciaLadoDirChao = raycastDir.distance;
+		//Debug.DrawRay(ladoEsq, Vector2.down);
+		//Debug.DrawRay(this.transform.position, Vector2.down);
+		//Debug.DrawRay(ladoDir, Vector2.down);
+		//distanciaLadoEsqChao = raycastEsq.distance;
+		//distanciaCentroChao = raycastCentro.distance;
+		//distanciaLadoDirChao = raycastDir.distance;
 
 		if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) || (raycastDir.distance <= metadeAltura))
         {

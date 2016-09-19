@@ -19,26 +19,6 @@ public class Inimigo : Ator
 	public int pontos;
 	#endregion
 
-    // Use this for initialization
-    void Start()
-	{
-		raioPercepcao = 5;
-		alvo = GameObject.FindGameObjectWithTag ("Player").GetComponent<Jogador> ();
-
-        this.Velocidade = 2;
-        this.ForcaPulo = 4;
-
-		this.HitboxAtor.Dano = 5;
-		this.DemoraAntesAtaque = 1f;
-		this.DemoraDepoisAtaque = 0.5f;
-		this.alcanceAtaque = 0.2f;
-
-		this.VidaTotal = 10;
-		this.VidaAtual = vidaTotal;
-
-		pontos = 3;
-    }
-
     // Update is called once per frame
     void Update()
     {

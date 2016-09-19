@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Hitbox : MonoBehaviour
 {
     #region atributos
-    public GameObject objetoAtingido;
+    public List<GameObject> objetosAtingidos;
 
     public int dano;
     public float forcaRecuo;
@@ -13,19 +14,14 @@ public class Hitbox : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-		objetoAtingido = null;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        objetosAtingidos = new List<GameObject>();
     }
 
     #region getters e setters
-    public GameObject ObjetoAtingido
+    public List<GameObject> ObjetosAtingidos
     {
-        get { return objetoAtingido; }
-        set { objetoAtingido = value; }
+        get { return objetosAtingidos; }
+        set { objetosAtingidos = value; }
     }
 
     public int Dano
@@ -48,13 +44,19 @@ public class Hitbox : MonoBehaviour
             (colisor.gameObject.tag.ToString() == "Inimigo") ||
             (colisor.gameObject.tag.ToString() == "Obstaculo"))
         {
-            objetoAtingido = colisor.gameObject;
+            if (!objetosAtingidos.Contains(colisor.gameObject))
+            {
+                objetosAtingidos.Add(colisor.gameObject);
+            }
         }
     }
 
     public void OnTriggerExit2D(Collider2D colisor)
     {
-        objetoAtingido = null;
+        if (objetosAtingidos.Contains(colisor.gameObject))
+        {
+            objetosAtingidos.Remove(colisor.gameObject);
+        }
     }
     #endregion
 
