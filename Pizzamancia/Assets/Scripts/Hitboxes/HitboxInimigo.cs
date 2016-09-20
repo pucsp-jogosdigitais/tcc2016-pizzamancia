@@ -21,7 +21,7 @@ public class HitboxInimigo : Hitbox
                     case "Obstaculo":
                         Obstaculo obstaculo = objetoAtingido.GetComponent<Obstaculo>();
 
-                        if (obstaculo.VidaTotal != 0)
+                        if (obstaculo.IsDestrutivel)
                         {
                             obstaculo.alterarVida(-this.Dano);
                         }

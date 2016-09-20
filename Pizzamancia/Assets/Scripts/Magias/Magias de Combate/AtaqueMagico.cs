@@ -127,7 +127,7 @@ public class AtaqueMagico : MonoBehaviour
             case "Obstaculo":
                 var obstaculo = colisor.gameObject.GetComponent<Obstaculo>();
 
-                if (obstaculo.VidaTotal != 0)
+                if (obstaculo.IsDestrutivel)
                 {
                     obstaculo.alterarVida(-dano);
                 }

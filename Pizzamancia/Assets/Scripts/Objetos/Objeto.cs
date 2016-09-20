@@ -3,42 +3,54 @@ using System.Collections;
 
 public class Objeto : MonoBehaviour
 {
-	#region atributos
-	//animacao
-	public Animator animadorObjeto;
-	//funcionamento
-	public float tempoVida;
-	public float velocidade;
-	#endregion
+    #region atributos
+    //animacao
+    public Animator animadorObjeto;
 
-	// Use this for initialization
-	void Start () {
-		if (tempoVida > 0) {
-			Destroy (gameObject, tempoVida);
-		}
-	}
+    //Rigidbody e colisao
+    public Rigidbody2D rdbObjeto;
 
-	// Update is called once per frame
-	void Update () {
-	}
-		
-	#region getters e setters
-	public Animator AnimadorObjeto
-	{
-		get { return animadorObjeto; } 
-		set { animadorObjeto = value; }
-	}
+    //funcionamento
+    public float tempoVida;
+    public float velocidade;
+    #endregion
 
-	public float TempoVida
-	{
-		get { return tempoVida; } 
-		set { tempoVida = value; }
-	}
+    // Use this for initialization
+    void Start()
+    {
+        animadorObjeto = this.GetComponent<Animator>();
 
-	public float Velocidade
-	{
-		get { return velocidade; } 
-		set { velocidade = value; }
-	}
-	#endregion
+        rdbObjeto = this.GetComponent<Rigidbody2D>();
+
+        if (tempoVida > 0)
+        {
+            Destroy(gameObject, tempoVida);
+        }
+    }
+
+    #region getters e setters
+    public Animator AnimadorObjeto
+    {
+        get { return animadorObjeto; }
+        set { animadorObjeto = value; }
+    }
+
+    public Rigidbody2D RdbObjeto
+    {
+        get { return rdbObjeto; }
+        set { rdbObjeto = value; }
+    }
+
+    public float TempoVida
+    {
+        get { return tempoVida; }
+        set { tempoVida = value; }
+    }
+
+    public float Velocidade
+    {
+        get { return velocidade; }
+        set { velocidade = value; }
+    }
+    #endregion
 }

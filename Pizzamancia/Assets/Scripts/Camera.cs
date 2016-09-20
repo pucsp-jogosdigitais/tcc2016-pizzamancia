@@ -1,27 +1,32 @@
 using UnityEngine;
 using System.Collections;
 
-public class Camera : MonoBehaviour {
-	public Transform alvo;
-	float posicaoCamera = 0;
-	float posicaoAlvo = 0;
-	public float velocidade;
+public class Camera : MonoBehaviour
+{
+    #region atributos
+    public Transform alvo;
+    float posicaoCamera = 0;
+    float posicaoAlvo = 0;
+    public float velocidade;
+    #endregion
 
-	// Use this for initialization
-	void Start () {
-		alvo = GameObject.FindGameObjectWithTag ("Player").transform;
-		posicaoCamera = transform.position.z;
-		posicaoAlvo = alvo.position.z;
-		velocidade = 10;
-	}
+    // Use this for initialization
+    void Start()
+    {
+        alvo = GameObject.FindGameObjectWithTag("Player").transform;
+        posicaoCamera = transform.position.z;
+        posicaoAlvo = alvo.position.z;
+        velocidade = 10;
+    }
 
-	// Update is called once per frame
-	void LateUpdate () {
-		//Vector3 vetorCamera = new Vector3(transform.position.x, transform.position.y, posicaoCamera);
-		//Vector3 vetorAlvo = new Vector3(alvo.position.x, alvo.position.y, posicaoAlvo);
-		Vector3 vetorCamera = new Vector3(transform.position.x, transform.position.y, posicaoCamera);
-		Vector3 vetorAlvo = new Vector3(alvo.position.x, alvo.position.y, posicaoAlvo);
+    // Update is called once per frame
+    void LateUpdate()
+    {
+        //Vector3 vetorCamera = new Vector3(transform.position.x, transform.position.y, posicaoCamera);
+        //Vector3 vetorAlvo = new Vector3(alvo.position.x, alvo.position.y, posicaoAlvo);
+        Vector3 vetorCamera = new Vector3(transform.position.x, transform.position.y, posicaoCamera);
+        Vector3 vetorAlvo = new Vector3(alvo.position.x, alvo.position.y, posicaoAlvo);
 
-		transform.position = Vector3.Lerp (vetorCamera, vetorAlvo, Time.smoothDeltaTime * velocidade);
-	}
+        transform.position = Vector3.Lerp(vetorCamera, vetorAlvo, Time.smoothDeltaTime * velocidade);
+    }
 }

@@ -16,28 +16,28 @@ public class Ator : MonoBehaviour
     public Rigidbody2D rdbAtor; //rigidbody do ator
 
     //movimentacao
-	public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
-	float metadeLargura; //distancia entre as bordas verticais do ator e o seu centro
-	float metadeAltura; //distancia entre as bordas horizontais do ator e o seu centro
+    public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
+    float metadeLargura; //distancia entre as bordas verticais do ator e o seu centro
+    float metadeAltura; //distancia entre as bordas horizontais do ator e o seu centro
     Vector2 ladoEsq; //local do ponto-medio da borda horizontal esquerda do ator
-	Vector2 ladoDir; //local do ponto-medio da borda horizontal direita do ator
+    Vector2 ladoDir; //local do ponto-medio da borda horizontal direita do ator
     RaycastHit2D raycastEsq; //linha tracada entre o ladoEsq e o chao
-	RaycastHit2D raycastCentro; //linha tracada entre o centro do ator e o chao
-	RaycastHit2D raycastDir; //linha tracada entre o ladoDir e o chao
+    RaycastHit2D raycastCentro; //linha tracada entre o centro do ator e o chao
+    RaycastHit2D raycastDir; //linha tracada entre o ladoDir e o chao
     float movimentoX; //movimento do ator no eixo X
     public float velocidade; //velocidade com a qual o ator se move
     public bool isNoChao; //booleana que mostra se ator esta colidindo com o chao ou nao
     public float forcaPulo; //forca do pulo
-	//float distanciaLadoEsqChao;
-	//float distanciaCentroChao;
-	//float distanciaLadoDirChao;
+    //float distanciaLadoEsqChao;
+    //float distanciaCentroChao;
+    //float distanciaLadoDirChao;
 
     //ataque melee
-    public bool isComecouAtaque; //booleana que indica se o ator comecou o processo de ataque ou nao
-	public bool isAtacou; //booleana que indica se ator ja executou taque
+    bool isComecouAtaque; //booleana que indica se o ator comecou o processo de ataque ou nao
+    bool isAtacou; //booleana que indica se ator ja executou taque
     public Hitbox hitboxAtor;
     public float demoraAntesAtaque; //tempo que demora entre o inicio do ataque a sua execucao
-	public float demoraDepoisAtaque; //tempo que demora entre a execucao do ataque e a sua finalizacao
+    public float demoraDepoisAtaque; //tempo que demora entre a execucao do ataque e a sua finalizacao
     float tempoPassadoInicioAtaque; //tempo passado desde o inicio do ataque
 
     //vida
@@ -52,11 +52,11 @@ public class Ator : MonoBehaviour
         rdbAtor = this.GetComponent<Rigidbody2D>();
 
         posicaoSpawn = this.transform.position;
-		metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 4;
-		metadeAltura = (this.GetComponent<Renderer>().bounds.size.y / 2) + 0.1f;
+        metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 4;
+        metadeAltura = (this.GetComponent<Renderer>().bounds.size.y / 2) + 0.1f;
 
         isComecouAtaque = false;
-		isAtacou = false;
+        isAtacou = false;
         tempoPassadoInicioAtaque = 0;
     }
 
@@ -65,16 +65,16 @@ public class Ator : MonoBehaviour
         ladoEsq = new Vector2(this.transform.position.x - metadeLargura, this.transform.position.y);
         ladoDir = new Vector2(this.transform.position.x + metadeLargura, this.transform.position.y);
         raycastEsq = Physics2D.Raycast(ladoEsq, Vector2.down);
-		raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
+        raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
         raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
-		//Debug.DrawRay(ladoEsq, Vector2.down);
-		//Debug.DrawRay(this.transform.position, Vector2.down);
-		//Debug.DrawRay(ladoDir, Vector2.down);
-		//distanciaLadoEsqChao = raycastEsq.distance;
-		//distanciaCentroChao = raycastCentro.distance;
-		//distanciaLadoDirChao = raycastDir.distance;
+        //Debug.DrawRay(ladoEsq, Vector2.down);
+        //Debug.DrawRay(this.transform.position, Vector2.down);
+        //Debug.DrawRay(ladoDir, Vector2.down);
+        //distanciaLadoEsqChao = raycastEsq.distance;
+        //distanciaCentroChao = raycastCentro.distance;
+        //distanciaLadoDirChao = raycastDir.distance;
 
-		if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) || (raycastDir.distance <= metadeAltura))
+        if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) || (raycastDir.distance <= metadeAltura))
         {
             isNoChao = true;
         }
@@ -88,14 +88,14 @@ public class Ator : MonoBehaviour
             movimentoX = 0;
             tempoPassadoInicioAtaque += Time.deltaTime;
 
-			if (tempoPassadoInicioAtaque >= demoraAntesAtaque && !isAtacou)
+            if (tempoPassadoInicioAtaque >= demoraAntesAtaque && !isAtacou)
             {
                 executarAtaque();
             }
 
             if (tempoPassadoInicioAtaque >= (demoraAntesAtaque + demoraDepoisAtaque))
             {
-				terminarAtaque();
+                terminarAtaque();
             }
         }
 
@@ -151,11 +151,11 @@ public class Ator : MonoBehaviour
         set { isComecouAtaque = value; }
     }
 
-	public bool IsAtacou 
-	{
-		get { return isAtacou; }
-		set { isAtacou = value; }
-	}
+    public bool IsAtacou
+    {
+        get { return isAtacou; }
+        set { isAtacou = value; }
+    }
 
     public Hitbox HitboxAtor
     {
@@ -206,11 +206,11 @@ public class Ator : MonoBehaviour
 
         rdbAtor.velocity = new Vector2(movimentoX * velocidade, rdbAtor.velocity.y);
     }
-		
-	//faz o ator pular
+
+    //faz o ator pular
     public void pular(bool isPular)
-	{
-		if (isPular && isNoChao)
+    {
+        if (isPular && isNoChao && !isComecouAtaque)
         {
             animadorAtor.SetTrigger("pular");
             rdbAtor.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
@@ -230,7 +230,7 @@ public class Ator : MonoBehaviour
     #region alteracao de status
     public void executarAtaque()
     {
-		isAtacou = true;
+        isAtacou = true;
 
         hitboxAtor.atingir();
     }
@@ -238,11 +238,11 @@ public class Ator : MonoBehaviour
     public void terminarAtaque()
     {
         isComecouAtaque = false;
-		isAtacou = false;
+        isAtacou = false;
         tempoPassadoInicioAtaque = 0;
     }
 
-	//aumenta ou diminui os pontos de vida atual
+    //aumenta ou diminui os pontos de vida atual
     public void alterarVida(int valor)
     {
         int resultadoFinal = vidaAtual + valor;
@@ -262,7 +262,7 @@ public class Ator : MonoBehaviour
         }
     }
 
-	//mata (destroi) o ator
+    //mata (destroi) o ator
     public virtual void morrer()
     {
     }

@@ -35,7 +35,7 @@ public class Jogador : Ator
         this.ForcaPulo = 4;
 
         this.HitboxAtor.Dano = 2;
-		this.HitboxAtor.ForcaRecuo = 0;
+        this.HitboxAtor.ForcaRecuo = 0;
         this.DemoraAntesAtaque = 0.25f;
         this.DemoraDepoisAtaque = 0.25f;
 
@@ -54,11 +54,6 @@ public class Jogador : Ator
         magias = new Dictionary<int, Magia>();
         magias.Add(0, this.GetComponent<RajadaDeAzeitonas>());
         magias.Add(1, this.GetComponent<DiscoDeCalabresa>());
-
-        //foreach (KeyValuePair<int, Magia> m in magias)
-        //{
-        //    m.Value.Conjurador = this;
-        //}
 
         posicaoMagiaSelecionada = 0;
         magiaSelecionada = magias[posicaoMagiaSelecionada];
@@ -163,12 +158,16 @@ public class Jogador : Ator
     #region obtencao de input
     public void obterInput()
     { //obtem input do controle do jogador
-        this.MovimentoX = InputControle.getInstance().MovePad.x;
-        this.pular(InputControle.getInstance().BtnPular);
-        this.comecarAtaque(InputControle.getInstance().BtnAtacar);
+        if (!this.IsComecouAtaque)
+        {
+            this.MovimentoX = InputControle.getInstance().MovePad.x;
+
+            this.pular(InputControle.getInstance().BtnPular);
+            this.comecarAtaque(InputControle.getInstance().BtnAtacar);
+            tentarConjurar();
+        }
 
         alterarMagia();
-        tentarConjurar();
     }
 
     //seleciona magia para ser utilizada
