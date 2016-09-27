@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: ed857a7b3f7923441919161551b1f67c
-timeCreated: 1474029040
+guid: 85daf188d526cbe48b72e949e3b65cf8
+timeCreated: 1474639103
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -15,6 +15,9 @@ TextureImporter:
     21300016: sprite sheet_8
     21300018: sprite sheet_9
     21300020: sprite sheet_10
+    21300022: sprite sheet_11
+    21300024: sprite sheet_12
+    21300026: sprite sheet_13
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -37,11 +40,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -2
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -64,7 +67,7 @@ TextureImporter:
     - name: sprite sheet_0
       rect:
         serializedVersion: 2
-        x: 26
+        x: 10
         y: 561
         width: 46
         height: 122
@@ -72,16 +75,16 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 3, y: 61}
-        - {x: -23, y: 61}
+      - - {x: -22, y: 61}
+        - {x: -23, y: 60}
         - {x: -23, y: -61}
-        - {x: 22, y: -61}
-        - {x: 23, y: -53}
-        - {x: 23, y: 52}
+        - {x: 23, y: -61}
+        - {x: 23, y: 44}
+        - {x: 9, y: 61}
     - name: sprite sheet_1
       rect:
         serializedVersion: 2
-        x: 87
+        x: 62
         y: 561
         width: 46
         height: 122
@@ -89,16 +92,16 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 3, y: 61}
-        - {x: -23, y: 61}
+      - - {x: -22, y: 61}
+        - {x: -23, y: 60}
         - {x: -23, y: -61}
-        - {x: 22, y: -61}
-        - {x: 23, y: -53}
-        - {x: 23, y: 52}
+        - {x: 23, y: -61}
+        - {x: 23, y: 44}
+        - {x: 9, y: 61}
     - name: sprite sheet_2
       rect:
         serializedVersion: 2
-        x: 147
+        x: 113
         y: 561
         width: 46
         height: 122
@@ -106,16 +109,50 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 3, y: 61}
-        - {x: -23, y: 61}
+      - - {x: -22, y: 61}
+        - {x: -23, y: 60}
         - {x: -23, y: -61}
-        - {x: 22, y: -61}
-        - {x: 23, y: -53}
-        - {x: 23, y: 52}
+        - {x: 23, y: -61}
+        - {x: 23, y: 44}
+        - {x: 9, y: 61}
     - name: sprite sheet_3
       rect:
         serializedVersion: 2
-        x: 210
+        x: 165
+        y: 561
+        width: 46
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 61}
+        - {x: -23, y: 60}
+        - {x: -23, y: -61}
+        - {x: 23, y: -61}
+        - {x: 23, y: 44}
+        - {x: 9, y: 61}
+    - name: sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 561
+        width: 46
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 61}
+        - {x: -23, y: 60}
+        - {x: -23, y: -61}
+        - {x: 23, y: -61}
+        - {x: 23, y: 44}
+        - {x: 9, y: 61}
+    - name: sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 270
         y: 563
         width: 47
         height: 120
@@ -124,16 +161,16 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -23.5, y: 60}
-        - {x: -23.5, y: -15}
-        - {x: -13.5, y: -60}
+        - {x: -23.5, y: -41}
+        - {x: -15.5, y: -60}
         - {x: 18.5, y: -60}
-        - {x: 23.5, y: -33}
-        - {x: 23.5, y: 52}
-        - {x: 5.5, y: 60}
-    - name: sprite sheet_4
+        - {x: 23.5, y: -23}
+        - {x: 23.5, y: 50}
+        - {x: 11.5, y: 60}
+    - name: sprite sheet_6
       rect:
         serializedVersion: 2
-        x: 274
+        x: 320
         y: 563
         width: 47
         height: 120
@@ -141,17 +178,20 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 2.5, y: 60}
-        - {x: -23.5, y: 60}
+      - - {x: -23.5, y: 60}
         - {x: -23.5, y: -60}
-        - {x: 8.5, y: -60}
-        - {x: 13.5, y: -58}
-        - {x: 23.5, y: -27}
-        - {x: 23.5, y: 52}
-    - name: sprite sheet_5
+        - {x: 23.5, y: -60}
+        - {x: 23.5, y: 56}
+        - {x: 10.5, y: 60}
+      - - {x: -20.5, y: -10}
+        - {x: -17.5, y: -9}
+        - {x: -17.5, y: -6}
+        - {x: -20.5, y: -5}
+        - {x: -22.5, y: -7}
+    - name: sprite sheet_7
       rect:
         serializedVersion: 2
-        x: 329
+        x: 370
         y: 563
         width: 74
         height: 120
@@ -159,21 +199,17 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 14, y: 60}
-        - {x: -35, y: 60}
-        - {x: -37, y: 55}
-        - {x: -37, y: -56}
-        - {x: -36, y: -60}
-        - {x: -20, y: -60}
-        - {x: -19, y: -58}
-        - {x: -11, y: -60}
-        - {x: 37, y: -60}
-        - {x: 37, y: 29}
-        - {x: 28, y: 53}
-    - name: sprite sheet_6
+      - - {x: -36, y: 60}
+        - {x: -37, y: 52}
+        - {x: -37, y: -60}
+        - {x: 36, y: -60}
+        - {x: 37, y: -59}
+        - {x: 37, y: 53}
+        - {x: 31, y: 60}
+    - name: sprite sheet_8
       rect:
         serializedVersion: 2
-        x: 413
+        x: 448
         y: 567
         width: 81
         height: 116
@@ -181,104 +217,121 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 30.5, y: -2}
-        - {x: 22.5, y: 9}
-        - {x: 35.5, y: 38}
-        - {x: 9.5, y: 58}
-        - {x: -25.5, y: 58}
-        - {x: -36.5, y: 55}
-        - {x: -40.5, y: 28}
+      - - {x: -17.5, y: 58}
+        - {x: -24.5, y: 55}
+        - {x: -40.5, y: -29}
         - {x: -40.5, y: -58}
         - {x: 40.5, y: -58}
-        - {x: 40.5, y: -48}
-        - {x: 31.5, y: -37}
-    - name: sprite sheet_7
-      rect:
-        serializedVersion: 2
-        x: 503
-        y: 561
-        width: 48
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -21, y: 60}
-        - {x: -24, y: 56}
-        - {x: -24, y: -60}
-        - {x: 14, y: -60}
-        - {x: 24, y: -53}
-        - {x: 24, y: 53}
-        - {x: 2, y: 60}
-    - name: sprite sheet_8
-      rect:
-        serializedVersion: 2
-        x: 564
-        y: 561
-        width: 50
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 25, y: 30}
-        - {x: 25, y: 41}
-        - {x: 20, y: 52}
-        - {x: 1, y: 60}
-        - {x: -25, y: 60}
-        - {x: -25, y: -60}
-        - {x: 25, y: -60}
-        - {x: 25, y: 12}
-        - {x: 23, y: 14}
+        - {x: 40.5, y: 45}
+        - {x: 13.5, y: 58}
     - name: sprite sheet_9
       rect:
         serializedVersion: 2
-        x: 29
-        y: 434
-        width: 81
-        height: 116
+        x: 533
+        y: 563
+        width: 49
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 27.5, y: -25}
-        - {x: 15.5, y: -19}
-        - {x: 21.5, y: -21}
-        - {x: 24.5, y: -16}
-        - {x: 26.5, y: -1}
-        - {x: 26.5, y: 2}
-        - {x: 21.5, y: 7}
-        - {x: 19.5, y: 7}
-        - {x: 30.5, y: 28}
-        - {x: 31.5, y: 37}
-        - {x: 8.5, y: 58}
-        - {x: -19.5, y: 58}
-        - {x: -33.5, y: 53}
-        - {x: -29.5, y: 32}
-        - {x: -40.5, y: -20}
-        - {x: -40.5, y: -58}
-        - {x: 40.5, y: -58}
-        - {x: 40.5, y: -46}
-        - {x: 31.5, y: -31}
+      - - {x: -23.5, y: 60}
+        - {x: -24.5, y: 59}
+        - {x: -24.5, y: -60}
+        - {x: 24.5, y: -60}
+        - {x: 24.5, y: 54}
+        - {x: 4.5, y: 60}
+      - - {x: -20.5, y: -10}
+        - {x: -17.5, y: -9}
+        - {x: -17.5, y: -6}
+        - {x: -20.5, y: -5}
+        - {x: -22.5, y: -7}
     - name: sprite sheet_10
       rect:
         serializedVersion: 2
-        x: 127
-        y: 432
+        x: 596
+        y: 563
         width: 47
         height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 2.5, y: 60}
-        - {x: -23.5, y: 60}
-        - {x: -23.5, y: -18}
-        - {x: -13.5, y: -60}
-        - {x: 12.5, y: -60}
-        - {x: 16.5, y: -42}
-        - {x: 23.5, y: -7}
-        - {x: 23.5, y: 50}
+      - - {x: -23.5, y: 60}
+        - {x: -23.5, y: -56}
+        - {x: -22.5, y: -60}
+        - {x: 19.5, y: -60}
+        - {x: 23.5, y: -37}
+        - {x: 23.5, y: 53}
+        - {x: 12.5, y: 60}
+      - - {x: -20.5, y: -10}
+        - {x: -17.5, y: -9}
+        - {x: -17.5, y: -6}
+        - {x: -20.5, y: -5}
+        - {x: -22.5, y: -7}
+    - name: sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 432
+        width: 74
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -35, y: 60}
+        - {x: -37, y: 54}
+        - {x: -37, y: -60}
+        - {x: 32, y: -60}
+        - {x: 37, y: -58}
+        - {x: 37, y: 46}
+        - {x: 18, y: 60}
+    - name: sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 432
+        width: 81
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 58}
+        - {x: -24.5, y: 55}
+        - {x: -22.5, y: 47}
+        - {x: -19.5, y: 43}
+        - {x: -22.5, y: 31}
+        - {x: -21.5, y: -11}
+        - {x: -40.5, y: -39}
+        - {x: -40.5, y: -58}
+        - {x: 40.5, y: -58}
+        - {x: 40.5, y: 45}
+        - {x: 13.5, y: 58}
+    - name: sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 433
+        width: 51
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 60}
+        - {x: -25.5, y: 60}
+        - {x: -25.5, y: -58}
+        - {x: -20.5, y: -60}
+        - {x: 25.5, y: -60}
+        - {x: 25.5, y: 49}
+        - {x: 22.5, y: 52}
+      - - {x: -19.5, y: -10}
+        - {x: -16.5, y: -9}
+        - {x: -16.5, y: -6}
+        - {x: -19.5, y: -5}
+        - {x: -21.5, y: -7}
     outline: []
   spritePackingTag: 
   userData: 
