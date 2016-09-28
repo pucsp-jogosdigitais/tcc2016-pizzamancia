@@ -7,7 +7,9 @@ public class Hitbox : MonoBehaviour
     #region atributos
     public List<GameObject> objetosAtingidos;
 
+	public int danoOriginal;
     public int dano;
+	public float forcaRecuoOriginal;
     public float forcaRecuo;
     #endregion
 
@@ -24,11 +26,23 @@ public class Hitbox : MonoBehaviour
         set { objetosAtingidos = value; }
     }
 
+	public int DanoOriginal
+	{
+		get { return danoOriginal; }
+		set { danoOriginal = value; }
+	}
+
     public int Dano
     {
         get { return dano; }
         set { dano = value; }
     }
+
+	public float ForcaRecuoOriginal
+	{
+		get { return forcaRecuoOriginal; }
+		set { forcaRecuoOriginal = value; }
+	}
 
     public float ForcaRecuo
     {
