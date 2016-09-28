@@ -15,32 +15,31 @@ public class Ator : MonoBehaviour
     //Rigidbody e colisao
     public Rigidbody2D rdbAtor; //rigidbody do ator
 
-    //movimentacao
+    //ponto de spawn
     public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
+
+    //movimentacao
     float metadeLargura; //distancia entre as bordas verticais do ator e o seu centro
     float metadeAltura; //distancia entre as bordas horizontais do ator e o seu centro
-    Vector2 ladoEsq; //local do ponto-medio da borda horizontal esquerda do ator
-    Vector2 ladoDir; //local do ponto-medio da borda horizontal direita do ator
-    RaycastHit2D raycastEsq; //linha tracada entre o ladoEsq e o chao
-    RaycastHit2D raycastCentro; //linha tracada entre o centro do ator e o chao
-    RaycastHit2D raycastDir; //linha tracada entre o ladoDir e o chao
     float movimentoX; //movimento do ator no eixo X
+    public float velocidadeOriginal;
     public float velocidade; //velocidade com a qual o ator se move
     public bool isNoChao; //booleana que mostra se ator esta colidindo com o chao ou nao
+    public float forcaPuloOriginal;
     public float forcaPulo; //forca do pulo
-    //float distanciaLadoEsqChao;
-    //float distanciaCentroChao;
-    //float distanciaLadoDirChao;
 
     //ataque melee
     bool isComecouAtaque; //booleana que indica se o ator comecou o processo de ataque ou nao
     bool isAtacou; //booleana que indica se ator ja executou taque
     public Hitbox hitboxAtor;
+    public float demoraAntesAtaqueOriginal;
     public float demoraAntesAtaque; //tempo que demora entre o inicio do ataque a sua execucao
+    public float demoraDepoisAtaqueOriginal;
     public float demoraDepoisAtaque; //tempo que demora entre a execucao do ataque e a sua finalizacao
     float tempoPassadoInicioAtaque; //tempo passado desde o inicio do ataque
 
     //vida
+    public int vidaTotalOriginal;
     public int vidaTotal; //quantos pontos de vida o ator tem no total
     public int vidaAtual; //quantos pontos de vida o ator tem no momento
     #endregion
@@ -62,17 +61,17 @@ public class Ator : MonoBehaviour
 
     void FixedUpdate()
     {
-        ladoEsq = new Vector2(this.transform.position.x - metadeLargura, this.transform.position.y);
-        ladoDir = new Vector2(this.transform.position.x + metadeLargura, this.transform.position.y);
-        raycastEsq = Physics2D.Raycast(ladoEsq, Vector2.down);
-        raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
-        raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
+        Vector2 ladoEsq = new Vector2(this.transform.position.x - metadeLargura, this.transform.position.y);
+        Vector2 ladoDir = new Vector2(this.transform.position.x + metadeLargura, this.transform.position.y);
+        RaycastHit2D raycastEsq = Physics2D.Raycast(ladoEsq, Vector2.down);
+        RaycastHit2D raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
+        RaycastHit2D raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
         //Debug.DrawRay(ladoEsq, Vector2.down);
         //Debug.DrawRay(this.transform.position, Vector2.down);
         //Debug.DrawRay(ladoDir, Vector2.down);
-        //distanciaLadoEsqChao = raycastEsq.distance;
-        //distanciaCentroChao = raycastCentro.distance;
-        //distanciaLadoDirChao = raycastDir.distance;
+        //float distanciaLadoEsqChao = raycastEsq.distance;
+        //float distanciaCentroChao = raycastCentro.distance;
+        //float distanciaLadoDirChao = raycastDir.distance;
 
         if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) || (raycastDir.distance <= metadeAltura))
         {
@@ -127,6 +126,12 @@ public class Ator : MonoBehaviour
         set { movimentoX = value; }
     }
 
+    public float VelocidadeOriginal
+    {
+        get { return velocidadeOriginal; }
+        set { velocidadeOriginal = value; }
+    }
+
     public float Velocidade
     {
         get { return velocidade; }
@@ -137,6 +142,12 @@ public class Ator : MonoBehaviour
     {
         get { return isNoChao; }
         set { isNoChao = value; }
+    }
+
+    public float ForcaPuloOriginal
+    {
+        get { return forcaPuloOriginal; }
+        set { forcaPuloOriginal = value; }
     }
 
     public float ForcaPulo
@@ -163,16 +174,34 @@ public class Ator : MonoBehaviour
         set { hitboxAtor = value; }
     }
 
+    public float DemoraAntesAtaqueOriginal
+    {
+        get { return demoraAntesAtaqueOriginal; }
+        set { demoraAntesAtaqueOriginal = value; }
+    }
+
     public float DemoraAntesAtaque
     {
         get { return demoraAntesAtaque; }
         set { demoraAntesAtaque = value; }
     }
 
+    public float DemoraDepoisAtaqueOriginal
+    {
+        get { return demoraDepoisAtaqueOriginal; }
+        set { demoraDepoisAtaqueOriginal = value; }
+    }
+
     public float DemoraDepoisAtaque
     {
         get { return demoraDepoisAtaque; }
         set { demoraDepoisAtaque = value; }
+    }
+
+    public int VidaTotalOriginal
+    {
+        get { return vidaTotalOriginal; }
+        set { vidaTotalOriginal = value; }
     }
 
     public int VidaTotal

@@ -13,6 +13,7 @@ public class Jogador : Ator
     public int chances; //quantas chances o jogador tem no momento
 
     //mana
+    public int manaTotalOriginal;
     public int manaTotal; //quantos pontos de mana o jogador tem no total
     public int manaAtual; //quantos pontos de mana o jogador tem no momento
     public int taxaRegeneracaoMana; //quantos pontos de mana sao regenerados apos um certo intervalo
@@ -31,21 +32,30 @@ public class Jogador : Ator
     {
         isControlavel = true;
 
-        this.Velocidade = 2;
-        this.ForcaPulo = 4;
+        this.VelocidadeOriginal = 3;
+        this.Velocidade = this.VelocidadeOriginal;
+        this.ForcaPuloOriginal = 6;
+        this.ForcaPulo = this.ForcaPuloOriginal;
 
-        this.HitboxAtor.Dano = 2;
-        this.HitboxAtor.ForcaRecuo = 0;
-        this.DemoraAntesAtaque = 0.25f;
-        this.DemoraDepoisAtaque = 0.25f;
+        this.HitboxAtor.DanoOriginal = 2;
+        this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
+        this.HitboxAtor.ForcaRecuoOriginal = 0;
+        this.HitboxAtor.ForcaRecuo = this.HitboxAtor.ForcaRecuoOriginal;
+
+        this.demoraAntesAtaqueOriginal = 0.25f;
+        this.DemoraAntesAtaque = this.demoraAntesAtaqueOriginal;
+        this.DemoraDepoisAtaqueOriginal = 0.25f;
+        this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
 
         chances = 3;
 
-        this.VidaTotal = 50;
-        this.VidaAtual = vidaTotal;
+        this.VidaTotalOriginal = 50;
+        this.VidaTotal = this.VidaTotalOriginal;
+        this.VidaAtual = this.VidaTotalOriginal;
 
-        manaTotal = 100;
-        manaAtual = manaTotal;
+        manaTotalOriginal = 100;
+        manaTotal = manaTotalOriginal;
+        manaAtual = manaTotalOriginal;
         taxaRegeneracaoMana = 10;
         tempoRegeneracaoMana = 1;
         tempoPassadoRegeneracao = 0;
@@ -82,6 +92,12 @@ public class Jogador : Ator
     {
         get { return chances; }
         set { chances = value; }
+    }
+
+    public int ManaTotalOriginal
+    {
+        get { return manaTotalOriginal; }
+        set { manaTotalOriginal = value; }
     }
 
     public int ManaTotal
@@ -199,10 +215,10 @@ public class Jogador : Ator
     { //tenta usar a magia
         if (InputControle.getInstance().BtnConjurar)
         {
-            if ((manaAtual >= magiaSelecionada.CustoMana) && (magiaSelecionada.tempoPassado >= magiaSelecionada.Cooldown))
+			if ((manaAtual >= magiaSelecionada.CustoMana) && (magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown))
             {
                 alterarMana(-magiaSelecionada.CustoMana);
-                magiaSelecionada.TempoPassado = 0;
+				magiaSelecionada.TempoPassado = 0;
                 magiaSelecionada.conjurar();
             }
         }

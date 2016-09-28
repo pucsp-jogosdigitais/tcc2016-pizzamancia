@@ -4,23 +4,33 @@ using System.Collections;
 
 public class MorcegoCalabresa : Inimigo
 {
-	// Use this for initialization
-	void Start()
-	{
-		this.RaioPercepcao = 2.5f;
-		this.Alvo = GameObject.FindGameObjectWithTag ("Player").GetComponent<Jogador> ();
+    // Use this for initialization
+    void Start()
+    {
+        base.Start();
 
-		this.Velocidade = 2;
-		this.ForcaPulo = 4;
+        this.AlcanceCentroVagar = 5f;
 
-		this.HitboxAtor.Dano = 5;
-		this.DemoraAntesAtaque = 0.5f;
-		this.DemoraDepoisAtaque = 0.5f;
-		this.AlcanceAtaque = 0.16f;
+        this.RaioPercepcao = 2.5f;
 
-		this.VidaTotal = 5;
-		this.VidaAtual = vidaTotal;
+        this.VelocidadeOriginal = 2;
+        this.Velocidade = this.VelocidadeOriginal;
+        this.ForcaPuloOriginal = 4;
+        this.ForcaPulo = this.ForcaPuloOriginal;
 
-		this.Pontos = 3;
-	}
+        this.HitboxAtor.DanoOriginal = 5;
+        this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
+
+        this.DemoraAntesAtaqueOriginal = 0.5f;
+        this.DemoraAntesAtaque = this.DemoraAntesAtaqueOriginal;
+        this.DemoraDepoisAtaqueOriginal = 0.5f;
+        this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
+        this.AlcanceAtaque = 0.16f;
+
+        this.VidaTotalOriginal = 5;
+        this.VidaTotal = this.VidaTotalOriginal;
+        this.VidaAtual = this.VidaTotalOriginal;
+
+        this.Pontos = 3;
+    }
 }

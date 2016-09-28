@@ -4,23 +4,33 @@ using System.Collections;
 
 public class GolemMussarela : Inimigo
 {
-	// Use this for initialization
-	void Start()
-	{
-		this.RaioPercepcao = 8f;
-		this.Alvo = GameObject.FindGameObjectWithTag ("Player").GetComponent<Jogador> ();
+    // Use this for initialization
+    void Start()
+    {
+        base.Start();
 
-		this.Velocidade = 1;
-		this.ForcaPulo = 2;
+        this.AlcanceCentroVagar = 5f;
 
-		this.HitboxAtor.Dano = 10;
-		this.DemoraAntesAtaque = 1f;
-		this.DemoraDepoisAtaque = 1f;
-		this.AlcanceAtaque = 0.6f;
+        this.RaioPercepcao = 8f;
 
-		this.VidaTotal = 20;
-        this.VidaAtual = this.VidaTotal;
+        this.VelocidadeOriginal = 1;
+        this.Velocidade = this.VelocidadeOriginal;
+        this.ForcaPuloOriginal = 2;
+        this.ForcaPulo = this.ForcaPuloOriginal;
 
-		this.Pontos = 10;
-	}
+        this.HitboxAtor.DanoOriginal = 5;
+        this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
+
+        this.DemoraAntesAtaqueOriginal = 1f;
+        this.DemoraAntesAtaque = this.DemoraAntesAtaqueOriginal;
+        this.DemoraDepoisAtaqueOriginal = 1f;
+        this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
+        this.AlcanceAtaque = 0.6f;
+
+        this.VidaTotalOriginal = 20;
+        this.VidaTotal = this.VidaTotalOriginal;
+        this.VidaAtual = this.VidaTotalOriginal;
+
+        this.Pontos = 10;
+    }
 }
