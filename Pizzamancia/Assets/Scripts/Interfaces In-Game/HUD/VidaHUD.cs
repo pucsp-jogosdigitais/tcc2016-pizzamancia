@@ -4,20 +4,25 @@ using System.Collections;
 
 public class VidaHUD : MonoBehaviour {
 	public static VidaHUD vidaHUDInst;
-	GameObject jogador;
-	GameObject vidaHUD;
+	Jogador jogador;
+	Text vidaHUD;
+	Slider sliderVida;
 
 	// Use this for initialization
 	void Start () {
 		vidaHUDInst = this;	
-		jogador = GameObject.FindGameObjectWithTag ("Player");
-		vidaHUD = GameObject.Find ("Vida HUD");
+		jogador = GameObject.FindGameObjectWithTag ("Player").GetComponent<Jogador> ();
+		vidaHUD = GameObject.Find ("Vida HUD").GetComponent<Text> ();
+		sliderVida = GameObject.Find ("Slider Vida").GetComponent<Slider> ();
+
+		sliderVida.minValue = 0;
+		sliderVida.maxValue = jogador.VidaTotal;
 	}
 
 	// Update is called once per frame
 	void Update () {
-		vidaHUD.GetComponent<Text> ().text = 
-			"Vida: " + jogador.GetComponent<Jogador> ().VidaAtual + "/" + jogador.GetComponent<Jogador> ().VidaTotal;
+		vidaHUD.text = "Vida: " + jogador.VidaAtual + "/" + jogador.VidaTotal;
+		sliderVida.value = jogador.VidaAtual;
 	}
 
 	public static VidaHUD getInstance () {
