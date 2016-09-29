@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: 1042448c9f8a523438a55b5bdbde5794
+timeCreated: 1475160159
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Props 4_0
+    21300002: Props 4_1
+    21300004: Props 4_2
+    21300006: Props 4_3
+    21300008: Props 4_4
+    21300010: Props 4_5
+    21300012: Props 4_6
+    21300014: Props 4_7
+    21300016: Props 4_8
+    21300018: Props 4_9
+    21300020: Props 4_10
+    21300022: Props 4_11
+    21300024: Props 4_12
+    21300026: Props 4_13
+    21300028: Props 4_14
+    21300030: Props 4_15
+    21300032: Props 4_16
+    21300034: Props 4_17
+    21300036: Props 4_18
+    21300038: Props 4_19
+    21300040: Props 4_20
+    21300042: Props 4_21
+    21300044: Props 4_22
+    21300046: Props 4_23
+    21300048: Props 4_24
+    21300050: Props 4_25
+    21300052: Props 4_26
+    21300054: Props 4_27
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Props 4_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 264
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 264
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 264
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 264
+        width: 31
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 227
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 18}
+        - {x: -17, y: 8}
+        - {x: -17, y: -15}
+        - {x: -15, y: -18}
+        - {x: 10, y: -18}
+        - {x: 17, y: -10}
+        - {x: 17, y: 8}
+        - {x: 9, y: 18}
+    - name: Props 4_5
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 227
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 18}
+        - {x: -17, y: 8}
+        - {x: -17, y: -15}
+        - {x: -15, y: -18}
+        - {x: 10, y: -18}
+        - {x: 17, y: -10}
+        - {x: 17, y: 8}
+        - {x: 9, y: 18}
+    - name: Props 4_6
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 227
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 18}
+        - {x: -17, y: 8}
+        - {x: -17, y: -15}
+        - {x: -15, y: -18}
+        - {x: 10, y: -18}
+        - {x: 17, y: -10}
+        - {x: 17, y: 8}
+        - {x: 9, y: 18}
+    - name: Props 4_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 227
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 18}
+        - {x: -17, y: 8}
+        - {x: -17, y: -15}
+        - {x: -15, y: -18}
+        - {x: 10, y: -18}
+        - {x: 17, y: -10}
+        - {x: 17, y: 8}
+        - {x: 9, y: 18}
+    - name: Props 4_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 212
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_9
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 212
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_10
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 212
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 212
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 152
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 29.5}
+        - {x: -11.5, y: 29.5}
+        - {x: -21.5, y: 15.5}
+        - {x: -25.5, y: 8.5}
+        - {x: -25.5, y: -24.5}
+        - {x: -21.5, y: -29.5}
+        - {x: 18.5, y: -29.5}
+        - {x: 25.5, y: -23.5}
+        - {x: 25.5, y: 3.5}
+        - {x: 18.5, y: 28.5}
+    - name: Props 4_13
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 152
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 29.5}
+        - {x: -11.5, y: 29.5}
+        - {x: -21.5, y: 15.5}
+        - {x: -25.5, y: 8.5}
+        - {x: -25.5, y: -24.5}
+        - {x: -21.5, y: -29.5}
+        - {x: 18.5, y: -29.5}
+        - {x: 25.5, y: -23.5}
+        - {x: 25.5, y: 3.5}
+        - {x: 18.5, y: 28.5}
+    - name: Props 4_14
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 152
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 29.5}
+        - {x: -11.5, y: 29.5}
+        - {x: -21.5, y: 15.5}
+        - {x: -25.5, y: 8.5}
+        - {x: -25.5, y: -24.5}
+        - {x: -21.5, y: -29.5}
+        - {x: 18.5, y: -29.5}
+        - {x: 25.5, y: -23.5}
+        - {x: 25.5, y: 3.5}
+        - {x: 18.5, y: 28.5}
+    - name: Props 4_15
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 152
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: 29.5}
+        - {x: -11.5, y: 29.5}
+        - {x: -21.5, y: 15.5}
+        - {x: -25.5, y: 8.5}
+        - {x: -25.5, y: -24.5}
+        - {x: -21.5, y: -29.5}
+        - {x: 18.5, y: -29.5}
+        - {x: 25.5, y: -23.5}
+        - {x: 25.5, y: 3.5}
+        - {x: 18.5, y: 28.5}
+    - name: Props 4_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 107
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_17
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 107
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_18
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 107
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_19
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 107
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_21
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 65
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_22
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 65
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 28
+        width: 39
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_24
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 28
+        width: 42
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_25
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 28
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 28
+        width: 44
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 4_27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
