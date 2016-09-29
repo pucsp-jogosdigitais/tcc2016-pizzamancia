@@ -9,9 +9,8 @@ public class Fade : MonoBehaviour {
     public string LevelToLoad;
 	public bool semClique=false;
     public static Fade fade;
-    //public AudioSource source;
-    //bool fadeAudio = false;
 
+    
     void Awake()
     {
         fade = this;
@@ -26,14 +25,6 @@ public class Fade : MonoBehaviour {
 			ChangeScene (LevelToLoad);
 		}
 	}
-	
-	// Update is called once per frame
-
-
-        //if (fadeAudio)
-        //{
-        //    source.volume = Mathf.Lerp(source.volume, 0, Time.deltaTime);
-        //}//será dado um fade quando mudar a tela, então a musica irá diminuir o volume e não irá cortar abruptamente
 	public void Update()
 	{
 		
@@ -49,9 +40,7 @@ public class Fade : MonoBehaviour {
 
     public void ChangeScene(string level)
 	{
-		if (semClique == true) {
-			Esperar ();
-		}
+
 			painelFade.CrossFadeAlpha (1, 2, true);
 			LevelToLoad = level;
 			Invoke ("ChangeScene", 2);
