@@ -1,11 +1,13 @@
 fileFormatVersion: 2
 guid: 968d788d46c3be847a6e3f2c761d6123
-timeCreated: 1475158279
-licenseType: Pro
+timeCreated: 1475198151
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: botoes_0
     21300002: botoes_1
+    21300004: botoes_2
+    21300006: botoes_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -52,15 +54,15 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: botoes_0
+    - name: botoes_1
       rect:
         serializedVersion: 2
-        x: 230
-        y: 442
+        x: 231
+        y: 247
         width: 768
         height: 167
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 46, y: -73.5}
@@ -94,15 +96,15 @@ TextureImporter:
         - {x: 27, y: -83.5}
         - {x: 32, y: -82.5}
         - {x: 41, y: -78.5}
-    - name: botoes_1
+    - name: botoes_2
       rect:
         serializedVersion: 2
-        x: 489
-        y: 207
+        x: 514
+        y: 171
         width: 214
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -98, y: 19.5}
@@ -113,6 +115,17 @@ TextureImporter:
         - {x: 107, y: -10.5}
         - {x: 107, y: 10.5}
         - {x: 98, y: 19.5}
+    - name: botoes_3
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 113
+        width: 1274
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

@@ -8,18 +8,6 @@ public class Armadilha : Obstaculo
     public int dano;
     #endregion
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     #region getters e setters
     public int Dano
     {
@@ -51,8 +39,5 @@ public class Armadilha : Obstaculo
     public void OnTriggerExit2D(Collider2D colisor)
     {
     }
-    #endregion
-
-    #region
     #endregion
 }

@@ -48,7 +48,7 @@ public class TelaGameOver : MonoBehaviour
         telaGameOver.SetActive(false);
 
         GameManager.getInstance().continuarJogo();
-        GameManager.getInstance().carregarTela("MenuSelecLevel");
+        GameManager.getInstance().carregarTelaSemFade("MenuSelecLevel");
     }
     #endregion
 }

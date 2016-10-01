@@ -1,50 +1,56 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class TelaLevelCompleto : MonoBehaviour
 {
-	public GameObject telaLevelCompleto; //GameObject que armazena a UI de menu de pause
-	public GameObject pontosObtidos;
+    #region atributos
+    public GameObject telaLevelCompleto; //GameObject que armazena a UI de menu de pause
+    GameObject pontosObtidos;
 
-	Jogador jogador;
+    Jogador jogador;
+    #endregion
 
-	// Use this for initialization
-	void Start()
-	{
-		telaLevelCompleto.SetActive(false);
-		jogador = GameObject.FindGameObjectWithTag ("Player").GetComponent<Jogador> ();
-	}
+    // Use this for initialization
+    void Start()
+    {
+        telaLevelCompleto.SetActive(false);
 
-	// Update is called once per frame
-	void Update()
-	{
-	}
+        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
+    }
 
-	public GameObject PontosObtidos
-	{
-		get { return pontosObtidos; }
-		set { pontosObtidos = value; }
+    #region getters e setters
+    public GameObject PontosObtidos
+    {
+        get { return pontosObtidos; }
+        set { pontosObtidos = value; }
+    }
+    #endregion
 
-	}
+    #region funcoes
+    public void completarLevel()
+    {
+        jogador.IsControlavel = false;
+        //pontosObtidos.GetComponent<Text> ().text = GameManager.getInstance ().PontosLevel.ToString("0000");
 
-	public void completarLevel()
-	{
-		jogador.IsControlavel = false;
-		pontosObtidos.GetComponent<GUIText> ().text = GameManager.getInstance ().PontosLevel.ToString("0000");
+        GameManager.getInstance().pararJogo();
+        telaLevelCompleto.SetActive(true);
+    }
 
-		GameManager.getInstance().pararJogo();
-		telaLevelCompleto.SetActive(true);
-	}
-		
-	public void reiniciarLevel()
-	{
-		GameManager.getInstance().recarregarLevel();
-		GameManager.getInstance().continuarJogo();
-	}
+    public void reiniciarLevel()
+    {
+        telaLevelCompleto.SetActive(false);
 
-	public void retornarSelecLevel()
-	{
-		GameManager.getInstance().carregarTela("MenuSelecLevel");
-		GameManager.getInstance().continuarJogo();
-	}
+        GameManager.getInstance().continuarJogo();
+        GameManager.getInstance().recarregarLevel();
+    }
+
+    public void retornarSelecLevel()
+    {
+        telaLevelCompleto.SetActive(false);
+
+        GameManager.getInstance().continuarJogo();
+        GameManager.getInstance().carregarTelaSemFade("MenuSelecLevel");
+    }
+    #endregion
 }

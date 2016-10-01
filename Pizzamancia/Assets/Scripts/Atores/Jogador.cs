@@ -48,8 +48,10 @@ public class Jogador : Ator
         this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
 
         chances = 3;
+		//chances = 0;
 
         this.VidaTotalOriginal = 50;
+		//this.VidaTotalOriginal = 5;
         this.VidaTotal = this.VidaTotalOriginal;
         this.VidaAtual = this.VidaTotalOriginal;
 

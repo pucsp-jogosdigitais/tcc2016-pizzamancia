@@ -43,13 +43,18 @@ public class GameManager : MonoBehaviour
     //carrega interfaces e levels
     public void carregarTela(string tela)
     {
-		Fade.fade.ChangeScene (tela);
+        Fade.fade.ChangeScene(tela);
+    }
+
+    public void carregarTelaSemFade(string tela)
+    {
+        Application.LoadLevel(tela);
     }
 
     //recarrega level atual
-	public void recarregarLevel()
+    public void recarregarLevel()
     {
-		Application.LoadLevel (Application.loadedLevel);	
+        Application.LoadLevel(Application.loadedLevel);
     }
 
     //sai do jogo

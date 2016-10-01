@@ -9,7 +9,7 @@ public class Camera : MonoBehaviour
     float posicaoAlvo = 0;
     public float velocidade;
     #endregion
-
+    public Vector3 ajuste;
     // Use this for initialization
     void Start()
     {
@@ -19,7 +19,7 @@ public class Camera : MonoBehaviour
 			}
 			posicaoCamera = transform.position.z;
 			posicaoAlvo = alvo.position.z;
-			velocidade = 10;
+			//velocidade = 10;
 		}
 
 	}
@@ -34,6 +34,6 @@ public class Camera : MonoBehaviour
         Vector3 vetorCamera = new Vector3(transform.position.x, transform.position.y, posicaoCamera);
         Vector3 vetorAlvo = new Vector3(alvo.position.x, alvo.position.y, posicaoAlvo);
 
-        transform.position = Vector3.Lerp(vetorCamera, vetorAlvo, Time.smoothDeltaTime * velocidade);
+        transform.position = Vector3.Lerp(vetorCamera, vetorAlvo + ajuste, Time.smoothDeltaTime * velocidade * vetorCamera.magnitude);
     }
 }
