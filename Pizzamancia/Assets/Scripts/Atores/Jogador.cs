@@ -9,6 +9,10 @@ public class Jogador : Ator
     #region atributos
     public bool isControlavel;
 
+	//audio
+	AudioSource audio;
+	public AudioClip clip;
+
     //vida
     public int chances; //quantas chances o jogador tem no momento
 
@@ -31,6 +35,8 @@ public class Jogador : Ator
     void Start()
     {
         isControlavel = true;
+
+		audio = GetComponent<AudioSource> ();
 
         this.VelocidadeOriginal = 3;
         this.Velocidade = this.VelocidadeOriginal;
@@ -222,6 +228,7 @@ public class Jogador : Ator
                 alterarMana(-magiaSelecionada.CustoMana);
 				magiaSelecionada.TempoPassado = 0;
                 magiaSelecionada.conjurar();
+				audio.PlayOneShot (clip, 1f); //audio baixo
             }
         }
     }

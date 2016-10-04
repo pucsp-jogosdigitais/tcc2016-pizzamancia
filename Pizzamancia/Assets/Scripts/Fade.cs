@@ -3,44 +3,47 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Fade : MonoBehaviour {
+public class Fade : MonoBehaviour
+{
 
     Image painelFade;
     public string LevelToLoad;
-	public bool semClique=false;
+    public bool semClique = false;
     public static Fade fade;
-    public float tempoEsperaProximaCena = 2;
-    public float tempoDuracaoFade = 2;
-        
+    public float tempoEspera;
+    float tempoFading = 1.5f;
+
     void Awake()
     {
         fade = this;
     }
-   void Start()
-	{ 
+    void Start()
+    {
         painelFade = GetComponent<Image>();
         painelFade.enabled = true;
-        painelFade.CrossFadeAlpha(0.01f, tempoDuracaoFade, true);
+        painelFade.CrossFadeAlpha(0.01f, tempoFading, true);
         if (semClique == true)
         {
-            Esperar();
-            ChangeScene(LevelToLoad);
+            StartCoroutine(Esperar());
         }
     }
 
     void ChangeScene()
     {
+        painelFade.CrossFadeAlpha(1, tempoFading, true);
         SceneManager.LoadScene(LevelToLoad);
     }
-	
-    IEnumerator Esperar (){
-         yield return new WaitForSeconds(tempoEsperaProximaCena);
+
+    IEnumerator Esperar()
+    {
+        yield return new WaitForSeconds(tempoEspera);
+        ChangeScene(LevelToLoad);
     }
 
     public void ChangeScene(string level)
-	{
-        painelFade.CrossFadeAlpha(1, tempoDuracaoFade, true);
-		LevelToLoad = level;
-        Invoke("ChangeScene", tempoEsperaProximaCena);
-	}
+    {
+        painelFade.CrossFadeAlpha(1, tempoFading, true);
+        LevelToLoad = level;
+        Invoke("ChangeScene", tempoEspera);
+    }
 }
