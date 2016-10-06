@@ -6,7 +6,7 @@ public class MagiasHUD : MonoBehaviour
 	#region atributos
     public static MagiasHUD magiasHUDInst;
     Jogador jogador;
-    public SlotMagia[] slotsMagias;
+	public SlotMagia[] slotsMagia;
 	#endregion
 
     // Use this for initialization
@@ -14,26 +14,25 @@ public class MagiasHUD : MonoBehaviour
     {
         magiasHUDInst = this;
         jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
-		slotsMagias = new SlotMagia[jogador.SlotsMagia];
+		slotsMagia = new SlotMagia[jogador.QtdMagiasAlocadas];
 
-        for (int slot = 0; slot < jogador.SlotsMagia; slot++)
+        for (int slot = 0; slot < jogador.QtdMagiasAlocadas; slot++)
         {
             int posicaoMagia = slot + 1;
-            string strMagia = "Magia " + posicaoMagia.ToString();
-			Magia erro = null;
+			string stringSlotMagia = "Magia " + posicaoMagia.ToString();
 
-            slotsMagias[slot] = GameObject.Find(strMagia).GetComponent<SlotMagia>();
-			slotsMagias[slot].MagiaContida = jogador.Magias[slot];
+			slotsMagia[slot] = GameObject.Find(stringSlotMagia).GetComponent<SlotMagia>();
+			slotsMagia[slot].MagiaContida = jogador.Magias[slot];
         }
     }
 
     // Update is called once per frame
-    /*void Update () {
-        for (int slot = 0; slot <= jogador.SlotsMagia; slot++) {
-            Magia magia = null;//jogador.Magias.TryGetValue (slot,out Magia a);
+    void Update () {
+        for (int slot = 0; slot < jogador.QtdMagiasAlocadas; slot++) {
+			Magia magia = jogador.Magias[slot];
 
             if (jogador.ManaAtual < magia.CustoMana) {
-                slotsMagias[slot].GetComponentInChildren<Image> ();
+                //slotsMagias[slot].GetComponentInChildren<Image> ();
             } else {
             }
 
@@ -41,7 +40,7 @@ public class MagiasHUD : MonoBehaviour
             } else {
             }
         }
-    }*/
+    }
 
     public static MagiasHUD getInstance()
     {

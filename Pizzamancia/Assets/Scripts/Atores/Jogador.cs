@@ -25,8 +25,8 @@ public class Jogador : Ator
     float tempoPassadoRegeneracao; //quanto tempo passou depois do ultimo intervalo de regeneracao de mana
 
     //magias
-    public int slotsMagia; //quantas magias o jogador pode escolher para um level
-    public Dictionary<int, Magia> magias; //magias escolhidas para o level
+    public int qtdMagiasAlocadas; //quantas magias o jogador pode escolher para um level
+	public Magia[] magias; //magias escolhidas para o level
     public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
     public Magia magiaSelecionada; //magia selecionada no momento pelo jogador
     #endregion
@@ -36,7 +36,7 @@ public class Jogador : Ator
     {
         isControlavel = true;
 
-		audio = GetComponent<AudioSource> ();
+		audio = this.GetComponent<AudioSource> ();
 
         this.VelocidadeOriginal = 3;
         this.Velocidade = this.VelocidadeOriginal;
@@ -48,7 +48,7 @@ public class Jogador : Ator
         this.HitboxAtor.ForcaRecuoOriginal = 0;
         this.HitboxAtor.ForcaRecuo = this.HitboxAtor.ForcaRecuoOriginal;
 
-        this.demoraAntesAtaqueOriginal = 0.25f;
+        this.DemoraAntesAtaqueOriginal = 0.25f;
         this.DemoraAntesAtaque = this.demoraAntesAtaqueOriginal;
         this.DemoraDepoisAtaqueOriginal = 0.25f;
         this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
@@ -68,10 +68,13 @@ public class Jogador : Ator
         tempoRegeneracaoMana = 1;
         tempoPassadoRegeneracao = 0;
 
-        slotsMagia = 2;
-        magias = new Dictionary<int, Magia>();
-        magias.Add(0, this.GetComponent<RajadaDeAzeitonas>());
-        magias.Add(1, this.GetComponent<DiscoDeCalabresa>());
+        qtdMagiasAlocadas = 2;
+        //magias = new Dictionary<int, Magia>();
+        //magias.Add(0, this.GetComponent<RajadaDeAzeitonas>());
+        //magias.Add(1, this.GetComponent<DiscoDeCalabresa>());
+		magias = new Magia[qtdMagiasAlocadas];
+		magias[0] = this.GetComponent<RajadaDeAzeitonas>();
+		magias [1] = this.GetComponent<DiscoDeCalabresa> ();
 
         posicaoMagiaSelecionada = 0;
         magiaSelecionada = magias[posicaoMagiaSelecionada];
@@ -132,13 +135,13 @@ public class Jogador : Ator
         set { tempoRegeneracaoMana = value; }
     }
 
-    public int SlotsMagia
+    public int QtdMagiasAlocadas
     {
-        get { return slotsMagia; }
-        set { slotsMagia = value; }
+        get { return qtdMagiasAlocadas; }
+        set { qtdMagiasAlocadas = value; }
     }
 
-    public Dictionary<int, Magia> Magias
+    public Magia[] Magias
     {
         get { return magias; }
         set { magias = value; }
@@ -169,11 +172,11 @@ public class Jogador : Ator
     //recarrega magias para que possam ser reutilizadas
     public void carregarMagias()
     {
-        foreach (KeyValuePair<int, Magia> m in magias)
+		foreach (Magia magia in magias)
         {
-            if (m.Value.TempoPassado < m.Value.Cooldown)
+            if (magia.TempoPassado < magia.Cooldown)
             {
-                m.Value.TempoPassado += Time.deltaTime;
+                magia.TempoPassado += Time.deltaTime;
             }
         }
     }
@@ -203,14 +206,14 @@ public class Jogador : Ator
 
             if (posicaoMagiaSelecionada < 0)
             {
-                posicaoMagiaSelecionada = (slotsMagia - 1);
+                posicaoMagiaSelecionada = (qtdMagiasAlocadas - 1);
             }
         }
         else if (InputControle.getInstance().BtnSelectNext)
         {
             posicaoMagiaSelecionada++;
 
-            if (posicaoMagiaSelecionada > (slotsMagia - 1))
+            if (posicaoMagiaSelecionada > (qtdMagiasAlocadas - 1))
             {
                 posicaoMagiaSelecionada = 0;
             }
