@@ -1,49 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MagiasHUD : MonoBehaviour
-{
-	#region atributos
-    public static MagiasHUD magiasHUDInst;
-    Jogador jogador;
-	public SlotMagia[] slotsMagia;
-	#endregion
+public class MagiasHUD : MonoBehaviour {
+	public static MagiasHUD magiasHUDInst;
+	Jogador jogador;
+	public GameObject[] slotsMagias;
 
-    // Use this for initialization
-    void Start()
-    {
-        magiasHUDInst = this;
-        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
-		slotsMagia = new SlotMagia[jogador.QtdMagiasAlocadas];
+	// Use this for initialization
+	void Start () {
+		magiasHUDInst = this;	
+		jogador = GameObject.FindGameObjectWithTag ("Player").GetComponent<Jogador> ();
+		slotsMagias = new GameObject[8];
 
-        for (int slot = 0; slot < jogador.QtdMagiasAlocadas; slot++)
-        {
-            int posicaoMagia = slot + 1;
-			string stringSlotMagia = "Magia " + posicaoMagia.ToString();
+		for (int slot = 0; slot < jogador.SlotsMagia; slot++) {
+			int posicaoMagia = slot + 1;
+			string str = "Magia " + posicaoMagia.ToString();
 
-			slotsMagia[slot] = GameObject.Find(stringSlotMagia).GetComponent<SlotMagia>();
-			slotsMagia[slot].MagiaContida = jogador.Magias[slot];
-        }
-    }
+			slotsMagias[slot] = GameObject.Find (str);
+			//magias.[magia].GetComponent<> ();
+		}
+	}
 
-    // Update is called once per frame
-    void Update () {
-        for (int slot = 0; slot < jogador.QtdMagiasAlocadas; slot++) {
-			Magia magia = jogador.Magias[slot];
+	// Update is called once per frame
+	/*void Update () {
+		for (int slot = 0; slot <= jogador.SlotsMagia; slot++) {
+			Magia magia = null;//jogador.Magias.TryGetValue (slot,out Magia a);
 
-            if (jogador.ManaAtual < magia.CustoMana) {
-                //slotsMagias[slot].GetComponentInChildren<Image> ();
-            } else {
-            }
+			if (jogador.ManaAtual < magia.CustoMana) {
+				slotsMagias[slot].GetComponentInChildren<Image> ();
+			} else {
+			}
 
-            if (magia.TempoPassado < magia.Cooldown) {
-            } else {
-            }
-        }
-    }
+			if (magia.TempoPassado < magia.Cooldown) {
+			} else {
+			}
+		}
+	}*/
 
-    public static MagiasHUD getInstance()
-    {
-        return magiasHUDInst;
-    }
+	public static MagiasHUD getInstance () {
+		return magiasHUDInst;
+	}
 }
