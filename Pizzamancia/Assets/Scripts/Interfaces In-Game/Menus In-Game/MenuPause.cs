@@ -6,7 +6,6 @@ public class MenuPause : MonoBehaviour
     #region atributos
     public GameObject menuDePause; //GameObject que armazena a UI de menu de pause
     public GameObject painelReiniciarLevel;
-    public GameObject painelSelecLevel;
     public GameObject painelSairJogo;
 
     bool isPaused; //informa se o jogo está pausado ou nao
@@ -19,7 +18,6 @@ public class MenuPause : MonoBehaviour
     {
         menuDePause.SetActive(false);
         painelReiniciarLevel.SetActive(false);
-        painelSelecLevel.SetActive(false);
         painelSairJogo.SetActive(false);
         isPaused = false;
         jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
@@ -39,10 +37,6 @@ public class MenuPause : MonoBehaviour
                 if (painelReiniciarLevel.activeInHierarchy)
                 {
                     painelReiniciarLevel.SetActive(false);
-                }
-                else if (painelSelecLevel.activeInHierarchy)
-                {
-                    painelSelecLevel.SetActive(false);
                 }
                 else if (painelSairJogo.activeInHierarchy)
                 {
@@ -75,7 +69,6 @@ public class MenuPause : MonoBehaviour
 
         menuDePause.SetActive(false);
         painelReiniciarLevel.SetActive(false);
-        painelSelecLevel.SetActive(false);
         painelSairJogo.SetActive(false);
 
         GameManager.getInstance().continuarJogo();
@@ -89,12 +82,12 @@ public class MenuPause : MonoBehaviour
         GameManager.getInstance().recarregarLevel();
     }
 
-    public void retornarSelecLevel()
+    public void retornarMenuPrincipal()
     {
         isPaused = false;
 
         GameManager.getInstance().continuarJogo();
-        GameManager.getInstance().carregarTelaSemFade("MenuSelecLevel");
+        GameManager.getInstance().carregarTelaSemFade("MenuPrincipal");
     }
     #endregion
 }

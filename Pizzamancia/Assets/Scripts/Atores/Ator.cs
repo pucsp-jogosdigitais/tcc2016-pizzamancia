@@ -42,6 +42,11 @@ public class Ator : MonoBehaviour
     public int vidaTotalOriginal;
     public int vidaTotal; //quantos pontos de vida o ator tem no total
     public int vidaAtual; //quantos pontos de vida o ator tem no momento
+
+    //atordoamento
+    bool isAtordoado;
+    float tempoAtordoamento;
+    float tempoAtordoamentoPassado;
     #endregion
 
     void Awake()
@@ -233,7 +238,14 @@ public class Ator : MonoBehaviour
             this.transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 180, transform.rotation.eulerAngles.z);
         }
 
-        rdbAtor.velocity = new Vector2(movimentoX * velocidade, rdbAtor.velocity.y);
+        if (!isAtordoado)
+        {
+            rdbAtor.velocity = new Vector2(movimentoX * velocidade, rdbAtor.velocity.y);
+        }
+        else
+        {
+
+        }
     }
 
     //faz o ator pular
@@ -252,6 +264,10 @@ public class Ator : MonoBehaviour
         {
             animadorAtor.SetTrigger("atacar");
             isComecouAtaque = true;
+        }
+        else
+        {
+            animadorAtor.SetBool("atacar", false);
         }
     }
     #endregion

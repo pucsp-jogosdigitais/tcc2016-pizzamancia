@@ -13,5 +13,6 @@ public class Espinhos : Armadilha
         this.VidaAtual = this.VidaTotal;
 
         this.Dano = 100000;
+		this.IsDestruirToque = false;
     }
 }

@@ -20,6 +20,8 @@ public class GolemMussarela : Inimigo
 
         this.HitboxAtor.DanoOriginal = 5;
         this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
+        this.HitboxAtor.ForcaRecuoOriginal = 5;
+        this.HitboxAtor.ForcaRecuo = this.HitboxAtor.ForcaRecuoOriginal;
 
         this.DemoraAntesAtaqueOriginal = 1f;
         this.DemoraAntesAtaque = this.DemoraAntesAtaqueOriginal;

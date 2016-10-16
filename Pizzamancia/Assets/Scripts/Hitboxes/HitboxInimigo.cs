@@ -16,7 +16,11 @@ public class HitboxInimigo : Hitbox
                     case "Player":
                         Jogador jogador = objetoAtingido.GetComponent<Jogador>();
 
+                        //jogador.RdbAtor.velocity = new Vector2(0, 0);
+                        jogador.MovimentoX = 0;
+
                         jogador.alterarVida(-this.Dano);
+                        jogador.RdbAtor.AddForce((Vector2.up + Vector2.right) * this.ForcaRecuo, ForceMode2D.Impulse);
                         break;
                     case "Obstaculo":
                         Obstaculo obstaculo = objetoAtingido.GetComponent<Obstaculo>();

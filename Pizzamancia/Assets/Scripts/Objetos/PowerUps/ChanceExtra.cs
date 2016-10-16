@@ -8,12 +8,8 @@ public class ChanceExtra : PowerUp {
 		this.TempoVida = 0;
 		this.Velocidade = 0;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
+	#region evento
 	public void OnTriggerEnter2D(Collider2D collider)
 	{
 		if (collider.gameObject.tag == "Player")
@@ -25,4 +21,5 @@ public class ChanceExtra : PowerUp {
 			Destroy(gameObject);
 		}
 	}
+	#endregion
 }

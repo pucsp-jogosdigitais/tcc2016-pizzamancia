@@ -15,8 +15,20 @@ public class HitboxJogador : Hitbox
                         break;
                     case "Inimigo":
                         Inimigo inimigo = objetoAtingido.GetComponent<Inimigo>();
+                        Vector2 direcaoRecuo = new Vector2();
+
+                        if (this.GetComponentInParent<Jogador>().transform.position.x < inimigo.transform.position.x)
+                        {
+                            direcaoRecuo = Vector2.up + Vector2.right;
+                        }
+                        else if (this.GetComponentInParent<Jogador>().transform.position.x > inimigo.transform.position.x)
+                        {
+                            direcaoRecuo = Vector2.up + Vector2.left;
+                        }
 
                         inimigo.alterarVida(-this.Dano);
+                        //inimigo.
+                        inimigo.RdbAtor.AddForce(direcaoRecuo * this.ForcaRecuo, ForceMode2D.Impulse);
                         break;
                     case "Obstaculo":
                         Obstaculo obstaculo = objetoAtingido.GetComponent<Obstaculo>();

@@ -8,7 +8,7 @@ public class Plataform : MonoBehaviour
     bool sobe;
     bool desce;
     public float velocidade;
-    
+
 
     //<menor
     // Use this for initialization
@@ -39,13 +39,15 @@ public class Plataform : MonoBehaviour
         {
             transform.Translate(Vector2.up * Time.deltaTime * velocidade);
         }
-     
+
 
     }
-	void OnTriggerEnter2D (Collider2D col) {
-		col.transform.parent = transform;
-	}
-	void OnTriggerExit2D (Collider2D col) {
-		col.transform.parent = null;
-	}
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        col.transform.parent = transform;
+    }
+    void OnTriggerExit2D(Collider2D col)
+    {
+        col.transform.parent = null;
+    }
 }
