@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 971340a217fca1040bb0eb5f19db0638
-timeCreated: 1476195660
+timeCreated: 1476701619
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -178,8 +178,10 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: props level 1_0
+    - serializedVersion: 2
+      name: props level 1_0
       rect:
         serializedVersion: 2
         x: 10
@@ -190,7 +192,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_1
+    - serializedVersion: 2
+      name: props level 1_1
       rect:
         serializedVersion: 2
         x: 79
@@ -201,7 +204,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_2
+    - serializedVersion: 2
+      name: props level 1_2
       rect:
         serializedVersion: 2
         x: 114
@@ -212,7 +216,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_3
+    - serializedVersion: 2
+      name: props level 1_3
       rect:
         serializedVersion: 2
         x: 149
@@ -223,7 +228,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_4
+    - serializedVersion: 2
+      name: props level 1_4
       rect:
         serializedVersion: 2
         x: 222
@@ -234,7 +240,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_5
+    - serializedVersion: 2
+      name: props level 1_5
       rect:
         serializedVersion: 2
         x: 259
@@ -245,7 +252,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_6
+    - serializedVersion: 2
+      name: props level 1_6
       rect:
         serializedVersion: 2
         x: 302
@@ -256,7 +264,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_7
+    - serializedVersion: 2
+      name: props level 1_7
       rect:
         serializedVersion: 2
         x: 381
@@ -266,13 +275,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 23.5}
-        - {x: -34, y: -5.5}
-        - {x: -8, y: -23.5}
-        - {x: 34, y: -23.5}
-        - {x: 34, y: 23.5}
-    - name: props level 1_8
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_8
       rect:
         serializedVersion: 2
         x: 460
@@ -282,13 +287,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -34, y: 23.5}
-        - {x: -34, y: -23.5}
-        - {x: 6, y: -23.5}
-        - {x: 34, y: -2.5}
-        - {x: 34, y: 23.5}
-    - name: props level 1_9
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_9
       rect:
         serializedVersion: 2
         x: 958
@@ -298,13 +299,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -42, y: 100.5}
-        - {x: -75, y: 88.5}
-        - {x: -75, y: -100.5}
-        - {x: 75, y: -100.5}
-        - {x: 75, y: 100.5}
-    - name: props level 1_10
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_10
       rect:
         serializedVersion: 2
         x: 1107
@@ -314,12 +311,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: 18}
-        - {x: -20, y: -18}
-        - {x: 20, y: -18}
-        - {x: 20, y: 18}
-    - name: props level 1_11
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_11
       rect:
         serializedVersion: 2
         x: 1148
@@ -329,12 +323,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: 18}
-        - {x: -20, y: -18}
-        - {x: 20, y: -18}
-        - {x: 20, y: 18}
-    - name: props level 1_12
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_12
       rect:
         serializedVersion: 2
         x: 1189
@@ -344,12 +335,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: 18}
-        - {x: -20, y: -18}
-        - {x: 20, y: -18}
-        - {x: 20, y: 18}
-    - name: props level 1_13
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_13
       rect:
         serializedVersion: 2
         x: 1230
@@ -359,14 +347,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -33, y: 18}
-        - {x: -33, y: 5}
-        - {x: -27, y: -18}
-        - {x: 22, y: -18}
-        - {x: 33, y: 11}
-        - {x: 33, y: 18}
-    - name: props level 1_14
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_14
       rect:
         serializedVersion: 2
         x: 10
@@ -376,13 +359,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -23, y: 18}
-        - {x: -23, y: 10}
-        - {x: -15, y: -18}
-        - {x: 23, y: -18}
-        - {x: 23, y: 18}
-    - name: props level 1_15
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_15
       rect:
         serializedVersion: 2
         x: 10
@@ -392,12 +371,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_16
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_16
       rect:
         serializedVersion: 2
         x: 47
@@ -407,12 +383,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_17
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_17
       rect:
         serializedVersion: 2
         x: 1109
@@ -422,13 +395,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -43, y: 78}
-        - {x: -43, y: -78}
-        - {x: 43, y: -78}
-        - {x: 43, y: 54}
-        - {x: 30, y: 78}
-    - name: props level 1_18
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_18
       rect:
         serializedVersion: 2
         x: 10
@@ -438,12 +407,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_19
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_19
       rect:
         serializedVersion: 2
         x: 47
@@ -453,12 +419,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_20
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_20
       rect:
         serializedVersion: 2
         x: 84
@@ -468,12 +431,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_21
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_21
       rect:
         serializedVersion: 2
         x: 121
@@ -483,12 +443,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_22
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_22
       rect:
         serializedVersion: 2
         x: 158
@@ -498,12 +455,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_23
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_23
       rect:
         serializedVersion: 2
         x: 195
@@ -513,12 +467,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_24
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_24
       rect:
         serializedVersion: 2
         x: 232
@@ -528,12 +479,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_25
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_25
       rect:
         serializedVersion: 2
         x: 269
@@ -543,12 +491,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_26
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_26
       rect:
         serializedVersion: 2
         x: 306
@@ -558,12 +503,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_27
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_27
       rect:
         serializedVersion: 2
         x: 343
@@ -573,12 +515,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_28
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_28
       rect:
         serializedVersion: 2
         x: 380
@@ -588,12 +527,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_29
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_29
       rect:
         serializedVersion: 2
         x: 417
@@ -603,12 +539,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_30
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_30
       rect:
         serializedVersion: 2
         x: 454
@@ -618,12 +551,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_31
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_31
       rect:
         serializedVersion: 2
         x: 491
@@ -633,12 +563,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_32
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_32
       rect:
         serializedVersion: 2
         x: 528
@@ -648,12 +575,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_33
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_33
       rect:
         serializedVersion: 2
         x: 10
@@ -663,12 +587,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_34
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_34
       rect:
         serializedVersion: 2
         x: 47
@@ -678,12 +599,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_35
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_35
       rect:
         serializedVersion: 2
         x: 84
@@ -693,12 +611,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_36
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_36
       rect:
         serializedVersion: 2
         x: 121
@@ -708,12 +623,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_37
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_37
       rect:
         serializedVersion: 2
         x: 158
@@ -723,12 +635,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_38
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_38
       rect:
         serializedVersion: 2
         x: 195
@@ -738,12 +647,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_39
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_39
       rect:
         serializedVersion: 2
         x: 232
@@ -753,12 +659,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_40
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_40
       rect:
         serializedVersion: 2
         x: 269
@@ -768,12 +671,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_41
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_41
       rect:
         serializedVersion: 2
         x: 306
@@ -783,12 +683,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_42
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_42
       rect:
         serializedVersion: 2
         x: 343
@@ -798,12 +695,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_43
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_43
       rect:
         serializedVersion: 2
         x: 380
@@ -813,12 +707,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_44
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_44
       rect:
         serializedVersion: 2
         x: 417
@@ -828,12 +719,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_45
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_45
       rect:
         serializedVersion: 2
         x: 454
@@ -843,12 +731,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_46
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_46
       rect:
         serializedVersion: 2
         x: 491
@@ -858,12 +743,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_47
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_47
       rect:
         serializedVersion: 2
         x: 528
@@ -873,12 +755,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_48
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_48
       rect:
         serializedVersion: 2
         x: 10
@@ -888,12 +767,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_49
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_49
       rect:
         serializedVersion: 2
         x: 47
@@ -903,12 +779,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_50
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_50
       rect:
         serializedVersion: 2
         x: 84
@@ -918,12 +791,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_51
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_51
       rect:
         serializedVersion: 2
         x: 121
@@ -933,12 +803,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_52
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_52
       rect:
         serializedVersion: 2
         x: 158
@@ -948,12 +815,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_53
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_53
       rect:
         serializedVersion: 2
         x: 195
@@ -963,12 +827,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_54
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_54
       rect:
         serializedVersion: 2
         x: 232
@@ -978,12 +839,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_55
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_55
       rect:
         serializedVersion: 2
         x: 269
@@ -993,12 +851,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_56
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_56
       rect:
         serializedVersion: 2
         x: 306
@@ -1008,12 +863,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_57
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_57
       rect:
         serializedVersion: 2
         x: 343
@@ -1023,12 +875,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_58
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_58
       rect:
         serializedVersion: 2
         x: 380
@@ -1038,12 +887,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_59
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_59
       rect:
         serializedVersion: 2
         x: 417
@@ -1053,12 +899,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_60
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_60
       rect:
         serializedVersion: 2
         x: 454
@@ -1068,12 +911,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_61
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_61
       rect:
         serializedVersion: 2
         x: 491
@@ -1083,12 +923,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_62
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_62
       rect:
         serializedVersion: 2
         x: 528
@@ -1098,12 +935,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_63
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_63
       rect:
         serializedVersion: 2
         x: 565
@@ -1113,12 +947,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_64
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_64
       rect:
         serializedVersion: 2
         x: 602
@@ -1128,12 +959,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_65
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_65
       rect:
         serializedVersion: 2
         x: 639
@@ -1143,12 +971,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_66
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_66
       rect:
         serializedVersion: 2
         x: 676
@@ -1158,12 +983,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_67
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_67
       rect:
         serializedVersion: 2
         x: 713
@@ -1173,12 +995,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_68
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_68
       rect:
         serializedVersion: 2
         x: 750
@@ -1188,12 +1007,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_69
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_69
       rect:
         serializedVersion: 2
         x: 787
@@ -1203,12 +1019,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_70
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_70
       rect:
         serializedVersion: 2
         x: 824
@@ -1218,12 +1031,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_71
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_71
       rect:
         serializedVersion: 2
         x: 861
@@ -1233,12 +1043,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_72
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_72
       rect:
         serializedVersion: 2
         x: 104
@@ -1248,18 +1055,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 10.5, y: 41.299988}
-        - {x: -11.5, y: 41.299988}
-        - {x: -21.5, y: 27.299988}
-        - {x: -25.5, y: 20.299988}
-        - {x: -25.5, y: -12.700012}
-        - {x: -21.5, y: -17.700012}
-        - {x: 18.5, y: -17.700012}
-        - {x: 25.5, y: -11.700012}
-        - {x: 25.5, y: 15.299988}
-        - {x: 18.5, y: 40.299988}
-    - name: props level 1_73
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_73
       rect:
         serializedVersion: 2
         x: 219
@@ -1269,12 +1067,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -54, y: 54}
-        - {x: -54, y: -54}
-        - {x: 54, y: -54}
-        - {x: 54, y: 54}
-    - name: props level 1_74
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_74
       rect:
         serializedVersion: 2
         x: 338
@@ -1284,31 +1079,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 54}
-        - {x: -14, y: 49}
-        - {x: -17, y: 42}
-        - {x: -18, y: 34}
-        - {x: -17, y: 31}
-        - {x: -15, y: 27}
-        - {x: -16, y: 29}
-        - {x: -19, y: 33}
-        - {x: -17, y: 41}
-        - {x: -27, y: 46}
-        - {x: -37, y: 40}
-        - {x: -54, y: 8}
-        - {x: -54, y: -6}
-        - {x: -52, y: -11}
-        - {x: -50, y: -14}
-        - {x: -45, y: -14}
-        - {x: -46, y: -27}
-        - {x: -37, y: -40}
-        - {x: -12, y: -54}
-        - {x: 20, y: -54}
-        - {x: 54, y: -23}
-        - {x: 54, y: 29}
-        - {x: 19, y: 54}
-    - name: props level 1_75
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_75
       rect:
         serializedVersion: 2
         x: 958
@@ -1318,12 +1091,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_76
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_76
       rect:
         serializedVersion: 2
         x: 995
@@ -1333,13 +1103,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: -15}
-        - {x: -15, y: 18}
-    - name: props level 1_77
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_77
       rect:
         serializedVersion: 2
         x: 1032
@@ -1349,13 +1115,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 4}
-        - {x: -9, y: 18}
-    - name: props level 1_78
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_78
       rect:
         serializedVersion: 2
         x: 1106
@@ -1365,12 +1127,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_79
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_79
       rect:
         serializedVersion: 2
         x: 1149
@@ -1381,7 +1140,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_80
+    - serializedVersion: 2
+      name: props level 1_80
       rect:
         serializedVersion: 2
         x: 10
@@ -1392,7 +1152,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 1.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_81
+    - serializedVersion: 2
+      name: props level 1_81
       rect:
         serializedVersion: 2
         x: 27
@@ -1403,7 +1164,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_82
+    - serializedVersion: 2
+      name: props level 1_82
       rect:
         serializedVersion: 2
         x: 63
@@ -1413,16 +1175,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -6, y: 18}
-        - {x: -17, y: 8}
-        - {x: -17, y: -15}
-        - {x: -15, y: -18}
-        - {x: 10, y: -18}
-        - {x: 17, y: -10}
-        - {x: 17, y: 8}
-        - {x: 9, y: 18}
-    - name: props level 1_83
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_83
       rect:
         serializedVersion: 2
         x: 1069
@@ -1433,7 +1188,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_84
+    - serializedVersion: 2
+      name: props level 1_84
       rect:
         serializedVersion: 2
         x: 7
@@ -1444,7 +1200,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_85
+    - serializedVersion: 2
+      name: props level 1_85
       rect:
         serializedVersion: 2
         x: 34
@@ -1455,7 +1212,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_86
+    - serializedVersion: 2
+      name: props level 1_86
       rect:
         serializedVersion: 2
         x: 67
@@ -1466,7 +1224,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_87
+    - serializedVersion: 2
+      name: props level 1_87
       rect:
         serializedVersion: 2
         x: 95
@@ -1477,7 +1236,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_88
+    - serializedVersion: 2
+      name: props level 1_88
       rect:
         serializedVersion: 2
         x: 958
@@ -1487,12 +1247,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_89
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_89
       rect:
         serializedVersion: 2
         x: 995
@@ -1502,12 +1259,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_90
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_90
       rect:
         serializedVersion: 2
         x: 1032
@@ -1517,12 +1271,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_91
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_91
       rect:
         serializedVersion: 2
         x: 1069
@@ -1532,12 +1283,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_92
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_92
       rect:
         serializedVersion: 2
         x: 1106
@@ -1547,12 +1295,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_93
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_93
       rect:
         serializedVersion: 2
         x: 1143
@@ -1562,12 +1307,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_94
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_94
       rect:
         serializedVersion: 2
         x: 223
@@ -1577,15 +1319,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -17, y: 79.2}
-        - {x: -20, y: 78.2}
-        - {x: -20, y: 32.199997}
-        - {x: -10, y: -8.800003}
-        - {x: 19, y: -8.800003}
-        - {x: 20, y: -0.80000305}
-        - {x: 20, y: 79.2}
-    - name: props level 1_95
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_95
       rect:
         serializedVersion: 2
         x: 279
@@ -1596,7 +1332,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_96
+    - serializedVersion: 2
+      name: props level 1_96
       rect:
         serializedVersion: 2
         x: 958
@@ -1606,12 +1343,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_97
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_97
       rect:
         serializedVersion: 2
         x: 995
@@ -1621,12 +1355,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_98
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_98
       rect:
         serializedVersion: 2
         x: 1032
@@ -1636,12 +1367,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_99
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_99
       rect:
         serializedVersion: 2
         x: 1069
@@ -1651,12 +1379,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_100
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_100
       rect:
         serializedVersion: 2
         x: 1106
@@ -1666,12 +1391,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_101
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_101
       rect:
         serializedVersion: 2
         x: 1143
@@ -1681,12 +1403,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18, y: 18}
-        - {x: -18, y: -18}
-        - {x: 18, y: -18}
-        - {x: 18, y: 18}
-    - name: props level 1_102
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_102
       rect:
         serializedVersion: 2
         x: 7
@@ -1697,7 +1416,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_103
+    - serializedVersion: 2
+      name: props level 1_103
       rect:
         serializedVersion: 2
         x: 52
@@ -1708,7 +1428,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_104
+    - serializedVersion: 2
+      name: props level 1_104
       rect:
         serializedVersion: 2
         x: 85
@@ -1719,7 +1440,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_105
+    - serializedVersion: 2
+      name: props level 1_105
       rect:
         serializedVersion: 2
         x: 125
@@ -1730,7 +1452,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_106
+    - serializedVersion: 2
+      name: props level 1_106
       rect:
         serializedVersion: 2
         x: 958
@@ -1740,14 +1463,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.22}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -36, y: -17.600006}
-        - {x: 36, y: -17.600006}
-        - {x: 36, y: 59.399994}
-        - {x: 35, y: 62.399994}
-        - {x: -31, y: 62.399994}
-        - {x: -36, y: 55.399994}
-    - name: props level 1_107
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_107
       rect:
         serializedVersion: 2
         x: 1031
@@ -1757,14 +1475,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.22}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -36, y: -17.600006}
-        - {x: 36, y: -17.600006}
-        - {x: 36, y: 59.399994}
-        - {x: 35, y: 62.399994}
-        - {x: -31, y: 62.399994}
-        - {x: -36, y: 55.399994}
-    - name: props level 1_108
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_108
       rect:
         serializedVersion: 2
         x: 7
@@ -1775,7 +1488,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_109
+    - serializedVersion: 2
+      name: props level 1_109
       rect:
         serializedVersion: 2
         x: 62
@@ -1786,29 +1500,32 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_110
+    - serializedVersion: 2
+      name: props level 1_110
       rect:
         serializedVersion: 2
         x: 114
         y: 237
         width: 48
         height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_111
+    - serializedVersion: 2
+      name: props level 1_111
       rect:
         serializedVersion: 2
         x: 168
         y: 237
         width: 44
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.7}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_112
+    - serializedVersion: 2
+      name: props level 1_112
       rect:
         serializedVersion: 2
         x: 0
@@ -1819,7 +1536,8 @@ TextureImporter:
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_113
+    - serializedVersion: 2
+      name: props level 1_113
       rect:
         serializedVersion: 2
         x: 22
@@ -1830,7 +1548,8 @@ TextureImporter:
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_114
+    - serializedVersion: 2
+      name: props level 1_114
       rect:
         serializedVersion: 2
         x: 50
@@ -1840,15 +1559,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 13, y: 90.3}
-        - {x: 6, y: 86.3}
-        - {x: 0, y: 49.300003}
-        - {x: 0, y: -124.7}
-        - {x: 38, y: -124.7}
-        - {x: 38, y: 70.3}
-        - {x: 31, y: 90.3}
-    - name: props level 1_115
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_115
       rect:
         serializedVersion: 2
         x: 90
@@ -1858,14 +1571,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 13, y: 90.3}
-        - {x: 0, y: 62.300003}
-        - {x: 0, y: -124.7}
-        - {x: 50, y: -124.7}
-        - {x: 50, y: 58.300003}
-        - {x: 37, y: 90.3}
-    - name: props level 1_116
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_116
       rect:
         serializedVersion: 2
         x: 141
@@ -1875,14 +1583,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 20, y: 90.3}
-        - {x: 0, y: 70.3}
-        - {x: 0, y: -124.7}
-        - {x: 62, y: -124.7}
-        - {x: 62, y: 58.300003}
-        - {x: 45, y: 90.3}
-    - name: props level 1_117
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_117
       rect:
         serializedVersion: 2
         x: 204
@@ -1892,14 +1595,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21, y: 90.3}
-        - {x: 0, y: 78.3}
-        - {x: 0, y: -124.7}
-        - {x: 74, y: -124.7}
-        - {x: 74, y: 51.300003}
-        - {x: 55, y: 90.3}
-    - name: props level 1_118
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_118
       rect:
         serializedVersion: 2
         x: 279
@@ -1909,13 +1607,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 21, y: 90.3}
-        - {x: 0, y: 81.3}
-        - {x: 0, y: -124.7}
-        - {x: 86, y: -124.7}
-        - {x: 86, y: 90.3}
-    - name: props level 1_119
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_119
       rect:
         serializedVersion: 2
         x: 366
@@ -1925,16 +1619,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 71, y: 90.3}
-        - {x: 29, y: 90.3}
-        - {x: 11, y: 72.3}
-        - {x: 0, y: 43.300003}
-        - {x: 0, y: -124.7}
-        - {x: 98, y: -124.7}
-        - {x: 98, y: 66.3}
-        - {x: 97, y: 80.3}
-    - name: props level 1_120
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_120
       rect:
         serializedVersion: 2
         x: 465
@@ -1944,16 +1631,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 86, y: 90.3}
-        - {x: 37, y: 90.3}
-        - {x: 5, y: 77.3}
-        - {x: 0, y: 57.300003}
-        - {x: 0, y: -124.7}
-        - {x: 110, y: -124.7}
-        - {x: 110, y: 50.300003}
-        - {x: 107, y: 76.3}
-    - name: props level 1_121
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_121
       rect:
         serializedVersion: 2
         x: 576
@@ -1963,15 +1643,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 37, y: 90.3}
-        - {x: 22, y: 85.3}
-        - {x: 0, y: 50.300003}
-        - {x: 0, y: -124.7}
-        - {x: 122, y: -124.7}
-        - {x: 122, y: 51.300003}
-        - {x: 91, y: 90.3}
-    - name: props level 1_122
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_122
       rect:
         serializedVersion: 2
         x: 699
@@ -1981,17 +1655,9 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0, y: 0.58}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 99, y: 78.3}
-        - {x: 72, y: 90.3}
-        - {x: 42, y: 90.3}
-        - {x: 9, y: 68.3}
-        - {x: 0, y: 45.300003}
-        - {x: 0, y: -124.7}
-        - {x: 120, y: -124.7}
-        - {x: 120, y: 44.300003}
-        - {x: 109, y: 67.3}
-    - name: props level 1_123
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_123
       rect:
         serializedVersion: 2
         x: 820
@@ -2002,7 +1668,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_124
+    - serializedVersion: 2
+      name: props level 1_124
       rect:
         serializedVersion: 2
         x: 850
@@ -2013,7 +1680,8 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: props level 1_125
+    - serializedVersion: 2
+      name: props level 1_125
       rect:
         serializedVersion: 2
         x: 958
@@ -2023,14 +1691,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -33, y: -18}
-        - {x: 33, y: -18}
-        - {x: 33, y: -5}
-        - {x: 27, y: 18}
-        - {x: -22, y: 18}
-        - {x: -33, y: -11}
-    - name: props level 1_126
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_126
       rect:
         serializedVersion: 2
         x: 1025
@@ -2040,12 +1703,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: 18}
-        - {x: -20, y: -18}
-        - {x: 20, y: -18}
-        - {x: 20, y: 18}
-    - name: props level 1_127
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_127
       rect:
         serializedVersion: 2
         x: 1066
@@ -2055,12 +1715,9 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -20, y: 18}
-        - {x: -20, y: -18}
-        - {x: 20, y: -18}
-        - {x: 20, y: 18}
-    - name: props level 1_128
+      outline: []
+    - serializedVersion: 2
+      name: props level 1_128
       rect:
         serializedVersion: 2
         x: 556
@@ -2070,13 +1727,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -53, y: 18}
-        - {x: -53, y: -2}
-        - {x: -37, y: -18}
-        - {x: 37, y: -18}
-        - {x: 53, y: -2}
-        - {x: 53, y: 18}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
