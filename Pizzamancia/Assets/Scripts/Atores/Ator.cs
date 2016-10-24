@@ -238,14 +238,7 @@ public class Ator : MonoBehaviour
             this.transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 180, transform.rotation.eulerAngles.z);
         }
 
-        if (!isAtordoado)
-        {
-            rdbAtor.velocity = new Vector2(movimentoX * velocidade, rdbAtor.velocity.y);
-        }
-        else
-        {
-
-        }
+        rdbAtor.velocity = new Vector2(movimentoX * velocidade, rdbAtor.velocity.y);
     }
 
     //faz o ator pular
