@@ -34,7 +34,7 @@ public class Jogador : Ator
     // Use this for initialization
     void Start()
     {
-        isControlavel = true;
+        this.IsControlavel = true;
 
         audio = this.GetComponent<AudioSource>();
 
@@ -54,10 +54,8 @@ public class Jogador : Ator
         this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
 
         chances = 3;
-        //chances = 0;
 
         this.VidaTotalOriginal = 50;
-        //this.VidaTotalOriginal = 5;
         this.VidaTotal = this.VidaTotalOriginal;
         this.VidaAtual = this.VidaTotalOriginal;
 
@@ -69,9 +67,6 @@ public class Jogador : Ator
         tempoPassadoRegeneracao = 0;
 
         qtdMagiasAlocadas = 2;
-        //magias = new Dictionary<int, Magia>();
-        //magias.Add(0, this.GetComponent<RajadaDeAzeitonas>());
-        //magias.Add(1, this.GetComponent<DiscoDeCalabresa>());
         magias = new Magia[qtdMagiasAlocadas];
         magias[0] = this.GetComponent<RajadaDeAzeitonas>();
         magias[1] = this.GetComponent<DiscoDeCalabresa>();
@@ -86,7 +81,7 @@ public class Jogador : Ator
         regenerarMana();
         carregarMagias();
 
-        if (isControlavel)
+        if (this.IsControlavel)
         {
             obterInput();
         }
