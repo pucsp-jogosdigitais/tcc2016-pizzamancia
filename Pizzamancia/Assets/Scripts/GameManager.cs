@@ -4,11 +4,15 @@ using System.Collections;
 public class GameManager : MonoBehaviour
 {
     #region atributos
+    //instancia
     public static GameManager gameManagerInst;
 
     //pontuacao
     public int pontosLevel;
     public int pontosGlobal;
+
+    //condicao para encerramento de fase
+    public bool isLevelCompleto;
     #endregion
 
     // Use this for initialization
@@ -18,6 +22,8 @@ public class GameManager : MonoBehaviour
 
         pontosLevel = 0;
         pontosGlobal = pontosLevel;
+
+        isLevelCompleto = false;
     }
 
     #region getters e setters
@@ -36,6 +42,12 @@ public class GameManager : MonoBehaviour
     {
         get { return pontosGlobal; }
         set { pontosGlobal = value; }
+    }
+
+    public bool IsLevelCompleto
+    {
+        get { return isLevelCompleto; }
+        set { isLevelCompleto = value; }
     }
     #endregion
 
