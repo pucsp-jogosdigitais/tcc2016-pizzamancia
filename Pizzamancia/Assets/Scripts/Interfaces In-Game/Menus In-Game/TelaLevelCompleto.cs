@@ -17,8 +17,8 @@ public class TelaLevelCompleto : MonoBehaviour
     {
         jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
 
-        pontosObtidosLevel = GameObject.Find("Pontos Obtidos Level").GetComponent<Text>();
-        pontosObtidosGlobal = GameObject.Find("Pontos Obtidos Global").GetComponent<Text>();
+        //pontosObtidosLevel = GameObject.Find("Pontos Obtidos Level").GetComponent<Text>();
+        //pontosObtidosGlobal = GameObject.Find("Pontos Obtidos Global").GetComponent<Text>();
 
         telaLevelCompleto.SetActive(false);
     }
@@ -52,8 +52,8 @@ public class TelaLevelCompleto : MonoBehaviour
 
         GameManager.getInstance().PontosGlobal += GameManager.getInstance().PontosLevel;
 
-        pontosObtidosLevel.text = "Pontos obtidos na fase: " + GameManager.getInstance().PontosLevel.ToString("0000");
-        pontosObtidosLevel.text = "Pontos totais obtidos: " + GameManager.getInstance().PontosGlobal.ToString("0000");
+        //pontosObtidosLevel.text = "Pontos obtidos na fase: " + GameManager.getInstance().PontosLevel.ToString("0000");
+        //pontosObtidosLevel.text = "Pontos totais obtidos: " + GameManager.getInstance().PontosGlobal.ToString("0000");
 
         GameManager.getInstance().pararJogo();
         telaLevelCompleto.SetActive(true);
