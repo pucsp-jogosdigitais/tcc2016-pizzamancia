@@ -4,17 +4,17 @@ using System.Collections;
 public class TelaGameOver : MonoBehaviour
 {
     #region atributos
-    Jogador jogador;
+    public GameObject telaGameOver; //GameObject que armazena a UI de menu de pause
 
-    public GameObject telaGameOver; //GameObject que armazena a UI de menu de pause 
+    Jogador jogador;
     #endregion
 
     // Use this for initialization
     void Start()
     {
-        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
-
         telaGameOver.SetActive(false);
+
+        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
     }
 
     // Update is called once per frame
@@ -44,14 +44,6 @@ public class TelaGameOver : MonoBehaviour
     }
 
     public void retornarSelecLevel()
-    {
-        telaGameOver.SetActive(false);
-
-        GameManager.getInstance().continuarJogo();
-        GameManager.getInstance().carregarTelaSemFade("MenuPrincipal");
-    }
-
-    public void retornarMenuPrincipal()
     {
         telaGameOver.SetActive(false);
 

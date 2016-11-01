@@ -4,25 +4,23 @@ using System.Collections;
 public class MenuPause : MonoBehaviour
 {
     #region atributos
-    Jogador jogador;
-
-    bool isPaused; //informa se o jogo está pausado ou nao
-
     public GameObject menuDePause; //GameObject que armazena a UI de menu de pause
     public GameObject painelReiniciarLevel;
     public GameObject painelSairJogo;
+
+    bool isPaused; //informa se o jogo está pausado ou nao
+
+    Jogador jogador;
     #endregion
 
     // Use this for initialization
     void Start()
     {
-        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
-
-        isPaused = false;
-
         menuDePause.SetActive(false);
         painelReiniciarLevel.SetActive(false);
         painelSairJogo.SetActive(false);
+        isPaused = false;
+        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
     }
 
     // Update is called once per frame

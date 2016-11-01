@@ -9,14 +9,6 @@ public class Plataform : MonoBehaviour
     bool desce;
     public float velocidade;
 
-
-    //<menor
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -33,21 +25,21 @@ public class Plataform : MonoBehaviour
         }
         if (sobe == true)
         {
-            transform.Translate(Vector2.down * Time.deltaTime * velocidade);
+			transform.Translate(Vector2.down * Time.deltaTime * velocidade);
         }
         if (desce == true)
         {
-            transform.Translate(Vector2.up * Time.deltaTime * velocidade);
+			transform.Translate(Vector2.up * Time.deltaTime * velocidade);
         }
 
 
     }
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        col.transform.parent = transform;
-    }
-    void OnTriggerExit2D(Collider2D col)
-    {
-        col.transform.parent = null;
-    }
+	void OnTriggerEnter2D(Collider2D col)
+	{
+		col.transform.parent = transform;
+	}
+	void OnTriggerExit2D(Collider2D col)
+	{
+		col.transform.parent = null;
+	}
 }

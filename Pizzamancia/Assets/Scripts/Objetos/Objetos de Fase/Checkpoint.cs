@@ -13,6 +13,12 @@ public class Checkpoint : MonoBehaviour
         isAlcancado = false;
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
     #region getters e setters
     public bool IsAlcancado
     {

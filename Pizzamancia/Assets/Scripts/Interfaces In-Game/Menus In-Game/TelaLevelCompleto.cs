@@ -5,43 +5,25 @@ using System.Collections;
 public class TelaLevelCompleto : MonoBehaviour
 {
     #region atributos
-    Jogador jogador;
-
     public GameObject telaLevelCompleto; //GameObject que armazena a UI de menu de pause
-    Text pontosObtidosLevel;
-    Text pontosObtidosGlobal;
+    GameObject pontosObtidos;
+
+    Jogador jogador;
     #endregion
 
     // Use this for initialization
     void Start()
     {
-        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
-
-        //pontosObtidosLevel = GameObject.Find("Pontos Obtidos Level").GetComponent<Text>();
-        //pontosObtidosGlobal = GameObject.Find("Pontos Obtidos Global").GetComponent<Text>();
-
         telaLevelCompleto.SetActive(false);
-    }
 
-    void Update()
-    {
-        if (GameManager.getInstance().IsLevelCompleto)
-        {
-            completarLevel();
-        }
+        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
     }
 
     #region getters e setters
-    public Text PontosObtidosLevel
+    public GameObject PontosObtidos
     {
-        get { return pontosObtidosLevel; }
-        set { pontosObtidosLevel = value; }
-    }
-
-    public Text PontosObtidosGlobal
-    {
-        get { return pontosObtidosLevel; }
-        set { pontosObtidosLevel = value; }
+        get { return pontosObtidos; }
+        set { pontosObtidos = value; }
     }
     #endregion
 
@@ -49,11 +31,7 @@ public class TelaLevelCompleto : MonoBehaviour
     public void completarLevel()
     {
         jogador.IsControlavel = false;
-
-        GameManager.getInstance().PontosGlobal += GameManager.getInstance().PontosLevel;
-
-        //pontosObtidosLevel.text = "Pontos obtidos na fase: " + GameManager.getInstance().PontosLevel.ToString("0000");
-        //pontosObtidosLevel.text = "Pontos totais obtidos: " + GameManager.getInstance().PontosGlobal.ToString("0000");
+        //pontosObtidos.GetComponent<Text> ().text = GameManager.getInstance ().PontosLevel.ToString("0000");
 
         GameManager.getInstance().pararJogo();
         telaLevelCompleto.SetActive(true);
@@ -73,14 +51,6 @@ public class TelaLevelCompleto : MonoBehaviour
 
         GameManager.getInstance().continuarJogo();
         GameManager.getInstance().carregarTelaSemFade("MenuSelecLevel");
-    }
-
-    public void retornarMenuPrincipal()
-    {
-        telaLevelCompleto.SetActive(false);
-
-        GameManager.getInstance().continuarJogo();
-        GameManager.getInstance().carregarTelaSemFade("MenuPrincipal");
     }
     #endregion
 }
