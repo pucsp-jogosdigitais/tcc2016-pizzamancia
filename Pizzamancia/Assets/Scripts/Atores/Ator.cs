@@ -230,12 +230,12 @@ public class Ator : MonoBehaviour
 
         if (movimentoX > 0)
         {
-            this.transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 0, transform.rotation.eulerAngles.z);
+            this.transform.localScale = new Vector2(1, this.transform.localScale.y);
         }
 
         if (movimentoX < 0)
         {
-            this.transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, 180, transform.rotation.eulerAngles.z);
+            this.transform.localScale = new Vector2(-1, this.transform.localScale.y);
         }
 
         rdbAtor.velocity = new Vector2(movimentoX * velocidade, rdbAtor.velocity.y);
