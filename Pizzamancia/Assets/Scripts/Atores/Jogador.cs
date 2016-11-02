@@ -100,7 +100,7 @@ public class Jogador : Ator
     {
         get { return chances; }
         set { chances = value; }
-    }
+	}
 
     public int ManaTotalOriginal
     {

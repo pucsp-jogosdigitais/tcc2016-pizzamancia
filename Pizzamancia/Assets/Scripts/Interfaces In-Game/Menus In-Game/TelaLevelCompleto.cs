@@ -50,10 +50,11 @@ public class TelaLevelCompleto : MonoBehaviour
     {
         jogador.IsControlavel = false;
 
+		GameManager.getInstance ().habilitarCursor ();
         GameManager.getInstance().PontosGlobal += GameManager.getInstance().PontosLevel;
 
-        pontosObtidosLevel.text = "Pontos obtidos na fase: " + GameManager.getInstance().PontosLevel.ToString("0000");
-        pontosObtidosLevel.text = "Pontos totais obtidos: " + GameManager.getInstance().PontosGlobal.ToString("0000");
+        //pontosObtidosLevel.text = "Pontos obtidos na fase: " + GameManager.getInstance().PontosLevel.ToString("0000");
+        //pontosObtidosLevel.text = "Pontos totais obtidos: " + GameManager.getInstance().PontosGlobal.ToString("0000");
 
         GameManager.getInstance().pararJogo();
         telaLevelCompleto.SetActive(true);

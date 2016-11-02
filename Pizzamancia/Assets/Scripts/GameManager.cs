@@ -7,8 +7,10 @@ public class GameManager : MonoBehaviour
     //instancia
     public static GameManager gameManagerInst;
 
+	public bool isCursorHabilitado;
+
     //pontuacao
-    public int pontosLevel;
+	public int pontosLevel;
     public int pontosGlobal;
 
     //condicao para encerramento de fase
@@ -19,6 +21,12 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         gameManagerInst = this;
+
+		if (isCursorHabilitado) {
+			habilitarCursor ();
+		} else {
+			desabilitarCursor ();
+		}
 
         pontosLevel = 0;
         pontosGlobal = pontosLevel;
@@ -54,6 +62,18 @@ public class GameManager : MonoBehaviour
     #endregion
 
     #region navegacao geral
+	public void habilitarCursor() 
+	{
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
+	}
+
+	public void desabilitarCursor()
+	{
+		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.Locked;
+	}
+
     //carrega interfaces e levels
     public void carregarTela(string tela)
     {

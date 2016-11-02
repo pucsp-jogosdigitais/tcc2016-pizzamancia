@@ -31,6 +31,7 @@ public class TelaGameOver : MonoBehaviour
     {
         jogador.IsControlavel = false;
 
+		GameManager.getInstance ().habilitarCursor ();
         GameManager.getInstance().pararJogo();
         telaGameOver.SetActive(true);
     }

@@ -59,8 +59,10 @@ public class MenuPause : MonoBehaviour
         isPaused = true;
         jogador.IsControlavel = false;
 
+		GameManager.getInstance ().habilitarCursor ();
         GameManager.getInstance().pararJogo();
         menuDePause.SetActive(true);
+
     }
 
     //retoma o jogo pausado
@@ -69,11 +71,11 @@ public class MenuPause : MonoBehaviour
         isPaused = false;
         jogador.IsControlavel = true;
 
-        menuDePause.SetActive(false);
-        painelReiniciarLevel.SetActive(false);
-        painelSairJogo.SetActive(false);
-
+		GameManager.getInstance ().desabilitarCursor ();
         GameManager.getInstance().continuarJogo();
+		menuDePause.SetActive(false);
+		painelReiniciarLevel.SetActive(false);
+		painelSairJogo.SetActive(false);
     }
 
     public void reiniciarLevel()
