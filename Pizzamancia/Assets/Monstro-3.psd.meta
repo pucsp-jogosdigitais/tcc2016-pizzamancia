@@ -1,9 +1,27 @@
 fileFormatVersion: 2
 guid: 9c60c9ff4c05122459f7bf75aaecaede
-timeCreated: 1477303991
-licenseType: Pro
+timeCreated: 1478201347
+licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Monstro-3_0
+    21300002: Monstro-3_1
+    21300004: Monstro-3_2
+    21300006: Monstro-3_3
+    21300008: Monstro-3_4
+    21300010: Monstro-3_5
+    21300012: Monstro-3_6
+    21300014: Monstro-3_7
+    21300016: Monstro-3_8
+    21300018: Monstro-3_9
+    21300020: Monstro-3_10
+    21300022: Monstro-3_11
+    21300024: Monstro-3_12
+    21300026: Monstro-3_13
+    21300028: Monstro-3_14
+    21300030: Monstro-3_15
+    21300032: Monstro-3_16
+    21300034: Monstro-3_17
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,8 +67,249 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    serializedVersion: 2
-    sprites: []
+    sprites:
+    - name: Monstro-3_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 93
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 93
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 93
+        width: 40
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 93
+        width: 65
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 93
+        width: 91
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_5
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 93
+        width: 92
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_6
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 93
+        width: 92
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 45
+        width: 206
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 17}
+        - {x: -103, y: -13}
+        - {x: -98, y: -17}
+        - {x: 103, y: -17}
+        - {x: 103, y: 17}
+    - name: Monstro-3_8
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 45
+        width: 206
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 19.5}
+        - {x: -103, y: -12.5}
+        - {x: -99, y: -19.5}
+        - {x: 103, y: -19.5}
+        - {x: 103, y: 19.5}
+    - name: Monstro-3_9
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 45
+        width: 206
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52, y: 23.5}
+        - {x: -103, y: 14.5}
+        - {x: -103, y: -23.5}
+        - {x: 103, y: -23.5}
+        - {x: 103, y: 11.5}
+        - {x: 64, y: 23.5}
+    - name: Monstro-3_10
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 45
+        width: 205
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -68.5, y: 20}
+        - {x: -102.5, y: 17}
+        - {x: -102.5, y: -15}
+        - {x: -99.5, y: -20}
+        - {x: 102.5, y: -20}
+        - {x: 102.5, y: 11}
+        - {x: 73.5, y: 20}
+    - name: Monstro-3_11
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 45
+        width: 204
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 17}
+        - {x: -102, y: 14}
+        - {x: -102, y: -17}
+        - {x: 102, y: -17}
+        - {x: 102, y: 17}
+    - name: Monstro-3_12
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 45
+        width: 204
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_13
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 45
+        width: 204
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 204
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Monstro-3_15
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1
+        width: 185
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92.5, y: 14.5}
+        - {x: 83.5, y: 19.5}
+        - {x: -92.5, y: 19.5}
+        - {x: -92.5, y: -19.5}
+        - {x: 92.5, y: -19.5}
+    - name: Monstro-3_16
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1
+        width: 161
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -33.5, y: 21.5}
+        - {x: -80.5, y: 13.5}
+        - {x: -80.5, y: -21.5}
+        - {x: 80.5, y: -21.5}
+        - {x: 80.5, y: 7.5}
+        - {x: 48.5, y: 21.5}
+    - name: Monstro-3_17
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 1
+        width: 185
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92.5, y: 14.5}
+        - {x: 83.5, y: 19.5}
+        - {x: -92.5, y: 19.5}
+        - {x: -92.5, y: -19.5}
+        - {x: 92.5, y: -19.5}
     outline: []
   spritePackingTag: 
   userData: 

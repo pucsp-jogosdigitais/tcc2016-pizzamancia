@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
 	{
 		Cursor.visible = false;
 		Cursor.lockState = CursorLockMode.Locked;
+
 	}
 
     //carrega interfaces e levels
