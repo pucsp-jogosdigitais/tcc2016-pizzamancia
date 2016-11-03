@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Paralax.cs">
+    <Files>
+      <File FileName="Assets\Scripts\PlatataformaFundo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Atores\Ator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Plataform.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Paralax.cs" Line="21" Column="45" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
