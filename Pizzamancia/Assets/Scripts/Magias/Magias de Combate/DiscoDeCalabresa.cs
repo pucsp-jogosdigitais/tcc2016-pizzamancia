@@ -28,7 +28,7 @@ public class DiscoDeCalabresa : MagiaCombate
     public override void conjurar()
     {
         ataqueMagico.GetComponent<AtaqueMagico>().Dano = this.Dano;
-        ataqueMagico.GetComponent<AtaqueMagico>().PosicaoRelativaInicial = new Vector3(0.3f, 0f, 0f);
+        ataqueMagico.GetComponent<AtaqueMagico>().PosicaoRelativaInicial = new Vector3(1f, 0);
         ataqueMagico.GetComponent<AtaqueMagico>().Velocidade = this.Velocidade;
         ataqueMagico.GetComponent<AtaqueMagico>().DuracaoAtaque = this.DuracaoAtaque;
 

@@ -33,7 +33,7 @@ public class RajadaDeAzeitonas : MagiaCombate
         {
             float distanciaAtaque = qtdAtq * 0.1f;
 
-            ataqueMagico.GetComponent<AtaqueMagico>().PosicaoRelativaInicial = new Vector3(0.3f + distanciaAtaque, 0f, 0f);
+            ataqueMagico.GetComponent<AtaqueMagico>().PosicaoRelativaInicial = new Vector3(1f + distanciaAtaque, 0);
 
             Instantiate(ataqueMagico, ataqueMagico.transform.position, new Quaternion());
         }
