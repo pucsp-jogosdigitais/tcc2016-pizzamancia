@@ -11,7 +11,7 @@ public class AtaqueMagico : MonoBehaviour
     public Rigidbody2D rdbMagiaAtaque;
 
     //jogador
-    public Jogador jogador;
+    public Jogador conjurador;
 
     //mecanica
     public int dano; //dano causado por cada ataque
@@ -27,22 +27,22 @@ public class AtaqueMagico : MonoBehaviour
 
         rdbMagiaAtaque = this.GetComponent<Rigidbody2D>();
 
-        jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
+        conjurador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
     }
 
     // Use this for initialization
     void Start()
     {
         float sentido = posicaoRelativaInicial.x;
-		direcaoVirada = jogador.transform.localScale;
+		direcaoVirada = conjurador.transform.localScale;
 
         if (direcaoVirada.x < 0)
         {
             sentido *= -1f;
         }
 
-        transform.position = new Vector3(jogador.transform.position.x + sentido,
-            jogador.transform.position.y + posicaoRelativaInicial.y);
+        transform.position = new Vector3(conjurador.transform.position.x + sentido,
+            conjurador.transform.position.y + posicaoRelativaInicial.y);
 
         Destroy(gameObject, duracaoAtaque);
     }
@@ -68,8 +68,8 @@ public class AtaqueMagico : MonoBehaviour
 
     public Jogador Conjurador
     {
-        get { return jogador; }
-        set { jogador = value; }
+        get { return conjurador; }
+        set { conjurador = value; }
     }
 
     public int Dano
