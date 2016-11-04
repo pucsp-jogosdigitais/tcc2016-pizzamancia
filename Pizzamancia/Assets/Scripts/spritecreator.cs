@@ -18,7 +18,7 @@ public class spritecreator : MonoBehaviour {
 	//public bool destruir=false;
     public Texture2D sourceTex;
     //public Texture sourceraw;
-    float spritesize=0.36f;
+    float spritesize=0.35f;
 
     IEnumerator Start()
     //void Start()
