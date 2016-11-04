@@ -13,14 +13,14 @@ public class GolemMussarela : Inimigo
 
         this.RaioPercepcao = 8f;
 
-        this.VelocidadeOriginal = 1;
+        this.VelocidadeOriginal = 1f;
         this.Velocidade = this.VelocidadeOriginal;
-        this.ForcaPuloOriginal = 2;
+        this.ForcaPuloOriginal = 2f;
         this.ForcaPulo = this.ForcaPuloOriginal;
 
         this.HitboxAtor.DanoOriginal = 5;
         this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
-        this.HitboxAtor.ForcaRecuoOriginal = 5;
+        this.HitboxAtor.ForcaRecuoOriginal = 5f;
         this.HitboxAtor.ForcaRecuo = this.HitboxAtor.ForcaRecuoOriginal;
 
         this.DemoraAntesAtaqueOriginal = 1f;

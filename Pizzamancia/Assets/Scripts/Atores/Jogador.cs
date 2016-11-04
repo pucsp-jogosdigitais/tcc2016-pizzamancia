@@ -38,14 +38,14 @@ public class Jogador : Ator
 
         audio = this.GetComponent<AudioSource>();
 
-        this.VelocidadeOriginal = 3;
+        this.VelocidadeOriginal = 3f;
         this.Velocidade = this.VelocidadeOriginal;
-        this.ForcaPuloOriginal = 6;
+        this.ForcaPuloOriginal = 6f;
         this.ForcaPulo = this.ForcaPuloOriginal;
 
         this.HitboxAtor.DanoOriginal = 2;
         this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
-        this.HitboxAtor.ForcaRecuoOriginal = 4;
+        this.HitboxAtor.ForcaRecuoOriginal = 4f;
         this.HitboxAtor.ForcaRecuo = this.HitboxAtor.ForcaRecuoOriginal;
 
         this.DemoraAntesAtaqueOriginal = 0.25f;

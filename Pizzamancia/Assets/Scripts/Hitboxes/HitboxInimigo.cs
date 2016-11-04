@@ -3,34 +3,36 @@ using System.Collections;
 
 public class HitboxInimigo : Hitbox
 {
-    public override void atingir()
-    {
-        foreach (GameObject objetoAtingido in this.ObjetosAtingidos)
-        {
-            if (objetoAtingido != null)
-            {
-                switch (objetoAtingido.gameObject.tag.ToString())
-                {
-                    default:
-                        break;
-                    case "Player":
-                        Jogador jogador = objetoAtingido.GetComponent<Jogador>();
-                        Vector2 direcaoTras = jogador.transform.right;
+	public override void atingir ()
+	{
+		foreach (GameObject objetoAtingido in this.ObjetosAtingidos) {
+			if (objetoAtingido != null) {
+				switch (objetoAtingido.gameObject.tag.ToString ()) {
+				default:
+					break;
+				case "Player":
+					Jogador jogador = objetoAtingido.GetComponent<Jogador> ();
+					Vector2 direcaoTras = jogador.transform.right;
 
-                        jogador.alterarVida(-this.Dano);
-                        jogador.RdbAtor.AddForce((Vector2.up + direcaoTras) * this.ForcaRecuo, ForceMode2D.Impulse);
-                        break;
-                    case "Obstaculo":
-                        Obstaculo obstaculo = objetoAtingido.GetComponent<Obstaculo>();
+					jogador.alterarVida (-this.Dano);
 
-                        if (obstaculo.IsDestrutivel)
-                        {
-                            obstaculo.alterarVida(-this.Dano);
-                        }
+					if (atorRespectivo.transform.position.x > jogador.transform.position.x) {
+						jogador.RdbAtor.AddForce ((Vector2.up - direcaoTras) * this.ForcaRecuo, ForceMode2D.Impulse);
+					} else if (atorRespectivo.transform.position.x < jogador.transform.position.x) {
+						jogador.RdbAtor.AddForce ((Vector2.up + direcaoTras) * this.ForcaRecuo, ForceMode2D.Impulse);
+					}
 
-                        break;
-                }
-            }
-        }
-    }
+					break;
+				case "Obstaculo":
+					Obstaculo obstaculo = objetoAtingido.GetComponent<Obstaculo> ();
+
+					if (obstaculo.IsDestrutivel) {
+						obstaculo.alterarVida (-this.Dano);
+					}
+
+					break;
+				}
+			}
+		}
+	}
 }
