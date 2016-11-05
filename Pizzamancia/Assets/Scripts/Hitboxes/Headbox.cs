@@ -2,14 +2,11 @@
 using System.Collections;
 
 public class Headbox : MonoBehaviour {
+	public Ator atorRespectivo;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public Ator AtorRespectivo
+	{
+		get { return atorRespectivo; }
+		set { atorRespectivo = value; }
 	}
 }

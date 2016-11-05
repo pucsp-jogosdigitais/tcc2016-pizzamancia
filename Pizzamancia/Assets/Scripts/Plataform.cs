@@ -3,14 +3,20 @@ using System.Collections;
 
 public class Plataform : MonoBehaviour
 {
+	public Rigidbody2D rdbPlataforma;
+
 	bool sobe;
 	bool desce;
 	bool isFundoTocado;
-    public Rigidbody2D rdd;
     public float posMin;
     public float posMax;
+	public float velocidade;
 
-    public float velocidade;
+	void Start() 
+	{
+		rdbPlataforma = this.GetComponent<Rigidbody2D> ();
+		velocidade = 1.5f;
+	}
 
     // Update is called once per frame
     void Update()
@@ -32,14 +38,16 @@ public class Plataform : MonoBehaviour
 
         if (sobe == true)
         {
-           // this.transform.Translate(Vector2.up * Time.deltaTime * velocidade,Space.World);
-            rdd.AddForce(Vector2.up*7, ForceMode2D.Force);
+			//this.transform.Translate(Vector2.up * Time.deltaTime * velocidade,Space.World);
+			//rdbPlataforma.AddForce(Vector2.up * 7, ForceMode2D.Force);
+			rdbPlataforma.velocity = new Vector2(0, velocidade);
         }
 
         if (desce == true)
         {
-           // this.transform.Translate(Vector2.down * Time.deltaTime * velocidade, Space.World);
-            rdd.AddForce(Vector2.down*7, ForceMode2D.Force);
+            //this.transform.Translate(Vector2.down * Time.deltaTime * velocidade, Space.World);
+			//rdbPlataforma.AddForce(Vector2.down * 7, ForceMode2D.Force);
+			rdbPlataforma.velocity = new Vector2(0, -velocidade);
         }
     }
 
@@ -49,7 +57,7 @@ public class Plataform : MonoBehaviour
 		set { isFundoTocado = value; }
 	}
 
-    void OnTriggerEnter2Dold(Collider2D colisor)
+    /*void OnTriggerEnter2D(Collider2D colisor)
     {
 		if (colisor.gameObject.tag.ToString() == "Player" || 
 			colisor.gameObject.tag.ToString() == "Inimigo") 
@@ -58,29 +66,12 @@ public class Plataform : MonoBehaviour
 		}
     }
 
-    void OnCollisionEnter2D(Collision2D colision)
-    {
-        if (colision.collider.gameObject.tag.ToString() == "Player" ||
-            colision.collider.gameObject.tag.ToString() == "Inimigo")
-        {
-            colision.collider.transform.parent = this.transform;
-        }
-    }
-    void OnCollisionExit2D(Collision2D colision)
-    {
-        if (colision.collider.gameObject.tag.ToString() == "Player" ||
-            colision.collider.gameObject.tag.ToString() == "Inimigo")
-        {
-            colision.collider.transform.parent = null;
-        }
-    }
-
-    void OnTriggerExit2Dout(Collider2D colisor)
+    void OnTriggerExit2D(Collider2D colisor)
     {
 		if (colisor.gameObject.tag.ToString() == "Player" || 
 			colisor.gameObject.tag.ToString() == "Inimigo") 
 		{
 			colisor.transform.parent = null;
 		}
-    }
+    }*/
 }
