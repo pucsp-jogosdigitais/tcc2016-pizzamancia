@@ -44,8 +44,8 @@ public class Ator : MonoBehaviour
 	public int vidaAtual; //quantos pontos de vida o ator tem no momento
 
 	//atordoamento
-	public bool isAtordoado; //condicao que indica se o ator fica atordoado(incapaz de realizar acoes)
-	public float tempoAtordoado; //quanto tempo o ator ficar atordoado
+	public bool isAtordoado; //condicao que indica se o ator fica atordoado(incapaz de realizar acoes) quando leva dano
+	public float tempoAtordoado; //quanto tempo o ator fica atordoado cada vez que leva dano
 	float tempoAtordoadoPassado; //quanto tempo se passou desde o inicio do atordoamento
 	#endregion
 
@@ -64,7 +64,6 @@ public class Ator : MonoBehaviour
 		tempoPassadoInicioAtaque = 0;
 
 		isAtordoado = false;
-		tempoAtordoado = 0;
 		tempoAtordoadoPassado = 0;
 	}
 
@@ -103,6 +102,15 @@ public class Ator : MonoBehaviour
 			if (tempoPassadoInicioAtaque >= (demoraAntesAtaque + demoraDepoisAtaque)) 
 			{
 				terminarAtaque ();
+			}
+		}
+			
+		if (isAtordoado) {
+			if (tempoAtordoadoPassado < tempoAtordoado) {
+				tempoAtordoadoPassado += Time.deltaTime;
+			} else {
+				isAtordoado = false;
+				tempoAtordoadoPassado = 0;
 			}
 		}
 
@@ -276,8 +284,11 @@ public class Ator : MonoBehaviour
 
 		if (resultadoFinal > vidaTotal) {
 			vidaAtual = vidaTotal;
-		} else if (resultadoFinal <= 0) {
-			vidaAtual = 0;
+		} else if (resultadoFinal < vidaAtual && resultadoFinal > 0) {
+			animadorAtor.SetTrigger ("ferido");
+			vidaAtual += valor;
+			isAtordoado = true;
+		} else if (resultadoFinal < 0) {
 			morrer ();
 		} else {
 			vidaAtual += valor;
@@ -287,6 +298,8 @@ public class Ator : MonoBehaviour
 	//mata (destroi) o ator
 	public virtual void morrer ()
 	{
+		animadorAtor.SetBool ("morrer", true);
+		vidaAtual = 0;
 	}
 	#endregion
 }

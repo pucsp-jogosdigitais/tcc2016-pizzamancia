@@ -76,6 +76,8 @@ public class Jogador : Ator
 		isComecouConjuracao = false;
 		demoraConjuracao = 0.3f;
 		tempoPassadoInicioConjuracao = 0;
+
+		this.TempoAtordoado = 0.03f;
     }
 
     //Update is called once per frame
