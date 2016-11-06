@@ -100,50 +100,48 @@ public class AtaqueMagico : MonoBehaviour
     #region eventos
 	void OnTriggerEnter2D(Collider2D colisor)
     {
-        switch (colisor.gameObject.tag.ToString())
-        {
-            default:
-                break;
-            case "Player":
-                Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
+		if (colisor.gameObject.layer == 9) 
+		{
+			Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
+		} 
+		else 
+		{
+			switch (colisor.gameObject.tag.ToString ()) 
+			{
+			default:
+				break;
+			case "Player":
+				Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
 
-                return;
-            case "AtaqueMagico":
-                Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
+				return;
+			case "AtaqueMagico":
+				Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
 
-                return;
+				return;
 			case "Hitbox":
-				Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
+				Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
 
 				return;
 			case "Headbox":
-				Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
+				Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
 
 				return;
-			case "Ponto":
-				Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
+			case "Inimigo":
+				Inimigo inimigo = colisor.gameObject.GetComponent<Inimigo> ();
 
-				return;
-            case "PowerUp":
-                Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
+				inimigo.alterarVida (-dano);
 
-                return;
-            case "Inimigo":
-                var inimigo = colisor.gameObject.GetComponent<Inimigo>();
+				break;
+			case "Obstaculo":
+				Obstaculo obstaculo = colisor.gameObject.GetComponent<Obstaculo> ();
 
-                inimigo.alterarVida(-dano);
-                break;
-            case "Obstaculo":
-                var obstaculo = colisor.gameObject.GetComponent<Obstaculo>();
+				obstaculo.alterarVida (-dano);
 
-                if (obstaculo.IsDestrutivel)
-                {
-                    obstaculo.alterarVida(-dano);
-                }
-                break;
-        }
+				break;
+			}
 
-        Destroy(gameObject);
+			Destroy(gameObject);
+		}
     }
     #endregion
 

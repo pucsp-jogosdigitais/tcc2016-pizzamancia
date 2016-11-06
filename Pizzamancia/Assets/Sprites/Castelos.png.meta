@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 14f75715fdf6118498075c611ace4e46
-timeCreated: 1478376359
+guid: bdd64c5490ea7b8498d65e311ad98e14
+timeCreated: 1478434145
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Castelos_0
-    21300002: Castelos_1
-    21300004: Castelos_2
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -29,11 +26,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
-    aniso: 16
+    filterMode: -1
+    aniso: -1
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -41,7 +38,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,95 +49,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: Castelos_0
-      rect:
-        serializedVersion: 2
-        x: 137
-        y: 0
-        width: 418
-        height: 326
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 209, y: 62}
-        - {x: 207, y: 72}
-        - {x: 197, y: 84}
-        - {x: 188, y: 86}
-        - {x: 187, y: 94}
-        - {x: 172, y: 112}
-        - {x: 156, y: 114}
-        - {x: 156, y: 125}
-        - {x: 141, y: 138}
-        - {x: 139, y: 137}
-        - {x: 119, y: 129}
-        - {x: 133, y: 141}
-        - {x: 132, y: 157}
-        - {x: 111, y: 163}
-        - {x: 87, y: 163}
-        - {x: 82, y: 162}
-        - {x: 35, y: 116}
-        - {x: 21, y: 71}
-        - {x: -209, y: -160}
-        - {x: -209, y: -163}
-        - {x: -16, y: -163}
-        - {x: 135, y: -13}
-        - {x: 164, y: 1}
-        - {x: 209, y: 44}
-    - name: Castelos_1
-      rect:
-        serializedVersion: 2
-        x: 597
-        y: 0
-        width: 138
-        height: 386
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 43, y: 193}
-        - {x: 23, y: 168}
-        - {x: 23, y: 193}
-        - {x: -5, y: 193}
-        - {x: -28, y: 161}
-        - {x: -66, y: 81}
-        - {x: -69, y: 49}
-        - {x: -69, y: -140}
-        - {x: -66, y: -156}
-        - {x: -68, y: -183}
-        - {x: -64, y: -193}
-        - {x: 48, y: -193}
-        - {x: 48, y: 119}
-        - {x: 69, y: 160}
-        - {x: 69, y: 193}
-    - name: Castelos_2
-      rect:
-        serializedVersion: 2
-        x: 828
-        y: 0
-        width: 167
-        height: 302
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 79.5, y: 126}
-        - {x: 66.5, y: 147}
-        - {x: 39.5, y: 145}
-        - {x: 29.5, y: 151}
-        - {x: 23.5, y: 151}
-        - {x: -4.5, y: 144}
-        - {x: -8.5, y: 147}
-        - {x: -16.5, y: 151}
-        - {x: -44.5, y: 151}
-        - {x: -57.5, y: 140}
-        - {x: -83.5, y: -121}
-        - {x: -83.5, y: -151}
-        - {x: 59.5, y: -151}
-        - {x: 75.5, y: -1}
-        - {x: 83.5, y: 89}
-        - {x: 83.5, y: 121}
+    sprites: []
     outline: []
   spritePackingTag: 
   userData: 

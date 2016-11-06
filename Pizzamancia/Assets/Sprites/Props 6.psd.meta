@@ -1,9 +1,162 @@
 fileFormatVersion: 2
 guid: 6f0de8b814ce55842a9d43429f44bb11
-timeCreated: 1478202942
+timeCreated: 1478374625
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Props 6_0
+    21300002: Props 6_1
+    21300004: Props 6_2
+    21300006: Props 6_3
+    21300008: Props 6_4
+    21300010: Props 6_5
+    21300012: Props 6_6
+    21300014: Props 6_7
+    21300016: Props 6_8
+    21300018: Props 6_9
+    21300020: Props 6_10
+    21300022: Props 6_11
+    21300024: Props 6_12
+    21300026: Props 6_13
+    21300028: Props 6_14
+    21300030: Props 6_15
+    21300032: Props 6_16
+    21300034: Props 6_17
+    21300036: Props 6_18
+    21300038: Props 6_19
+    21300040: Props 6_20
+    21300042: Props 6_21
+    21300044: Props 6_22
+    21300046: Props 6_23
+    21300048: Props 6_24
+    21300050: Props 6_25
+    21300052: Props 6_26
+    21300054: Props 6_27
+    21300056: Props 6_28
+    21300058: Props 6_29
+    21300060: Props 6_30
+    21300062: Props 6_31
+    21300064: Props 6_32
+    21300066: Props 6_33
+    21300068: Props 6_34
+    21300070: Props 6_35
+    21300072: Props 6_36
+    21300074: Props 6_37
+    21300076: Props 6_38
+    21300078: Props 6_39
+    21300080: Props 6_40
+    21300082: Props 6_41
+    21300084: Props 6_42
+    21300086: Props 6_43
+    21300088: Props 6_44
+    21300090: Props 6_45
+    21300092: Props 6_46
+    21300094: Props 6_47
+    21300096: Props 6_48
+    21300098: Props 6_49
+    21300100: Props 6_50
+    21300102: Props 6_51
+    21300104: Props 6_52
+    21300106: Props 6_53
+    21300108: Props 6_54
+    21300110: Props 6_55
+    21300112: Props 6_56
+    21300114: Props 6_57
+    21300116: Props 6_58
+    21300118: Props 6_59
+    21300120: Props 6_60
+    21300122: Props 6_61
+    21300124: Props 6_62
+    21300126: Props 6_63
+    21300128: Props 6_64
+    21300130: Props 6_65
+    21300132: Props 6_66
+    21300134: Props 6_67
+    21300136: Props 6_68
+    21300138: Props 6_69
+    21300140: Props 6_70
+    21300142: Props 6_71
+    21300144: Props 6_72
+    21300146: Props 6_73
+    21300148: Props 6_74
+    21300150: Props 6_75
+    21300152: Props 6_76
+    21300154: Props 6_77
+    21300156: Props 6_78
+    21300158: Props 6_79
+    21300160: Props 6_80
+    21300162: Props 6_81
+    21300164: Props 6_82
+    21300166: Props 6_83
+    21300168: Props 6_84
+    21300170: Props 6_85
+    21300172: Props 6_86
+    21300174: Props 6_87
+    21300176: Props 6_88
+    21300178: Props 6_89
+    21300180: Props 6_90
+    21300182: Props 6_91
+    21300184: Props 6_92
+    21300186: Props 6_93
+    21300188: Props 6_94
+    21300190: Props 6_95
+    21300192: Props 6_96
+    21300194: Props 6_97
+    21300196: Props 6_98
+    21300198: Props 6_99
+    21300200: Props 6_100
+    21300202: Props 6_101
+    21300204: Props 6_102
+    21300206: Props 6_103
+    21300208: Props 6_104
+    21300210: Props 6_105
+    21300212: Props 6_106
+    21300214: Props 6_107
+    21300216: Props 6_108
+    21300218: Props 6_109
+    21300220: Props 6_110
+    21300222: Props 6_111
+    21300224: Props 6_112
+    21300226: Props 6_113
+    21300228: Props 6_114
+    21300230: Props 6_115
+    21300232: Props 6_116
+    21300234: Props 6_117
+    21300236: Props 6_118
+    21300238: Props 6_119
+    21300240: Props 6_120
+    21300242: Props 6_121
+    21300244: Props 6_122
+    21300246: Props 6_123
+    21300248: Props 6_124
+    21300250: Props 6_125
+    21300252: Props 6_126
+    21300254: Props 6_127
+    21300256: Props 6_128
+    21300258: Props 6_129
+    21300260: Props 6_130
+    21300262: Props 6_131
+    21300264: Props 6_132
+    21300266: Props 6_133
+    21300268: Props 6_134
+    21300270: Props 6_135
+    21300272: Props 6_136
+    21300274: Props 6_137
+    21300276: Props 6_138
+    21300278: Props 6_139
+    21300280: Props 6_140
+    21300282: Props 6_141
+    21300284: Props 6_142
+    21300286: Props 6_143
+    21300288: Props 6_144
+    21300290: Props 6_145
+    21300292: Props 6_146
+    21300294: Props 6_147
+    21300296: Props 6_148
+    21300298: Props 6_149
+    21300300: Props 6_150
+    21300302: Props 6_151
+    21300304: Props 6_152
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +202,1964 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Props 6_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 372
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 6_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 372
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 6_2
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 372
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 6_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 372
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 6_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 372
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 6_5
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 372
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 6_6
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 372
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 6_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 372
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 6_8
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 374
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_9
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 374
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_10
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 374
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_11
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 374
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_12
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 374
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_13
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 374
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_14
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 399
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_15
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 398
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_16
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 381
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_17
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 378
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_18
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 351
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 28.5}
+        - {x: -16.5, y: 22.5}
+        - {x: 6.5, y: -28.5}
+        - {x: 13.5, y: -28.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 16.5, y: -8.5}
+        - {x: 16.5, y: 28.5}
+    - name: Props 6_19
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 351
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 28.5}
+        - {x: -16.5, y: 22.5}
+        - {x: 6.5, y: -28.5}
+        - {x: 13.5, y: -28.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 16.5, y: -8.5}
+        - {x: 16.5, y: 28.5}
+    - name: Props 6_20
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 351
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 28.5}
+        - {x: -16.5, y: 22.5}
+        - {x: 6.5, y: -28.5}
+        - {x: 13.5, y: -28.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 16.5, y: -8.5}
+        - {x: 16.5, y: 28.5}
+    - name: Props 6_21
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 351
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 28.5}
+        - {x: -16.5, y: 22.5}
+        - {x: 6.5, y: -28.5}
+        - {x: 13.5, y: -28.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 16.5, y: -8.5}
+        - {x: 16.5, y: 28.5}
+    - name: Props 6_22
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 351
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 28.5}
+        - {x: -16.5, y: 22.5}
+        - {x: 6.5, y: -28.5}
+        - {x: 13.5, y: -28.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 16.5, y: -8.5}
+        - {x: 16.5, y: 28.5}
+    - name: Props 6_23
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 351
+        width: 33
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 28.5}
+        - {x: -16.5, y: 22.5}
+        - {x: 6.5, y: -28.5}
+        - {x: 13.5, y: -28.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 16.5, y: -8.5}
+        - {x: 16.5, y: 28.5}
+    - name: Props 6_24
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 399
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_25
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 398
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_26
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 394
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_27
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 395
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_28
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 384
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_29
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 382
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_30
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 387
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_31
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 385
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_32
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 384
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_33
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 382
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_34
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 376
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_35
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 378
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_36
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 384
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_37
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 389
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_38
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 372
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_39
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 369
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_40
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 369
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_41
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 369
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_42
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 369
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_43
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 355
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_44
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 369
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_45
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 366
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_46
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 355
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_47
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 373
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_48
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 372
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_49
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 355
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_50
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 355
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_51
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 355
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_52
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 355
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_53
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 250
+        width: 30
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 250
+        width: 30
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_55
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 250
+        width: 30
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_56
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 250
+        width: 30
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_57
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 250
+        width: 30
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_58
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 250
+        width: 30
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_59
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 342
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_60
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 341
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_61
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 335
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_62
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 300
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_63
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 300
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_64
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 300
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_65
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 300
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_66
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 300
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_67
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 300
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_68
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 342
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_69
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 322
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_70
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 327
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_71
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 325
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_72
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 332
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_73
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 326
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_74
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 332
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_75
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 315
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_76
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 298
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_77
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 320
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_78
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 318
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_79
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 311
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_80
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 313
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_81
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 299
+        width: 9
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_82
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 304
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_83
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 312
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_84
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 316
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_85
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 299
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_86
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 309
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_87
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 304
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_88
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 300
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_89
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 299
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_90
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 308
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_91
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 300
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_92
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 295
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_93
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 299
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_94
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 299
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_95
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 299
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_96
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 287
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_97
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 289
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_98
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 295
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_99
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 289
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_100
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 290
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_101
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 284
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_102
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 299
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_103
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 284
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_104
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 288
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_105
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 286
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_106
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 281
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_107
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 281
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_108
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 282
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_109
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 273
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_110
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 269
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_111
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 269
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_112
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 276
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_113
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 250
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_114
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 277
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_115
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 276
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_116
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 267
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_117
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 265
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_118
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 267
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_119
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 267
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_120
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 267
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_121
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 264
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_122
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 262
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_123
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 257
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_124
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 266
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_125
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 250
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_126
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 250
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_127
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 257
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_128
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 250
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_129
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 250
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_130
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 250
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_131
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 250
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_132
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 250
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Props 6_133
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_134
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_135
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_136
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_137
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_138
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_139
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_140
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_141
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_142
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_143
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 120
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_144
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_145
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_146
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 1
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_147
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_148
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_149
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 1
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_150
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_151
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 1
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
+    - name: Props 6_152
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 1
+        width: 108
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 25}
+        - {x: 4, y: 59}
+        - {x: -20, y: 59}
+        - {x: -54, y: 11}
+        - {x: -54, y: -53}
+        - {x: -32, y: -59}
+        - {x: 49, y: -59}
+        - {x: 50, y: -58}
+        - {x: 54, y: -35}
+        - {x: 54, y: 17}
     outline: []
   spritePackingTag: 
   userData: 

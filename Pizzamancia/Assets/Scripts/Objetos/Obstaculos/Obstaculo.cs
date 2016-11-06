@@ -43,20 +43,22 @@ public class Obstaculo : Objeto
     //aumenta ou diminui os pontos de vida atual
     public void alterarVida(int valor)
     {
-        int resultadoFinal = vidaAtual + valor;
+		if (isDestrutivel) {
+        	int resultadoFinal = vidaAtual + valor;
 
-        if (resultadoFinal > vidaTotal)
-        {
-            vidaAtual = vidaTotal;
-        }
-        else if (resultadoFinal <= 0)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            vidaAtual += valor;
-        }
+        	if (resultadoFinal > vidaTotal)
+        	{
+            	vidaAtual = vidaTotal;
+        	}
+        	else if (resultadoFinal <= 0)
+        	{
+            	Destroy(this.gameObject);
+        	}
+        	else
+        	{
+            	vidaAtual += valor;
+        	}
+		}
     }
     #endregion
 }

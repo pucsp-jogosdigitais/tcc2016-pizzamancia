@@ -18,7 +18,7 @@ public class Objeto : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        animadorObjeto = this.GetComponent<Animator>();
+		animadorObjeto = this.GetComponent<Animator>();
 
         rdbObjeto = this.GetComponent<Rigidbody2D>();
 

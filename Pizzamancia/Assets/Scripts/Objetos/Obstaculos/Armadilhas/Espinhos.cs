@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Espinhos : Armadilha
 {
-    // Use this for initialization
     void Start()
     {
         this.TempoVida = 0;
