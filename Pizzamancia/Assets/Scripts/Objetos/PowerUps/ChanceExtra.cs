@@ -14,9 +14,9 @@ public class ChanceExtra : PowerUp {
 	{
 		if (collider.gameObject.tag == "Player")
 		{
-			var player = collider.gameObject.GetComponent<Jogador>();
+			Jogador jogador = collider.gameObject.GetComponent<Jogador>();
 
-			player.alterarChances(1);
+			jogador.alterarChances(1);
 
 			Destroy(gameObject);
 		}

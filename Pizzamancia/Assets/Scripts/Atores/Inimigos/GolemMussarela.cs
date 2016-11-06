@@ -13,8 +13,8 @@ public class GolemMussarela : Inimigo
 
         this.RaioPercepcao = 8f;
 
-        this.VelocidadeOriginal = 1f;
-        this.Velocidade = this.VelocidadeOriginal;
+        this.VelocidadeMaximaOriginal = 1f;
+        this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
         this.ForcaPuloOriginal = 2f;
         this.ForcaPulo = this.ForcaPuloOriginal;
 

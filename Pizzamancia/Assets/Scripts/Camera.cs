@@ -4,12 +4,13 @@ using System.Collections;
 public class Camera : MonoBehaviour
 {
     #region atributos
-    public Transform alvo;
+    Transform alvo;
     float posicaoCamera = 0;
     float posicaoAlvo = 0;
     public float velocidade;
     #endregion
     public Vector3 ajuste;
+
     // Use this for initialization
     void Start()
     {
@@ -17,11 +18,10 @@ public class Camera : MonoBehaviour
 			while (alvo == null) {
 				alvo = GameObject.FindGameObjectWithTag ("Player").transform;
 			}
+
 			posicaoCamera = transform.position.z;
 			posicaoAlvo = alvo.position.z;
-			//velocidade = 10;
 		}
-
 	}
 
     // Update is called once per frame

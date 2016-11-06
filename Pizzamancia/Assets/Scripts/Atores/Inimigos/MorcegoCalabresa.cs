@@ -13,8 +13,8 @@ public class MorcegoCalabresa : Inimigo
 
         this.RaioPercepcao = 2.5f;
 
-        this.VelocidadeOriginal = 2;
-        this.Velocidade = this.VelocidadeOriginal;
+        this.VelocidadeMaximaOriginal = 2;
+        this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
         this.ForcaPuloOriginal = 4;
         this.ForcaPulo = this.ForcaPuloOriginal;
 

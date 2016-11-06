@@ -11,7 +11,7 @@ public class AtaqueMagico : MonoBehaviour
     public Rigidbody2D rdbMagiaAtaque;
 
     //jogador
-    public Jogador conjurador;
+    Jogador conjurador;
 
     //mecanica
     public int dano; //dano causado por cada ataque

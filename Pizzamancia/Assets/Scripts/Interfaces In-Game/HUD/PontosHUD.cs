@@ -3,9 +3,10 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class PontosHUD : MonoBehaviour {
+	#region atributos
 	public static PontosHUD pontosHUDInst;
-	GameObject jogador;
 	GameObject pontosHUD;
+	#endregion
 
 	// Use this for initialization
 	void Start () {

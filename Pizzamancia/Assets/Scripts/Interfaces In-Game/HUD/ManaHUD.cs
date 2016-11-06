@@ -4,10 +4,12 @@ using System.Collections;
 
 public class ManaHUD : MonoBehaviour
 {
+	#region atributos
     public static ManaHUD ManaHUDInst;
     Jogador jogador;
     Text manaHUD;
     Slider sliderMana;
+	#endregion
 
     // Use this for initialization
     void Start()

@@ -16,11 +16,11 @@ public class RecuperacaoMana : PowerUp
     {
         if (collider.gameObject.tag == "Player")
         {
-            var player = collider.gameObject.GetComponent<Jogador>();
+			Jogador jogador = collider.gameObject.GetComponent<Jogador>();
 
-            if (player.ManaAtual < player.ManaTotal)
+            if (jogador.ManaAtual < jogador.ManaTotal)
             {
-                player.alterarMana(10);
+                jogador.alterarMana(10);
 
                 Destroy(gameObject);
             }

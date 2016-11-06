@@ -19,7 +19,7 @@ public class PocaoDeVelocidade : MonoBehaviour {
         {
             var player = collider.gameObject.GetComponent<Jogador>();
 
-			player.Velocidade *= 3;
+			player.VelocidadeMaxima *= 3;
 
             Destroy(gameObject);
 		}

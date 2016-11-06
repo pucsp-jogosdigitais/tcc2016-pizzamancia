@@ -16,11 +16,11 @@ public class RecuperacaoVida : PowerUp
     {
         if (collider.gameObject.tag == "Player")
         {
-            var player = collider.gameObject.GetComponent<Jogador>();
+			Jogador jogador = collider.gameObject.GetComponent<Jogador>();
 
-            if (player.VidaAtual < player.VidaTotal)
+            if (jogador.VidaAtual < jogador.VidaTotal)
             {
-                player.alterarVida(10);
+                jogador.alterarVida(10);
 
                 Destroy(gameObject);
             }
