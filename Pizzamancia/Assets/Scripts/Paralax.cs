@@ -19,7 +19,7 @@ public class Paralax : MonoBehaviour
         if (jogadorRig.velocity.magnitude >= 0.01)
         {
 			direcao = jogadorRig.gameObject.transform.localScale.x >= 1 ? 1.0f : -1.0f;
-            currentMaterial.SetTextureOffset("_MainTex", new Vector2((offset * direcao + currentMaterial.GetTextureOffset("_MainTex").x), 0.0f));
+			currentMaterial.SetTextureOffset("_MainTex", new Vector2(((offset/10000) * direcao + currentMaterial.GetTextureOffset("_MainTex").x), 0.0f));
 
 
         }
