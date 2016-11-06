@@ -85,6 +85,7 @@
      <Compile Include="Assets\Scripts\Objetos\Obstaculos\Armadilhas\Armadilha.cs" />
      <Compile Include="Assets\Scripts\Objetos\Obstaculos\Armadilhas\Espinhos.cs" />
      <Compile Include="Assets\Scripts\Objetos\Obstaculos\Armadilhas\Pedregulhos.cs" />
+     <Compile Include="Assets\Scripts\Objetos\Obstaculos\Armadilhas\TriggerArmadilha.cs" />
      <Compile Include="Assets\Scripts\Objetos\Obstaculos\Obstaculo.cs" />
      <Compile Include="Assets\Scripts\Objetos\Pontos\AzeitonaDeEsmeralda.cs" />
      <Compile Include="Assets\Scripts\Objetos\Pontos\Ponto.cs" />
