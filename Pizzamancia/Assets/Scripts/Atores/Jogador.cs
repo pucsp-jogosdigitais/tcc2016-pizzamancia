@@ -29,9 +29,9 @@ public class Jogador : Ator
 	public Magia[] magias; //magias escolhidas para o level
 	public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
 	public Magia magiaSelecionada; //magia selecionada no momento pelo jogador
-	bool isComecouConjuracao; //booleana que indica se o jogador comecou a conjuracao de uma magia
-	float demoraConjuracao; //tempo que demora para uma magia ser lancada apos o inicio da conjuracao
-	float tempoPassadoInicioConjuracao; // tempo passado desde o inicio do processo de conjuracao
+
+	//respawn
+	float tempoRestanteRespawn; //quanto tempo falta para o jogador respawnar
     #endregion
 
     // Use this for initialization
@@ -73,34 +73,31 @@ public class Jogador : Ator
         magias[1] = this.GetComponent<DiscoDeCalabresa>();
         posicaoMagiaSelecionada = 0;
         magiaSelecionada = magias[posicaoMagiaSelecionada];
-		isComecouConjuracao = false;
-		demoraConjuracao = 0.3f;
-		tempoPassadoInicioConjuracao = 0;
 
-		this.TempoAtordoado = 0.03f;
+		this.DuracaoAtordoamento = 0.5f;
+
+		tempoRestanteRespawn = 0;
     }
 
     //Update is called once per frame
     void Update()
     {
-		if (!this.isAtordoado) {
-			regenerarMana ();
-			carregarMagias ();
+		if (this.VidaAtual > 0) {
+			if (!this.isAtordoado)
+			{
+				regenerarMana ();
+				carregarMagias ();
 
-			if (this.IsControlavel) {
-				obterInput ();
-			}
-
-			if (isComecouConjuracao) {
-				tempoPassadoInicioConjuracao += Time.deltaTime;
-
-				if (tempoPassadoInicioConjuracao >= demoraConjuracao) {
-					lancarMagia ();
+				if (this.IsControlavel) {
+					obterInput ();
 				}
 			}
 		} else {
-			isComecouConjuracao = false;
-			tempoPassadoInicioConjuracao = 0;
+			if (tempoRestanteRespawn > 0) {
+				tempoRestanteRespawn -= Time.deltaTime;
+			} else {
+				respawnar ();
+			}
 		}
     }
 
@@ -241,25 +238,19 @@ public class Jogador : Ator
 	//tenta usar a magia
     public void tentarConjurar()
     {
-        if (InputControle.getInstance().BtnConjurar)
-        {
-            if ((manaAtual >= magiaSelecionada.CustoMana) && (magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown))
-            {
-				animadorAtor.SetTrigger("conjurar");
-				audio.PlayOneShot(clip, 1f); //audio baixo
-				isComecouConjuracao = true; 
-            }
-        }
-    }
+		if (InputControle.getInstance ().BtnConjurar) {
+			animadorAtor.SetBool ("conjurar", true);
 
-	public void lancarMagia()
-	{
-		isComecouConjuracao = false;
-		tempoPassadoInicioConjuracao = 0;
-		alterarMana(-magiaSelecionada.CustoMana);
-		magiaSelecionada.TempoPassado = 0;
-		magiaSelecionada.conjurar();  
-	}
+			if (manaAtual >= magiaSelecionada.CustoMana && magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown) {
+				audio.PlayOneShot (clip, 1f); //audio baixo
+				alterarMana (-magiaSelecionada.CustoMana);
+				magiaSelecionada.TempoPassado = 0;
+				magiaSelecionada.conjurar ();
+			}
+		} else {
+			animadorAtor.SetBool ("conjurar", false);
+		}
+    }
     #endregion
 
     #region alteracao de status
@@ -291,20 +282,22 @@ public class Jogador : Ator
 	//mata o jogador
     public override void morrer()
     {
-		this.animadorAtor.SetBool ("morrer", true);
+		base.morrer ();
         alterarChances(-1);
 
         if (chances >= 0)
         {
-			respawnar (); 
+			tempoRestanteRespawn = 2f;
         }
     }
 
+	//revive o jogador e colocao-o no ponto inicial ou no ultimo checkpoint passado
 	public void respawnar (){
-		this.animadorAtor.SetBool ("morrer", false);
+		this.animadorAtor.SetBool ("morto", false);
 		this.transform.position = this.PosicaoSpawn;
 		this.VidaAtual = this.VidaTotal;
 		this.ManaAtual = this.ManaTotal;
+		this.IsImuneDano = false;
 		GameManager.getInstance().continuarJogo();
 	}
     #endregion

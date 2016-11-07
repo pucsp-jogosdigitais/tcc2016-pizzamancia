@@ -45,8 +45,11 @@ public class Ator : MonoBehaviour
 
 	//atordoamento
 	public bool isAtordoado; //condicao que indica se o ator fica atordoado(incapaz de realizar acoes) quando leva dano
-	public float tempoAtordoado; //quanto tempo o ator fica atordoado cada vez que leva dano
+	public float duracaoAtordoamento; //quanto tempo o ator fica atordoado cada vez que leva dano
 	float tempoAtordoadoPassado; //quanto tempo se passou desde o inicio do atordoamento
+
+	//buffs e debuffs
+	public bool isImuneDano;
 	#endregion
 
 	void Awake ()
@@ -76,8 +79,7 @@ public class Ator : MonoBehaviour
 		RaycastHit2D raycastDir = Physics2D.Raycast (ladoDir, Vector2.down);
 
 		animadorAtor.SetFloat ("distanciaChao", raycastCentro.distance);
-
-		print (raycastCentro.distance);
+		//print (raycastCentro.distance);
 
 		if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) || 
 			(raycastDir.distance <= metadeAltura)) 
@@ -89,32 +91,36 @@ public class Ator : MonoBehaviour
 			isNoChao = false;
 		}
 
-		if (isComecouAtaque) 
-		{
-			movimentoX = 0;
-			tempoPassadoInicioAtaque += Time.deltaTime;
-
-			if (tempoPassadoInicioAtaque >= demoraAntesAtaque && !isAtacou) 
-			{
-				executarAtaque ();
-			}
-
-			if (tempoPassadoInicioAtaque >= (demoraAntesAtaque + demoraDepoisAtaque)) 
-			{
-				terminarAtaque ();
-			}
-		}
-			
 		if (isAtordoado) {
-			if (tempoAtordoadoPassado < tempoAtordoado) {
+			movimentoX = 0;
+			terminarAtaque ();
+
+			if (tempoAtordoadoPassado < duracaoAtordoamento) {
 				tempoAtordoadoPassado += Time.deltaTime;
 			} else {
+				animadorAtor.SetBool ("atordoado", false);
 				isAtordoado = false;
 				tempoAtordoadoPassado = 0;
 			}
-		}
+		} else {
+			if (isComecouAtaque) 
+			{
+				movimentoX = 0;
+				tempoPassadoInicioAtaque += Time.deltaTime;
 
-		andar ();
+				if (tempoPassadoInicioAtaque >= demoraAntesAtaque && !isAtacou) 
+				{
+					executarAtaque ();
+				}
+
+				if (tempoPassadoInicioAtaque >= (demoraAntesAtaque + demoraDepoisAtaque)) 
+				{
+					terminarAtaque ();
+				}
+			}
+
+			andar ();
+		}
 	}
 
 	#region getters e setters
@@ -214,10 +220,16 @@ public class Ator : MonoBehaviour
 		set { isAtordoado = value; }
 	}
 
-	public float TempoAtordoado
+	public float DuracaoAtordoamento
 	{
-		get { return tempoAtordoado; }
-		set { tempoAtordoado = value; }
+		get { return duracaoAtordoamento; }
+		set { duracaoAtordoamento = value; }
+	}
+
+	public bool IsImuneDano
+	{
+		get { return isImuneDano; }
+		set { isImuneDano = value; }
 	}
 	#endregion
 
@@ -282,13 +294,19 @@ public class Ator : MonoBehaviour
 	{
 		int resultadoFinal = vidaAtual + valor;
 
+		if (resultadoFinal < vidaAtual && isImuneDano) {
+			valor = 0;
+			resultadoFinal = vidaAtual;
+		}
+
 		if (resultadoFinal > vidaTotal) {
 			vidaAtual = vidaTotal;
 		} else if (resultadoFinal < vidaAtual && resultadoFinal > 0) {
 			animadorAtor.SetTrigger ("ferido");
+			animadorAtor.SetBool ("atordoado", true);
 			vidaAtual += valor;
 			isAtordoado = true;
-		} else if (resultadoFinal < 0) {
+		} else if (resultadoFinal <= 0 && !isImuneDano) {
 			morrer ();
 		} else {
 			vidaAtual += valor;
@@ -298,8 +316,13 @@ public class Ator : MonoBehaviour
 	//mata (destroi) o ator
 	public virtual void morrer ()
 	{
-		animadorAtor.SetBool ("morrer", true);
+		animadorAtor.SetBool ("atordoado" , false);
+		animadorAtor.SetBool ("morto", true);
+		movimentoX = 0;
 		vidaAtual = 0;
+		isImuneDano = true;
+
+		terminarAtaque ();
 	}
 	#endregion
 }
