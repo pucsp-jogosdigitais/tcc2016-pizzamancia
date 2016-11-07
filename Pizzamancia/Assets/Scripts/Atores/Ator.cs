@@ -3,303 +3,363 @@ using System.Collections;
 
 public class Ator : MonoBehaviour
 {
-	//essa classe serve para representar caracteristicas básicas de
-	//todos os personagens do game, funcionando como uma classe-pai para
-	//as demais classes que serao responsaveis pelo funcionamento de
-	//personagens jogaveis, NPC's, mobs e bosses
+    //essa classe serve para representar caracteristicas básicas de
+    //todos os personagens do game, funcionando como uma classe-pai para
+    //as demais classes que serao responsaveis pelo funcionamento de
+    //personagens jogaveis, NPC's, mobs e bosses
 
-	#region atributos
-	//animacao
-	public Animator animadorAtor; //animator do ator
+    #region atributos
+    //animacao
+    public Animator animadorAtor; //animator do ator
 
-	//Rigidbody e colisao
-	public Rigidbody2D rdbAtor; //rigidbody do ator
+    //Rigidbody e colisao
+    public Rigidbody2D rdbAtor; //rigidbody do ator
 
-	//ponto de spawn
-	public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
+    //ponto de spawn
+    public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
 
-	//movimentacao
-	float metadeLargura; //distancia entre as bordas verticais do ator e o seu centro
-	float metadeAltura; //distancia entre as bordas horizontais do ator e o seu centro
-	float movimentoX; //movimento do ator no eixo X
-	public float velocidadeMaximaOriginal; //velocida maxima que o ator pode atingir andando
-	public float velocidadeMaxima; //velocidade maxima atual
-	bool isNoChao; //booleana que mostra se ator esta colidindo com o chao ou nao
-	public float forcaPuloOriginal; ////forca do pulo
-	public float forcaPulo; //forca do pulo atual
+    //movimentacao
+    float metadeLargura; //distancia entre as bordas verticais do ator e o seu centro
+    float metadeAltura; //distancia entre as bordas horizontais do ator e o seu centro
+    float movimentoX; //movimento do ator no eixo X
+    public float velocidadeMaximaOriginal; //velocida maxima que o ator pode atingir andando
+    public float velocidadeMaxima; //velocidade maxima atual
+    bool isNoChao; //booleana que mostra se ator esta colidindo com o chao ou nao
+    public float forcaPuloOriginal; ////forca do pulo
+    public float forcaPulo; //forca do pulo atual
 
-	//ataque melee
-	public Hitbox hitboxAtor; //hitbox respectiva do ator
-	bool isComecouAtaque; //booleana que indica se o ator comecou o processo de ataque ou nao
-	bool isAtacou; //booleana que indica se ator ja executou taque
-	public float demoraAntesAtaqueOriginal; //tempo que demora entre o inicio do ataque a sua execucao
-	public float demoraAntesAtaque; //demora antes da execucao do ataque atual
-	public float demoraDepoisAtaqueOriginal; //tempo que demora entre a execucao do ataque e a sua finalizacao
-	public float demoraDepoisAtaque; //demora depois da execucao do ataque atual
-	float tempoPassadoInicioAtaque; //tempo passado desde o inicio do ataque
+    //ataque melee
+    public Hitbox hitboxAtor; //hitbox respectiva do ator
+    bool isComecouAtaque; //booleana que indica se o ator comecou o processo de ataque ou nao
+    bool isAtacou; //booleana que indica se ator ja executou taque
+    public float demoraAntesAtaqueOriginal; //tempo que demora entre o inicio do ataque a sua execucao
+    public float demoraAntesAtaque; //demora antes da execucao do ataque atual
+    public float demoraDepoisAtaqueOriginal; //tempo que demora entre a execucao do ataque e a sua finalizacao
+    public float demoraDepoisAtaque; //demora depois da execucao do ataque atual
+    float tempoPassadoInicioAtaque; //tempo passado desde o inicio do ataque
 
-	//vida
-	public int vidaTotalOriginal; //quantos pontos de vida o ator tem no total
-	public int vidaTotal; //quantos pontos de vida o ator tem no total atual
-	public int vidaAtual; //quantos pontos de vida o ator tem no momento
+    //vida
+    public int vidaTotalOriginal; //quantos pontos de vida o ator tem no total
+    public int vidaTotal; //quantos pontos de vida o ator tem no total atual
+    public int vidaAtual; //quantos pontos de vida o ator tem no momento
 
-	//atordoamento
-	public bool isAtordoado; //condicao que indica se o ator fica atordoado(incapaz de realizar acoes) quando leva dano
-	public float tempoAtordoado; //quanto tempo o ator fica atordoado cada vez que leva dano
-	float tempoAtordoadoPassado; //quanto tempo se passou desde o inicio do atordoamento
-	#endregion
+    //atordoamento
+    public bool isAtordoado; //condicao que indica se o ator fica atordoado(incapaz de realizar acoes) quando leva dano
+    public float duracaoAtordoamento; //quanto tempo o ator fica atordoado cada vez que leva dano
+    float tempoAtordoadoPassado; //quanto tempo se passou desde o inicio do atordoamento
 
-	void Awake ()
-	{
-		animadorAtor = this.GetComponent<Animator> ();
+    //buffs e debuffs
+    public bool isImuneDano;
+    #endregion
 
-		rdbAtor = this.GetComponent<Rigidbody2D> ();
+    void Awake()
+    {
+        animadorAtor = this.GetComponent<Animator>();
 
-		posicaoSpawn = this.transform.position;
-		metadeLargura = this.GetComponent<Renderer> ().bounds.size.x / 4;
-		metadeAltura = (this.GetComponent<Renderer> ().bounds.size.y / 2) + 0.1f;
+        rdbAtor = this.GetComponent<Rigidbody2D>();
 
-		isComecouAtaque = false;
-		isAtacou = false;
-		tempoPassadoInicioAtaque = 0;
+        posicaoSpawn = this.transform.position;
+        metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 4;
+        metadeAltura = (this.GetComponent<Renderer>().bounds.size.y / 2) + 0.1f;
 
-		isAtordoado = false;
-		tempoAtordoadoPassado = 0;
-	}
+        isComecouAtaque = false;
+        isAtacou = false;
+        tempoPassadoInicioAtaque = 0;
 
-	void FixedUpdate ()
-	{
-		Vector2 ladoEsq = new Vector2 (this.transform.position.x - metadeLargura, this.transform.position.y);
-		Vector2 ladoDir = new Vector2 (this.transform.position.x + metadeLargura, this.transform.position.y);
-		RaycastHit2D raycastEsq = Physics2D.Raycast (ladoEsq, Vector2.down);
-		RaycastHit2D raycastCentro = Physics2D.Raycast (this.transform.position, Vector2.down);
-		RaycastHit2D raycastDir = Physics2D.Raycast (ladoDir, Vector2.down);
+        isAtordoado = false;
+        tempoAtordoadoPassado = 0;
+    }
 
-		animadorAtor.SetFloat ("distanciaChao", raycastCentro.distance);
+    void FixedUpdate()
+    {
+        Vector2 ladoEsq = new Vector2(this.transform.position.x - metadeLargura, this.transform.position.y);
+        Vector2 ladoDir = new Vector2(this.transform.position.x + metadeLargura, this.transform.position.y);
+        RaycastHit2D raycastEsq = Physics2D.Raycast(ladoEsq, Vector2.down);
+        RaycastHit2D raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
+        RaycastHit2D raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
 
-		print (raycastCentro.distance);
+        animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
+        //print (raycastCentro.distance);
 
-		if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) || 
-			(raycastDir.distance <= metadeAltura)) 
-		{
-			isNoChao = true;
-		} 
-		else 
-		{
-			isNoChao = false;
-		}
+        if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) ||
+            (raycastDir.distance <= metadeAltura))
+        {
+            isNoChao = true;
+        }
+        else
+        {
+            isNoChao = false;
+        }
 
-		if (isComecouAtaque) 
-		{
-			movimentoX = 0;
-			tempoPassadoInicioAtaque += Time.deltaTime;
+        if (isAtordoado)
+        {
+            movimentoX = 0;
+            terminarAtaque();
 
-			if (tempoPassadoInicioAtaque >= demoraAntesAtaque && !isAtacou) 
-			{
-				executarAtaque ();
-			}
+            if (tempoAtordoadoPassado < duracaoAtordoamento)
+            {
+                tempoAtordoadoPassado += Time.deltaTime;
+            }
+            else
+            {
+                animadorAtor.SetBool("atordoado", false);
+                isAtordoado = false;
+                tempoAtordoadoPassado = 0;
+            }
+        }
+        else
+        {
+            if (isComecouAtaque)
+            {
+                movimentoX = 0;
+                tempoPassadoInicioAtaque += Time.deltaTime;
 
-			if (tempoPassadoInicioAtaque >= (demoraAntesAtaque + demoraDepoisAtaque)) 
-			{
-				terminarAtaque ();
-			}
-		}
-			
-		if (isAtordoado) {
-			if (tempoAtordoadoPassado < tempoAtordoado) {
-				tempoAtordoadoPassado += Time.deltaTime;
-			} else {
-				isAtordoado = false;
-				tempoAtordoadoPassado = 0;
-			}
-		}
+                if (tempoPassadoInicioAtaque >= demoraAntesAtaque && !isAtacou)
+                {
+                    executarAtaque();
+                }
 
-		andar ();
-	}
+                if (tempoPassadoInicioAtaque >= (demoraAntesAtaque + demoraDepoisAtaque))
+                {
+                    terminarAtaque();
+                }
+            }
 
-	#region getters e setters
-	public Animator AnimadorAtor {
-		get { return animadorAtor; }
-		set { animadorAtor = value; }
-	}
+            andar();
+        }
+    }
 
-	public Rigidbody2D RdbAtor {
-		get { return rdbAtor; }
-		set { rdbAtor = value; }
-	}
+    #region getters e setters
+    public Animator AnimadorAtor
+    {
+        get { return animadorAtor; }
+        set { animadorAtor = value; }
+    }
 
-	public Vector2 PosicaoSpawn {
-		get { return posicaoSpawn; }
-		set { posicaoSpawn = value; }
-	}
+    public Rigidbody2D RdbAtor
+    {
+        get { return rdbAtor; }
+        set { rdbAtor = value; }
+    }
 
-	public float MovimentoX {
-		get { return movimentoX; }
-		set { movimentoX = value; }
-	}
+    public Vector2 PosicaoSpawn
+    {
+        get { return posicaoSpawn; }
+        set { posicaoSpawn = value; }
+    }
 
-	public float VelocidadeMaximaOriginal {
-		get { return velocidadeMaximaOriginal; }
-		set { velocidadeMaximaOriginal = value; }
-	}
+    public float MovimentoX
+    {
+        get { return movimentoX; }
+        set { movimentoX = value; }
+    }
 
-	public float VelocidadeMaxima {
-		get { return velocidadeMaxima; }
-		set { velocidadeMaxima = value; }
-	}
+    public float VelocidadeMaximaOriginal
+    {
+        get { return velocidadeMaximaOriginal; }
+        set { velocidadeMaximaOriginal = value; }
+    }
 
-	public bool IsNoChao {
-		get { return isNoChao; }
-		set { isNoChao = value; }
-	}
+    public float VelocidadeMaxima
+    {
+        get { return velocidadeMaxima; }
+        set { velocidadeMaxima = value; }
+    }
 
-	public float ForcaPuloOriginal {
-		get { return forcaPuloOriginal; }
-		set { forcaPuloOriginal = value; }
-	}
+    public bool IsNoChao
+    {
+        get { return isNoChao; }
+        set { isNoChao = value; }
+    }
 
-	public float ForcaPulo {
-		get { return forcaPulo; }
-		set { forcaPulo = value; }
-	}
+    public float ForcaPuloOriginal
+    {
+        get { return forcaPuloOriginal; }
+        set { forcaPuloOriginal = value; }
+    }
 
-	public Hitbox HitboxAtor {
-		get { return hitboxAtor; }
-		set { hitboxAtor = value; }
-	}
+    public float ForcaPulo
+    {
+        get { return forcaPulo; }
+        set { forcaPulo = value; }
+    }
 
-	public bool IsComecouAtaque {
-		get { return isComecouAtaque; }
-		set { isComecouAtaque = value; }
-	}
+    public Hitbox HitboxAtor
+    {
+        get { return hitboxAtor; }
+        set { hitboxAtor = value; }
+    }
 
-	public float DemoraAntesAtaqueOriginal {
-		get { return demoraAntesAtaqueOriginal; }
-		set { demoraAntesAtaqueOriginal = value; }
-	}
+    public bool IsComecouAtaque
+    {
+        get { return isComecouAtaque; }
+        set { isComecouAtaque = value; }
+    }
 
-	public float DemoraAntesAtaque {
-		get { return demoraAntesAtaque; }
-		set { demoraAntesAtaque = value; }
-	}
+    public float DemoraAntesAtaqueOriginal
+    {
+        get { return demoraAntesAtaqueOriginal; }
+        set { demoraAntesAtaqueOriginal = value; }
+    }
 
-	public float DemoraDepoisAtaqueOriginal {
-		get { return demoraDepoisAtaqueOriginal; }
-		set { demoraDepoisAtaqueOriginal = value; }
-	}
+    public float DemoraAntesAtaque
+    {
+        get { return demoraAntesAtaque; }
+        set { demoraAntesAtaque = value; }
+    }
 
-	public float DemoraDepoisAtaque {
-		get { return demoraDepoisAtaque; }
-		set { demoraDepoisAtaque = value; }
-	}
+    public float DemoraDepoisAtaqueOriginal
+    {
+        get { return demoraDepoisAtaqueOriginal; }
+        set { demoraDepoisAtaqueOriginal = value; }
+    }
 
-	public int VidaTotalOriginal {
-		get { return vidaTotalOriginal; }
-		set { vidaTotalOriginal = value; }
-	}
+    public float DemoraDepoisAtaque
+    {
+        get { return demoraDepoisAtaque; }
+        set { demoraDepoisAtaque = value; }
+    }
 
-	public int VidaTotal {
-		get { return vidaTotal; }
-		set { vidaTotal = value; }
-	}
+    public int VidaTotalOriginal
+    {
+        get { return vidaTotalOriginal; }
+        set { vidaTotalOriginal = value; }
+    }
 
-	public int VidaAtual {
-		get { return vidaAtual; }
-		set { vidaAtual = value; }
-	}
+    public int VidaTotal
+    {
+        get { return vidaTotal; }
+        set { vidaTotal = value; }
+    }
 
-	public bool IsAtordoado
-	{
-		get { return isAtordoado; }
-		set { isAtordoado = value; }
-	}
+    public int VidaAtual
+    {
+        get { return vidaAtual; }
+        set { vidaAtual = value; }
+    }
 
-	public float TempoAtordoado
-	{
-		get { return tempoAtordoado; }
-		set { tempoAtordoado = value; }
-	}
-	#endregion
+    public bool IsAtordoado
+    {
+        get { return isAtordoado; }
+        set { isAtordoado = value; }
+    }
 
-	#region acoes
-	//faz o ator andar
-	public void andar ()
-	{
-		animadorAtor.SetFloat ("andar", Mathf.Abs (movimentoX));
+    public float DuracaoAtordoamento
+    {
+        get { return duracaoAtordoamento; }
+        set { duracaoAtordoamento = value; }
+    }
 
-		if (movimentoX > 0) {
-			this.transform.localScale = new Vector2 (1, this.transform.localScale.y);
-		}
+    public bool IsImuneDano
+    {
+        get { return isImuneDano; }
+        set { isImuneDano = value; }
+    }
+    #endregion
 
-		if (movimentoX < 0) {
-			this.transform.localScale = new Vector2 (-1, this.transform.localScale.y);
-		}
-			
-		rdbAtor.AddForce (new Vector2 (movimentoX, 0) * 10);
+    #region acoes
+    //faz o ator andar
+    public void andar()
+    {
+        animadorAtor.SetFloat("andar", Mathf.Abs(movimentoX));
 
-		if (Mathf.Abs (rdbAtor.velocity.x) > velocidadeMaxima) {
-			rdbAtor.velocity = new Vector2 (rdbAtor.velocity.normalized.x * velocidadeMaxima, rdbAtor.velocity.y);
-		}
-	}
+        if (movimentoX > 0)
+        {
+            this.transform.localScale = new Vector2(1, this.transform.localScale.y);
+        }
 
-	//faz o ator pular
-	public void pular (bool isPular)
-	{
-		if (isPular && isNoChao && !isComecouAtaque) {
-			animadorAtor.SetTrigger ("pular");
-			rdbAtor.AddForce (Vector2.up * forcaPulo, ForceMode2D.Impulse);
-		}
-	}
+        if (movimentoX < 0)
+        {
+            this.transform.localScale = new Vector2(-1, this.transform.localScale.y);
+        }
 
-	//comeca processo de execucao do ataque
-	public void comecarAtaque (bool isAtacar)
-	{
-		if (isAtacar && !isComecouAtaque) {
-			isComecouAtaque = true;
-		}
-	}
+        rdbAtor.AddForce(new Vector2(movimentoX, 0) * 10);
 
-	//executa ataque
-	public void executarAtaque ()
-	{
-		animadorAtor.SetTrigger ("atacar");
-		isAtacou = true;
-		hitboxAtor.atingir ();
-	}
+        if (Mathf.Abs(rdbAtor.velocity.x) > velocidadeMaxima)
+        {
+            rdbAtor.velocity = new Vector2(rdbAtor.velocity.normalized.x * velocidadeMaxima, rdbAtor.velocity.y);
+        }
+    }
 
-	//termina o processo de execucao de ataque
-	public void terminarAtaque ()
-	{
-		isComecouAtaque = false;
-		isAtacou = false;
-		tempoPassadoInicioAtaque = 0;
-	}
-	#endregion
+    //faz o ator pular
+    public void pular(bool isPular)
+    {
+        if (isPular && isNoChao && !isComecouAtaque)
+        {
+            animadorAtor.SetTrigger("pular");
+            rdbAtor.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
+        }
+    }
 
-	#region alteracao de status
-	//aumenta ou diminui os pontos de vida atual
-	public void alterarVida (int valor)
-	{
-		int resultadoFinal = vidaAtual + valor;
+    //comeca processo de execucao do ataque
+    public void comecarAtaque(bool isAtacar)
+    {
+        if (isAtacar && !isComecouAtaque)
+        {
+            isComecouAtaque = true;
+        }
+    }
 
-		if (resultadoFinal > vidaTotal) {
-			vidaAtual = vidaTotal;
-		} else if (resultadoFinal < vidaAtual && resultadoFinal > 0) {
-			animadorAtor.SetTrigger ("ferido");
-			vidaAtual += valor;
-			isAtordoado = true;
-		} else if (resultadoFinal < 0) {
-			morrer ();
-		} else {
-			vidaAtual += valor;
-		}
-	}
+    //executa ataque
+    public void executarAtaque()
+    {
+        animadorAtor.SetTrigger("atacar");
+        isAtacou = true;
+        hitboxAtor.atingir();
+    }
 
-	//mata (destroi) o ator
-	public virtual void morrer ()
-	{
-		animadorAtor.SetBool ("morrer", true);
-		vidaAtual = 0;
-	}
-	#endregion
+    //termina o processo de execucao de ataque
+    public void terminarAtaque()
+    {
+        isComecouAtaque = false;
+        isAtacou = false;
+        tempoPassadoInicioAtaque = 0;
+    }
+    #endregion
+
+    #region alteracao de status
+    //aumenta ou diminui os pontos de vida atual
+    public void alterarVida(int valor)
+    {
+        int resultadoFinal = vidaAtual + valor;
+
+        if (resultadoFinal < vidaAtual && isImuneDano)
+        {
+            valor = 0;
+            resultadoFinal = vidaAtual;
+        }
+
+        if (resultadoFinal > vidaTotal)
+        {
+            vidaAtual = vidaTotal;
+        }
+        else if (resultadoFinal < vidaAtual && resultadoFinal > 0)
+        {
+            animadorAtor.SetTrigger("ferido");
+            animadorAtor.SetBool("atordoado", true);
+            vidaAtual += valor;
+            isAtordoado = true;
+        }
+        else if (resultadoFinal <= 0 && !isImuneDano)
+        {
+            morrer();
+        }
+        else
+        {
+            vidaAtual += valor;
+        }
+    }
+
+    //mata (destroi) o ator
+    public virtual void morrer()
+    {
+        animadorAtor.SetBool("atordoado", false);
+        animadorAtor.SetBool("morto", true);
+        movimentoX = 0;
+        vidaAtual = 0;
+        isImuneDano = true;
+
+        terminarAtaque();
+    }
+    #endregion
 }
