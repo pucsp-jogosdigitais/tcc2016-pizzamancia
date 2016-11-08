@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: bfb5145cd58dbe244b27d000a74c3a49
-timeCreated: 1478450115
-licenseType: Free
+timeCreated: 1478610642
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: Props 13_0
@@ -10,7 +10,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -29,10 +29,10 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -61,17 +61,17 @@ TextureImporter:
         width: 34
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -11, y: 17}
         - {x: -17, y: 11}
         - {x: -17, y: -11}
         - {x: -11, y: -17}
-        - {x: 11, y: -17}
-        - {x: 17, y: -11}
-        - {x: 17, y: 11}
-        - {x: 11, y: 17}
+        - {x: 13, y: -17}
+        - {x: 17, y: -16}
+        - {x: 17, y: 13}
+        - {x: 16, y: 17}
     - name: Props 13_1
       rect:
         serializedVersion: 2
@@ -79,18 +79,18 @@ TextureImporter:
         y: 1
         width: 34
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -11, y: 17}
-        - {x: -17, y: 11}
-        - {x: -17, y: -11}
-        - {x: -11, y: -17}
-        - {x: 11, y: -17}
-        - {x: 17, y: -11}
-        - {x: 17, y: 11}
-        - {x: 11, y: 17}
+      - - {x: -11, y: 30.6}
+        - {x: -17, y: 24.6}
+        - {x: -17, y: 2.6000004}
+        - {x: -11, y: -3.3999996}
+        - {x: 13, y: -3.3999996}
+        - {x: 17, y: -2.3999996}
+        - {x: 17, y: 26.6}
+        - {x: 16, y: 30.6}
     - name: Props 13_2
       rect:
         serializedVersion: 2
@@ -99,17 +99,17 @@ TextureImporter:
         width: 34
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -11, y: 17}
         - {x: -17, y: 11}
         - {x: -17, y: -11}
         - {x: -11, y: -17}
-        - {x: 11, y: -17}
-        - {x: 17, y: -11}
-        - {x: 17, y: 11}
-        - {x: 11, y: 17}
+        - {x: 13, y: -17}
+        - {x: 17, y: -16}
+        - {x: 17, y: 13}
+        - {x: 16, y: 17}
     outline: []
   spritePackingTag: 
   userData: 
