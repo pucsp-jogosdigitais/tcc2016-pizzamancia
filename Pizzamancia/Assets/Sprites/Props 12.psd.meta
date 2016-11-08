@@ -53,15 +53,13 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 98
+  spritePixelsToUnits: 96
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: Props 12_0
+    - name: Props 12_0
       rect:
         serializedVersion: 2
         x: 1
@@ -72,8 +70,7 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: Props 12_1
+    - name: Props 12_1
       rect:
         serializedVersion: 2
         x: 38
@@ -83,9 +80,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 12_2
+      outline:
+      - - {x: -14, y: 16}
+        - {x: -18, y: 13}
+        - {x: -18, y: -16}
+        - {x: 18, y: -16}
+        - {x: 18, y: 12}
+        - {x: 14, y: 16}
+    - name: Props 12_2
       rect:
         serializedVersion: 2
         x: 75
@@ -95,9 +97,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 12_3
+      outline:
+      - - {x: 7, y: 16.5}
+        - {x: -10, y: 16.5}
+        - {x: -18, y: 12.5}
+        - {x: -18, y: -16.5}
+        - {x: 18, y: -16.5}
+        - {x: 18, y: 13.5}
+    - name: Props 12_3
       rect:
         serializedVersion: 2
         x: 112
@@ -107,9 +114,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 12_4
+      outline:
+      - - {x: 15, y: 13}
+        - {x: 1, y: 16}
+        - {x: -10, y: 16}
+        - {x: -18, y: 12}
+        - {x: -18, y: -16}
+        - {x: 18, y: -16}
+        - {x: 18, y: 12}
+        - {x: 17, y: 13}
+    - name: Props 12_4
       rect:
         serializedVersion: 2
         x: 149
@@ -119,9 +133,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 12_5
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 12_5
       rect:
         serializedVersion: 2
         x: 186
@@ -131,9 +148,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 12_6
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 12_6
       rect:
         serializedVersion: 2
         x: 223
@@ -143,9 +163,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 12_7
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 12_7
       rect:
         serializedVersion: 2
         x: 260
@@ -155,9 +178,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 12_8
+      outline:
+      - - {x: -18, y: 18}
+        - {x: -18, y: -18}
+        - {x: 18, y: -18}
+        - {x: 18, y: 18}
+    - name: Props 12_8
       rect:
         serializedVersion: 2
         x: 297
@@ -167,7 +193,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -11, y: 17}
+        - {x: -17, y: 11}
+        - {x: -17, y: -11}
+        - {x: -11, y: -17}
+        - {x: 11, y: -17}
+        - {x: 17, y: -11}
+        - {x: 17, y: 11}
+        - {x: 11, y: 17}
     outline: []
   spritePackingTag: 
   userData: 
