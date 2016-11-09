@@ -21,7 +21,7 @@ public class Jogador : Ator
     public int manaTotal; //quantos pontos de mana o jogador tem no total atual
     public int manaAtual; //quantos pontos de mana o jogador tem no momento
     public int taxaRegeneracaoMana; //quantos pontos de mana sao regenerados apos um certo intervalo
-    public float demoraRegeneracaoMana; //intervalo que demora para regenerar pontos de mana
+    public float tempoRegeneracaoMana; //intervalo que demora para regenerar pontos de mana
     float tempoPassadoRegeneracao; //quanto tempo passou depois do ultimo intervalo de regeneracao de mana
 
     //magias
@@ -64,7 +64,7 @@ public class Jogador : Ator
         manaTotal = manaTotalOriginal;
         manaAtual = manaTotalOriginal;
         taxaRegeneracaoMana = 10;
-        demoraRegeneracaoMana = 1f;
+        tempoRegeneracaoMana = 1;
         tempoPassadoRegeneracao = 0;
 
         qtdMagiasAlocadas = 2;
@@ -84,15 +84,15 @@ public class Jogador : Ator
     {
         if (this.VidaAtual > 0)
         {
-            if (this.isAtordoado)
-            {
-                animadorAtor.SetBool("conjurar", false);
-            }
-            else
+            if (!this.isAtordoado)
             {
                 regenerarMana();
                 carregarMagias();
-                obterInput();
+
+                if (this.IsControlavel)
+                {
+                    obterInput();
+                }
             }
         }
         else
@@ -145,10 +145,10 @@ public class Jogador : Ator
         set { taxaRegeneracaoMana = value; }
     }
 
-    public float DemoraRegeneracaoMana
+    public float TempoRegeneracaoMana
     {
-        get { return demoraRegeneracaoMana; }
-        set { demoraRegeneracaoMana = value; }
+        get { return tempoRegeneracaoMana; }
+        set { tempoRegeneracaoMana = value; }
     }
 
     public int QtdMagiasAlocadas
@@ -174,7 +174,7 @@ public class Jogador : Ator
     //restaura pontos de mana gastos
     public void regenerarMana()
     {
-        if (tempoPassadoRegeneracao < demoraRegeneracaoMana && manaAtual < manaTotal)
+        if (tempoPassadoRegeneracao < tempoRegeneracaoMana && manaAtual < manaTotal)
         {
             tempoPassadoRegeneracao += Time.deltaTime;
         }
@@ -202,22 +202,19 @@ public class Jogador : Ator
     //obtem input do controle do jogador
     public void obterInput()
     {
-        if (this.IsControlavel)
+        if (!this.IsComecouAtaque)
         {
-            if (!this.IsComecouAtaque)
+            this.MovimentoX = InputControle.getInstance().MovePad.x;
+            this.pular(InputControle.getInstance().BtnPular);
+            tentarConjurar();
+
+            if (this.IsNoChao)
             {
-                this.MovimentoX = InputControle.getInstance().MovePad.x;
-                this.pular(InputControle.getInstance().BtnPular);
-                tentarConjurar();
-
-                if (this.IsNoChao)
-                {
-                    this.comecarAtaque(InputControle.getInstance().BtnAtacar);
-                }
+                this.comecarAtaque(InputControle.getInstance().BtnAtacar);
             }
-
-            alterarMagia();
         }
+
+        alterarMagia();
     }
 
     //seleciona magia para ser utilizada
@@ -250,10 +247,11 @@ public class Jogador : Ator
     {
         if (InputControle.getInstance().BtnConjurar)
         {
+            animadorAtor.SetBool("conjurar", true);
+
             if (manaAtual >= magiaSelecionada.CustoMana && magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown)
             {
-                animadorAtor.SetBool("conjurar", true);
-                audio.PlayOneShot(clip, 1f);
+                audio.PlayOneShot(clip, 1f); //audio baixo
                 alterarMana(-magiaSelecionada.CustoMana);
                 magiaSelecionada.TempoPassado = 0;
                 magiaSelecionada.conjurar();

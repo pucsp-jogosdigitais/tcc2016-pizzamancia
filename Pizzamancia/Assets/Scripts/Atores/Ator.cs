@@ -79,7 +79,6 @@ public class Ator : MonoBehaviour
         RaycastHit2D raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
 
         animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
-        //print (raycastCentro.distance);
 
         if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) ||
             (raycastDir.distance <= metadeAltura))
@@ -273,8 +272,8 @@ public class Ator : MonoBehaviour
             this.transform.localScale = new Vector2(-1, this.transform.localScale.y);
         }
 
-        rdbAtor.AddForce(new Vector2(movimentoX, 0) * (20 / (rdbAtor.velocity.magnitude+1f)));
-        
+        rdbAtor.AddForce(new Vector2(movimentoX, 0) * (20 / (rdbAtor.velocity.magnitude + 1f)));
+
         if (Mathf.Abs(rdbAtor.velocity.x) > velocidadeMaxima)
         {
             rdbAtor.velocity = new Vector2(rdbAtor.velocity.normalized.x * velocidadeMaxima, rdbAtor.velocity.y);

@@ -27,7 +27,7 @@ public class GolemMussarela : Inimigo
         this.DemoraAntesAtaque = this.DemoraAntesAtaqueOriginal;
         this.DemoraDepoisAtaqueOriginal = 1f;
         this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
-        this.AlcanceAtaque = 0.9f;
+        this.AlcanceAtaque = 1.8f;
 
         this.VidaTotalOriginal = 20;
         this.VidaTotal = this.VidaTotalOriginal;
