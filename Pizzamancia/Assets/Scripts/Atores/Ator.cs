@@ -273,8 +273,8 @@ public class Ator : MonoBehaviour
             this.transform.localScale = new Vector2(-1, this.transform.localScale.y);
         }
 
-        rdbAtor.AddForce(new Vector2(movimentoX, 0) * 10);
-
+        rdbAtor.AddForce(new Vector2(movimentoX, 0) * (20 / (rdbAtor.velocity.magnitude+1f)));
+        
         if (Mathf.Abs(rdbAtor.velocity.x) > velocidadeMaxima)
         {
             rdbAtor.velocity = new Vector2(rdbAtor.velocity.normalized.x * velocidadeMaxima, rdbAtor.velocity.y);

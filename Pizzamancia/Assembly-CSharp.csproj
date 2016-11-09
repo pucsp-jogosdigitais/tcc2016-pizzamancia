@@ -96,6 +96,7 @@
      <Compile Include="Assets\Scripts\Objetos\PowerUps\RecuperacaoVida.cs" />
      <Compile Include="Assets\Scripts\Paralax.cs" />
      <Compile Include="Assets\Scripts\Plataform.cs" />
+     <Compile Include="Assets\Scripts\PlataformX.cs" />
      <Compile Include="Assets\Scripts\PlatataformaFundo.cs" />
      <Compile Include="Assets\Scripts\spritecreator.cs" />
  <Reference Include="UnityEngine.UI">
