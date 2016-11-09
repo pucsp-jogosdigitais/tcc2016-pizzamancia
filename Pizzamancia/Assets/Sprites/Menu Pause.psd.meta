@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 782a436dd4efc9543baa85c90d3e775e
-timeCreated: 1478689335
-licenseType: Pro
+timeCreated: 1478719134
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Menu Pause_0
@@ -51,10 +51,8 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: Menu Pause_1
+    - name: Menu Pause_1
       rect:
         serializedVersion: 2
         x: 513
@@ -64,7 +62,79 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 284, y: 211}
+        - {x: 282, y: 213}
+        - {x: -279, y: 213}
+        - {x: -281, y: 211}
+        - {x: -281, y: 164}
+        - {x: -280, y: 162}
+        - {x: -278, y: 161}
+        - {x: -278, y: -324}
+        - {x: -211, y: -391}
+        - {x: 214, y: -391}
+        - {x: 281, y: -324}
+        - {x: 281, y: 162}
+        - {x: 284, y: 163}
+      - - {x: 21, y: 225}
+        - {x: 30, y: 229}
+        - {x: 31, y: 231}
+        - {x: 32, y: 231}
+        - {x: 35, y: 234}
+        - {x: 36, y: 234}
+        - {x: 44, y: 242}
+        - {x: 44, y: 243}
+        - {x: 49, y: 248}
+        - {x: 53, y: 257}
+        - {x: 53, y: 259}
+        - {x: 55, y: 263}
+        - {x: 55, y: 266}
+        - {x: 56, y: 267}
+        - {x: 56, y: 271}
+        - {x: 373, y: 271}
+        - {x: 373, y: 391}
+        - {x: -373, y: 391}
+        - {x: -373, y: 271}
+        - {x: -56, y: 271}
+        - {x: -55, y: 263}
+        - {x: -54, y: 262}
+        - {x: -53, y: 257}
+        - {x: -49, y: 248}
+        - {x: -44, y: 243}
+        - {x: -44, y: 242}
+        - {x: -36, y: 234}
+        - {x: -35, y: 234}
+        - {x: -30, y: 229}
+        - {x: -21, y: 225}
+        - {x: -19, y: 225}
+        - {x: -15, y: 223}
+        - {x: -12, y: 223}
+        - {x: -11, y: 222}
+        - {x: 11, y: 222}
+        - {x: 12, y: 223}
+        - {x: 15, y: 223}
+        - {x: 16, y: 224}
+    - name: Menu Pause_0
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 152
+        width: 561
+        height: 602
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 280.5, y: 301}
+        - {x: -280.5, y: 301}
+        - {x: -280.5, y: 252}
+        - {x: -279.5, y: 251}
+        - {x: -279.5, y: -234}
+        - {x: -212.5, y: -301}
+        - {x: 212.5, y: -301}
+        - {x: 279.5, y: -234}
+        - {x: 279.5, y: 252}
+        - {x: 280.5, y: 252}
     outline: []
   spritePackingTag: 
   userData: 
