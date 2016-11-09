@@ -10,6 +10,7 @@ public class Camera : MonoBehaviour
     public float velocidade;
     #endregion
     public Vector3 ajuste;
+    public float folgaCamera = 2;
 
     // Use this for initialization
     void Start()
@@ -33,7 +34,9 @@ public class Camera : MonoBehaviour
         //Vector3 vetorAlvo = new Vector3(alvo.position.x, alvo.position.y, posicaoAlvo);
         Vector3 vetorCamera = new Vector3(transform.position.x, transform.position.y, posicaoCamera);
         Vector3 vetorAlvo = new Vector3(alvo.position.x, alvo.position.y, posicaoAlvo);
-
-        transform.position = Vector3.Lerp(vetorCamera, vetorAlvo + ajuste, Time.smoothDeltaTime * velocidade * vetorCamera.magnitude);
+        Vector3 destino= vetorAlvo + ajuste;
+        Vector3 vetorCameraalvo = new Vector3(transform.position.x, transform.position.y, alvo.position.z);
+        float folga = Vector3.Distance(destino, vetorCameraalvo);
+        transform.position = Vector3.Lerp(vetorCamera, destino, (Time.smoothDeltaTime * velocidade * vetorCamera.magnitude) * Mathf.Clamp(folga - folgaCamera, 0, 1));
     }
 }
