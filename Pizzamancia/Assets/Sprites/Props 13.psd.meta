@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bfb5145cd58dbe244b27d000a74c3a49
-timeCreated: 1478610642
+timeCreated: 1478694388
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -52,27 +52,22 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Props 13_0
+    - serializedVersion: 2
+      name: Props 13_0
       rect:
         serializedVersion: 2
         x: 1
         y: 1
         width: 34
         height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11, y: 17}
-        - {x: -17, y: 11}
-        - {x: -17, y: -11}
-        - {x: -11, y: -17}
-        - {x: 13, y: -17}
-        - {x: 17, y: -16}
-        - {x: 17, y: 13}
-        - {x: 16, y: 17}
-    - name: Props 13_1
+      outline: []
+    - serializedVersion: 2
+      name: Props 13_1
       rect:
         serializedVersion: 2
         x: 36
@@ -82,34 +77,19 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11, y: 30.6}
-        - {x: -17, y: 24.6}
-        - {x: -17, y: 2.6000004}
-        - {x: -11, y: -3.3999996}
-        - {x: 13, y: -3.3999996}
-        - {x: 17, y: -2.3999996}
-        - {x: 17, y: 26.6}
-        - {x: 16, y: 30.6}
-    - name: Props 13_2
+      outline: []
+    - serializedVersion: 2
+      name: Props 13_2
       rect:
         serializedVersion: 2
         x: 71
         y: 1
         width: 34
         height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11, y: 17}
-        - {x: -17, y: 11}
-        - {x: -17, y: -11}
-        - {x: -11, y: -17}
-        - {x: 13, y: -17}
-        - {x: 17, y: -16}
-        - {x: 17, y: 13}
-        - {x: 16, y: 17}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
