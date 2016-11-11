@@ -9,9 +9,10 @@ public class Fade : MonoBehaviour
     Image painelFade;
     public string LevelToLoad;
     public bool semClique = false;
+    public bool GoInAnyClick=false;
     public static Fade fade;
     public float tempoEspera;
-    float tempoFading = 1.5f;
+    float tempoFading = 1f;
 
     void Awake()
     {
@@ -27,7 +28,15 @@ public class Fade : MonoBehaviour
             StartCoroutine(Esperar());
         }
     }
-
+    void Update()
+    { //checar se a tecla for apertada
+        if (GoInAnyClick && Input.anyKeyDown)
+        {
+            painelFade.CrossFadeAlpha(1, tempoFading, true);
+            Invoke("ChangeScene", tempoFading);
+            //fadeAudio = true;
+        }
+    }
     void ChangeScene()
     {
         painelFade.CrossFadeAlpha(1, tempoFading, true);
