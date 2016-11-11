@@ -10,6 +10,7 @@ public class TelaLevelCompleto : MonoBehaviour
     public GameObject telaLevelCompleto; //GameObject que armazena a UI de menu de pause
     public Text pontosObtidosLevel;
     public Text pontosObtidosGlobal;
+    //public string tela="Fase2";
     #endregion
 
     // Use this for initialization
@@ -65,9 +66,9 @@ public class TelaLevelCompleto : MonoBehaviour
         telaLevelCompleto.SetActive(false);
 
         GameManager.getInstance().continuarJogo();
-        GameManager.getInstance().recarregarLevel();
+        GameManager.getInstance().carregarTela("Fase2");
     }
-
+    
     public void retornarSelecLevel()
     {
         telaLevelCompleto.SetActive(false);
