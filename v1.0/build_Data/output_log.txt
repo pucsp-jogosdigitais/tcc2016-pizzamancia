@@ -1,0 +1,63 @@
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
+    Vendor:   ATI
+    VRAM:     2030 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\ADM\Desktop\build\build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\build\build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\build\build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\build\build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\build\build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\build\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\ADM\Desktop\build\build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\ADM\Desktop\build\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.033 seconds
+Platform assembly: C:\Users\ADM\Desktop\build\build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\ADM\Desktop\build\build_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3520x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.533404 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1634 -> priority: 1 
+  Thread -> id: 159c -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.989417 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 225.
+Total: 0.101126 ms (FindLiveObjects: 0.010263 ms CreateObjectMapping: 0.007244 ms MarkObjects: 0.079089 ms  DeleteObjects: 0.004226 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.251759 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 263.
+Total: 0.173575 ms (FindLiveObjects: 0.007848 ms CreateObjectMapping: 0.016300 ms MarkObjects: 0.134332 ms  DeleteObjects: 0.014791 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.767051 ms
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 260.
+Total: 0.248137 ms (FindLiveObjects: 0.010565 ms CreateObjectMapping: 0.023545 ms MarkObjects: 0.175990 ms  DeleteObjects: 0.037733 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.229404 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 74743.
+Total: 14.990860 ms (FindLiveObjects: 3.155144 ms CreateObjectMapping: 0.614909 ms MarkObjects: 11.159527 ms  DeleteObjects: 0.060373 ms)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 56.293610 ms
+
+Unloading 298 unused Assets to reduce memory usage. Loaded Objects now: 152364.
+Total: 37.647106 ms (FindLiveObjects: 11.224730 ms CreateObjectMapping: 1.055941 ms MarkObjects: 25.077845 ms  DeleteObjects: 0.287078 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 81.151695 ms
+
+Unloading 507 unused Assets to reduce memory usage. Loaded Objects now: 288.
+Total: 2.637739 ms (FindLiveObjects: 1.909931 ms CreateObjectMapping: 0.027772 ms MarkObjects: 0.276210 ms  DeleteObjects: 0.423523 ms)
+
