@@ -1,13 +1,20 @@
 fileFormatVersion: 2
 guid: 80e6fcf7ee67db04eb325af7ec898b8c
-timeCreated: 1478692799
+timeCreated: 1478869124
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Alavanca_0
+    21300002: Alavanca_1
+    21300004: Alavanca_2
+    21300006: Alavanca_3
+    21300008: Alavanca_4
+    21300010: Alavanca_5
+    21300012: Alavanca_6
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -26,11 +33,11 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,19 +45,143 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 96
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    serializedVersion: 2
-    sprites: []
+    sprites:
+    - name: Alavanca_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 25.5, y: 19.5}
+        - {x: 19.5, y: 19.5}
+        - {x: -28.5, y: -19.5}
+        - {x: -28.5, y: -28.5}
+        - {x: 16.5, y: -28.5}
+        - {x: 16.5, y: -24.5}
+        - {x: 28.5, y: 0.5}
+        - {x: 28.5, y: 15.5}
+    - name: Alavanca_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12.5, y: 27.5}
+        - {x: 3.5, y: 6.5}
+        - {x: -17.5, y: -16.5}
+        - {x: -22.5, y: -22.5}
+        - {x: -22.5, y: -28.5}
+        - {x: 22.5, y: -28.5}
+        - {x: 22.5, y: 26.5}
+        - {x: 18.5, y: 27.5}
+    - name: Alavanca_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 28.5}
+        - {x: -13.5, y: 15.5}
+        - {x: -21.5, y: -12.5}
+        - {x: -21.5, y: -28.5}
+        - {x: 21.5, y: -28.5}
+        - {x: 21.5, y: 28.5}
+    - name: Alavanca_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: -28.5}
+        - {x: 21.5, y: -28.5}
+        - {x: 21.5, y: 3.5}
+        - {x: 17.5, y: 28.5}
+        - {x: -8.5, y: 28.5}
+        - {x: -21.5, y: -19.5}
+    - name: Alavanca_4
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 43
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: -28.5}
+        - {x: 21.5, y: -28.5}
+        - {x: 21.5, y: -15.5}
+        - {x: 2.5, y: 28.5}
+        - {x: -20.5, y: 28.5}
+        - {x: -21.5, y: 27.5}
+    - name: Alavanca_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 27.5}
+        - {x: -22.5, y: -28.5}
+        - {x: 22.5, y: -28.5}
+        - {x: 22.5, y: -17.5}
+        - {x: -12.5, y: 27.5}
+    - name: Alavanca_6
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 1
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10.5, y: -9.5}
+        - {x: -22.5, y: 19.5}
+        - {x: -23.5, y: 19.5}
+        - {x: -28.5, y: 14.5}
+        - {x: -28.5, y: 7.5}
+        - {x: -16.5, y: -28.5}
+        - {x: 28.5, y: -28.5}
+        - {x: 28.5, y: -22.5}
+        - {x: 17.5, y: -11.5}
     outline: []
   spritePackingTag: 
   userData: 
