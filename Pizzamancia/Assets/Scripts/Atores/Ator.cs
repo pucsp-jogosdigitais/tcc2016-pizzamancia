@@ -25,8 +25,6 @@ public class Ator : MonoBehaviour
     public float velocidadeMaximaOriginal; //velocida maxima que o ator pode atingir andando
     public float velocidadeMaxima; //velocidade maxima atual
     bool isNoChao; //booleana que mostra se ator esta colidindo com o chao ou nao
-    public float forcaPuloOriginal; ////forca do pulo
-    public float forcaPulo; //forca do pulo atual
 
     //ataque melee
     public Hitbox hitboxAtor; //hitbox respectiva do ator
@@ -60,7 +58,7 @@ public class Ator : MonoBehaviour
 
         posicaoSpawn = this.transform.position;
         metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 4;
-        metadeAltura = (this.GetComponent<Renderer>().bounds.size.y ) + 0.1f;
+        metadeAltura = (this.GetComponent<Renderer>().bounds.size.y) + 0.1f;
 
         isComecouAtaque = false;
         isAtacou = false;
@@ -77,7 +75,7 @@ public class Ator : MonoBehaviour
         RaycastHit2D raycastEsq = Physics2D.Raycast(ladoEsq, Vector2.down);
         RaycastHit2D raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
         RaycastHit2D raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
-       
+
         animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
 
         if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) ||
@@ -169,18 +167,6 @@ public class Ator : MonoBehaviour
     {
         get { return isNoChao; }
         set { isNoChao = value; }
-    }
-
-    public float ForcaPuloOriginal
-    {
-        get { return forcaPuloOriginal; }
-        set { forcaPuloOriginal = value; }
-    }
-
-    public float ForcaPulo
-    {
-        get { return forcaPulo; }
-        set { forcaPulo = value; }
     }
 
     public Hitbox HitboxAtor
@@ -277,16 +263,6 @@ public class Ator : MonoBehaviour
         if (Mathf.Abs(rdbAtor.velocity.x) > velocidadeMaxima)
         {
             rdbAtor.velocity = new Vector2(rdbAtor.velocity.normalized.x * velocidadeMaxima, rdbAtor.velocity.y);
-        }
-    }
-
-    //faz o ator pular
-    public void pular(bool isPular)
-    {
-        if (isPular && isNoChao && !isComecouAtaque)
-        {
-            animadorAtor.SetTrigger("pular");
-            rdbAtor.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
         }
     }
 

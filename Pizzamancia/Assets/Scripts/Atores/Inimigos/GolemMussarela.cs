@@ -15,8 +15,6 @@ public class GolemMussarela : Inimigo
 
         this.VelocidadeMaximaOriginal = 1f;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
-        this.ForcaPuloOriginal = 2f;
-        this.ForcaPulo = this.ForcaPuloOriginal;
 
         this.HitboxAtor.DanoOriginal = 5;
         this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;

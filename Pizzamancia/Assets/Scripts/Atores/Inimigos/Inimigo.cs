@@ -30,6 +30,7 @@ public class Inimigo : Ator
 
         alvo = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -110,33 +111,36 @@ public class Inimigo : Ator
     }
     #endregion
 
-	#region eventos de colisao
-	void OnCollisionEnter2D (Collision2D colisao) 
-	{
-		Collider2D colisor = colisao.collider;
+    #region eventos de colisao
+    void OnCollisionEnter2D(Collision2D colisao)
+    {
+        Collider2D colisor = colisao.collider;
 
-		if ((colisor.gameObject.tag.ToString() != "Player") &&
-			(colisor.gameObject.tag.ToString() != "Inimigo") &&
-			(colisor.gameObject.tag.ToString() != "Hitbox") &&
-			(colisor.gameObject.tag.ToString() != "Headbox") &&
-			(colisor.gameObject.tag.ToString() != "PowerUp") &&
-			(colisor.gameObject.tag.ToString() != "Ponto") &&
-			(colisor.gameObject.tag.ToString() != "Obstaculo") &&
-			(colisor.gameObject.tag.ToString() != "AtaqueMagico")) 
-		{
-			Vector2 pontoCentral = new Vector2(
-				this.GetComponent<Renderer>().bounds.center.x, 
-				this.GetComponent<Renderer>().bounds.center.y);
-			Vector2 pontoContato = colisao.contacts [0].point;
+        if ((colisor.gameObject.tag.ToString() != "Player") &&
+            (colisor.gameObject.tag.ToString() != "Inimigo") &&
+            (colisor.gameObject.tag.ToString() != "Hitbox") &&
+            (colisor.gameObject.tag.ToString() != "Headbox") &&
+            (colisor.gameObject.tag.ToString() != "PowerUp") &&
+            (colisor.gameObject.tag.ToString() != "Ponto") &&
+            (colisor.gameObject.tag.ToString() != "Obstaculo") &&
+            (colisor.gameObject.tag.ToString() != "AtaqueMagico"))
+        {
+            Vector2 pontoCentral = new Vector2(
+                this.GetComponent<Renderer>().bounds.center.x,
+                this.GetComponent<Renderer>().bounds.center.y);
+            Vector2 pontoContato = colisao.contacts[0].point;
 
-			if (pontoContato.x < pontoCentral.x) {
-				this.MovimentoX = 1;
-			} else {
-				this.MovimentoX = -1;
-			}
-		}
-	}
-	#endregion
+            if (pontoContato.x < pontoCentral.x)
+            {
+                this.MovimentoX = 1;
+            }
+            else if (pontoContato.x > pontoCentral.x)
+            {
+                this.MovimentoX = -1;
+            }
+        }
+    }
+    #endregion
 
     #region acoes basicas
     public void perseguirJogador()

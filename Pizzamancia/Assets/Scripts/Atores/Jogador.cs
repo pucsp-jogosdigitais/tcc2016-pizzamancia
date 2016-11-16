@@ -13,6 +13,10 @@ public class Jogador : Ator
     AudioSource audio;
     public AudioClip clip;
 
+    //pulo
+    public float forcaPuloOriginal; //forca do pulo
+    public float forcaPulo; //forca do pulo atual
+
     //vida
     public int chances; //quantas chances o jogador tem no momento
 
@@ -43,8 +47,8 @@ public class Jogador : Ator
 
         this.VelocidadeMaximaOriginal = 4f;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
-        this.ForcaPuloOriginal = 4f;
-        this.ForcaPulo = this.ForcaPuloOriginal;
+        forcaPuloOriginal = 4f;
+        forcaPulo = forcaPuloOriginal;
 
         this.HitboxAtor.DanoOriginal = 2;
         this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
@@ -82,7 +86,7 @@ public class Jogador : Ator
     //Update is called once per frame
     void Update()
     {
-       
+
         if (this.VidaAtual > 0)
         {
             if (!this.isAtordoado)
@@ -206,7 +210,7 @@ public class Jogador : Ator
         if (!this.IsComecouAtaque)
         {
             this.MovimentoX = InputControle.getInstance().MovePad.x;
-            this.pular(InputControle.getInstance().BtnPular);
+            pular(InputControle.getInstance().BtnPular);
             tentarConjurar();
 
             if (this.IsNoChao)
@@ -216,6 +220,16 @@ public class Jogador : Ator
         }
 
         alterarMagia();
+    }
+
+    //faz o ator pular
+    public void pular(bool isPular)
+    {
+        if (isPular && this.IsNoChao && !this.IsComecouAtaque)
+        {
+            this.animadorAtor.SetTrigger("pular");
+            this.rdbAtor.AddForce(Vector2.up * this.forcaPulo, ForceMode2D.Impulse);
+        }
     }
 
     //seleciona magia para ser utilizada
