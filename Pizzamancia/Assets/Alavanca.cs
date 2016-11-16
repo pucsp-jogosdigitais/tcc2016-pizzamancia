@@ -2,10 +2,12 @@
 using System.Collections;
 
 public class Alavanca : MonoBehaviour {
-    public GameObject lever;
+    public GameObject Spikes;
+    public Animator anim;
 	// Use this for initialization
     void OnTriggerEnter2D(Collider2D col)
     {
-        Destroy(lever);
+        anim.SetBool("ativada", true);
+        Destroy(Spikes);
     }
 }
