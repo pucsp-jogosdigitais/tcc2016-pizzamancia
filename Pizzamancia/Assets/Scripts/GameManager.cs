@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 	public int pontosLevel;
     public int pontosGlobal;
 
+    float timescale = 0;
+
     //condicao para encerramento de fase
     public bool isLevelCompleto;
     #endregion
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        timescale = Time.timeScale;
         gameManagerInst = this;
 
 		if (isCursorHabilitado) {
@@ -103,13 +106,13 @@ public class GameManager : MonoBehaviour
     //para o jogo
     public void pararJogo()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 0.000001f;
     }
 
     //continua o jogo
     public void continuarJogo()
     {
-        Time.timeScale = 1;
+        Time.timeScale = timescale;
     }
     #endregion
 

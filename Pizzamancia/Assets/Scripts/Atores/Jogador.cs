@@ -41,9 +41,9 @@ public class Jogador : Ator
 
         audio = this.GetComponent<AudioSource>();
 
-        this.VelocidadeMaximaOriginal = 3f;
+        this.VelocidadeMaximaOriginal = 4f;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
-        this.ForcaPuloOriginal = 6f;
+        this.ForcaPuloOriginal = 4f;
         this.ForcaPulo = this.ForcaPuloOriginal;
 
         this.HitboxAtor.DanoOriginal = 2;
@@ -82,6 +82,7 @@ public class Jogador : Ator
     //Update is called once per frame
     void Update()
     {
+       
         if (this.VidaAtual > 0)
         {
             if (!this.isAtordoado)

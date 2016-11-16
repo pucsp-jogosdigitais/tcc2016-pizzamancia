@@ -60,7 +60,7 @@ public class Ator : MonoBehaviour
 
         posicaoSpawn = this.transform.position;
         metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 4;
-        metadeAltura = (this.GetComponent<Renderer>().bounds.size.y / 2) + 0.1f;
+        metadeAltura = (this.GetComponent<Renderer>().bounds.size.y ) + 0.1f;
 
         isComecouAtaque = false;
         isAtacou = false;
@@ -77,7 +77,7 @@ public class Ator : MonoBehaviour
         RaycastHit2D raycastEsq = Physics2D.Raycast(ladoEsq, Vector2.down);
         RaycastHit2D raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
         RaycastHit2D raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
-
+       
         animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
 
         if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) ||
@@ -272,7 +272,7 @@ public class Ator : MonoBehaviour
             this.transform.localScale = new Vector2(-1, this.transform.localScale.y);
         }
 
-        rdbAtor.AddForce(new Vector2(movimentoX, 0) * (20 / (rdbAtor.velocity.magnitude + 1f)));
+        rdbAtor.AddForce(new Vector2(movimentoX, 0) * (15 / (rdbAtor.velocity.magnitude + 1f)));
 
         if (Mathf.Abs(rdbAtor.velocity.x) > velocidadeMaxima)
         {
