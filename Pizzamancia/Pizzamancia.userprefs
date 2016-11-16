@@ -1,8 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\teste.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Atores\Jogador.cs">
     <Files>
-      <File FileName="Assets\teste.cs" Line="5" Column="2" />
+      <File FileName="Assets\Scripts\Atores\Jogador.cs" Line="263" Column="44" />
+      <File FileName="Assets\Scripts\Atores\Ator.cs" Line="338" Column="4" />
+      <File FileName="Assets\Scripts\Magias\Magia.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Magias\Magias de Combate\AtaqueMagico.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Magias\Magias de Combate\RajadaDeAzeitonas.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\InputControle.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

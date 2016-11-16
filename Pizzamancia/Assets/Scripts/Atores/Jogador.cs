@@ -260,6 +260,7 @@ public class Jogador : Ator
         }
         else
         {
+			//audio.PlayOneShot(clip, 1f);//sem mana
             animadorAtor.SetBool("conjurar", false);
         }
     }
