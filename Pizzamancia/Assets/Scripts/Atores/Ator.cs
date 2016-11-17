@@ -277,7 +277,8 @@ public class Ator : MonoBehaviour
 
     //executa ataque
     public void executarAtaque()
-    {
+	{
+		//audio.PlayOneShot(clip, 1f);
         animadorAtor.SetTrigger("atacar");
         isAtacou = true;
         hitboxAtor.atingir();
@@ -309,7 +310,8 @@ public class Ator : MonoBehaviour
             vidaAtual = vidaTotal;
         }
         else if (resultadoFinal < vidaAtual && resultadoFinal > 0)
-        {
+		{
+			//audio.PlayOneShot(clip, 1f);
             animadorAtor.SetTrigger("ferido");
             animadorAtor.SetBool("atordoado", true);
             vidaAtual += valor;
@@ -318,6 +320,7 @@ public class Ator : MonoBehaviour
         else if (resultadoFinal <= 0 && !isImuneDano)
         {
             morrer();
+
         }
         else
         {
@@ -327,7 +330,8 @@ public class Ator : MonoBehaviour
 
     //mata (destroi) o ator
     public virtual void morrer()
-    {
+	{
+		//audio.PlayOneShot(clip, 1f);
         animadorAtor.SetBool("atordoado", false);
         animadorAtor.SetBool("morto", true);
         movimentoX = 0;
