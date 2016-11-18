@@ -319,7 +319,6 @@ public class Ator : MonoBehaviour
         }
         else if (resultadoFinal < vidaAtual && resultadoFinal > 0)
 		{
-		//this.AudioSourceAtor.PlayOneShot("dano", 1f);
             animadorAtor.SetTrigger("ferido");
             animadorAtor.SetBool("atordoado", true);
             vidaAtual += valor;
