@@ -15,6 +15,9 @@ public class Ator : MonoBehaviour
     //Rigidbody e colisao
     public Rigidbody2D rdbAtor; //rigidbody do ator
 
+ //audio
+    AudioSource audioSourceAtor;
+   
     //ponto de spawn
     public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
 
@@ -138,6 +141,12 @@ public class Ator : MonoBehaviour
         get { return rdbAtor; }
         set { rdbAtor = value; }
     }
+
+	public AudioSource AudioSourceAtor
+	{
+	  get { return audioSourceAtor; }
+        set { audioSourceAtor = value; }
+	}
 
     public Vector2 PosicaoSpawn
     {
@@ -278,7 +287,6 @@ public class Ator : MonoBehaviour
     //executa ataque
     public void executarAtaque()
 	{
-	//audio.PlayOneShot("ataque", 1f);
         animadorAtor.SetTrigger("atacar");
         isAtacou = true;
         hitboxAtor.atingir();
