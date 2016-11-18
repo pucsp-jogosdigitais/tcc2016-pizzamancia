@@ -207,6 +207,7 @@ public class Jogador : Ator
     {
         if (!this.IsComecouAtaque)
         {
+	
             this.MovimentoX = InputControle.getInstance().MovePad.x;
             pular(InputControle.getInstance().BtnPular);
             tentarConjurar();
@@ -225,6 +226,7 @@ public class Jogador : Ator
     {
         if (isPular && this.IsNoChao && !this.IsComecouAtaque)
         {
+	//this.AudioSourceAtor.PlayOneShot("pulo", 1f);
             this.animadorAtor.SetTrigger("pular");
             this.rdbAtor.AddForce(Vector2.up * this.forcaPulo, ForceMode2D.Impulse);
         }
@@ -268,11 +270,12 @@ public class Jogador : Ator
                 alterarMana(-magiaSelecionada.CustoMana);
                 magiaSelecionada.TempoPassado = 0;
                 magiaSelecionada.conjurar();
-            }
+            } else {
+	    //this.AudioSourceAtor.PlayOneShot("sem mana", 1f);//sem mana
+	    }
         }
         else
         {
-	//this.AudioSourceAtor.PlayOneShot("sem mana", 1f);//sem mana
             animadorAtor.SetBool("conjurar", false);
         }
     }
@@ -308,6 +311,7 @@ public class Jogador : Ator
     public override void morrer()
     {
         base.morrer();
+		//this.AudioSourceAtor.PlayOneShot("morte jogador", 1f);
         alterarChances(-1);
 
         if (chances >= 0)
