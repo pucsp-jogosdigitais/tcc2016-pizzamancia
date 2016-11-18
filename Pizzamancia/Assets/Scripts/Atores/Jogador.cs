@@ -9,8 +9,9 @@ public class Jogador : Ator
     #region atributos
     public bool isControlavel; //booleana que mostra se o jogador recebe input do controle
 
+    //audio
     public AudioClip clip;
-  
+
     //pulo
     public float forcaPuloOriginal; //forca do pulo
     public float forcaPulo; //forca do pulo atual
@@ -40,8 +41,6 @@ public class Jogador : Ator
     void Start()
     {
         this.IsControlavel = true;
-
-        audio = this.GetComponent<AudioSource>();
 
         this.VelocidadeMaximaOriginal = 4f;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
@@ -84,7 +83,6 @@ public class Jogador : Ator
     //Update is called once per frame
     void Update()
     {
-
         if (this.VidaAtual > 0)
         {
             if (!this.isAtordoado)
@@ -207,7 +205,6 @@ public class Jogador : Ator
     {
         if (!this.IsComecouAtaque)
         {
-	
             this.MovimentoX = InputControle.getInstance().MovePad.x;
             pular(InputControle.getInstance().BtnPular);
             tentarConjurar();
@@ -226,7 +223,7 @@ public class Jogador : Ator
     {
         if (isPular && this.IsNoChao && !this.IsComecouAtaque)
         {
-	//this.AudioSourceAtor.PlayOneShot("pulo", 1f);
+            this.AudioSourceAtor.PlayOneShot(clip, 1f); //pulo
             this.animadorAtor.SetTrigger("pular");
             this.rdbAtor.AddForce(Vector2.up * this.forcaPulo, ForceMode2D.Impulse);
         }
@@ -266,13 +263,15 @@ public class Jogador : Ator
 
             if (manaAtual >= magiaSelecionada.CustoMana && magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown)
             {
-                //this.AudioSourceAtor.PlayOneShot("conjurar", 1f); //audio baixo
+                this.AudioSourceAtor.PlayOneShot(clip, 1f); //audio baixo, conjura
                 alterarMana(-magiaSelecionada.CustoMana);
                 magiaSelecionada.TempoPassado = 0;
                 magiaSelecionada.conjurar();
-            } else {
-	    //this.AudioSourceAtor.PlayOneShot("sem mana", 1f);//sem mana
-	    }
+            }
+            else
+            {
+                this.AudioSourceAtor.PlayOneShot(clip, 1f); //sem mana
+            }
         }
         else
         {
@@ -311,7 +310,6 @@ public class Jogador : Ator
     public override void morrer()
     {
         base.morrer();
-		//this.AudioSourceAtor.PlayOneShot("morte jogador", 1f);
         alterarChances(-1);
 
         if (chances >= 0)
@@ -323,7 +321,7 @@ public class Jogador : Ator
     //revive o jogador e colocao-o no ponto inicial ou no ultimo checkpoint passado
     public void respawnar()
     {
-        this.animadorAtor.SetBool("morto", false);
+        this.AnimadorAtor.SetBool("morto", false);
         this.transform.position = this.PosicaoSpawn;
         this.VidaAtual = this.VidaTotal;
         this.ManaAtual = this.ManaTotal;

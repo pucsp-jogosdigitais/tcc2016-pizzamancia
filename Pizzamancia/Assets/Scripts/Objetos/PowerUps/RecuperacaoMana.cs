@@ -3,7 +3,6 @@ using System.Collections;
 
 public class RecuperacaoMana : PowerUp
 {
-
     // Use this for initialization
     void Start()
     {
@@ -16,7 +15,9 @@ public class RecuperacaoMana : PowerUp
     {
         if (collider.gameObject.tag == "Player")
         {
-			Jogador jogador = collider.gameObject.GetComponent<Jogador>();
+            Jogador jogador = collider.gameObject.GetComponent<Jogador>();
+
+            this.AudioSourceObjeto.PlayOneShot(this.SomPego, 1f);
 
             if (jogador.ManaAtual < jogador.ManaTotal)
             {

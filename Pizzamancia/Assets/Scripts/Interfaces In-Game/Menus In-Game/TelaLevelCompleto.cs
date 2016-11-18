@@ -11,6 +11,10 @@ public class TelaLevelCompleto : MonoBehaviour
     public Text pontosObtidosLevel;
     public Text pontosObtidosGlobal;
     //public string tela="Fase2";
+
+    //audio
+    public AudioSource audioSourceTela;
+    public AudioClip clip;
     #endregion
 
     // Use this for initialization
@@ -51,7 +55,7 @@ public class TelaLevelCompleto : MonoBehaviour
     {
         jogador.IsControlavel = false;
 
-		GameManager.getInstance ().habilitarCursor ();
+        GameManager.getInstance().habilitarCursor();
         GameManager.getInstance().PontosGlobal += GameManager.getInstance().PontosLevel;
 
         //pontosObtidosLevel.text = "Pontos obtidos na fase: " + GameManager.getInstance().PontosLevel.ToString("0000");
@@ -59,6 +63,7 @@ public class TelaLevelCompleto : MonoBehaviour
 
         GameManager.getInstance().pararJogo();
         telaLevelCompleto.SetActive(true);
+        audioSourceTela.PlayOneShot(clip, 1f);
     }
 
     public void reiniciarLevel()
@@ -68,7 +73,7 @@ public class TelaLevelCompleto : MonoBehaviour
         GameManager.getInstance().continuarJogo();
         GameManager.getInstance().carregarTela("Fase2");
     }
-    
+
     public void retornarSelecLevel()
     {
         telaLevelCompleto.SetActive(false);

@@ -5,6 +5,9 @@ using System.Collections;
 public class Inimigo : Ator
 {
     #region atributos
+    //audio
+    public AudioClip clip;
+
     //movimentacao de vagar
     public Vector2 posicaoCentroVagar;
     public float alcanceCentroVagar;
@@ -169,7 +172,8 @@ public class Inimigo : Ator
     #region alteracao de status
     public override void morrer()
     {
-    	//this.AudioSourceAtor.PlayOneShot("morte inimigo", 1f);
+        base.morrer();
+    	this.AudioSourceAtor.PlayOneShot(clip, 1f); //morte
         GameManager.getInstance().alterarPontos(pontos);
         Destroy(this.gameObject);
     }

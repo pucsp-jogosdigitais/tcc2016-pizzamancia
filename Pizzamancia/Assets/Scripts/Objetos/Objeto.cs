@@ -10,6 +10,10 @@ public class Objeto : MonoBehaviour
     //Rigidbody e colisao
     public Rigidbody2D rdbObjeto;
 
+    //audio
+    AudioSource audioSourceObjeto; //audiosource do ator
+    public AudioClip clip;
+
     //funcionamento
     public float tempoVida;
     public float velocidade;
@@ -18,7 +22,7 @@ public class Objeto : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-		animadorObjeto = this.GetComponent<Animator>();
+        animadorObjeto = this.GetComponent<Animator>();
 
         rdbObjeto = this.GetComponent<Rigidbody2D>();
 
@@ -39,6 +43,12 @@ public class Objeto : MonoBehaviour
     {
         get { return rdbObjeto; }
         set { rdbObjeto = value; }
+    }
+
+    public AudioSource AudioSourceObjeto
+    {
+        get { return audioSourceObjeto; }
+        set { audioSourceObjeto = value; }
     }
 
     public float TempoVida

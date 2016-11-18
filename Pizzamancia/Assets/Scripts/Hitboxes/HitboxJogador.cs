@@ -3,37 +3,44 @@ using System.Collections;
 
 public class HitboxJogador : Hitbox
 {
-	public override void atingir ()
-	{
-		foreach (GameObject objetoAtingido in this.ObjetosAtingidos) {
-			if (objetoAtingido != null) {
-			//this.AtorRespectivo.AudioSourceAtor.PlayOneShot("ataque jogador", 1f);
-			
-				switch (objetoAtingido.gameObject.tag.ToString ()) {
-				default:
-					break;
-				case "Inimigo":
-					Inimigo inimigo = objetoAtingido.GetComponent<Inimigo> ();
-					Vector2 direcaoTras = inimigo.transform.right;
+    public override void atingir()
+    {
+        foreach (GameObject objetoAtingido in this.ObjetosAtingidos)
+        {
+            if (objetoAtingido != null)
+            {
+                this.AtorRespectivo.AudioSourceAtor.PlayOneShot(this.SomAtaqueAtingido, 1f);
 
-					inimigo.alterarVida (-this.Dano);
+                switch (objetoAtingido.gameObject.tag.ToString())
+                {
+                    default:
+                        break;
+                    case "Inimigo":
+                        Inimigo inimigo = objetoAtingido.GetComponent<Inimigo>();
+                        Vector2 direcaoTras = inimigo.transform.right;
 
-					if (atorRespectivo.transform.position.x > inimigo.transform.position.x) {
-						inimigo.RdbAtor.AddForce ((Vector2.up - direcaoTras) * this.ForcaRecuo, ForceMode2D.Impulse);
-					} else if (atorRespectivo.transform.position.x < inimigo.transform.position.x) {
-						inimigo.RdbAtor.AddForce ((Vector2.up + direcaoTras) * this.ForcaRecuo, ForceMode2D.Impulse);
-					}
+                        inimigo.alterarVida(-this.Dano);
 
-					break;
-				case "Obstaculo":
-					Obstaculo obstaculo = objetoAtingido.GetComponent<Obstaculo> ();
+                        if (atorRespectivo.transform.position.x > inimigo.transform.position.x)
+                        {
+                            inimigo.RdbAtor.AddForce((Vector2.up - direcaoTras) * this.ForcaRecuo, ForceMode2D.Impulse);
+                        }
+                        else if (atorRespectivo.transform.position.x < inimigo.transform.position.x)
+                        {
+                            inimigo.RdbAtor.AddForce((Vector2.up + direcaoTras) * this.ForcaRecuo, ForceMode2D.Impulse);
+                        }
 
-					if (obstaculo.IsDestrutivel) {
-						obstaculo.alterarVida (-this.Dano);
-					}
-					break;
-				}
-			}
-		}
-	}
+                        break;
+                    case "Obstaculo":
+                        Obstaculo obstaculo = objetoAtingido.GetComponent<Obstaculo>();
+
+                        if (obstaculo.IsDestrutivel)
+                        {
+                            obstaculo.alterarVida(-this.Dano);
+                        }
+                        break;
+                }
+            }
+        }
+    }
 }

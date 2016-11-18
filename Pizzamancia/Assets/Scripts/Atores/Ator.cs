@@ -15,9 +15,10 @@ public class Ator : MonoBehaviour
     //Rigidbody e colisao
     public Rigidbody2D rdbAtor; //rigidbody do ator
 
- //audio
-    AudioSource audioSourceAtor;
-   
+    //audio
+    AudioSource audioSourceAtor; //audiosource do ator
+    public AudioClip clip;
+
     //ponto de spawn
     public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
 
@@ -58,6 +59,8 @@ public class Ator : MonoBehaviour
         animadorAtor = this.GetComponent<Animator>();
 
         rdbAtor = this.GetComponent<Rigidbody2D>();
+
+        audioSourceAtor = this.GetComponent<AudioSource>();
 
         posicaoSpawn = this.transform.position;
         metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 4;
@@ -142,11 +145,11 @@ public class Ator : MonoBehaviour
         set { rdbAtor = value; }
     }
 
-	public AudioSource AudioSourceAtor
-	{
-	  get { return audioSourceAtor; }
+    public AudioSource AudioSourceAtor
+    {
+        get { return audioSourceAtor; }
         set { audioSourceAtor = value; }
-	}
+    }
 
     public Vector2 PosicaoSpawn
     {
@@ -286,7 +289,7 @@ public class Ator : MonoBehaviour
 
     //executa ataque
     public void executarAtaque()
-	{
+    {
         animadorAtor.SetTrigger("atacar");
         isAtacou = true;
         hitboxAtor.atingir();
@@ -318,7 +321,7 @@ public class Ator : MonoBehaviour
             vidaAtual = vidaTotal;
         }
         else if (resultadoFinal < vidaAtual && resultadoFinal > 0)
-		{
+        {
             animadorAtor.SetTrigger("ferido");
             animadorAtor.SetBool("atordoado", true);
             vidaAtual += valor;
@@ -336,7 +339,7 @@ public class Ator : MonoBehaviour
 
     //mata (destroi) o ator
     public virtual void morrer()
-	{
+    {
         animadorAtor.SetBool("atordoado", false);
         animadorAtor.SetBool("morto", true);
         movimentoX = 0;
