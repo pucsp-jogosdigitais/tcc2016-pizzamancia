@@ -327,7 +327,6 @@ public class Ator : MonoBehaviour
         else if (resultadoFinal <= 0 && !isImuneDano)
         {
             morrer();
-
         }
         else
         {
