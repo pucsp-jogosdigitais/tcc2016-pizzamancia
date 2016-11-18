@@ -7,7 +7,10 @@ public class Alavanca : MonoBehaviour {
 	// Use this for initialization
     void OnTriggerEnter2D(Collider2D col)
     {
-        anim.SetBool("ativada", true);
-        Destroy(Spikes);
+        if (col.gameObject.tag == "Player")
+        {
+            anim.SetBool("ativada", true);
+            Destroy(Spikes);
+        }
     }
 }

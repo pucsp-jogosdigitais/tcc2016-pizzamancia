@@ -9,7 +9,7 @@ public class Jogador : Ator
     #region atributos
     public bool isControlavel; //booleana que mostra se o jogador recebe input do controle
 
-  public AudioClip clip;
+    public AudioClip clip;
   
     //pulo
     public float forcaPuloOriginal; //forca do pulo
