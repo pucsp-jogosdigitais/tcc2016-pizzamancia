@@ -319,7 +319,7 @@ public class Ator : MonoBehaviour
         }
         else if (resultadoFinal < vidaAtual && resultadoFinal > 0)
 		{
-		//audio.PlayOneShot("dano", 1f);
+		//this.AudioSourceAtor.PlayOneShot("dano", 1f);
             animadorAtor.SetTrigger("ferido");
             animadorAtor.SetBool("atordoado", true);
             vidaAtual += valor;
@@ -339,7 +339,6 @@ public class Ator : MonoBehaviour
     //mata (destroi) o ator
     public virtual void morrer()
 	{
-	//audio.PlayOneShot("morte", 1f);
         animadorAtor.SetBool("atordoado", false);
         animadorAtor.SetBool("morto", true);
         movimentoX = 0;
