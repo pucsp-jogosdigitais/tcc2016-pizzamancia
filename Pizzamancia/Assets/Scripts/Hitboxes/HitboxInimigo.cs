@@ -5,6 +5,8 @@ public class HitboxInimigo : Hitbox
 {
 	public override void atingir ()
 	{
+	//audio.PlayOneShot("ataque", 1f);
+	
 		foreach (GameObject objetoAtingido in this.ObjetosAtingidos) {
 			if (objetoAtingido != null) {
 				switch (objetoAtingido.gameObject.tag.ToString ()) {
