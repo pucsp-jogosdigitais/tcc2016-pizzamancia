@@ -169,6 +169,7 @@ public class Inimigo : Ator
     #region alteracao de status
     public override void morrer()
     {
+    	//this.AudioSourceAtor.PlayOneShot("morte inimigo", 1f);
         GameManager.getInstance().alterarPontos(pontos);
         Destroy(this.gameObject);
     }
