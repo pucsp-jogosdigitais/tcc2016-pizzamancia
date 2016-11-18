@@ -9,10 +9,8 @@ public class Jogador : Ator
     #region atributos
     public bool isControlavel; //booleana que mostra se o jogador recebe input do controle
 
-    //audio
-    AudioSource audio;
-    public AudioClip clip;
-
+  public AudioClip clip;
+  
     //pulo
     public float forcaPuloOriginal; //forca do pulo
     public float forcaPulo; //forca do pulo atual
@@ -266,7 +264,7 @@ public class Jogador : Ator
 
             if (manaAtual >= magiaSelecionada.CustoMana && magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown)
             {
-                //audio.PlayOneShot("conjurar", 1f); //audio baixo
+                //this.AudioSourceAtor.PlayOneShot("conjurar", 1f); //audio baixo
                 alterarMana(-magiaSelecionada.CustoMana);
                 magiaSelecionada.TempoPassado = 0;
                 magiaSelecionada.conjurar();
@@ -274,7 +272,7 @@ public class Jogador : Ator
         }
         else
         {
-	//audio.PlayOneShot("sem mana", 1f);//sem mana
+	//this.AudioSourceAtor.PlayOneShot("sem mana", 1f);//sem mana
             animadorAtor.SetBool("conjurar", false);
         }
     }
