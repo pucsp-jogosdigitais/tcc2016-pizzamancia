@@ -9,6 +9,8 @@ public class HitboxInimigo : Hitbox
 	
 		foreach (GameObject objetoAtingido in this.ObjetosAtingidos) {
 			if (objetoAtingido != null) {
+			//this.AtorRespectivo.AudioSourceAtor.PlayOneShot("ataque inimigo", 1f);
+			
 				switch (objetoAtingido.gameObject.tag.ToString ()) {
 				default:
 					break;
