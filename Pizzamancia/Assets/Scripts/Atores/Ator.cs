@@ -60,7 +60,7 @@ public class Ator : MonoBehaviour
 
         rdbAtor = this.GetComponent<Rigidbody2D>();
 
-        audioSourceAtor = this.GetComponent<AudioSource>();
+        audioSourceAtor = GameObject.Find("Audio ambiente").GetComponent<AudioSource>();
 
         posicaoSpawn = this.transform.position;
         metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 4;

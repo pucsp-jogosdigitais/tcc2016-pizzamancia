@@ -8,6 +8,7 @@ public class Ponto : Objeto
 
     //audio
     public AudioClip somPego;
+    public AudioSource source;
     #endregion
 
     #region getters e setters
@@ -23,7 +24,7 @@ public class Ponto : Objeto
     {
         if (collider.gameObject.tag == "Player")
         {
-            this.AudioSourceObjeto.PlayOneShot(somPego, 1f);
+            source.PlayOneShot(somPego, 1f);
             GameManager.getInstance().alterarPontos(valor);
 
             Destroy(gameObject);

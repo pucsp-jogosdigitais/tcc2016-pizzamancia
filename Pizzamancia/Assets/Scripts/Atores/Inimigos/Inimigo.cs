@@ -6,7 +6,7 @@ public class Inimigo : Ator
 {
     #region atributos
     //audio
-    public AudioClip clip;
+    public AudioClip morte;
 
     //movimentacao de vagar
     public Vector2 posicaoCentroVagar;
@@ -173,7 +173,7 @@ public class Inimigo : Ator
     public override void morrer()
     {
         base.morrer();
-    	this.AudioSourceAtor.PlayOneShot(clip, 1f); //morte
+    	this.AudioSourceAtor.PlayOneShot(morte, 5f); //morte
         GameManager.getInstance().alterarPontos(pontos);
         Destroy(this.gameObject);
     }

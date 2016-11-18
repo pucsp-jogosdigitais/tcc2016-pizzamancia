@@ -9,7 +9,7 @@ public class HitboxInimigo : Hitbox
         {
             if (objetoAtingido != null)
             {
-                this.AtorRespectivo.AudioSourceAtor.PlayOneShot(this.SomAtaqueAtingido, 1f);
+                this.AtorRespectivo.AudioSourceAtor.PlayOneShot(this.SomAtaqueAtingido, 5f);
 
                 switch (objetoAtingido.gameObject.tag.ToString())
                 {

@@ -25,7 +25,7 @@ public class Objeto : MonoBehaviour
         animadorObjeto = this.GetComponent<Animator>();
 
         rdbObjeto = this.GetComponent<Rigidbody2D>();
-
+       // audioSourceObjeto = GameObject.Find("Audio ambiente").GetComponent<AudioSource>();
         if (tempoVida > 0)
         {
             Destroy(gameObject, tempoVida);

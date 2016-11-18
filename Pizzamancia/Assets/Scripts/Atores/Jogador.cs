@@ -10,7 +10,10 @@ public class Jogador : Ator
     public bool isControlavel; //booleana que mostra se o jogador recebe input do controle
 
     //audio
-    public AudioClip clip;
+    public AudioClip pulo;
+    public AudioClip semMana;
+    public AudioClip skill;
+
 
     //pulo
     public float forcaPuloOriginal; //forca do pulo
@@ -223,7 +226,7 @@ public class Jogador : Ator
     {
         if (isPular && this.IsNoChao && !this.IsComecouAtaque)
         {
-            this.AudioSourceAtor.PlayOneShot(clip, 1f); //pulo
+            this.AudioSourceAtor.PlayOneShot(pulo, 5f); //pulo
             this.animadorAtor.SetTrigger("pular");
             this.rdbAtor.AddForce(Vector2.up * this.forcaPulo, ForceMode2D.Impulse);
         }
@@ -263,14 +266,14 @@ public class Jogador : Ator
 
             if (manaAtual >= magiaSelecionada.CustoMana && magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown)
             {
-                this.AudioSourceAtor.PlayOneShot(clip, 1f); //audio baixo, conjura
+                this.AudioSourceAtor.PlayOneShot(skill, 5f); // conjura
                 alterarMana(-magiaSelecionada.CustoMana);
                 magiaSelecionada.TempoPassado = 0;
                 magiaSelecionada.conjurar();
             }
             else
             {
-                this.AudioSourceAtor.PlayOneShot(clip, 1f); //sem mana
+                this.AudioSourceAtor.PlayOneShot(semMana, 5f); //sem mana
             }
         }
         else
@@ -314,7 +317,7 @@ public class Jogador : Ator
 
         if (chances >= 0)
         {
-            tempoRestanteRespawn = 2f;
+            tempoRestanteRespawn = 0.6f;
         }
     }
 
