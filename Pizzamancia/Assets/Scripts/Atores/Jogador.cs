@@ -273,7 +273,7 @@ public class Jogador : Ator
             }
             else
             {
-                this.AudioSourceAtor.PlayOneShot(semMana, 5f); //sem mana
+               // this.AudioSourceAtor.PlayOneShot(semMana, 5f); //sem mana
             }
         }
         else

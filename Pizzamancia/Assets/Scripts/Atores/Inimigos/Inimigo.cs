@@ -175,7 +175,7 @@ public class Inimigo : Ator
         base.morrer();
     	this.AudioSourceAtor.PlayOneShot(morte, 5f); //morte
         GameManager.getInstance().alterarPontos(pontos);
-        Destroy(this.gameObject);
+        Destroy(this.gameObject, 0.8f);
     }
     #endregion
 }
