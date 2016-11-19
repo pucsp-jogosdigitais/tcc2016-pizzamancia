@@ -19,10 +19,11 @@ public class RecuperacaoVida : PowerUp
         {
             Jogador jogador = collider.gameObject.GetComponent<Jogador>();
 
-            source.PlayOneShot(this.SomPego, 5f);
+            
 
             if (jogador.VidaAtual < jogador.VidaTotal)
             {
+				source.PlayOneShot(this.SomPego, 5f);
                 jogador.alterarVida(10);
 
                 Destroy(gameObject);
