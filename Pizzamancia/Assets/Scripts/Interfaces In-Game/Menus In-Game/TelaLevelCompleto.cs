@@ -13,8 +13,7 @@ public class TelaLevelCompleto : MonoBehaviour
     //public string tela="Fase2";
 
     //audio
-    public AudioSource audioSourceTela;
-    public AudioClip clip;
+    
     #endregion
 
     // Use this for initialization
@@ -63,7 +62,6 @@ public class TelaLevelCompleto : MonoBehaviour
 
         GameManager.getInstance().pararJogo();
         telaLevelCompleto.SetActive(true);
-        audioSourceTela.PlayOneShot(clip, 1f);
     }
 
     public void reiniciarLevel()

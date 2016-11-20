@@ -11,6 +11,8 @@ public class Armadilha : Obstaculo
 	//colisao
 	public bool isDestruirToque;
 
+	public AudioSource source;
+	public AudioClip morreu;
 	#endregion
 
 	#region getters e setters
@@ -50,7 +52,7 @@ public class Armadilha : Obstaculo
 				return;
 			case "Player":
 				Jogador jogador = colisor.gameObject.GetComponent<Jogador> ();
-
+				source.PlayOneShot(morreu, 5f);
 				jogador.alterarVida (-dano);
 
 				break;
@@ -62,7 +64,7 @@ public class Armadilha : Obstaculo
 				break;
 			case "Obstaculo":
 				Obstaculo obstaculo = colisor.gameObject.GetComponent<Obstaculo> ();
-
+				source.PlayOneShot(morreu, 5f);
 				obstaculo.alterarVida (-dano);
 
 				break;

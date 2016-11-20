@@ -37,7 +37,7 @@ public class TelaGameOver : MonoBehaviour
         GameManager.getInstance().habilitarCursor();
         GameManager.getInstance().pararJogo();
         telaGameOver.SetActive(true);
-        audioSourceTela.PlayOneShot(clip, 1f); // música de game over
+		//audioSourceTela.PlayOneShot(clip, 1f); // música de game over
     }
 
     public void reiniciarLevel()

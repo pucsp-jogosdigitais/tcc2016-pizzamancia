@@ -19,6 +19,7 @@ public class ChancesHUD : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		chancesHUD.GetComponent<Text> ().text = jogador.Chances.ToString ();
+		verificador ();
 	}
 
 	public static ChancesHUD getInstance () {
