@@ -10,14 +10,20 @@ public class Jogador : Ator
     public bool isControlavel; //booleana que mostra se o jogador recebe input do controle
 
     //audio
-    AudioSource audio;
-    public AudioClip clip;
+    public AudioClip pulo;
+    public AudioClip semMana;
+    public AudioClip skill;
+
+
+    //pulo
+    public float forcaPuloOriginal; //forca do pulo
+    public float forcaPulo; //forca do pulo atual
 
     //vida
     public int chances; //quantas chances o jogador tem no momento
 
     //mana
-	public int manaTotalOriginal; //quantos pontos de mana o jogador tem no total
+    public int manaTotalOriginal; //quantos pontos de mana o jogador tem no total
     public int manaTotal; //quantos pontos de mana o jogador tem no total atual
     public int manaAtual; //quantos pontos de mana o jogador tem no momento
     public int taxaRegeneracaoMana; //quantos pontos de mana sao regenerados apos um certo intervalo
@@ -25,6 +31,7 @@ public class Jogador : Ator
     float tempoPassadoRegeneracao; //quanto tempo passou depois do ultimo intervalo de regeneracao de mana
 
     //magias
+<<<<<<< HEAD
 	public int qtdMagiasAlocadas; //quantas magias o jogador pode escolher para um level
 	public Magia[] magias; //magias escolhidas para o level
 	public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
@@ -32,6 +39,15 @@ public class Jogador : Ator
 
 	//respawn
 	float tempoRestanteRespawn; //quanto tempo falta para o jogador respawnar
+=======
+    public int qtdMagiasAlocadas; //quantas magias o jogador pode escolher para um level
+    public Magia[] magias; //magias escolhidas para o level
+    public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
+    public Magia magiaSelecionada; //magia selecionada no momento pelo jogador
+
+    //respawn
+    float tempoRestanteRespawn; //quanto tempo falta para o jogador respawnar
+>>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     #endregion
 
     // Use this for initialization
@@ -39,12 +55,10 @@ public class Jogador : Ator
     {
         this.IsControlavel = true;
 
-        audio = this.GetComponent<AudioSource>();
-
-        this.VelocidadeMaximaOriginal = 3f;
+        this.VelocidadeMaximaOriginal = 4f;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
-        this.ForcaPuloOriginal = 6f;
-        this.ForcaPulo = this.ForcaPuloOriginal;
+        forcaPuloOriginal = 4f;
+        forcaPulo = forcaPuloOriginal;
 
         this.HitboxAtor.DanoOriginal = 2;
         this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
@@ -74,20 +88,36 @@ public class Jogador : Ator
         posicaoMagiaSelecionada = 0;
         magiaSelecionada = magias[posicaoMagiaSelecionada];
 
+<<<<<<< HEAD
 		this.DuracaoAtordoamento = 0.5f;
 
 		tempoRestanteRespawn = 0;
+=======
+        this.DuracaoAtordoamento = 0.5f;
+
+        tempoRestanteRespawn = 0;
+>>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     }
 
     //Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
 		if (this.VidaAtual > 0) {
 			if (!this.isAtordoado)
 			{
 				regenerarMana ();
 				carregarMagias ();
+=======
+        if (this.VidaAtual > 0)
+        {
+            if (!this.isAtordoado)
+            {
+                regenerarMana();
+                carregarMagias();
+>>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
 
+<<<<<<< HEAD
 				if (this.IsControlavel) {
 					obterInput ();
 				}
@@ -99,6 +129,25 @@ public class Jogador : Ator
 				respawnar ();
 			}
 		}
+=======
+                if (this.IsControlavel)
+                {
+                    obterInput();
+                }
+            }
+        }
+        else
+        {
+            if (tempoRestanteRespawn > 0)
+            {
+                tempoRestanteRespawn -= Time.deltaTime;
+            }
+            else
+            {
+                respawnar();
+            }
+        }
+>>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     }
 
     #region getters e setters
@@ -112,7 +161,7 @@ public class Jogador : Ator
     {
         get { return chances; }
         set { chances = value; }
-	}
+    }
 
     public int ManaTotalOriginal
     {
@@ -192,22 +241,33 @@ public class Jogador : Ator
     #endregion
 
     #region obtencao de input
-	//obtem input do controle do jogador
+    //obtem input do controle do jogador
     public void obterInput()
     {
         if (!this.IsComecouAtaque)
         {
-           	this.MovimentoX = InputControle.getInstance().MovePad.x;
-           	this.pular(InputControle.getInstance().BtnPular);
-			tentarConjurar();
+            this.MovimentoX = InputControle.getInstance().MovePad.x;
+            pular(InputControle.getInstance().BtnPular);
+            tentarConjurar();
 
-			if (this.IsNoChao) 
-			{
-				this.comecarAtaque(InputControle.getInstance().BtnAtacar);
-			}        
+            if (this.IsNoChao)
+            {
+                this.comecarAtaque(InputControle.getInstance().BtnAtacar);
+            }
         }
 
-		alterarMagia();
+        alterarMagia();
+    }
+
+    //faz o ator pular
+    public void pular(bool isPular)
+    {
+        if (isPular && this.IsNoChao && !this.IsComecouAtaque)
+        {
+            this.AudioSourceAtor.PlayOneShot(pulo, 5f); //pulo
+            this.animadorAtor.SetTrigger("pular");
+            this.rdbAtor.AddForce(Vector2.up * this.forcaPulo, ForceMode2D.Impulse);
+        }
     }
 
     //seleciona magia para ser utilizada
@@ -235,9 +295,10 @@ public class Jogador : Ator
         magiaSelecionada = magias[posicaoMagiaSelecionada];
     }
 
-	//tenta usar a magia
+    //tenta usar a magia
     public void tentarConjurar()
     {
+<<<<<<< HEAD
 		if (InputControle.getInstance ().BtnConjurar) {
 			animadorAtor.SetBool ("conjurar", true);
 
@@ -250,19 +311,41 @@ public class Jogador : Ator
 		} else {
 			animadorAtor.SetBool ("conjurar", false);
 		}
+=======
+        if (InputControle.getInstance().BtnConjurar)
+        {
+            animadorAtor.SetBool("conjurar", true);
+
+            if (manaAtual >= magiaSelecionada.CustoMana && magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown)
+            {
+                this.AudioSourceAtor.PlayOneShot(skill, 5f); // conjura
+                alterarMana(-magiaSelecionada.CustoMana);
+                magiaSelecionada.TempoPassado = 0;
+                magiaSelecionada.conjurar();
+            }
+            else
+            {
+               // this.AudioSourceAtor.PlayOneShot(semMana, 5f); //sem mana
+            }
+        }
+        else
+        {
+            animadorAtor.SetBool("conjurar", false);
+        }
+>>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     }
     #endregion
 
     #region alteracao de status
-	//altera a quantidade de chances do jogador
+    //altera a quantidade de chances do jogador
     public void alterarChances(int valor)
     {
         chances += valor;
     }
 
-	//aumenta ou diminui os pontos de mana atual
+    //aumenta ou diminui os pontos de mana atual
     public void alterarMana(int valor)
-    { 
+    {
         int resultadoFinal = manaAtual + valor;
 
         if (resultadoFinal > manaTotal)
@@ -279,18 +362,27 @@ public class Jogador : Ator
         }
     }
 
-	//mata o jogador
+    //mata o jogador
     public override void morrer()
     {
+<<<<<<< HEAD
 		base.morrer ();
+=======
+        base.morrer();
+>>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
         alterarChances(-1);
 
         if (chances >= 0)
         {
+<<<<<<< HEAD
 			tempoRestanteRespawn = 2f;
+=======
+            tempoRestanteRespawn = 0.6f;
+>>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
         }
     }
 
+<<<<<<< HEAD
 	//revive o jogador e colocao-o no ponto inicial ou no ultimo checkpoint passado
 	public void respawnar (){
 		this.animadorAtor.SetBool ("morto", false);
@@ -300,5 +392,17 @@ public class Jogador : Ator
 		this.IsImuneDano = false;
 		GameManager.getInstance().continuarJogo();
 	}
+=======
+    //revive o jogador e colocao-o no ponto inicial ou no ultimo checkpoint passado
+    public void respawnar()
+    {
+        this.AnimadorAtor.SetBool("morto", false);
+        this.transform.position = this.PosicaoSpawn;
+        this.VidaAtual = this.VidaTotal;
+        this.ManaAtual = this.ManaTotal;
+        this.IsImuneDano = false;
+        GameManager.getInstance().continuarJogo();
+    }
+>>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     #endregion
 }

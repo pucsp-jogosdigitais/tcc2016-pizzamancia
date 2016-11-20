@@ -15,8 +15,6 @@ public class GolemMussarela : Inimigo
 
         this.VelocidadeMaximaOriginal = 1f;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
-        this.ForcaPuloOriginal = 2f;
-        this.ForcaPulo = this.ForcaPuloOriginal;
 
         this.HitboxAtor.DanoOriginal = 5;
         this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
@@ -27,7 +25,7 @@ public class GolemMussarela : Inimigo
         this.DemoraAntesAtaque = this.DemoraAntesAtaqueOriginal;
         this.DemoraDepoisAtaqueOriginal = 1f;
         this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
-        this.AlcanceAtaque = 0.9f;
+        this.AlcanceAtaque = 1.8f;
 
         this.VidaTotalOriginal = 20;
         this.VidaTotal = this.VidaTotalOriginal;

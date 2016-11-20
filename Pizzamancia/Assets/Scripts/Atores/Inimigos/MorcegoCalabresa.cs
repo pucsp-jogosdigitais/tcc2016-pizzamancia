@@ -15,8 +15,6 @@ public class MorcegoCalabresa : Inimigo
 
         this.VelocidadeMaximaOriginal = 2;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
-        this.ForcaPuloOriginal = 4;
-        this.ForcaPulo = this.ForcaPuloOriginal;
 
         this.HitboxAtor.DanoOriginal = 5;
         this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;

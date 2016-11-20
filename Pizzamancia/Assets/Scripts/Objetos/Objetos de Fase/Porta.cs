@@ -5,7 +5,9 @@ public class Porta : Objeto
 {
     #region atributos
     bool isProntaParaAbrir;
-    #endregion
+	public AudioClip Door;
+	public AudioSource source;
+	#endregion
 
     #region getters e setters
     public bool IsProntaParaAbrir
@@ -19,6 +21,7 @@ public class Porta : Objeto
     {
         if (collider.gameObject.tag == "Player" && isProntaParaAbrir)
         {
+			source.PlayOneShot (Door, 2f);
             this.AnimadorObjeto.SetTrigger("abrir");
             this.GetComponent<BoxCollider2D>().enabled = false;
         }

@@ -1,0 +1,1085 @@
+fileFormatVersion: 2
+guid: 5cceea68d63444a45acf1eb7f8eb63bd
+timeCreated: 1479474922
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: MagoMalSpriteSheet_0
+    21300002: MagoMalSpriteSheet_1
+    21300004: MagoMalSpriteSheet_2
+    21300006: MagoMalSpriteSheet_3
+    21300008: MagoMalSpriteSheet_4
+    21300010: MagoMalSpriteSheet_5
+    21300012: MagoMalSpriteSheet_6
+    21300014: MagoMalSpriteSheet_7
+    21300016: MagoMalSpriteSheet_8
+    21300018: MagoMalSpriteSheet_9
+    21300020: MagoMalSpriteSheet_10
+    21300022: MagoMalSpriteSheet_11
+    21300024: MagoMalSpriteSheet_12
+    21300026: MagoMalSpriteSheet_13
+    21300028: MagoMalSpriteSheet_14
+    21300030: MagoMalSpriteSheet_15
+    21300032: MagoMalSpriteSheet_17
+    21300034: MagoMalSpriteSheet_18
+    21300036: MagoMalSpriteSheet_19
+    21300038: MagoMalSpriteSheet_20
+    21300040: MagoMalSpriteSheet_21
+    21300042: MagoMalSpriteSheet_22
+    21300044: MagoMalSpriteSheet_23
+    21300046: MagoMalSpriteSheet_24
+    21300048: MagoMalSpriteSheet_25
+    21300050: MagoMalSpriteSheet_26
+    21300052: MagoMalSpriteSheet_27
+    21300054: MagoMalSpriteSheet_28
+    21300056: MagoMalSpriteSheet_29
+    21300058: MagoMalSpriteSheet_30
+    21300060: MagoMalSpriteSheet_31
+    21300062: MagoMalSpriteSheet_32
+    21300064: MagoMalSpriteSheet_33
+    21300066: MagoMalSpriteSheet_36
+    21300068: MagoMalSpriteSheet_43
+    21300070: MagoMalSpriteSheet_46
+    21300072: MagoMalSpriteSheet_77
+    21300074: MagoMalSpriteSheet_82
+    21300076: MagoMalSpriteSheet_16
+    21300078: MagoMalSpriteSheet_34
+    21300080: MagoMalSpriteSheet_35
+    21300082: MagoMalSpriteSheet_41
+    21300084: MagoMalSpriteSheet_42
+    21300086: MagoMalSpriteSheet_44
+    21300088: MagoMalSpriteSheet_45
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 98
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: MagoMalSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 610
+        width: 44
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 55}
+        - {x: -22, y: 47}
+        - {x: -22, y: -51}
+        - {x: -21, y: -55}
+        - {x: 22, y: -55}
+        - {x: 22, y: 44}
+        - {x: 13, y: 55}
+    - name: MagoMalSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 610
+        width: 47
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: 55}
+        - {x: -23.5, y: 55}
+        - {x: -23.5, y: -55}
+        - {x: 23.5, y: -55}
+        - {x: 23.5, y: 12}
+        - {x: 19.5, y: 54}
+    - name: MagoMalSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 610
+        width: 52
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 55}
+        - {x: -26, y: 44}
+        - {x: -26, y: -55}
+        - {x: 26, y: -55}
+        - {x: 26, y: 23}
+        - {x: 16, y: 55}
+    - name: MagoMalSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 610
+        width: 45
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 55}
+        - {x: -22.5, y: -55}
+        - {x: 22.5, y: -55}
+        - {x: 22.5, y: 55}
+    - name: MagoMalSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 610
+        width: 51
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 55}
+        - {x: -25.5, y: 55}
+        - {x: -25.5, y: -55}
+        - {x: 19.5, y: -55}
+        - {x: 25.5, y: -53}
+        - {x: 25.5, y: -17}
+        - {x: 19.5, y: 51}
+    - name: MagoMalSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 610
+        width: 48
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 55}
+        - {x: -24, y: -54}
+        - {x: -21, y: -55}
+        - {x: 24, y: -55}
+        - {x: 24, y: 33}
+        - {x: 14, y: 55}
+    - name: MagoMalSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 610
+        width: 46
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 55}
+        - {x: -23, y: 55}
+        - {x: -23, y: -55}
+        - {x: 23, y: -55}
+        - {x: 23, y: 33}
+        - {x: 22, y: 37}
+    - name: MagoMalSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 610
+        width: 42
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 55}
+        - {x: -21, y: 44}
+        - {x: -21, y: -22}
+        - {x: -8, y: -47}
+        - {x: -2, y: -55}
+        - {x: 21, y: -55}
+        - {x: 21, y: 42}
+        - {x: 14, y: 55}
+    - name: MagoMalSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 610
+        width: 50
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -18, y: 55}
+        - {x: -25, y: 43}
+        - {x: -25, y: -27}
+        - {x: -19, y: -55}
+        - {x: 25, y: -55}
+        - {x: 25, y: 54}
+        - {x: 22, y: 55}
+    - name: MagoMalSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 610
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 55}
+        - {x: -26.5, y: -40}
+        - {x: -24.5, y: -47}
+        - {x: -20.5, y: -55}
+        - {x: 26.5, y: -55}
+        - {x: 26.5, y: 27}
+        - {x: 8.5, y: 55}
+    - name: MagoMalSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 610
+        width: 42
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 55}
+        - {x: -21, y: 43}
+        - {x: -21, y: -22}
+        - {x: -8, y: -47}
+        - {x: -2, y: -55}
+        - {x: 21, y: -55}
+        - {x: 21, y: 42}
+        - {x: 14, y: 55}
+    - name: MagoMalSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 610
+        width: 44
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 55}
+        - {x: -22, y: 47}
+        - {x: -22, y: -51}
+        - {x: -21, y: -55}
+        - {x: 22, y: -55}
+        - {x: 22, y: 44}
+        - {x: 13, y: 55}
+    - name: MagoMalSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 610
+        width: 49
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 55}
+        - {x: -24.5, y: -55}
+        - {x: 24.5, y: -55}
+        - {x: 24.5, y: 44}
+        - {x: 20.5, y: 55}
+    - name: MagoMalSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 610
+        width: 57
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 55}
+        - {x: -28.5, y: -55}
+        - {x: 23.5, y: -55}
+        - {x: 28.5, y: -41}
+        - {x: 28.5, y: 30}
+        - {x: 18.5, y: 55}
+    - name: MagoMalSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 610
+        width: 62
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31, y: 55}
+        - {x: -31, y: -55}
+        - {x: 25, y: -55}
+        - {x: 31, y: -27}
+        - {x: 31, y: 31}
+        - {x: 14, y: 55}
+    - name: MagoMalSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 610
+        width: 56
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28, y: 55}
+        - {x: -28, y: -49}
+        - {x: -26, y: -55}
+        - {x: 22, y: -55}
+        - {x: 28, y: -18}
+        - {x: 28, y: 36}
+        - {x: 8, y: 55}
+    - name: MagoMalSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 610
+        width: 45
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 55}
+        - {x: -22.5, y: -26}
+        - {x: -19.5, y: -44}
+        - {x: -14.5, y: -55}
+        - {x: 22.5, y: -55}
+        - {x: 22.5, y: 55}
+    - name: MagoMalSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 610
+        width: 57
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -28.5, y: 55}
+        - {x: -28.5, y: -49}
+        - {x: -27.5, y: -54}
+        - {x: -22.5, y: -55}
+        - {x: 20.5, y: -55}
+        - {x: 28.5, y: 14}
+        - {x: 28.5, y: 47}
+        - {x: 17.5, y: 55}
+    - name: MagoMalSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 610
+        width: 59
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 55}
+        - {x: -29.5, y: 55}
+        - {x: -29.5, y: -49}
+        - {x: -26.5, y: -55}
+        - {x: 21.5, y: -55}
+        - {x: 29.5, y: -21}
+        - {x: 29.5, y: 28}
+        - {x: 24.5, y: 40}
+    - name: MagoMalSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 610
+        width: 45
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 55}
+        - {x: -22.5, y: -20}
+        - {x: -9.5, y: -55}
+        - {x: 20.5, y: -55}
+        - {x: 22.5, y: -32}
+        - {x: 22.5, y: 55}
+    - name: MagoMalSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 480
+        width: 52
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 55}
+        - {x: -26, y: -45}
+        - {x: -23, y: -55}
+        - {x: 24, y: -55}
+        - {x: 26, y: -44}
+        - {x: 26, y: 47}
+        - {x: 10, y: 55}
+    - name: MagoMalSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 480
+        width: 51
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 55}
+        - {x: -25.5, y: 50}
+        - {x: -25.5, y: -55}
+        - {x: 24.5, y: -55}
+        - {x: 25.5, y: -50}
+        - {x: 25.5, y: 45}
+        - {x: 9.5, y: 55}
+    - name: MagoMalSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 480
+        width: 51
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22.5, y: 55}
+        - {x: -25.5, y: 54}
+        - {x: -25.5, y: -26}
+        - {x: -23.5, y: -44}
+        - {x: -17.5, y: -55}
+        - {x: 24.5, y: -55}
+        - {x: 25.5, y: -38}
+        - {x: 25.5, y: 42}
+        - {x: 16.5, y: 55}
+    - name: MagoMalSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 480
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 24.5, y: 55}
+        - {x: -26.5, y: 55}
+        - {x: -26.5, y: -32}
+        - {x: -21.5, y: -55}
+        - {x: 18.5, y: -55}
+        - {x: 20.5, y: -49}
+        - {x: 26.5, y: -16}
+        - {x: 26.5, y: 53}
+    - name: MagoMalSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 480
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 55}
+        - {x: -26.5, y: -55}
+        - {x: 24.5, y: -55}
+        - {x: 26.5, y: -28}
+        - {x: 26.5, y: 54}
+        - {x: 23.5, y: 55}
+    - name: MagoMalSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 480
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 55}
+        - {x: -26.5, y: 55}
+        - {x: -26.5, y: -53}
+        - {x: -23.5, y: -55}
+        - {x: 18.5, y: -55}
+        - {x: 20.5, y: -49}
+        - {x: 26.5, y: -10}
+        - {x: 26.5, y: 49}
+    - name: MagoMalSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 480
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 55}
+        - {x: -26.5, y: -55}
+        - {x: 22.5, y: -55}
+        - {x: 26.5, y: -12}
+        - {x: 26.5, y: 48}
+        - {x: 16.5, y: 55}
+    - name: MagoMalSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 480
+        width: 52
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26, y: 55}
+        - {x: -26, y: -55}
+        - {x: 23, y: -55}
+        - {x: 26, y: -42}
+        - {x: 26, y: 46}
+        - {x: 18, y: 55}
+    - name: MagoMalSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 480
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17.5, y: 55}
+        - {x: -26.5, y: 55}
+        - {x: -26.5, y: -53}
+        - {x: -23.5, y: -55}
+        - {x: 18.5, y: -55}
+        - {x: 20.5, y: -49}
+        - {x: 26.5, y: -16}
+        - {x: 26.5, y: 50}
+    - name: MagoMalSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 480
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 55}
+        - {x: -26.5, y: -38}
+        - {x: -23.5, y: -55}
+        - {x: 22.5, y: -55}
+        - {x: 26.5, y: -34}
+        - {x: 26.5, y: 49}
+        - {x: 21.5, y: 55}
+    - name: MagoMalSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 480
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.5, y: 55}
+        - {x: -26.5, y: -29}
+        - {x: -23.5, y: -55}
+        - {x: 22.5, y: -55}
+        - {x: 26.5, y: -11}
+        - {x: 26.5, y: 51}
+        - {x: 12.5, y: 55}
+    - name: MagoMalSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 480
+        width: 53
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14.5, y: 55}
+        - {x: -25.5, y: 55}
+        - {x: -26.5, y: 54}
+        - {x: -26.5, y: -32}
+        - {x: -21.5, y: -55}
+        - {x: 11.5, y: -55}
+        - {x: 18.5, y: -49}
+        - {x: 26.5, y: -3}
+        - {x: 26.5, y: 40}
+    - name: MagoMalSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 480
+        width: 51
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19.5, y: 55}
+        - {x: -25.5, y: 54}
+        - {x: -25.5, y: -38}
+        - {x: -21.5, y: -55}
+        - {x: 16.5, y: -55}
+        - {x: 25.5, y: -21}
+        - {x: 25.5, y: 39}
+        - {x: 10.5, y: 55}
+    - name: MagoMalSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 480
+        width: 40
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 19, y: -51}
+        - {x: 20, y: -50}
+        - {x: 20, y: 55}
+        - {x: -20, y: 55}
+        - {x: -20, y: -27}
+        - {x: -15, y: -55}
+        - {x: 14, y: -55}
+        - {x: 16, y: -53}
+        - {x: 16, y: -50}
+        - {x: 13, y: -49}
+    - name: MagoMalSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 566
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: MagoMalSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 568
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: MagoMalSpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 480
+        width: 49
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24.5, y: 55}
+        - {x: -24.5, y: -55}
+        - {x: 22.5, y: -55}
+        - {x: 24.5, y: -51}
+        - {x: 24.5, y: 54}
+        - {x: 23.5, y: 55}
+    - name: MagoMalSpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 480
+        width: 37
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 6.5, y: 12}
+        - {x: 7.5, y: 15}
+        - {x: 11.5, y: 12}
+        - {x: 14.5, y: 13}
+        - {x: 18.5, y: 17}
+        - {x: 18.5, y: 55}
+        - {x: -18.5, y: 55}
+        - {x: -18.5, y: -55}
+        - {x: 14.5, y: -55}
+        - {x: 18.5, y: -47}
+        - {x: 18.5, y: 15}
+        - {x: 11.5, y: 12}
+      - - {x: 15.5, y: 36}
+        - {x: 14.5, y: 34}
+        - {x: 14.5, y: 29}
+        - {x: 16.5, y: 28}
+        - {x: 18.5, y: 29}
+        - {x: 18.5, y: 36}
+    - name: MagoMalSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 610
+        width: 54
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 55}
+        - {x: -27, y: 43}
+        - {x: -27, y: -37}
+        - {x: -21, y: -55}
+        - {x: 22, y: -55}
+        - {x: 27, y: 6}
+        - {x: 27, y: 44}
+        - {x: 11, y: 55}
+    - name: MagoMalSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 480
+        width: 36
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: -47}
+        - {x: 10, y: -45}
+        - {x: 8, y: -45}
+        - {x: 8, y: -42}
+        - {x: 5, y: -41}
+        - {x: 7, y: -41}
+        - {x: 9, y: -44}
+        - {x: 12, y: -45}
+        - {x: 18, y: -43}
+        - {x: 18, y: -39}
+        - {x: 8, y: -35}
+        - {x: 5, y: -36}
+        - {x: 3, y: -36}
+        - {x: 3, y: -34}
+        - {x: 5, y: -36}
+        - {x: 8, y: -35}
+        - {x: 15, y: -20}
+        - {x: 16, y: -12}
+        - {x: 18, y: -3}
+        - {x: 18, y: 25}
+        - {x: 15, y: 44}
+        - {x: 12, y: 45}
+        - {x: 7, y: 43}
+        - {x: 6, y: 41}
+        - {x: 6, y: 42}
+        - {x: 12, y: 47}
+        - {x: 15, y: 45}
+        - {x: 17, y: 45}
+        - {x: 18, y: 48}
+        - {x: 11, y: 55}
+        - {x: 10, y: 55}
+        - {x: 5, y: 52}
+        - {x: 2, y: 50}
+        - {x: 4, y: 51}
+        - {x: 5, y: 54}
+        - {x: 5, y: 55}
+        - {x: -15, y: 55}
+        - {x: -18, y: 51}
+        - {x: -18, y: 29}
+        - {x: -17, y: 27}
+        - {x: -13, y: 25}
+        - {x: -15, y: 22}
+        - {x: -15, y: 19}
+        - {x: -15, y: 23}
+        - {x: -14, y: 25}
+        - {x: -16, y: 27}
+        - {x: -18, y: 26}
+        - {x: -18, y: -3}
+        - {x: -12, y: -21}
+        - {x: -7, y: -23}
+        - {x: -4, y: -23}
+        - {x: -6, y: -23}
+        - {x: -10, y: -24}
+        - {x: -17, y: -36}
+        - {x: -12, y: -55}
+        - {x: -11, y: -55}
+        - {x: -8, y: -51}
+        - {x: -8, y: -48}
+        - {x: -5, y: -52}
+        - {x: -3, y: -55}
+        - {x: 2, y: -55}
+        - {x: 2, y: -52}
+        - {x: 8, y: -55}
+        - {x: 12, y: -55}
+      - - {x: 12, y: -35}
+        - {x: 15, y: -34}
+        - {x: 15, y: -31}
+        - {x: 12, y: -30}
+        - {x: 10, y: -32}
+      - - {x: 10, y: 14}
+        - {x: 13, y: 15}
+        - {x: 13, y: 18}
+        - {x: 10, y: 19}
+        - {x: 8, y: 17}
+      - - {x: 15, y: 36}
+        - {x: 14, y: 34}
+        - {x: 14, y: 29}
+        - {x: 16, y: 28}
+        - {x: 18, y: 29}
+        - {x: 18, y: 36}
+    - name: MagoMalSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 480
+        width: 37
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13.5, y: -30}
+        - {x: 14.5, y: -30}
+        - {x: 18.5, y: -29}
+        - {x: 18.5, y: 4}
+        - {x: 16.5, y: 8}
+        - {x: 12.5, y: 12}
+        - {x: 11.5, y: 12}
+        - {x: 12.5, y: 12}
+        - {x: 15.5, y: 13}
+        - {x: 18.5, y: 17}
+        - {x: 18.5, y: 46}
+        - {x: 15.5, y: 48}
+        - {x: 9.5, y: 49}
+        - {x: 3.5, y: 46}
+        - {x: -1.5, y: 42}
+        - {x: -0.5, y: 39}
+        - {x: 4.5, y: 38}
+        - {x: -4.5, y: 39}
+        - {x: -5.5, y: 42}
+        - {x: 6.5, y: 50}
+        - {x: 13.5, y: 49}
+        - {x: 15.5, y: 55}
+        - {x: -16.5, y: 55}
+        - {x: -18.5, y: 53}
+        - {x: -18.5, y: -46}
+        - {x: -12.5, y: -55}
+        - {x: 16.5, y: -55}
+        - {x: 18.5, y: -50}
+        - {x: 18.5, y: -34}
+        - {x: 16.5, y: -31}
+      - - {x: -14.5, y: 12}
+        - {x: -11.5, y: 13}
+        - {x: -11.5, y: 16}
+        - {x: -14.5, y: 17}
+        - {x: -16.5, y: 15}
+      - - {x: 16.5, y: 36}
+        - {x: 15.5, y: 34}
+        - {x: 15.5, y: 29}
+        - {x: 17.5, y: 28}
+        - {x: 18.5, y: 28}
+        - {x: 18.5, y: 36}
+      - - {x: -15.5, y: 46}
+        - {x: -12.5, y: 47}
+        - {x: -12.5, y: 50}
+        - {x: -15.5, y: 51}
+        - {x: -17.5, y: 49}
+    - name: MagoMalSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 480
+        width: 32
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: -51}
+        - {x: -6, y: -55}
+        - {x: -3, y: -54}
+        - {x: -3, y: -52}
+        - {x: -7, y: -48}
+        - {x: -9, y: -48}
+      - - {x: 6, y: -44}
+        - {x: 4, y: -46}
+        - {x: 4, y: -52}
+        - {x: 7, y: -53}
+        - {x: 12, y: -53}
+        - {x: 14, y: -52}
+        - {x: 14, y: -49}
+        - {x: 12, y: -44}
+      - - {x: -8, y: -47}
+        - {x: 1, y: -47}
+        - {x: 1, y: -43}
+        - {x: -2, y: -33}
+        - {x: -7, y: -33}
+        - {x: -12, y: -39}
+        - {x: -12, y: -45}
+      - - {x: 11, y: -42}
+        - {x: 13, y: -44}
+        - {x: 16, y: -43}
+        - {x: 16, y: -39}
+        - {x: 14, y: -37}
+        - {x: 11, y: -38}
+      - - {x: 10, y: -11}
+        - {x: 11, y: -8}
+        - {x: 10, y: -8}
+        - {x: 14, y: -5}
+        - {x: 11, y: 4}
+        - {x: 9, y: 5}
+        - {x: -5, y: 5}
+        - {x: -5, y: -34}
+        - {x: 2, y: -42}
+        - {x: 13, y: -42}
+        - {x: 16, y: -38}
+        - {x: 16, y: -10}
+        - {x: 15, y: -10}
+      - - {x: 9, y: 13}
+        - {x: 6, y: 12}
+        - {x: 5, y: 8}
+        - {x: 7, y: 3}
+        - {x: 10, y: 3}
+        - {x: 15, y: 6}
+        - {x: 15, y: 11}
+        - {x: 14, y: 13}
+      - - {x: 3, y: 50}
+        - {x: -16, y: 37}
+        - {x: -16, y: 35}
+        - {x: -11, y: 32}
+        - {x: -7, y: 31}
+        - {x: -5, y: 31}
+        - {x: -2, y: 28}
+        - {x: 1, y: 28}
+        - {x: 2, y: 31}
+        - {x: 1, y: 26}
+        - {x: -5, y: 31}
+        - {x: -9, y: 31}
+        - {x: -15, y: 27}
+        - {x: -16, y: 25}
+        - {x: -16, y: 21}
+        - {x: -10, y: 8}
+        - {x: -6, y: 6}
+        - {x: 5, y: 6}
+        - {x: 16, y: 19}
+        - {x: 16, y: 50}
+      - - {x: 12, y: 15}
+        - {x: 15, y: 16}
+        - {x: 15, y: 19}
+        - {x: 12, y: 20}
+        - {x: 10, y: 18}
+      - - {x: -15, y: 28}
+        - {x: -12, y: 27}
+        - {x: -9, y: 29}
+        - {x: -10, y: 32}
+        - {x: -14, y: 33}
+        - {x: -16, y: 31}
+      - - {x: -10, y: 54}
+        - {x: -16, y: 46}
+        - {x: -16, y: 38}
+        - {x: -10, y: 38}
+        - {x: -3, y: 40}
+        - {x: -2, y: 42}
+        - {x: -2, y: 52}
+        - {x: -4, y: 54}
+      - - {x: -16, y: 48}
+        - {x: -15, y: 47}
+        - {x: -12, y: 48}
+        - {x: -12, y: 51}
+        - {x: -15, y: 52}
+        - {x: -16, y: 51}
+    - name: MagoMalSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 480
+        width: 30
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: MagoMalSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 480
+        width: 16
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: MagoMalSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 480
+        width: 9
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

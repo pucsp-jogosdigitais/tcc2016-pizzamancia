@@ -5,8 +5,11 @@ public class TelaGameOver : MonoBehaviour
 {
     #region atributos
     Jogador jogador;
-
     public GameObject telaGameOver; //GameObject que armazena a UI de menu de pause 
+
+    //audio
+    public AudioSource audioSourceTela;
+    public AudioClip clip;
     #endregion
 
     // Use this for initialization
@@ -31,9 +34,10 @@ public class TelaGameOver : MonoBehaviour
     {
         jogador.IsControlavel = false;
 
-		GameManager.getInstance ().habilitarCursor ();
+        GameManager.getInstance().habilitarCursor();
         GameManager.getInstance().pararJogo();
         telaGameOver.SetActive(true);
+        audioSourceTela.PlayOneShot(clip, 1f); // música de game over
     }
 
     public void reiniciarLevel()

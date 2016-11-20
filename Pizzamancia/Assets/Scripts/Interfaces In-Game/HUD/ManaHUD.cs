@@ -4,19 +4,19 @@ using System.Collections;
 
 public class ManaHUD : MonoBehaviour
 {
-	#region atributos
+    #region atributos
     public static ManaHUD ManaHUDInst;
     Jogador jogador;
     Text manaHUD;
     Slider sliderMana;
-	#endregion
+    #endregion
 
     // Use this for initialization
     void Start()
     {
         ManaHUDInst = this;
         jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
-        manaHUD = GameObject.Find("Mana HUD").GetComponent<Text>();
+        //manaHUD = GameObject.Find("Mana HUD").GetComponent<Text>();
         sliderMana = GameObject.Find("Slider Mana").GetComponent<Slider>();
 
         sliderMana.minValue = 0;
@@ -26,7 +26,7 @@ public class ManaHUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        manaHUD.text = "Mana: " + jogador.ManaAtual + "/" + jogador.ManaTotal;
+        //manaHUD.text = "Mana: " + jogador.ManaAtual + "/" + jogador.ManaTotal;
         sliderMana.value = jogador.ManaAtual;
     }
 
