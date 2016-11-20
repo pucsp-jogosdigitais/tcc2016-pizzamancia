@@ -5,6 +5,8 @@ public class Chave : Objeto
 {
     #region atributos
     public Porta portaRespectiva;
+	public AudioClip pegar;
+	public AudioSource source;
     #endregion
 
     // Use this for initialization
@@ -28,7 +30,7 @@ public class Chave : Objeto
         if (collider.gameObject.tag == "Player")
         {
             portaRespectiva.IsProntaParaAbrir = true;
-
+			source.PlayOneShot (pegar, 5f);
             Destroy(gameObject);
         }
     }

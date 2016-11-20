@@ -12,7 +12,8 @@ public class Jogador : Ator
     //audio
     public AudioClip pulo;
     public AudioClip semMana;
-    public AudioClip skill;
+	public AudioClip death;
+	public AudioClip skill;
 
 
     //pulo
@@ -314,7 +315,7 @@ public class Jogador : Ator
     {
         base.morrer();
         alterarChances(-1);
-
+		this.AudioSourceAtor.PlayOneShot(death, 5f);
         if (chances >= 0)
         {
             tempoRestanteRespawn = 0.6f;

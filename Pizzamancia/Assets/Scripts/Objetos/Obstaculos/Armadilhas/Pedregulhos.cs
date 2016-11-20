@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Pedregulhos : Armadilha {
+	
 	void Start () {
         this.TempoVida = 0;
         this.Velocidade = 0;

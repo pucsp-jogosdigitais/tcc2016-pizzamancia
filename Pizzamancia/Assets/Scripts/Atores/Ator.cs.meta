@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: 7effc3c567f9b5f4a84f528fcc18a206
-timeCreated: 1477300888
-licenseType: Pro
+timeCreated: 1479661557
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animadorAtor: {instanceID: 0}
+  - rdbAtor: {instanceID: 0}
+  - dano: {fileID: 8300000, guid: 9a8abf22a6721114bacc926bf0dd714e, type: 3}
+  - hitboxAtor: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
