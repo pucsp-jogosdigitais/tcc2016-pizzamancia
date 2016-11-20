@@ -15,7 +15,6 @@ public class Jogador : Ator
 	public AudioClip death;
 	public AudioClip skill;
 
-
     //pulo
     public float forcaPuloOriginal; //forca do pulo
     public float forcaPulo; //forca do pulo atual
@@ -87,6 +86,8 @@ public class Jogador : Ator
     //Update is called once per frame
     void Update()
     {
+		animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
+
         if (this.VidaAtual > 0)
         {
             if (!this.isAtordoado)
@@ -315,7 +316,8 @@ public class Jogador : Ator
     {
         base.morrer();
         alterarChances(-1);
-		this.AudioSourceAtor.PlayOneShot(death, 5f);
+
+		this.AudioSourceAtor.PlayOneShot (death, 5f);
         if (chances >= 0)
         {
             tempoRestanteRespawn = 0.6f;

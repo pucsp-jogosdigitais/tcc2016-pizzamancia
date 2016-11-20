@@ -25,6 +25,7 @@ public class Ator : MonoBehaviour
     //movimentacao
     float metadeLargura; //distancia entre as bordas verticais do ator e o seu centro
     float metadeAltura; //distancia entre as bordas horizontais do ator e o seu centro
+	public RaycastHit2D raycastCentro;
     float movimentoX; //movimento do ator no eixo X
     public float velocidadeMaximaOriginal; //velocida maxima que o ator pode atingir andando
     public float velocidadeMaxima; //velocidade maxima atual
@@ -79,10 +80,8 @@ public class Ator : MonoBehaviour
         Vector2 ladoEsq = new Vector2(this.transform.position.x - metadeLargura, this.transform.position.y);
         Vector2 ladoDir = new Vector2(this.transform.position.x + metadeLargura, this.transform.position.y);
         RaycastHit2D raycastEsq = Physics2D.Raycast(ladoEsq, Vector2.down);
-        RaycastHit2D raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
+        raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
         RaycastHit2D raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
-
-        animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
 
         if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) ||
             (raycastDir.distance <= metadeAltura))
