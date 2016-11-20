@@ -40,21 +40,10 @@ public class Ator : MonoBehaviour
     public float demoraDepoisAtaque; //demora depois da execucao do ataque atual
     float tempoPassadoInicioAtaque; //tempo passado desde o inicio do ataque
 
-<<<<<<< HEAD
-	//atordoamento
-	public bool isAtordoado; //condicao que indica se o ator fica atordoado(incapaz de realizar acoes) quando leva dano
-	public float duracaoAtordoamento; //quanto tempo o ator fica atordoado cada vez que leva dano
-	float tempoAtordoadoPassado; //quanto tempo se passou desde o inicio do atordoamento
-
-	//buffs e debuffs
-	public bool isImuneDano;
-	#endregion
-=======
     //vida
     public int vidaTotalOriginal; //quantos pontos de vida o ator tem no total
     public int vidaTotal; //quantos pontos de vida o ator tem no total atual
     public int vidaAtual; //quantos pontos de vida o ator tem no momento
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
 
     //atordoamento
     public bool isAtordoado; //condicao que indica se o ator fica atordoado(incapaz de realizar acoes) quando leva dano
@@ -77,10 +66,6 @@ public class Ator : MonoBehaviour
         metadeLargura = this.GetComponent<Renderer>().bounds.size.x / 4;
         metadeAltura = (this.GetComponent<Renderer>().bounds.size.y) + 0.1f;
 
-<<<<<<< HEAD
-		animadorAtor.SetFloat ("distanciaChao", raycastCentro.distance);
-		//print (raycastCentro.distance);
-=======
         isComecouAtaque = false;
         isAtacou = false;
         tempoPassadoInicioAtaque = 0;
@@ -88,7 +73,6 @@ public class Ator : MonoBehaviour
         isAtordoado = false;
         tempoAtordoadoPassado = 0;
     }
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
 
     void FixedUpdate()
     {
@@ -98,24 +82,6 @@ public class Ator : MonoBehaviour
         RaycastHit2D raycastCentro = Physics2D.Raycast(this.transform.position, Vector2.down);
         RaycastHit2D raycastDir = Physics2D.Raycast(ladoDir, Vector2.down);
 
-<<<<<<< HEAD
-		if (isAtordoado) {
-			movimentoX = 0;
-			terminarAtaque ();
-
-			if (tempoAtordoadoPassado < duracaoAtordoamento) {
-				tempoAtordoadoPassado += Time.deltaTime;
-			} else {
-				animadorAtor.SetBool ("atordoado", false);
-				isAtordoado = false;
-				tempoAtordoadoPassado = 0;
-			}
-		} else {
-			if (isComecouAtaque) 
-			{
-				movimentoX = 0;
-				tempoPassadoInicioAtaque += Time.deltaTime;
-=======
         animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
 
         if ((raycastEsq.distance <= metadeAltura) || (raycastCentro.distance <= metadeAltura) ||
@@ -132,24 +98,7 @@ public class Ator : MonoBehaviour
         {
             movimentoX = 0;
             terminarAtaque();
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
 
-<<<<<<< HEAD
-				if (tempoPassadoInicioAtaque >= demoraAntesAtaque && !isAtacou) 
-				{
-					executarAtaque ();
-				}
-
-				if (tempoPassadoInicioAtaque >= (demoraAntesAtaque + demoraDepoisAtaque)) 
-				{
-					terminarAtaque ();
-				}
-			}
-
-			andar ();
-		}
-	}
-=======
             if (tempoAtordoadoPassado < duracaoAtordoamento)
             {
                 tempoAtordoadoPassado += Time.deltaTime;
@@ -167,7 +116,6 @@ public class Ator : MonoBehaviour
             {
                 movimentoX = 0;
                 tempoPassadoInicioAtaque += Time.deltaTime;
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
 
                 if (tempoPassadoInicioAtaque >= demoraAntesAtaque && !isAtacou)
                 {
@@ -281,26 +229,11 @@ public class Ator : MonoBehaviour
         set { vidaTotal = value; }
     }
 
-<<<<<<< HEAD
-	public float DuracaoAtordoamento
-	{
-		get { return duracaoAtordoamento; }
-		set { duracaoAtordoamento = value; }
-	}
-
-	public bool IsImuneDano
-	{
-		get { return isImuneDano; }
-		set { isImuneDano = value; }
-	}
-	#endregion
-=======
     public int VidaAtual
     {
         get { return vidaAtual; }
         set { vidaAtual = value; }
     }
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
 
     public bool IsAtordoado
     {
@@ -354,26 +287,6 @@ public class Ator : MonoBehaviour
         }
     }
 
-<<<<<<< HEAD
-		if (resultadoFinal < vidaAtual && isImuneDano) {
-			valor = 0;
-			resultadoFinal = vidaAtual;
-		}
-
-		if (resultadoFinal > vidaTotal) {
-			vidaAtual = vidaTotal;
-		} else if (resultadoFinal < vidaAtual && resultadoFinal > 0) {
-			animadorAtor.SetTrigger ("ferido");
-			animadorAtor.SetBool ("atordoado", true);
-			vidaAtual += valor;
-			isAtordoado = true;
-		} else if (resultadoFinal <= 0 && !isImuneDano) {
-			morrer ();
-		} else {
-			vidaAtual += valor;
-		}
-	}
-=======
     //executa ataque
     public void executarAtaque()
     {
@@ -381,22 +294,7 @@ public class Ator : MonoBehaviour
         isAtacou = true;
         hitboxAtor.atingir();
     }
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
 
-<<<<<<< HEAD
-	//mata (destroi) o ator
-	public virtual void morrer ()
-	{
-		animadorAtor.SetBool ("atordoado" , false);
-		animadorAtor.SetBool ("morto", true);
-		movimentoX = 0;
-		vidaAtual = 0;
-		isImuneDano = true;
-
-		terminarAtaque ();
-	}
-	#endregion
-=======
     //termina o processo de execucao de ataque
     public void terminarAtaque()
     {
@@ -451,5 +349,4 @@ public class Ator : MonoBehaviour
         terminarAtaque();
     }
     #endregion
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
 }

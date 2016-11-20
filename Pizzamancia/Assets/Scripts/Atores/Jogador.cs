@@ -31,15 +31,6 @@ public class Jogador : Ator
     float tempoPassadoRegeneracao; //quanto tempo passou depois do ultimo intervalo de regeneracao de mana
 
     //magias
-<<<<<<< HEAD
-	public int qtdMagiasAlocadas; //quantas magias o jogador pode escolher para um level
-	public Magia[] magias; //magias escolhidas para o level
-	public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
-	public Magia magiaSelecionada; //magia selecionada no momento pelo jogador
-
-	//respawn
-	float tempoRestanteRespawn; //quanto tempo falta para o jogador respawnar
-=======
     public int qtdMagiasAlocadas; //quantas magias o jogador pode escolher para um level
     public Magia[] magias; //magias escolhidas para o level
     public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
@@ -47,7 +38,6 @@ public class Jogador : Ator
 
     //respawn
     float tempoRestanteRespawn; //quanto tempo falta para o jogador respawnar
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     #endregion
 
     // Use this for initialization
@@ -88,48 +78,21 @@ public class Jogador : Ator
         posicaoMagiaSelecionada = 0;
         magiaSelecionada = magias[posicaoMagiaSelecionada];
 
-<<<<<<< HEAD
-		this.DuracaoAtordoamento = 0.5f;
-
-		tempoRestanteRespawn = 0;
-=======
         this.DuracaoAtordoamento = 0.5f;
 
         tempoRestanteRespawn = 0;
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     }
 
     //Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
-		if (this.VidaAtual > 0) {
-			if (!this.isAtordoado)
-			{
-				regenerarMana ();
-				carregarMagias ();
-=======
         if (this.VidaAtual > 0)
         {
             if (!this.isAtordoado)
             {
                 regenerarMana();
                 carregarMagias();
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
 
-<<<<<<< HEAD
-				if (this.IsControlavel) {
-					obterInput ();
-				}
-			}
-		} else {
-			if (tempoRestanteRespawn > 0) {
-				tempoRestanteRespawn -= Time.deltaTime;
-			} else {
-				respawnar ();
-			}
-		}
-=======
                 if (this.IsControlavel)
                 {
                     obterInput();
@@ -147,7 +110,6 @@ public class Jogador : Ator
                 respawnar();
             }
         }
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     }
 
     #region getters e setters
@@ -298,20 +260,6 @@ public class Jogador : Ator
     //tenta usar a magia
     public void tentarConjurar()
     {
-<<<<<<< HEAD
-		if (InputControle.getInstance ().BtnConjurar) {
-			animadorAtor.SetBool ("conjurar", true);
-
-			if (manaAtual >= magiaSelecionada.CustoMana && magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown) {
-				audio.PlayOneShot (clip, 1f); //audio baixo
-				alterarMana (-magiaSelecionada.CustoMana);
-				magiaSelecionada.TempoPassado = 0;
-				magiaSelecionada.conjurar ();
-			}
-		} else {
-			animadorAtor.SetBool ("conjurar", false);
-		}
-=======
         if (InputControle.getInstance().BtnConjurar)
         {
             animadorAtor.SetBool("conjurar", true);
@@ -332,7 +280,6 @@ public class Jogador : Ator
         {
             animadorAtor.SetBool("conjurar", false);
         }
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     }
     #endregion
 
@@ -365,34 +312,15 @@ public class Jogador : Ator
     //mata o jogador
     public override void morrer()
     {
-<<<<<<< HEAD
-		base.morrer ();
-=======
         base.morrer();
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
         alterarChances(-1);
 
         if (chances >= 0)
         {
-<<<<<<< HEAD
-			tempoRestanteRespawn = 2f;
-=======
             tempoRestanteRespawn = 0.6f;
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
         }
     }
 
-<<<<<<< HEAD
-	//revive o jogador e colocao-o no ponto inicial ou no ultimo checkpoint passado
-	public void respawnar (){
-		this.animadorAtor.SetBool ("morto", false);
-		this.transform.position = this.PosicaoSpawn;
-		this.VidaAtual = this.VidaTotal;
-		this.ManaAtual = this.ManaTotal;
-		this.IsImuneDano = false;
-		GameManager.getInstance().continuarJogo();
-	}
-=======
     //revive o jogador e colocao-o no ponto inicial ou no ultimo checkpoint passado
     public void respawnar()
     {
@@ -403,6 +331,5 @@ public class Jogador : Ator
         this.IsImuneDano = false;
         GameManager.getInstance().continuarJogo();
     }
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
     #endregion
 }

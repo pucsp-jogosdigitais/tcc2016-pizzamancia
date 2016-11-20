@@ -17,16 +17,12 @@ public class InputControle : MonoBehaviour {
 	// Use this for initialization
 	void Start () {		
 	}
-
+	
 	// Update is called once per frame
 	void Update () {
         movePad = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         btnPular = Input.GetButtonDown("Jump");
-<<<<<<< HEAD
-		btnConjurar = Input.GetButton ("Fire1");
-=======
         btnConjurar = Input.GetButton("Fire1");
->>>>>>> branch 'master' of https://github.com/pucsp-jogosdigitais/tcc2016-pizzamancia.git
         btnAtacar = Input.GetButtonDown ("Fire2");
         btnSelectPrev = Input.GetButtonDown("Select Prev");
         btnSelectNext = Input.GetButtonDown("Select Next");
