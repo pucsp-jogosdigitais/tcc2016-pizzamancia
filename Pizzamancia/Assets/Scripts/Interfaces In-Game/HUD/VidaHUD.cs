@@ -16,7 +16,7 @@ public class VidaHUD : MonoBehaviour
     {
         vidaHUDInst = this;
         jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
-        //vidaHUD = GameObject.Find("Vida HUD").GetComponent<Text>();
+        vidaHUD = GameObject.Find("Vida HUD").GetComponent<Text>();
         sliderVida = GameObject.Find("Slider Vida").GetComponent<Slider>();
 
         sliderVida.minValue = 0;
@@ -26,7 +26,7 @@ public class VidaHUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //vidaHUD.text = "Vida: " + jogador.VidaAtual + "/" + jogador.VidaTotal;
+        vidaHUD.text = jogador.VidaAtual + "/" + jogador.VidaTotal;
         sliderVida.value = jogador.VidaAtual;
     }
 
