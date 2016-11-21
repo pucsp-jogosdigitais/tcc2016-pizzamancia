@@ -27,7 +27,7 @@ public class Inimigo : Ator
 
     protected void Start()
     {
-        this.MovimentoX = -1;
+        this.MovimentoX = 0; //= -1;
 
         posicaoCentroVagar = this.PosicaoSpawn;
 
@@ -50,10 +50,10 @@ public class Inimigo : Ator
                 this.comecarAtaque(true);
             }
         }
-        else
+        /*else
         {
             vagar();
-        }
+        }*/
     }
 
     #region getters e setters
@@ -114,7 +114,7 @@ public class Inimigo : Ator
     }
     #endregion
 
-    #region eventos de colisao
+    /*#region eventos de colisao
     void OnCollisionEnter2D(Collision2D colisao)
     {
         Collider2D colisor = colisao.collider;
@@ -128,9 +128,7 @@ public class Inimigo : Ator
             (colisor.gameObject.tag.ToString() != "Obstaculo") &&
             (colisor.gameObject.tag.ToString() != "AtaqueMagico"))
         {
-            Vector2 pontoCentral = new Vector2(
-                this.GetComponent<Renderer>().bounds.center.x,
-                this.GetComponent<Renderer>().bounds.center.y);
+            Vector2 pontoCentral = new Vector2(this.GetComponent<Renderer>().bounds.center.x, this.GetComponent<Renderer>().bounds.center.y);
             Vector2 pontoContato = colisao.contacts[0].point;
 
             if (pontoContato.x < pontoCentral.x)
@@ -143,20 +141,25 @@ public class Inimigo : Ator
             }
         }
     }
-    #endregion
+    #endregion*/
 
     #region acoes basicas
     public void perseguirJogador()
     {
-        if ((alvo.transform.position.x - this.transform.position.x) < 0)
+        if ((alvo.transform.position.x - this.transform.position.x) < -0.1f)
         {
             this.MovimentoX = -1;
-            posicaoCentroVagar = new Vector2(this.transform.position.x + alcanceCentroVagar, this.transform.position.y);
+            //posicaoCentroVagar = new Vector2(this.transform.position.x + alcanceCentroVagar, this.transform.position.y);
         }
-        else if ((alvo.transform.position.x - this.transform.position.x) > 0)
+        else if ((alvo.transform.position.x - this.transform.position.x) > 0.1f)
         {
             this.MovimentoX = 1;
-            posicaoCentroVagar = new Vector2(this.transform.position.x - alcanceCentroVagar, this.transform.position.y);
+            //posicaoCentroVagar = new Vector2(this.transform.position.x - alcanceCentroVagar, this.transform.position.y);
+        }
+        else
+        {
+            this.MovimentoX = 0;
+            //posicaoCentroVagar = new Vector2(this.transform.position.x, this.transform.position.y);
         }
     }
 
@@ -173,7 +176,7 @@ public class Inimigo : Ator
     public override void morrer()
     {
         base.morrer();
-    	this.AudioSourceAtor.PlayOneShot(morte, 5f); //morte
+        this.AudioSourceAtor.PlayOneShot(morte, 5f); //morte
         GameManager.getInstance().alterarPontos(pontos);
         Destroy(this.gameObject, 0.8f);
     }
