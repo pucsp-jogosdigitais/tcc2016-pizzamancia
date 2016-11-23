@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 520f4690bd18da546910dc6a391d2d2c
-timeCreated: 1479931442
+timeCreated: 1479938013
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -30,7 +30,7 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -2
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
@@ -53,67 +53,56 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: tocha_0
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 197
-        width: 181
-        height: 181
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -90.5, y: 90.5}
-        - {x: -90.5, y: -90.5}
-        - {x: 90.5, y: -90.5}
-        - {x: 90.5, y: 90.5}
-    - name: tocha_1
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 197
-        width: 181
-        height: 181
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -90.5, y: 90.5}
-        - {x: -90.5, y: -90.5}
-        - {x: 90.5, y: -90.5}
-        - {x: 90.5, y: 90.5}
-    - name: tocha_2
+    - serializedVersion: 2
+      name: tocha_0
       rect:
         serializedVersion: 2
         x: 3
-        y: 8
-        width: 181
-        height: 181
-      alignment: 0
+        y: 197
+        width: 180
+        height: 180
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -90.5, y: 90.5}
-        - {x: -90.5, y: -90.5}
-        - {x: 90.5, y: -90.5}
-        - {x: 90.5, y: 90.5}
-    - name: tocha_3
+      outline: []
+    - serializedVersion: 2
+      name: tocha_1
       rect:
         serializedVersion: 2
-        x: 187
-        y: 8
-        width: 181
-        height: 181
-      alignment: 0
+        x: 188
+        y: 197
+        width: 180
+        height: 180
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -90.5, y: 90.5}
-        - {x: -90.5, y: -90.5}
-        - {x: 90.5, y: -90.5}
-        - {x: 90.5, y: 90.5}
+      outline: []
+    - serializedVersion: 2
+      name: tocha_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 8
+        width: 180
+        height: 180
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - serializedVersion: 2
+      name: tocha_3
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 8
+        width: 180
+        height: 180
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
