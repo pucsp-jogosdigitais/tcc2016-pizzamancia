@@ -106,13 +106,15 @@ public class GameManager : MonoBehaviour
     //para o jogo
     public void pararJogo()
     {
-        Time.timeScale = 0.000001f;
+        //Time.timeScale = 0.000001f;
+		Time.timeScale = 0;
     }
 
     //continua o jogo
     public void continuarJogo()
     {
-        Time.timeScale = timescale;
+        //Time.timeScale = timescale;
+		Time.timeScale = 1f;
     }
     #endregion
 
