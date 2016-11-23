@@ -61,10 +61,8 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: Props 16_0
+    - name: Props 16_0
       rect:
         serializedVersion: 2
         x: 1
@@ -74,9 +72,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_1
+      outline:
+      - - {x: -52, y: 43.5}
+        - {x: -69, y: 37.5}
+        - {x: -69, y: -21.5}
+        - {x: -60, y: -43.5}
+        - {x: -1, y: -43.5}
+        - {x: 61, y: -25.5}
+        - {x: 69, y: -8.5}
+        - {x: 69, y: 26.5}
+        - {x: 49, y: 43.5}
+    - name: Props 16_1
       rect:
         serializedVersion: 2
         x: 140
@@ -87,8 +93,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - serializedVersion: 2
-      name: Props 16_2
+    - name: Props 16_2
       rect:
         serializedVersion: 2
         x: 158
@@ -98,9 +103,47 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_3
+      outline:
+      - - {x: 4.5, y: 26.5}
+        - {x: 4.5, y: 25.5}
+        - {x: 5.5, y: 22.5}
+        - {x: 7.5, y: 18.5}
+        - {x: 4.5, y: 17.5}
+        - {x: 2.5, y: 15.5}
+        - {x: 3.5, y: 17.5}
+        - {x: 5.5, y: 17.5}
+        - {x: 6.5, y: 20.5}
+        - {x: 3.5, y: 26.5}
+        - {x: -10.5, y: 26.5}
+        - {x: -11.5, y: 23.5}
+        - {x: -8.5, y: 18.5}
+        - {x: -9.5, y: 12.5}
+        - {x: -11.5, y: 9.5}
+        - {x: -9.5, y: 12.5}
+        - {x: -11.5, y: 15.5}
+        - {x: -15.5, y: 16.5}
+        - {x: -16.5, y: 16.5}
+        - {x: -18.5, y: 14.5}
+        - {x: -23.5, y: 10.5}
+        - {x: -23.5, y: -16.5}
+        - {x: -17.5, y: -26.5}
+        - {x: 20.5, y: -26.5}
+        - {x: 25.5, y: -12.5}
+        - {x: 25.5, y: 26.5}
+      - - {x: -22.5, y: -8.5}
+        - {x: -22.5, y: -5.5}
+        - {x: -25.5, y: -4.5}
+        - {x: -25.5, y: -9.5}
+      - - {x: -22.5, y: -3.5}
+        - {x: -22.5, y: -0.5}
+        - {x: -25.5, y: 0.5}
+        - {x: -25.5, y: -4.5}
+      - - {x: -11.5, y: 15.5}
+        - {x: -8.5, y: 16.5}
+        - {x: -8.5, y: 19.5}
+        - {x: -11.5, y: 20.5}
+        - {x: -13.5, y: 18.5}
+    - name: Props 16_3
       rect:
         serializedVersion: 2
         x: 212
@@ -110,9 +153,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_4
+      outline:
+      - - {x: -21, y: 27.5}
+        - {x: -24, y: 26.5}
+        - {x: -24, y: -27.5}
+        - {x: 11, y: -27.5}
+        - {x: 24, y: -11.5}
+        - {x: 24, y: 20.5}
+        - {x: 22, y: 27.5}
+      - - {x: 21, y: -4.5}
+        - {x: 23, y: -6.5}
+        - {x: 24, y: -6.5}
+        - {x: 24, y: -1.5}
+        - {x: 22, y: -1.5}
+      - - {x: -20, y: 13.5}
+        - {x: -17, y: 14.5}
+        - {x: -17, y: 17.5}
+        - {x: -20, y: 18.5}
+        - {x: -22, y: 16.5}
+    - name: Props 16_4
       rect:
         serializedVersion: 2
         x: 266
@@ -122,9 +181,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_5
+      outline:
+      - - {x: 19.5, y: 27}
+        - {x: -13.5, y: 27}
+        - {x: -22.5, y: 14}
+        - {x: -22.5, y: -20}
+        - {x: -14.5, y: -26}
+        - {x: -12.5, y: -27}
+        - {x: 9.5, y: -27}
+        - {x: 19.5, y: -16}
+        - {x: 22.5, y: -9}
+        - {x: 22.5, y: 24}
+      - - {x: -7.5, y: 22}
+        - {x: -4.5, y: 23}
+        - {x: -4.5, y: 26}
+        - {x: -7.5, y: 27}
+        - {x: -9.5, y: 25}
+    - name: Props 16_5
       rect:
         serializedVersion: 2
         x: 1
@@ -134,9 +207,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_6
+      outline:
+      - - {x: -31, y: 34.5}
+        - {x: -36, y: 22.5}
+        - {x: -36, y: -34.5}
+        - {x: 36, y: -34.5}
+        - {x: 36, y: 31.5}
+        - {x: 34, y: 34.5}
+    - name: Props 16_6
       rect:
         serializedVersion: 2
         x: 74
@@ -146,9 +224,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_7
+      outline:
+      - - {x: -31, y: 34.5}
+        - {x: -36, y: 22.5}
+        - {x: -36, y: -34.5}
+        - {x: 36, y: -34.5}
+        - {x: 36, y: 31.5}
+        - {x: 34, y: 34.5}
+    - name: Props 16_7
       rect:
         serializedVersion: 2
         x: 147
@@ -158,9 +241,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_8
+      outline:
+      - - {x: -31, y: 34.5}
+        - {x: -36, y: 22.5}
+        - {x: -36, y: -34.5}
+        - {x: 36, y: -34.5}
+        - {x: 36, y: 31.5}
+        - {x: 34, y: 34.5}
+    - name: Props 16_8
       rect:
         serializedVersion: 2
         x: 220
@@ -170,9 +258,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_9
+      outline:
+      - - {x: 17.5, y: 31.5}
+        - {x: 7.5, y: 31.5}
+        - {x: -27.5, y: 9.5}
+        - {x: -35.5, y: 3.5}
+        - {x: -35.5, y: -31.5}
+        - {x: -19.5, y: -31.5}
+        - {x: 34.5, y: -16.5}
+        - {x: 35.5, y: -14.5}
+        - {x: 35.5, y: 22.5}
+    - name: Props 16_9
       rect:
         serializedVersion: 2
         x: 292
@@ -182,9 +278,16 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_10
+      outline:
+      - - {x: -18, y: 58.5}
+        - {x: -28, y: 49.5}
+        - {x: -28, y: -0.5}
+        - {x: -18, y: -6.5}
+        - {x: 23, y: -6.5}
+        - {x: 28, y: 3.5}
+        - {x: 28, y: 45.5}
+        - {x: 16, y: 58.5}
+    - name: Props 16_10
       rect:
         serializedVersion: 2
         x: 349
@@ -194,9 +297,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - serializedVersion: 2
-      name: Props 16_11
+      outline:
+      - - {x: -18, y: 32.5}
+        - {x: -28, y: 23.5}
+        - {x: -28, y: -26.5}
+        - {x: -18, y: -32.5}
+        - {x: 23, y: -32.5}
+        - {x: 28, y: -22.5}
+        - {x: 28, y: 19.5}
+        - {x: 16, y: 32.5}
+    - name: Props 16_11
       rect:
         serializedVersion: 2
         x: 319
@@ -206,7 +316,15 @@ TextureImporter:
       alignment: 9
       pivot: {x: 0.5, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -27.5, y: 64.8}
+        - {x: -35.5, y: 55.800003}
+        - {x: -35.5, y: -7.199997}
+        - {x: -9.5, y: -7.199997}
+        - {x: 11.5, y: -1.199997}
+        - {x: 35.5, y: 27.800003}
+        - {x: 35.5, y: 56.800003}
+        - {x: 11.5, y: 64.8}
     outline: []
   spritePackingTag: 
   userData: 

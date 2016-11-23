@@ -7,6 +7,7 @@ public class Porta : Objeto
     bool isProntaParaAbrir;
 	public AudioClip Door;
 	public AudioSource source;
+	public Collider2D col;
 	#endregion
 
     #region getters e setters
@@ -24,6 +25,7 @@ public class Porta : Objeto
 			source.PlayOneShot (Door, 2f);
             this.AnimadorObjeto.SetTrigger("abrir");
             this.GetComponent<BoxCollider2D>().enabled = false;
+			Destroy (col);
         }
     }
 }
