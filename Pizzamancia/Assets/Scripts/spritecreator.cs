@@ -22,40 +22,10 @@ public class spritecreator : MonoBehaviour {
 
     IEnumerator Start()
     //void Start()
-    {
+	{
 		// Implementar a geração direta do mapa no Start sem botão dentro do editor
-        yield return StartCoroutine("GenerateSprite");
-    }
-	
-	// Update is called once per frame
-   void Update()
-    {
-       /*
-        for (int indiceBloco = 0; indiceBloco < blocos.Length; indiceBloco++)
-        {
-
-            blocos[indiceBloco].cor = sourceTex.GetPixel(blocos[indiceBloco].pixellock, pixellocky);
-
-        }
-      /*
-        if (destruir)
-        {
-            destruir = false;
-            while (transform.childCount > 0)
-            {
-                for (int i = 0; i < transform.childCount; i++)
-                {
-                    GameObject.DestroyImmediate(transform.GetChild(i).gameObject);
-                }
-            }
-        }
-        if (execute)
-        {
-            execute = false;
-            StartCoroutine("GenerateSprite");
-        }
-       */
-    }
+		yield return StartCoroutine ("GenerateSprite");
+	}
 
     public IEnumerator GenerateSprite()
     {
@@ -75,14 +45,7 @@ public class spritecreator : MonoBehaviour {
             for (int y = 0; y < sourceTex.height; y++)
             {
                 Color pixel = sourceTex.GetPixel(x, y);
-                
-                //sourceraw.GetNativeTexturePtr()
-                //GameObject tile;
-                // Temos que varrer a lista de cores.. Como fazemos isso?
-                // Que tal usar uma estura de repetição?
-                // Primeiramente temos que descobrir qual é o indice da lista de sprites e cores
-                // correspondente ao pixel da imagem corrente.
-                
+
                 for (int indiceBloco = 0; indiceBloco < blocos.Length; indiceBloco++)
 
                 {
@@ -95,21 +58,9 @@ public class spritecreator : MonoBehaviour {
                         GameObject clone = GameObject.Instantiate(blocos[indiceBloco].prefab);
                         clone.transform.parent = transform;
                         clone.transform.position = new Vector3(transform.position.x + x * spritesize, transform.position.y + y * spritesize, 0);
-                        // Instanciamos o sprite
-                        //tile = AddSprite(blocos[indiceBloco].sprite);
-                        //tile.transform.parent = transform;
-                        //tile.transform.position = new Vector3(transform.position.x + x * spritesize, transform.position.y + y * spritesize, 0);
-                        //tile.AddComponent<BoxCollider2D>();
-                        //if (blocos[indiceBloco].isCollider == false)
-                        //{
-                        //    Destroy(tile.GetComponent<Collider2D>());
-                        //}
-                        //tile = AddSprite(blocos[indiceBloco].prefab);
                     }
                     else
                     {
-
-                        //print(blocos[indiceBloco].cor);
                     }
                 }
             }

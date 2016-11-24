@@ -75,7 +75,7 @@ public class Hitbox : MonoBehaviour
                   (colisor.gameObject.tag.ToString() == "Obstaculo"))
         {
             if (!objetosAtingidos.Contains(colisor.gameObject))
-            {
+			{
                 objetosAtingidos.Add(colisor.gameObject);
             }
         }

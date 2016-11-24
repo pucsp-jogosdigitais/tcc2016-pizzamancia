@@ -18,6 +18,7 @@ public class Ator : MonoBehaviour
     //audio
     AudioSource audioSourceAtor; //audiosource do ator
     public AudioClip clip;
+	public AudioClip dano;
 
     //ponto de spawn
     public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
@@ -320,7 +321,8 @@ public class Ator : MonoBehaviour
             vidaAtual = vidaTotal;
         }
         else if (resultadoFinal < vidaAtual && resultadoFinal > 0)
-        {
+		{
+			
             animadorAtor.SetTrigger("ferido");
             animadorAtor.SetBool("atordoado", true);
             vidaAtual += valor;

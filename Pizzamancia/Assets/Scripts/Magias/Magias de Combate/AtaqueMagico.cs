@@ -23,6 +23,7 @@ public class AtaqueMagico : MonoBehaviour
 
     void Awake()
     {
+		
         animadorMagiaAtaque = this.GetComponent<Animator>();
 
         rdbMagiaAtaque = this.GetComponent<Rigidbody2D>();
@@ -32,7 +33,7 @@ public class AtaqueMagico : MonoBehaviour
 
     // Use this for initialization
     void Start()
-    {
+	{
         float sentido = posicaoRelativaInicial.x;
 		direcaoVirada = conjurador.transform.localScale;
 
@@ -139,7 +140,6 @@ public class AtaqueMagico : MonoBehaviour
 
 				break;
 			}
-
 			Destroy(gameObject);
 		}
     }

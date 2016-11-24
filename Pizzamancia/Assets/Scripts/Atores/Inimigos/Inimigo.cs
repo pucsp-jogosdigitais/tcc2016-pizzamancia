@@ -7,6 +7,7 @@ public class Inimigo : Ator
     #region atributos
     //audio
     public AudioClip morte;
+	public AudioClip hit;
 
     //movimentacao de vagar
     public Vector2 posicaoCentroVagar;
