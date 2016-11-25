@@ -9,7 +9,7 @@ public class GolemMussarela : Inimigo
     {
         base.Start();
 
-        this.AlcanceCentroVagar = 5f;
+        //this.AlcanceCentroVagar = 5f;
 
         this.RaioPercepcao = 8f;
 

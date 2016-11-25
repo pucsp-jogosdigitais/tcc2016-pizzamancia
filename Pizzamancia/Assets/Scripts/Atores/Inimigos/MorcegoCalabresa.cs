@@ -9,7 +9,7 @@ public class MorcegoCalabresa : Inimigo
     {
         base.Start();
 
-        this.AlcanceCentroVagar = 5f;
+        //this.AlcanceCentroVagar = 5f;
 
         this.RaioPercepcao = 2.5f;
 
