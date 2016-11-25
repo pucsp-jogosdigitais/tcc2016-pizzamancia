@@ -21,16 +21,16 @@ public class Boss : Inimigo
 
     //duracao e tempo passado nos estados
     public float duracaoPausa;
-	public float tempoPassadoPausa;
+    public float tempoPassadoPausa;
     public float duracaoAtacando;
-	public float tempoPassadoAtacando;
+    public float tempoPassadoAtacando;
     public float duracaoSuperVulneravel;
-	public float tempoPassadoSuperVulneravel;
+    public float tempoPassadoSuperVulneravel;
 
-	//ataques
-	public TiroInimigo ataque1;
-	public TiroInimigo ataque2;
-	public TiroInimigo ataque3;
+    //ataques
+    public TiroInimigo ataque1;
+    public TiroInimigo ataque2;
+    public TiroInimigo ataque3;
     #endregion
 
     // Use this for initialization
@@ -42,7 +42,7 @@ public class Boss : Inimigo
 
         duracaoPausa = 2f;
         tempoPassadoPausa = 0;
-        duracaoAtacando = 10f;
+        duracaoAtacando = 5f;
         tempoPassadoAtacando = 0;
         duracaoSuperVulneravel = 4f;
         tempoPassadoSuperVulneravel = 0;
@@ -60,27 +60,27 @@ public class Boss : Inimigo
         this.AlcanceAtaque = 0.16f;
 
         //this.VidaTotalOriginal = 100;
-		this.VidaTotalOriginal = 20;
+        this.VidaTotalOriginal = 20;
         this.VidaTotal = this.VidaTotalOriginal;
         this.VidaAtual = this.VidaTotalOriginal;
 
-		ataque1.Dano = 5;
-		ataque1.PosicaoRelativaInicial = new Vector3(0, 1f);
-		ataque1.Velocidade = 1f;
-		ataque1.DuracaoAtaque = 5f;
-		ataque1.Cooldown = 1f;
+        ataque1.Dano = 5;
+        ataque1.PosicaoRelativaInicial = new Vector3(0, 1f);
+        ataque1.Velocidade = 1f;
+        ataque1.DuracaoAtaque = 5f;
+        ataque1.Cooldown = 1f;
 
-		ataque2.Dano = 5;
-		ataque2.PosicaoRelativaInicial = new Vector3(0, 1f);
-		ataque2.Velocidade = 1f;
-		ataque2.DuracaoAtaque = 5f;
-		ataque2.Cooldown = 0.5f;
+        ataque2.Dano = 5;
+        ataque2.PosicaoRelativaInicial = new Vector3(0, 1f);
+        ataque2.Velocidade = 1f;
+        ataque2.DuracaoAtaque = 5f;
+        ataque2.Cooldown = 0.5f;
 
-		ataque3.Dano = 5;
-		ataque3.PosicaoRelativaInicial = new Vector3(0, 1f);
-		ataque3.Velocidade = 1f;
-		ataque3.DuracaoAtaque = 5f;
-		ataque3.Cooldown = 1f;
+        ataque3.Dano = 5;
+        ataque3.PosicaoRelativaInicial = new Vector3(0, 1f);
+        ataque3.Velocidade = 1f;
+        ataque3.DuracaoAtaque = 5f;
+        ataque3.Cooldown = 1f;
     }
 
     // Update is called once per frame
@@ -95,9 +95,9 @@ public class Boss : Inimigo
 
                 break;
             case PAUSA1:
-				if (tempoPassadoPausa <= duracaoPausa)
+                if (tempoPassadoPausa <= duracaoPausa)
                 {
-					tempoPassadoPausa += Time.deltaTime;
+                    tempoPassadoPausa += Time.deltaTime;
                 }
                 else
                 {
@@ -109,8 +109,8 @@ public class Boss : Inimigo
             case ATAQUE1:
                 if (tempoPassadoAtacando <= duracaoAtacando)
                 {
-					tempoPassadoAtacando += Time.deltaTime;
-					ficarAtacando (ataque1);
+                    tempoPassadoAtacando += Time.deltaTime;
+                    ficarAtacando(ataque1);
                 }
                 else
                 {
@@ -128,9 +128,9 @@ public class Boss : Inimigo
 
                 break;
             case PAUSA2:
-				if (tempoPassadoPausa <= duracaoPausa)
+                if (tempoPassadoPausa <= duracaoPausa)
                 {
-					tempoPassadoPausa += Time.deltaTime;
+                    tempoPassadoPausa += Time.deltaTime;
                 }
                 else
                 {
@@ -142,8 +142,8 @@ public class Boss : Inimigo
             case ATAQUE2:
                 if (tempoPassadoAtacando <= duracaoAtacando)
                 {
-					tempoPassadoAtacando += Time.deltaTime;
-					ficarAtacando (ataque2);
+                    tempoPassadoAtacando += Time.deltaTime;
+                    ficarAtacando(ataque2);
                 }
                 else
                 {
@@ -153,13 +153,18 @@ public class Boss : Inimigo
 
                 break;
             case LEVITARBAIXO:
-                estadoAtual = PAUSABAIXO;
+                levitarParaCima(this.Alvo.transform.position);
+
+                if (this.transform.position.Equals(this.Alvo.transform.position))
+                {
+                    estadoAtual = PAUSABAIXO;
+                }
 
                 break;
             case PAUSABAIXO:
-				if (tempoPassadoPausa <= duracaoPausa)
+                if (tempoPassadoPausa <= duracaoPausa)
                 {
-					tempoPassadoPausa += Time.deltaTime;
+                    tempoPassadoPausa += Time.deltaTime;
                 }
                 else
                 {
@@ -171,8 +176,8 @@ public class Boss : Inimigo
             case ATAQUEBAIXO:
                 if (tempoPassadoAtacando <= duracaoAtacando)
                 {
-					tempoPassadoAtacando += Time.deltaTime;
-					ficarAtacando (ataque3);
+                    tempoPassadoAtacando += Time.deltaTime;
+                    ficarAtacando(ataque3);
                 }
                 else
                 {
@@ -184,7 +189,7 @@ public class Boss : Inimigo
             case SUPERVULNERAVEL:
                 if (tempoPassadoSuperVulneravel <= duracaoSuperVulneravel)
                 {
-					tempoPassadoSuperVulneravel += Time.deltaTime;
+                    tempoPassadoSuperVulneravel += Time.deltaTime;
                 }
                 else
                 {
@@ -196,7 +201,7 @@ public class Boss : Inimigo
             case PAUSAREPELIR:
                 if (tempoPassadoPausa <= duracaoPausa)
                 {
-					tempoPassadoPausa += Time.deltaTime;
+                    tempoPassadoPausa += Time.deltaTime;
                 }
                 else
                 {
@@ -209,114 +214,115 @@ public class Boss : Inimigo
                 estadoAtual = LEVITARALTO;
 
                 break;
-		case LEVITARALTO:
-				/*levitar (this.PosicaoSpawn);
+            case LEVITARALTO:
+                levitarParaCima(this.PosicaoSpawn);
 
-				if (this.transform.position.Equals(this.PosicaoSpawn)) 
-				{
-                	estadoAtual = PAUSA1;
-				}*/
-				estadoAtual = PAUSA1;
+                if (this.transform.position.Equals(this.PosicaoSpawn))
+                {
+                    estadoAtual = PAUSA1;
+                }
 
                 break;
         }
     }
 
-	#region getters e setters
-	public int EstadoAtual
-	{
-		get { return estadoAtual; }
-		set { estadoAtual = value; }
-	}
+    #region getters e setters
+    public int EstadoAtual
+    {
+        get { return estadoAtual; }
+        set { estadoAtual = value; }
+    }
 
-	public float DuracaoPausa
-	{
-		get { return duracaoPausa; }
-		set { duracaoPausa = value; }
-	}
+    public float DuracaoPausa
+    {
+        get { return duracaoPausa; }
+        set { duracaoPausa = value; }
+    }
 
-	public float DuracaoAtacando
-	{
-		get { return duracaoAtacando; }
-		set { duracaoAtacando = value; }
-	}
+    public float DuracaoAtacando
+    {
+        get { return duracaoAtacando; }
+        set { duracaoAtacando = value; }
+    }
 
-	public float DuracaoSuperVulneravel
-	{
-		get { return duracaoSuperVulneravel; }
-		set { duracaoSuperVulneravel = value; }
-	}
-	#endregion
+    public float DuracaoSuperVulneravel
+    {
+        get { return duracaoSuperVulneravel; }
+        set { duracaoSuperVulneravel = value; }
+    }
+    #endregion
 
     #region acoes
     public void comecarLuta()
     {
         estadoAtual = PAUSA1;
     }
-		
-	public void ficarAtacando (TiroInimigo ataque)
-	{
-		if (ataque.TempoPassadoCooldown < ataque1.Cooldown)
-		{
-			ataque.TempoPassadoCooldown += Time.deltaTime;
-		}
-		else
-		{
-			ataque.TempoPassadoCooldown = 0;
-			ataque.Atirador = this.GetComponent<Inimigo>();
-			Instantiate(ataque, ataque.transform.position, new Quaternion());
-		}
-	}
 
-	public void levitar(Vector2 destino)
+    public void ficarAtacando(TiroInimigo ataque)
     {
-		Vector2.MoveTowards (this.transform.position, destino, 4 * Time.deltaTime);
+        if (ataque.TempoPassadoCooldown < ataque1.Cooldown)
+        {
+            ataque.TempoPassadoCooldown += Time.deltaTime;
+        }
+        else
+        {
+            ataque.TempoPassadoCooldown = 0;
+            ataque.Atirador = this.GetComponent<Inimigo>();
+            Instantiate(ataque, ataque.transform.position, new Quaternion());
+        }
+    }
+
+    //public 
+
+    public void levitarParaCima(Vector2 destino)
+    {
+        this.transform.position = Vector2.MoveTowards(this.transform.position, destino, velocidadeMaxima / 100);
     }
     #endregion
 
-	#region alteracao de status
-	public void alterarVida(int valor)   
-	{
-		int resultadoFinal = this.VidaAtual + valor;
+    #region alteracao de status
+    public void alterarVida(int valor)
+    {
+        int resultadoFinal = this.VidaAtual + valor;
 
-		if (valor < 0 && tempoPassadoSuperVulneravel > 0)
-		{
-			valor *= 3;
-		}
+        if (valor < 0 && tempoPassadoSuperVulneravel > 0)
+        {
+            valor *= 3;
+        }
 
-		if (valor < 0 && this.IsImuneDano)
-		{
-			valor = 0;
-			resultadoFinal = this.VidaAtual;
-		}
+        if (valor < 0 && this.IsImuneDano)
+        {
+            valor = 0;
+            resultadoFinal = this.VidaAtual;
+        }
 
-		if (resultadoFinal > this.VidaTotal)
-		{
-			this.VidaAtual = this.VidaTotal;
-		}
-		else if (resultadoFinal < this.VidaAtual && resultadoFinal > 0)
-		{
-			this.AnimadorAtor.SetTrigger("ferido");
-			this.AnimadorAtor.SetBool("atordoado", true);
-			this.VidaAtual += valor;
-			this.IsAtordoado = true;
-		}
-		else if (resultadoFinal <= 0 && !this.IsImuneDano)
-		{
-			morrer();
-		}
-		else
-		{
-			this.VidaAtual += valor;
-		}
-	}
+        if (resultadoFinal > this.VidaTotal)
+        {
+            this.VidaAtual = this.VidaTotal;
+        }
+        else if (resultadoFinal < this.VidaAtual && resultadoFinal > 0)
+        {
+            this.AnimadorAtor.SetTrigger("ferido");
+            this.AnimadorAtor.SetBool("atordoado", true);
+            this.VidaAtual += valor;
+            this.IsAtordoado = true;
+        }
+        else if (resultadoFinal <= 0 && !this.IsImuneDano)
+        {
+            morrer();
+        }
+        else
+        {
+            this.VidaAtual += valor;
+        }
+    }
 
-	//mata o boss
-	public virtual void morrer()
-	{
-		base.morrer ();
-		this.AudioSourceAtor.PlayOneShot(morte, 5f); //morte
-		Destroy(this.gameObject, 0.8f);
-	}
-	#endregion
+    //mata o boss
+    public virtual void morrer()
+    {
+        base.morrer();
+        this.AudioSourceAtor.PlayOneShot(morte, 5f); //morte
+        Destroy(this.gameObject, 0.8f);
+    }
+    #endregion
 }

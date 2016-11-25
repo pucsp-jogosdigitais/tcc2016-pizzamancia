@@ -10,6 +10,8 @@ public class PreludioBoss : MonoBehaviour
 		if (colisor.gameObject.tag.ToString () == "Player") 
 		{
 			bossRespectivo.comecarLuta ();
+
+            Destroy(gameObject);
 		}
 	}
 }

@@ -16,14 +16,14 @@ public class AtaqueMagico : MonoBehaviour
     //mecanica
     public int dano; //dano causado por cada ataque
     public Vector2 posicaoRelativaInicial; //posicao onde ataque comeca em relacao ao conjurador
-	Vector2 direcaoVirada; //direcao do ataque
+    Vector2 direcaoVirada; //direcao do ataque
     public float velocidade; //velocidade de cada ataque
     public int duracaoAtaque; //duracao na tela em segundos de cada ataque
     #endregion
 
     void Awake()
     {
-		
+
         animadorMagiaAtaque = this.GetComponent<Animator>();
 
         rdbMagiaAtaque = this.GetComponent<Rigidbody2D>();
@@ -33,9 +33,9 @@ public class AtaqueMagico : MonoBehaviour
 
     // Use this for initialization
     void Start()
-	{
+    {
         float sentido = posicaoRelativaInicial.x;
-		direcaoVirada = conjurador.transform.localScale;
+        direcaoVirada = conjurador.transform.localScale;
 
         if (direcaoVirada.x < 0)
         {
@@ -99,49 +99,50 @@ public class AtaqueMagico : MonoBehaviour
     #endregion
 
     #region eventos
-	void OnTriggerEnter2D(Collider2D colisor)
+    void OnTriggerEnter2D(Collider2D colisor)
     {
-		if (colisor.gameObject.layer == 9) 
-		{
-			Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
-		} 
-		else 
-		{
-			switch (colisor.gameObject.tag.ToString ()) 
-			{
-			default:
-				break;
-			case "Player":
-				Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
+        if (colisor.gameObject.layer == 9)
+        {
+            Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
+        }
+        else
+        {
+            switch (colisor.gameObject.tag.ToString())
+            {
+                default:
+                    break;
+                case "Player":
+                    Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
 
-				return;
-			case "AtaqueMagico":
-				Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
+                    return;
+                case "AtaqueMagico":
+                    Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
 
-				return;
-			case "Hitbox":
-				Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
+                    return;
+                case "Hitbox":
+                    Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
 
-				return;
-			case "Headbox":
-				Physics2D.IgnoreCollision (this.GetComponent<Collider2D> (), colisor);
+                    return;
+                case "Headbox":
+                    Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
 
-				return;
-			case "Inimigo":
-				Inimigo inimigo = colisor.gameObject.GetComponent<Inimigo> ();
+                    return;
+                case "Inimigo":
+                    Inimigo inimigo = colisor.gameObject.GetComponent<Inimigo>();
 
-				inimigo.alterarVida (-dano);
+                    inimigo.alterarVida(-dano);
 
-				break;
-			case "Obstaculo":
-				Obstaculo obstaculo = colisor.gameObject.GetComponent<Obstaculo> ();
+                    break;
+                case "Obstaculo":
+                    Obstaculo obstaculo = colisor.gameObject.GetComponent<Obstaculo>();
 
-				obstaculo.alterarVida (-dano);
+                    obstaculo.alterarVida(-dano);
 
-				break;
-			}
-			Destroy(gameObject);
-		}
+                    break;
+            }
+
+            Destroy(gameObject);
+        }
     }
     #endregion
 

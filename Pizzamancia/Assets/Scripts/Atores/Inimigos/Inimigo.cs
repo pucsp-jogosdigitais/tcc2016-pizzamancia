@@ -7,11 +7,11 @@ public class Inimigo : Ator
     #region atributos
     //audio
     public AudioClip morte;
-	public AudioClip hit;
+    public AudioClip hit;
 
     //movimentacao de vagar
-    public Vector2 posicaoCentroVagar;
-    public float alcanceCentroVagar;
+    //public Vector2 posicaoCentroVagar;
+    //public float alcanceCentroVagar;
 
     //perseguicao de jogador
     public float raioPercepcao;
@@ -30,7 +30,7 @@ public class Inimigo : Ator
     {
         this.MovimentoX = 0; //= -1;
 
-        posicaoCentroVagar = this.PosicaoSpawn;
+        //posicaoCentroVagar = this.PosicaoSpawn;
 
         alvo = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
     }
@@ -58,11 +58,11 @@ public class Inimigo : Ator
     }
 
     #region getters e setters
-    public float AlcanceCentroVagar
-    {
-        get { return alcanceCentroVagar; }
-        set { alcanceCentroVagar = value; }
-    }
+    //public float AlcanceCentroVagar
+    //{
+    //    get { return alcanceCentroVagar; }
+    //    set { alcanceCentroVagar = value; }
+    //}
 
     public float RaioPercepcao
     {
@@ -164,13 +164,13 @@ public class Inimigo : Ator
         }
     }
 
-    public void vagar()
-    {
-        if ((Vector2.Distance(this.transform.position, posicaoCentroVagar) > alcanceCentroVagar))
-        {
-            this.MovimentoX *= -1;
-        }
-    }
+    //public void vagar()
+    //{
+    //    if ((Vector2.Distance(this.transform.position, posicaoCentroVagar) > alcanceCentroVagar))
+    //    {
+    //        this.MovimentoX *= -1;
+    //    }
+    //}
     #endregion
 
     #region alteracao de status

@@ -25,17 +25,33 @@ public class RajadaDeAzeitonas : MagiaCombate
 
     public override void conjurar()
     {
+        //int ataquesLancados = 0;
+        //float intervaloAtaque = 0.25f;
+        //float tempoPassadoAtaque = 0;
+
         ataqueMagico.GetComponent<AtaqueMagico>().Dano = this.Dano;
         ataqueMagico.GetComponent<AtaqueMagico>().Velocidade = this.Velocidade;
         ataqueMagico.GetComponent<AtaqueMagico>().DuracaoAtaque = this.DuracaoAtaque;
+        ataqueMagico.GetComponent<AtaqueMagico>().PosicaoRelativaInicial = new Vector3(0.3f, 0);
 
         for (int qtdAtq = 0; qtdAtq < this.NumeroAtaques; qtdAtq++)
         {
             float distanciaAtaque = qtdAtq * 0.1f;
 
-            ataqueMagico.GetComponent<AtaqueMagico>().PosicaoRelativaInicial = new Vector3(0.3f + distanciaAtaque, 0);
+            ataqueMagico.GetComponent<AtaqueMagico>().PosicaoRelativaInicial = new Vector3(0.5f + distanciaAtaque, 0);
 
             Instantiate(ataqueMagico, ataqueMagico.transform.position, new Quaternion());
         }
+
+        //if (tempoPassadoAtaque < intervaloAtaque)
+        //{
+        //    tempoPassadoAtaque += Time.deltaTime;
+        //}
+        //else if (ataquesLancados <= this.NumeroAtaques)
+        //{
+        //    tempoPassadoAtaque = 0;
+        //    ataquesLancados++;
+        //    Instantiate(ataqueMagico, ataqueMagico.transform.position, new Quaternion());
+        //}
     }
 }

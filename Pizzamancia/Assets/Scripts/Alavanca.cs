@@ -6,7 +6,7 @@ public class Alavanca : MonoBehaviour {
     public Animator anim;
 	public AudioClip lever;
 	public AudioSource source;
-	public Collider2D col;
+	public Collider2D collider;
 	void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "Player")
@@ -14,7 +14,7 @@ public class Alavanca : MonoBehaviour {
 			source.PlayOneShot (lever, 2f);
             anim.SetBool("ativada", true);
             Destroy(Spikes);
-			Destroy(col);
+			Destroy(collider);
         }
     }
 }

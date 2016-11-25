@@ -8,13 +8,13 @@ public class Jogador : Ator
 {
     #region atributos
     public bool isControlavel; //booleana que mostra se o jogador recebe input do controle
-	public Image painelFade;
+    public Image painelFade;
 
     //audio
     public AudioClip pulo;
     public AudioClip semMana;
-	public AudioClip death;
-	public AudioClip skill;
+    public AudioClip death;
+    public AudioClip skill;
 
     //pulo
     public float forcaPuloOriginal; //forca do pulo
@@ -87,7 +87,7 @@ public class Jogador : Ator
     //Update is called once per frame
     void Update()
     {
-		animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
+        animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
 
         if (this.VidaAtual > 0)
         {
@@ -276,7 +276,7 @@ public class Jogador : Ator
             }
             else
             {
-               // this.AudioSourceAtor.PlayOneShot(semMana, 5f); //sem mana
+                // this.AudioSourceAtor.PlayOneShot(semMana, 5f); //sem mana
             }
         }
         else
@@ -318,18 +318,20 @@ public class Jogador : Ator
         base.morrer();
         alterarChances(-1);
 
-		this.AudioSourceAtor.PlayOneShot (death, 2f);
+        this.AudioSourceAtor.PlayOneShot(death, 2f);
+
         if (chances >= 0)
         {
             tempoRestanteRespawn = 0.6f;
         }
-		painelFade.CrossFadeAlpha(1f, 0.5f, true);
+
+        painelFade.CrossFadeAlpha(1f, 0.5f, true);
     }
 
     //revive o jogador e colocao-o no ponto inicial ou no ultimo checkpoint passado
     public void respawnar()
-	{		
-		painelFade.CrossFadeAlpha(0.01f, 0.3f, true);
+    {
+        painelFade.CrossFadeAlpha(0.01f, 0.3f, true);
         this.AnimadorAtor.SetBool("morto", false);
         this.transform.position = this.PosicaoSpawn;
         this.VidaAtual = this.VidaTotal;
