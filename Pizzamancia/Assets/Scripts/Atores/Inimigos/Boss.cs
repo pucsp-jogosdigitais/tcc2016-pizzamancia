@@ -14,23 +14,29 @@ public class Boss : Inimigo
     const int LEVITARBAIXO = 4;
     const int PAUSABAIXO = 5;
     const int ATAQUEBAIXO = 6;
-    const int SUPERVULNERAVEL = 7;
+	const int VULNERAVEL = 7;
     const int PAUSAREPELIR = 8;
     const int REPELIR = 9;
     const int LEVITARALTO = 10;
 
     //duracao e tempo passado nos estados
     public float duracaoPausa;
-    public float tempoPassadoPausa;
+    float tempoPassadoPausa;
     public float duracaoAtacando;
-    public float tempoPassadoAtacando;
-    public float duracaoSuperVulneravel;
-    public float tempoPassadoSuperVulneravel;
+    float tempoPassadoAtacando;
+    public float duracaoVulneravel;
+    float tempoPassadoVulneravel;
 
     //ataques
     public TiroInimigo ataque1;
     public TiroInimigo ataque2;
     public TiroInimigo ataque3;
+
+	//destino da levitacao
+	public Vector2 destino;
+
+	//campos magicos
+	public EscudoBoss escudo;
     #endregion
 
     // Use this for initialization
@@ -44,8 +50,8 @@ public class Boss : Inimigo
         tempoPassadoPausa = 0;
         duracaoAtacando = 5f;
         tempoPassadoAtacando = 0;
-        duracaoSuperVulneravel = 4f;
-        tempoPassadoSuperVulneravel = 0;
+        duracaoVulneravel = 4f;
+        tempoPassadoVulneravel = 0;
 
         this.VelocidadeMaximaOriginal = 4f;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
@@ -81,6 +87,10 @@ public class Boss : Inimigo
         ataque3.Velocidade = 1f;
         ataque3.DuracaoAtaque = 5f;
         ataque3.Cooldown = 1f;
+
+		destino = null;
+
+		escudo.desativar ();
     }
 
     // Update is called once per frame
@@ -152,13 +162,17 @@ public class Boss : Inimigo
                 }
 
                 break;
-            case LEVITARBAIXO:
-                levitarParaCima(this.Alvo.transform.position);
+			case LEVITARBAIXO:
+				if (destino == null) 
+				{
+				}
 
-                if (this.transform.position.Equals(this.Alvo.transform.position))
-                {
-                    estadoAtual = PAUSABAIXO;
-                }
+				levitarParaBaixo(this.Alvo.transform.position);
+
+				if (this.transform.position.Equals(this.Alvo.transform.position))
+				{
+					estadoAtual = PAUSABAIXO;
+				}
 
                 break;
             case PAUSABAIXO:
@@ -182,18 +196,19 @@ public class Boss : Inimigo
                 else
                 {
                     tempoPassadoAtacando = 0;
-                    estadoAtual = SUPERVULNERAVEL;
+                    estadoAtual = VULNERAVEL;
+					escudo.desativar ();
                 }
 
                 break;
-            case SUPERVULNERAVEL:
-                if (tempoPassadoSuperVulneravel <= duracaoSuperVulneravel)
+            case VULNERAVEL:
+                if (tempoPassadoVulneravel <= duracaoVulneravel)
                 {
-                    tempoPassadoSuperVulneravel += Time.deltaTime;
+                    tempoPassadoVulneravel += Time.deltaTime;
                 }
                 else
                 {
-                    tempoPassadoSuperVulneravel = 0;
+                    tempoPassadoVulneravel = 0;
                     estadoAtual = PAUSAREPELIR;
                 }
 
@@ -212,50 +227,26 @@ public class Boss : Inimigo
                 break;
             case REPELIR:
                 estadoAtual = LEVITARALTO;
+				escudo.ativar ();
 
                 break;
             case LEVITARALTO:
-                levitarParaCima(this.PosicaoSpawn);
+                levitarParaCima();
 
-                if (this.transform.position.Equals(this.PosicaoSpawn))
-                {
-                    estadoAtual = PAUSA1;
-                }
+				if (this.transform.position.Equals(this.PosicaoSpawn))
+				{
+					estadoAtual = PAUSA1;
+				}
 
                 break;
         }
     }
 
-    #region getters e setters
-    public int EstadoAtual
-    {
-        get { return estadoAtual; }
-        set { estadoAtual = value; }
-    }
-
-    public float DuracaoPausa
-    {
-        get { return duracaoPausa; }
-        set { duracaoPausa = value; }
-    }
-
-    public float DuracaoAtacando
-    {
-        get { return duracaoAtacando; }
-        set { duracaoAtacando = value; }
-    }
-
-    public float DuracaoSuperVulneravel
-    {
-        get { return duracaoSuperVulneravel; }
-        set { duracaoSuperVulneravel = value; }
-    }
-    #endregion
-
     #region acoes
     public void comecarLuta()
     {
         estadoAtual = PAUSA1;
+		escudo.ativar ();
     }
 
     public void ficarAtacando(TiroInimigo ataque)
@@ -272,11 +263,19 @@ public class Boss : Inimigo
         }
     }
 
-    //public 
+	public void levitarParaBaixo(Vector2 destino)
+	{
+		this.transform.position = Vector2.MoveTowards(this.transform.position, this.PosicaoSpawn, velocidadeMaxima / 100);
 
-    public void levitarParaCima(Vector2 destino)
+		if (this.transform.position.Equals(this.Alvo.transform.position))
+		{
+			estadoAtual = PAUSABAIXO;
+		}
+	}
+
+    public void levitarParaCima()
     {
-        this.transform.position = Vector2.MoveTowards(this.transform.position, destino, velocidadeMaxima / 100);
+		this.transform.position = Vector2.MoveTowards(this.transform.position, this.PosicaoSpawn, velocidadeMaxima / 100);
     }
     #endregion
 
@@ -285,7 +284,7 @@ public class Boss : Inimigo
     {
         int resultadoFinal = this.VidaAtual + valor;
 
-        if (valor < 0 && tempoPassadoSuperVulneravel > 0)
+        if (valor < 0 && tempoPassadoVulneravel > 0)
         {
             valor *= 3;
         }

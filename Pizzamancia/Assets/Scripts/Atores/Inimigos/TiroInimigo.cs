@@ -136,6 +136,10 @@ public class TiroInimigo : MonoBehaviour
                     Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
 
                     return;
+				case "EscudoBoss":
+					Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
+
+					return;
                 case "Plataforma":
                     Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
 
