@@ -88,7 +88,7 @@ public class Boss : Inimigo
         ataque3.DuracaoAtaque = 5f;
         ataque3.Cooldown = 1f;
 
-		destino = null;
+		//destino = null;
 
 		escudo.desativar ();
     }

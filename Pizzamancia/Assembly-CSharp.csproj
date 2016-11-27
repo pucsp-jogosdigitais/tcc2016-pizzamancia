@@ -48,9 +48,11 @@
      <Compile Include="Assets\Scripts\Alavanca.cs" />
      <Compile Include="Assets\Scripts\Atores\Ator.cs" />
      <Compile Include="Assets\Scripts\Atores\Inimigos\Boss.cs" />
+     <Compile Include="Assets\Scripts\Atores\Inimigos\EscudoBoss.cs" />
      <Compile Include="Assets\Scripts\Atores\Inimigos\GolemMussarela.cs" />
      <Compile Include="Assets\Scripts\Atores\Inimigos\Inimigo.cs" />
      <Compile Include="Assets\Scripts\Atores\Inimigos\MorcegoCalabresa.cs" />
+     <Compile Include="Assets\Scripts\Atores\Inimigos\TiroInimigo.cs" />
      <Compile Include="Assets\Scripts\Atores\Jogador.cs" />
      <Compile Include="Assets\Scripts\Blinker.cs" />
      <Compile Include="Assets\Scripts\ButtonPlaySound.cs" />
@@ -86,6 +88,7 @@
      <Compile Include="Assets\Scripts\Objetos\Objetos de Fase\Checkpoint.cs" />
      <Compile Include="Assets\Scripts\Objetos\Objetos de Fase\ObjetivoLevel.cs" />
      <Compile Include="Assets\Scripts\Objetos\Objetos de Fase\Porta.cs" />
+     <Compile Include="Assets\Scripts\Objetos\Objetos de Fase\PreludioBoss.cs" />
      <Compile Include="Assets\Scripts\Objetos\Obstaculos\Armadilhas\Armadilha.cs" />
      <Compile Include="Assets\Scripts\Objetos\Obstaculos\Armadilhas\Espinhos.cs" />
      <Compile Include="Assets\Scripts\Objetos\Obstaculos\Armadilhas\Pedregulhos.cs" />
