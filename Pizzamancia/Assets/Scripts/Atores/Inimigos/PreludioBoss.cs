@@ -9,6 +9,8 @@ public class PreludioBoss : MonoBehaviour
 	{
 		if (colisor.gameObject.tag.ToString () == "Player") 
 		{
+			BossHUD.getInstance ().comecarLuta (bossRespectivo);
+
 			bossRespectivo.comecarLuta ();
 
             Destroy(gameObject);

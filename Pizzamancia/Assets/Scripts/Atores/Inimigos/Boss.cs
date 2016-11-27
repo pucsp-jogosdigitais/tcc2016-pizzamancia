@@ -18,6 +18,8 @@ public class Boss : Inimigo
     const int PAUSAREEPELIR = 8;
     const int LEVITARALTO = 9;
 
+	public int fatorVulnerabilidade = 2;
+
     //duracao e tempo passado nos estados
 	public float duracaoPausa;
     float tempoPassadoPausa;
@@ -35,9 +37,9 @@ public class Boss : Inimigo
 	public Vector2 destino;
 
     //ataques
-    public TiroInimigo ataque1;
-    public TiroInimigo ataque2;
-    public TiroInimigo ataque3;
+    public TiroBoss ataque1;
+    public TiroBoss ataque2;
+    public TiroBoss ataque3;
 
 	//campos magicos
 	public EscudoBoss escudo;
@@ -60,32 +62,19 @@ public class Boss : Inimigo
         this.VelocidadeMaximaOriginal = 4f;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
 
-        //this.VidaTotalOriginal = 100;
-        this.VidaTotalOriginal = 20;
+        this.VidaTotalOriginal = 50;
         this.VidaTotal = this.VidaTotalOriginal;
         this.VidaAtual = this.VidaTotalOriginal;
 
 		destino = new Vector2(0, 0);
 
-        ataque1.Dano = 5;
         ataque1.PosicaoRelativaInicial = new Vector3(0, 1f);
-        ataque1.Velocidade = 1f;
-        ataque1.DuracaoAtaque = 5f;
-        ataque1.Cooldown = 1f;
 		ataque1.TempoPassadoCooldown = 0;
 
-        ataque2.Dano = 5;
         ataque2.PosicaoRelativaInicial = new Vector3(0, 1f);
-       	ataque2.Velocidade = 2f;
-        ataque2.DuracaoAtaque = 5f;
-        ataque2.Cooldown = 0.5f;
 		ataque2.TempoPassadoCooldown = 0;
 
-        ataque3.Dano = 10;
         ataque3.PosicaoRelativaInicial = new Vector3(0, 1f);
-        ataque3.Velocidade = 1f;
-        ataque3.DuracaoAtaque = 5f;
-        ataque3.Cooldown = 1f;
 		ataque3.TempoPassadoCooldown = 0;
 
 		escudo.desativar ();
@@ -221,7 +210,6 @@ public class Boss : Inimigo
                 if (tempoPassadoVulneravel <= duracaoVulneravel)
                 {
                     tempoPassadoVulneravel += Time.deltaTime;
-					print ("ORA!");
                 }
                 else
                 {
@@ -264,7 +252,7 @@ public class Boss : Inimigo
 		escudo.ativar ();
     }
 
-    public void ficarAtacando(TiroInimigo ataque)
+    public void ficarAtacando(TiroBoss ataque)
     {
         if (ataque.TempoPassadoCooldown < ataque1.Cooldown)
         {
@@ -289,13 +277,13 @@ public class Boss : Inimigo
     #endregion
 
     #region alteracao de status
-    public void alterarVida(int valor)
+    public override void alterarVida(int valor)
     {
         int resultadoFinal = 0;
 
         if (valor < 0 && tempoPassadoVulneravel > 0)
         {
-            valor *= 3;
+			valor *= fatorVulnerabilidade;
         }
 
 		resultadoFinal = this.VidaAtual + valor;

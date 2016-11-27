@@ -306,7 +306,7 @@ public class Ator : MonoBehaviour
 
     #region alteracao de status
     //aumenta ou diminui os pontos de vida atual
-    public void alterarVida(int valor)
+    public virtual void alterarVida(int valor)
     {
         int resultadoFinal = vidaAtual + valor;
 
