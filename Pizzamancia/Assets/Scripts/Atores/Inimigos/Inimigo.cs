@@ -14,16 +14,16 @@ public class Inimigo : Ator
     //public float alcanceCentroVagar;
 
     //perseguicao de jogador
-    public float raioPercepcao;
+    float raioPercepcao;
     bool isDetectou;
     Jogador alvo;
     float distanciaInimigoJogador;
 
     //ataque
-    public float alcanceAtaque;
+    float alcanceAtaque;
 
     //pontos
-    public int pontos;
+    int pontos;
     #endregion
 
     protected void Start()
@@ -51,19 +51,9 @@ public class Inimigo : Ator
                 this.comecarAtaque(true);
             }
         }
-        /*else
-        {
-            vagar();
-        }*/
     }
 
     #region getters e setters
-    //public float AlcanceCentroVagar
-    //{
-    //    get { return alcanceCentroVagar; }
-    //    set { alcanceCentroVagar = value; }
-    //}
-
     public float RaioPercepcao
     {
         get { return raioPercepcao; }

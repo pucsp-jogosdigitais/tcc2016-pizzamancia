@@ -17,28 +17,28 @@ public class Jogador : Ator
     public AudioClip skill;
 
     //pulo
-    public float forcaPuloOriginal; //forca do pulo
-    public float forcaPulo; //forca do pulo atual
+	public float forcaPuloOriginal; //forca do pulo
+	public float forcaPulo; //forca do pulo atual
 
     //vida
-    public int chances; //quantas chances o jogador tem no momento
+	public int chances; //quantas chances o jogador tem no momento
 
     //mana
-    public int manaTotalOriginal; //quantos pontos de mana o jogador tem no total
-    public int manaTotal; //quantos pontos de mana o jogador tem no total atual
-    public int manaAtual; //quantos pontos de mana o jogador tem no momento
-    public int taxaRegeneracaoMana; //quantos pontos de mana sao regenerados apos um certo intervalo
-    public float tempoRegeneracaoMana; //intervalo que demora para regenerar pontos de mana
+	public int manaTotalOriginal; //quantos pontos de mana o jogador tem no total
+	public int manaTotal; //quantos pontos de mana o jogador tem no total atual
+	public int manaAtual; //quantos pontos de mana o jogador tem no momento
+	public int taxaRegeneracaoMana; //quantos pontos de mana sao regenerados apos um certo intervalo
+	public float tempoRegeneracaoMana; //intervalo que demora para regenerar pontos de mana
     float tempoPassadoRegeneracao; //quanto tempo passou depois do ultimo intervalo de regeneracao de mana
 
     //magias
-    public int qtdMagiasAlocadas; //quantas magias o jogador pode escolher para um level
-    public Magia[] magias; //magias escolhidas para o level
-    public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
-    public Magia magiaSelecionada; //magia selecionada no momento pelo jogador
+	public int qtdMagiasAlocadas; //quantas magias o jogador pode escolher para um level
+	public Magia[] magias; //magias escolhidas para o level
+	public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
+	public  Magia magiaSelecionada; //magia selecionada no momento pelo jogador
 
     //respawn
-    float tempoRestanteRespawn; //quanto tempo falta para o jogador respawnar
+	float tempoRestanteRespawn; //quanto tempo falta para o jogador respawnar
     #endregion
 
     // Use this for initialization
@@ -56,7 +56,7 @@ public class Jogador : Ator
         this.HitboxAtor.ForcaRecuoOriginal = 4f;
         this.HitboxAtor.ForcaRecuo = this.HitboxAtor.ForcaRecuoOriginal;
         this.DemoraAntesAtaqueOriginal = 0.25f;
-        this.DemoraAntesAtaque = this.demoraAntesAtaqueOriginal;
+        this.DemoraAntesAtaque = this.DemoraAntesAtaqueOriginal;
         this.DemoraDepoisAtaqueOriginal = 0.25f;
         this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
 
@@ -87,11 +87,11 @@ public class Jogador : Ator
     //Update is called once per frame
     void Update()
     {
-        animadorAtor.SetFloat("distanciaChao", raycastCentro.distance);
+        this.AnimadorAtor.SetFloat("distanciaChao", this.raycastCentro.distance);
 
         if (this.VidaAtual > 0)
         {
-            if (!this.isAtordoado)
+            if (!this.IsAtordoado)
             {
                 regenerarMana();
                 carregarMagias();
@@ -230,8 +230,8 @@ public class Jogador : Ator
         if (isPular && this.IsNoChao && !this.IsComecouAtaque)
         {
             this.AudioSourceAtor.PlayOneShot(pulo, 2f); //pulo
-            this.animadorAtor.SetTrigger("pular");
-            this.rdbAtor.AddForce(Vector2.up * this.forcaPulo, ForceMode2D.Impulse);
+            this.AnimadorAtor.SetTrigger("pular");
+            this.RdbAtor.AddForce(Vector2.up * this.forcaPulo, ForceMode2D.Impulse);
         }
     }
 
@@ -265,7 +265,7 @@ public class Jogador : Ator
     {
         if (InputControle.getInstance().BtnConjurar)
         {
-            animadorAtor.SetBool("conjurar", true);
+            this.AnimadorAtor.SetBool("conjurar", true);
 
             if (manaAtual >= magiaSelecionada.CustoMana && magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown)
             {
@@ -276,12 +276,12 @@ public class Jogador : Ator
             }
             else
             {
-                // this.AudioSourceAtor.PlayOneShot(semMana, 5f); //sem mana
+            	this.AudioSourceAtor.PlayOneShot(semMana, 5f); //sem mana
             }
         }
         else
         {
-            animadorAtor.SetBool("conjurar", false);
+            this.AnimadorAtor.SetBool("conjurar", false);
         }
     }
     #endregion

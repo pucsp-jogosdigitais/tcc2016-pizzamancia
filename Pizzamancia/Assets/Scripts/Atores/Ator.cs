@@ -10,50 +10,50 @@ public class Ator : MonoBehaviour
 
     #region atributos
     //animacao
-    public Animator animadorAtor; //animator do ator
+	public Animator animadorAtor; //animator do ator
 
     //Rigidbody e colisao
-    public Rigidbody2D rdbAtor; //rigidbody do ator
+	public Rigidbody2D rdbAtor; //rigidbody do ator
 
     //audio
-    AudioSource audioSourceAtor; //audiosource do ator
+	public AudioSource audioSourceAtor; //audiosource do ator
     public AudioClip clip;
 	public AudioClip dano;
 
     //ponto de spawn
-    public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
+	public Vector2 posicaoSpawn; //posicao onde o ator (re)comeca
 
     //movimentacao
     float metadeLargura; //distancia entre as bordas verticais do ator e o seu centro
     float metadeAltura; //distancia entre as bordas horizontais do ator e o seu centro
 	public RaycastHit2D raycastCentro;
     float movimentoX; //movimento do ator no eixo X
-    public float velocidadeMaximaOriginal; //velocida maxima que o ator pode atingir andando
-    public float velocidadeMaxima; //velocidade maxima atual
-    bool isNoChao; //booleana que mostra se ator esta colidindo com o chao ou nao
+	public float velocidadeMaximaOriginal; //velocida maxima que o ator pode atingir andando
+	public float velocidadeMaxima; //velocidade maxima atual
+	public bool isNoChao; //booleana que mostra se ator esta colidindo com o chao ou nao
 
     //ataque melee
     public Hitbox hitboxAtor; //hitbox respectiva do ator
-    bool isComecouAtaque; //booleana que indica se o ator comecou o processo de ataque ou nao
-    bool isAtacou; //booleana que indica se ator ja executou taque
-    public float demoraAntesAtaqueOriginal; //tempo que demora entre o inicio do ataque a sua execucao
-    public float demoraAntesAtaque; //demora antes da execucao do ataque atual
-    public float demoraDepoisAtaqueOriginal; //tempo que demora entre a execucao do ataque e a sua finalizacao
-    public float demoraDepoisAtaque; //demora depois da execucao do ataque atual
+	public bool isComecouAtaque; //booleana que indica se o ator comecou o processo de ataque ou nao
+	bool isAtacou; //booleana que indica se ator ja executou taque
+	public float demoraAntesAtaqueOriginal; //tempo que demora entre o inicio do ataque a sua execucao
+	public float demoraAntesAtaque; //demora antes da execucao do ataque atual
+	public float demoraDepoisAtaqueOriginal; //tempo que demora entre a execucao do ataque e a sua finalizacao
+	public float demoraDepoisAtaque; //demora depois da execucao do ataque atual
     float tempoPassadoInicioAtaque; //tempo passado desde o inicio do ataque
 
     //vida
-    public int vidaTotalOriginal; //quantos pontos de vida o ator tem no total
-    public int vidaTotal; //quantos pontos de vida o ator tem no total atual
-    public int vidaAtual; //quantos pontos de vida o ator tem no momento
+	public int vidaTotalOriginal; //quantos pontos de vida o ator tem no total
+	public int vidaTotal; //quantos pontos de vida o ator tem no total atual
+	public int vidaAtual; //quantos pontos de vida o ator tem no momento
 
     //atordoamento
-    public bool isAtordoado; //condicao que indica se o ator fica atordoado(incapaz de realizar acoes) quando leva dano
-    public float duracaoAtordoamento; //quanto tempo o ator fica atordoado cada vez que leva dano
+	public bool isAtordoado; //condicao que indica se o ator fica atordoado(incapaz de realizar acoes) quando leva dano
+	public float duracaoAtordoamento; //quanto tempo o ator fica atordoado cada vez que leva dano
     float tempoAtordoadoPassado; //quanto tempo se passou desde o inicio do atordoamento
 
     //buffs e debuffs
-    public bool isImuneDano;
+	public bool isImuneDano;
     #endregion
 
     void Awake()
@@ -258,7 +258,7 @@ public class Ator : MonoBehaviour
     //faz o ator andar
     public void andar()
     {
-        animadorAtor.SetFloat("andar", Mathf.Abs(movimentoX));
+        this.AnimadorAtor.SetFloat("andar", Mathf.Abs(movimentoX));
 
         if (movimentoX > 0)
         {
@@ -270,11 +270,11 @@ public class Ator : MonoBehaviour
             this.transform.localScale = new Vector2(-1, this.transform.localScale.y);
         }
 
-        rdbAtor.AddForce(new Vector2(movimentoX, 0) * (15 / (rdbAtor.velocity.magnitude + 1f)));
+        this.RdbAtor.AddForce(new Vector2(movimentoX, 0) * (15 / (this.RdbAtor.velocity.magnitude + 1f)));
 
-        if (Mathf.Abs(rdbAtor.velocity.x) > velocidadeMaxima)
+		if (Mathf.Abs(this.RdbAtor.velocity.x) > this.VelocidadeMaxima)
         {
-            rdbAtor.velocity = new Vector2(rdbAtor.velocity.normalized.x * velocidadeMaxima, rdbAtor.velocity.y);
+			this.RdbAtor.velocity = new Vector2(this.RdbAtor.velocity.normalized.x * this.VelocidadeMaxima, this.RdbAtor.velocity.y);
         }
     }
 
@@ -290,7 +290,7 @@ public class Ator : MonoBehaviour
     //executa ataque
     public void executarAtaque()
     {
-        animadorAtor.SetTrigger("atacar");
+        this.AnimadorAtor.SetTrigger("atacar");
         isAtacou = true;
         hitboxAtor.atingir();
     }

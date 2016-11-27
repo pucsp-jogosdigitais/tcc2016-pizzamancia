@@ -5,48 +5,48 @@ public class TiroInimigo : MonoBehaviour
 {
     #region atributos
     //animacao
-    public Animator animadorTiroInimigo;
+	public Animator animadorTiroInimigo;
 
     //Rigidbody e colisao
-    public Rigidbody2D rdbTiroInimigo;
+	public Rigidbody2D rdbTiroInimigo;
 
     //atirador
-    public Inimigo atirador; //inimigo que o atirou
+	public Boss atirador; //boss que o atirou
 
     //mecanica
-    public int dano; //dano causado pelo tiro
-    public Vector2 posicaoRelativaInicial; //posicao onde comeca em relacao ao atirador
-    Vector2 direcaoVirada; //direcao
-    public float velocidade; //velocidade
-    public float duracaoAtaque; //duracao na tela em segundos
-    public Vector2 posicaoAlvo; //posicao para onde foi mirado
-    public float cooldown;
-    public float tempoPassadoCooldown;
+	public int dano; //dano causado pelo tiro
+	Vector2 posicaoRelativaInicial; //posicao onde comeca em relacao ao atirador
+	public float velocidade; //velocidade
+	public float duracaoAtaque; //duracao na tela em segundos
+	Vector2 posicaoAlvo; //posicao para onde foi mirado
+	public float cooldown;
+	public float tempoPassadoCooldown;
     #endregion
 
     void Awake()
     {
         animadorTiroInimigo = this.GetComponent<Animator>();
 
-        rdbTiroInimigo = this.GetComponent<Rigidbody2D>();
+		rdbTiroInimigo = this.gameObject.GetComponent<Rigidbody2D>();
 
-        posicaoAlvo = GameObject.FindGameObjectWithTag("Player").transform.position;
-        tempoPassadoCooldown = 0;
+		atirador = GameObject.Find ("Malvagius").GetComponent<Boss> ();
+
+		posicaoAlvo = GameObject.FindGameObjectWithTag("Player").transform.position;
     }
 
     // Use this for initialization
     void Start()
     {
         float sentido = posicaoRelativaInicial.x;
-        direcaoVirada = atirador.transform.localScale;
+		Vector2 direcaoVirada = atirador.transform.localScale;
 
         if (direcaoVirada.x < 0)
         {
             sentido *= -1f;
         }
 
-        transform.position = new Vector2(atirador.transform.position.x + sentido,
-            atirador.transform.position.y + posicaoRelativaInicial.y);
+		transform.position = new Vector2 (atirador.transform.position.x + sentido,
+			atirador.transform.position.y + posicaoRelativaInicial.y);
 
         Destroy(gameObject, duracaoAtaque);
     }
@@ -54,7 +54,7 @@ public class TiroInimigo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mover();
+		mover ();
     }
 
     #region getters e setters
@@ -70,7 +70,7 @@ public class TiroInimigo : MonoBehaviour
         set { rdbTiroInimigo = value; }
     }
 
-    public Inimigo Atirador
+    public Boss Atirador
     {
         get { return atirador; }
         set { atirador = value; }
@@ -140,10 +140,6 @@ public class TiroInimigo : MonoBehaviour
 					Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
 
 					return;
-                case "Plataforma":
-                    Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
-
-                    return;
                 case "Hitbox":
                     Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), colisor);
 
@@ -174,9 +170,7 @@ public class TiroInimigo : MonoBehaviour
     #region acoes
     public void mover()
     {
-        Vector2 posicaoOrigem = new Vector2(this.transform.position.x, this.transform.position.y);
-
-        rdbTiroInimigo.AddForce((posicaoAlvo - posicaoOrigem) * velocidade);
+		rdbTiroInimigo.AddForce((posicaoAlvo - (Vector2) this.transform.position).normalized * velocidade);
     }
     #endregion
 }
