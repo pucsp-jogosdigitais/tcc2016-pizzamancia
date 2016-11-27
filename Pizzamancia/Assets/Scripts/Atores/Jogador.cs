@@ -269,14 +269,14 @@ public class Jogador : Ator
 
             if (manaAtual >= magiaSelecionada.CustoMana && magiaSelecionada.TempoPassado >= magiaSelecionada.Cooldown)
             {
-                this.AudioSourceAtor.PlayOneShot(skill, 2f); // conjura
+                this.AudioSourceAtor.PlayOneShot(skill, 1f); // conjura
                 alterarMana(-magiaSelecionada.CustoMana);
                 magiaSelecionada.TempoPassado = 0;
                 magiaSelecionada.conjurar();
             }
             else
             {
-            	this.AudioSourceAtor.PlayOneShot(semMana, 5f); //sem mana
+            	//this.AudioSourceAtor.PlayOneShot(semMana, 1f); //sem mana
             }
         }
         else
