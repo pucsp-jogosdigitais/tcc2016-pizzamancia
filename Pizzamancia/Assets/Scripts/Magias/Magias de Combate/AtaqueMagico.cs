@@ -23,7 +23,6 @@ public class AtaqueMagico : MonoBehaviour
 
     void Awake()
     {
-
         animadorMagiaAtaque = this.GetComponent<Animator>();
 
         rdbMagiaAtaque = this.GetComponent<Rigidbody2D>();

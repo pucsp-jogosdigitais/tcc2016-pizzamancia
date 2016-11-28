@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 58d4e7084ae33f24fb8a2d5c90440a43
-timeCreated: 1480250030
+guid: 8457651ddd39a654484d31c3f3c6f127
+timeCreated: 1479847124
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,12 +12,10 @@ TextureImporter:
     21300010: Props 15_5
     21300012: Props 15_6
     21300014: Props 15_7
-    21300016: Props 15_8
-    21300018: Props 15_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -36,10 +34,10 @@ TextureImporter:
   cubemapConvolutionSteps: 7
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -64,11 +62,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 395
+        y: 188
         width: 186
         height: 186
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 89, y: 53}
@@ -88,11 +86,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 188
-        y: 395
+        y: 188
         width: 186
         height: 186
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 89, y: 53}
@@ -112,11 +110,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 375
-        y: 395
+        y: 188
         width: 186
         height: 186
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 89, y: 53}
@@ -136,11 +134,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 562
-        y: 395
+        y: 188
         width: 186
         height: 186
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 89, y: 53}
@@ -160,11 +158,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 208
+        y: 1
         width: 186
         height: 186
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 89, y: 53}
@@ -184,11 +182,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 188
-        y: 208
+        y: 1
         width: 186
         height: 186
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 89, y: 53}
@@ -208,11 +206,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 375
-        y: 208
+        y: 1
         width: 186
         height: 186
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 89, y: 53}
@@ -232,59 +230,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 562
-        y: 208
+        y: 1
         width: 186
         height: 186
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 89, y: 53}
-        - {x: 50, y: 84}
-        - {x: 39, y: 93}
-        - {x: -49, y: 93}
-        - {x: -55, y: 92}
-        - {x: -89, y: 53}
-        - {x: -93, y: 34}
-        - {x: -93, y: -43}
-        - {x: -56, y: -93}
-        - {x: 41, y: -93}
-        - {x: 87, y: -52}
-        - {x: 93, y: -37}
-        - {x: 93, y: 29}
-    - name: Props 15_8
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 8
-        width: 186
-        height: 186
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 89, y: 53}
-        - {x: 50, y: 84}
-        - {x: 39, y: 93}
-        - {x: -49, y: 93}
-        - {x: -55, y: 92}
-        - {x: -89, y: 53}
-        - {x: -93, y: 34}
-        - {x: -93, y: -43}
-        - {x: -56, y: -93}
-        - {x: 41, y: -93}
-        - {x: 87, y: -52}
-        - {x: 93, y: -37}
-        - {x: 93, y: 29}
-    - name: Props 15_9
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 8
-        width: 186
-        height: 186
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 89, y: 53}
