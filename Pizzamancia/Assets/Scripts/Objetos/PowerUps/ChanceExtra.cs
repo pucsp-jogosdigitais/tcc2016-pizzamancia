@@ -18,7 +18,7 @@ public class ChanceExtra : PowerUp {
 			Jogador jogador = collider.gameObject.GetComponent<Jogador>();
 
 			jogador.alterarChances(1);
-			source.PlayOneShot(this.SomPego, 5f);
+			source.PlayOneShot(this.SomPego, 2f);
 			Destroy(gameObject);
 		}
 	}

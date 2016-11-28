@@ -23,7 +23,7 @@ public class RecuperacaoVida : PowerUp
 
             if (jogador.VidaAtual < jogador.VidaTotal)
             {
-				source.PlayOneShot(this.SomPego, 5f);
+				source.PlayOneShot(this.SomPego, 2f);
                 jogador.alterarVida(10);
 
                 Destroy(gameObject);

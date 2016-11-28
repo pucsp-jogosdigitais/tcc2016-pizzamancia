@@ -175,7 +175,7 @@ public class Inimigo : Ator
     public override void morrer()
     {
         base.morrer();
-        this.AudioSourceAtor.PlayOneShot(morte, 5f); //morte
+        this.AudioSourceAtor.PlayOneShot(morte, 2f); //morte
         GameManager.getInstance().alterarPontos(pontos);
         Destroy(this.gameObject, tempoMorte);
     }

@@ -52,7 +52,7 @@ public class Armadilha : Obstaculo
 				return;
 			case "Player":
 				Jogador jogador = colisor.gameObject.GetComponent<Jogador> ();
-				source.PlayOneShot(morreu, 5f);
+				source.PlayOneShot(morreu, 2f);
 				jogador.alterarVida (-dano);
 
 				break;
@@ -64,7 +64,7 @@ public class Armadilha : Obstaculo
 				break;
 			case "Obstaculo":
 				Obstaculo obstaculo = colisor.gameObject.GetComponent<Obstaculo> ();
-				source.PlayOneShot(morreu, 5f);
+				source.PlayOneShot(morreu, 2f);
 				obstaculo.alterarVida (-dano);
 
 				break;

@@ -9,7 +9,7 @@ public class ObjetivoLevel : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
 		{
-			audioSourceTela.PlayOneShot(completo, 5f);
+			audioSourceTela.PlayOneShot(completo, 1f);
             GameManager.getInstance().IsLevelCompleto = true;
         }
     }

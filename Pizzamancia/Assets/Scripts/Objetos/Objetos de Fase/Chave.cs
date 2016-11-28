@@ -30,7 +30,7 @@ public class Chave : Objeto
         if (collider.gameObject.tag == "Player")
         {
             portaRespectiva.IsProntaParaAbrir = true;
-			source.PlayOneShot (pegar, 5f);
+			source.PlayOneShot (pegar, 1f);
             Destroy(gameObject);
         }
     }
