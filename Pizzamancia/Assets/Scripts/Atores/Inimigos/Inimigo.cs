@@ -24,6 +24,8 @@ public class Inimigo : Ator
 
     //pontos
     int pontos;
+
+	public float tempoMorte;
     #endregion
 
     protected void Start()
@@ -89,6 +91,12 @@ public class Inimigo : Ator
         get { return pontos; }
         set { pontos = value; }
     }
+
+	public float TempoMorte
+	{
+		get { return tempoMorte; }
+		set { tempoMorte = value; }
+	}
     #endregion
 
     #region acoes automaticas
@@ -169,7 +177,7 @@ public class Inimigo : Ator
         base.morrer();
         this.AudioSourceAtor.PlayOneShot(morte, 5f); //morte
         GameManager.getInstance().alterarPontos(pontos);
-        Destroy(this.gameObject, 0.8f);
+        Destroy(this.gameObject, tempoMorte);
     }
     #endregion
 }

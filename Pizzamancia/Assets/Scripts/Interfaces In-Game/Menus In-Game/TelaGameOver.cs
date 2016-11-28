@@ -48,14 +48,6 @@ public class TelaGameOver : MonoBehaviour
         GameManager.getInstance().recarregarLevel();
     }
 
-    public void retornarSelecLevel()
-    {
-        telaGameOver.SetActive(false);
-
-        GameManager.getInstance().continuarJogo();
-        GameManager.getInstance().carregarTelaSemFade("MenuPrincipal");
-    }
-
     public void retornarMenuPrincipal()
     {
         telaGameOver.SetActive(false);

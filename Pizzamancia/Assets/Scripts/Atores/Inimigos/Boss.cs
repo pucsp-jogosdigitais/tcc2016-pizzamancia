@@ -28,6 +28,8 @@ public class Boss : Inimigo
 	public float duracaoVulneravel;
     float tempoPassadoVulneravel;
 
+	public int limiteAtaque2;
+
 	//waypoints
 	public WaypointBoss waypointCima;
 	public WaypointBoss waypointBaixo1;
@@ -50,6 +52,17 @@ public class Boss : Inimigo
     {
         base.Start();
 
+		this.VelocidadeMaximaOriginal = 4f;
+		this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
+
+		this.VidaTotalOriginal = 1;
+		this.VidaTotal = this.VidaTotalOriginal;
+		this.VidaAtual = this.VidaTotalOriginal;
+
+		this.Pontos = 0;
+
+		this.TempoMorte = 2.6f;
+
         estadoAtual = IDLE;
 
         duracaoPausa = 2f;
@@ -59,12 +72,7 @@ public class Boss : Inimigo
         duracaoVulneravel = 4f;
         tempoPassadoVulneravel = 0;
 
-        this.VelocidadeMaximaOriginal = 4f;
-        this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
-
-        this.VidaTotalOriginal = 50;
-        this.VidaTotal = this.VidaTotalOriginal;
-        this.VidaAtual = this.VidaTotalOriginal;
+		limiteAtaque2 = 25;
 
 		destino = new Vector2(0, 0);
 
@@ -120,13 +128,13 @@ public class Boss : Inimigo
                 {
                     tempoPassadoAtacando = 0;
 
-                    if (this.VidaAtual <= (this.VidaTotalOriginal / 4))
+					if (this.VidaAtual <= limiteAtaque2)
                     {
                         estadoAtual = PAUSA2;
                     }
                     else
                     {
-                        estadoAtual = LEVITARBAIXO;
+						estadoAtual = LEVITARBAIXO;
                     }
                 }
 
@@ -256,7 +264,7 @@ public class Boss : Inimigo
     {
         if (ataque.TempoPassadoCooldown < ataque1.Cooldown)
         {
-           ataque.TempoPassadoCooldown += Time.deltaTime;
+			ataque.TempoPassadoCooldown += Time.deltaTime;
         }
         else
         {
@@ -319,8 +327,6 @@ public class Boss : Inimigo
     public virtual void morrer()
     {
         base.morrer();
-        this.AudioSourceAtor.PlayOneShot(morte, 5f); //morte
-        Destroy(this.gameObject, 0.8f);
     }
     #endregion
 }

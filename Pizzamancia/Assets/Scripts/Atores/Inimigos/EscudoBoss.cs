@@ -9,9 +9,9 @@ public class EscudoBoss : MonoBehaviour
 
 	public GameObject brilho;
 
-	SpriteRenderer spriteEscudo;
-	SpriteRenderer spriteBrilho;
-	Collider2D colliderEscudo;
+	public SpriteRenderer spriteEscudo;
+	public SpriteRenderer spriteBrilho;
+	public Collider2D colliderEscudo;
 	#endregion
 
 	void Start()

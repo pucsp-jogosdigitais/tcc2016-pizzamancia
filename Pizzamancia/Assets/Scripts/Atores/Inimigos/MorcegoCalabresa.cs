@@ -30,5 +30,7 @@ public class MorcegoCalabresa : Inimigo
         this.VidaAtual = this.VidaTotalOriginal;
 
         this.Pontos = 3;
+
+		this.TempoMorte = 0.8f;
     }
 }
