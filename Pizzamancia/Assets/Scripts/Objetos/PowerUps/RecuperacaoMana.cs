@@ -3,8 +3,11 @@ using System.Collections;
 
 public class RecuperacaoMana : PowerUp
 {
+    public AudioSource source;
+
     void Start()
     {
+        source = GameObject.Find("Audio ambiente").GetComponent<AudioSource>();
         this.TempoVida = 0;
         this.Velocidade = 0;
     }
@@ -16,10 +19,9 @@ public class RecuperacaoMana : PowerUp
         {
             Jogador jogador = collider.gameObject.GetComponent<Jogador>();
 
-            this.AudioSourceObjeto.PlayOneShot(this.SomPego, 1f);
-
             if (jogador.ManaAtual < jogador.ManaTotal)
             {
+                source.PlayOneShot(this.SomPego, 1f);
                 jogador.alterarMana(10);
 
                 Destroy(gameObject);

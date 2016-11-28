@@ -4,6 +4,7 @@ using System.Collections;
 public class RecuperacaoVida : PowerUp
 {
     public AudioSource source;
+
     void Start()
     {
         source = GameObject.Find("Audio ambiente").GetComponent<AudioSource>();
@@ -18,11 +19,9 @@ public class RecuperacaoVida : PowerUp
         {
             Jogador jogador = collider.gameObject.GetComponent<Jogador>();
 
-            
-
             if (jogador.VidaAtual < jogador.VidaTotal)
             {
-				source.PlayOneShot(this.SomPego, 2f);
+                source.PlayOneShot(this.SomPego, 2f);
                 jogador.alterarVida(10);
 
                 Destroy(gameObject);
