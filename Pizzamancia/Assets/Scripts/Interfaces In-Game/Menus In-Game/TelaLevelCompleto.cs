@@ -17,8 +17,8 @@ public class TelaLevelCompleto : MonoBehaviour
     {
         jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
 
-        pontosObtidosLevel = GameObject.Find("Pontos Level 1").GetComponent<Text>();
-        pontosObtidosGlobal = GameObject.Find("Pontos Global 2").GetComponent<Text>();
+        //pontosObtidosLevel = GameObject.Find("Pontos Level 1").GetComponent<Text>();
+        //pontosObtidosGlobal = GameObject.Find("Pontos Global 2").GetComponent<Text>();
 
         telaLevelCompleto.SetActive(false);
     }
