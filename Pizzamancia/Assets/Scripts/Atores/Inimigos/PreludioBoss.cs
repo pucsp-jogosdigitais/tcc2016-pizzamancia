@@ -9,10 +9,9 @@ public class PreludioBoss : MonoBehaviour
 	{
 		if (colisor.gameObject.tag.ToString () == "Player") 
 		{
+            colisor.gameObject.GetComponent<Jogador>().PosicaoSpawn = new Vector2(29f, 4.6f);
 			BossHUD.getInstance ().comecarLuta (bossRespectivo);
-
 			bossRespectivo.comecarLuta ();
-
             Destroy(gameObject);
 		}
 	}

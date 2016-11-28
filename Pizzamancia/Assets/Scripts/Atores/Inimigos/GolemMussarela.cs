@@ -31,8 +31,10 @@ public class GolemMussarela : Inimigo
         this.VidaTotal = this.VidaTotalOriginal;
         this.VidaAtual = this.VidaTotalOriginal;
 
+        this.DuracaoAtordoamento = 0.3f;
+
         this.Pontos = 10;
 
-		this.TempoMorte = 0.8f;
+        this.TempoMorte = 0.8f;
     }
 }

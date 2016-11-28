@@ -1,28 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class WaypointBoss : MonoBehaviour {
-	public bool isBossChegou;
+public class WaypointBoss : MonoBehaviour
+{
+    public bool isBossChegou;
 
-	public bool IsBossChegou
-	{
-		get { return isBossChegou; }
-		set { isBossChegou = value; }
-	}
+    public bool IsBossChegou
+    {
+        get { return isBossChegou; }
+        set { isBossChegou = value; }
+    }
 
-	void OnTriggerEnter2D (Collider2D colisor)
-	{
-		if (colisor.gameObject.name == "Malvagius") 
-		{
-			isBossChegou = true;
-		}
-	}
+    void OnTriggerEnter2D(Collider2D colisor)
+    {
+        if (colisor.gameObject.name == "Malvagius")
+        {
+            isBossChegou = true;
+        }
+    }
 
-	void OnTriggerExit2D (Collider2D colisor)
-	{
-		if (colisor.gameObject.name == "Malvagius") 
-		{
-			isBossChegou = false;
-		}
-	}
+    void OnTriggerExit2D(Collider2D colisor)
+    {
+        if (colisor.gameObject.name == "Malvagius")
+        {
+            colisor.gameObject.GetComponent<Boss>().AnimadorAtor.SetBool("chegouWaypoint", false);
+            isBossChegou = false;
+        }
+    }
 }
