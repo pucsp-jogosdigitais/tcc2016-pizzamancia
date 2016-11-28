@@ -3,7 +3,6 @@ using System.Collections;
 
 public class RecuperacaoMana : PowerUp
 {
-    // Use this for initialization
     void Start()
     {
         this.TempoVida = 0;

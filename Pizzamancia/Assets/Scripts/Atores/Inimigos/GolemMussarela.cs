@@ -4,19 +4,16 @@ using System.Collections;
 
 public class GolemMussarela : Inimigo
 {
-    // Use this for initialization
     void Start()
     {
         base.Start();
 
-        //this.AlcanceCentroVagar = 5f;
-
         this.RaioPercepcao = 8f;
 
-        this.VelocidadeMaximaOriginal = 1f;
+        this.VelocidadeMaximaOriginal = 1.5f;
         this.VelocidadeMaxima = this.VelocidadeMaximaOriginal;
 
-        this.HitboxAtor.DanoOriginal = 5;
+        this.HitboxAtor.DanoOriginal = 10;
         this.HitboxAtor.Dano = this.HitboxAtor.DanoOriginal;
         this.HitboxAtor.ForcaRecuoOriginal = 5f;
         this.HitboxAtor.ForcaRecuo = this.HitboxAtor.ForcaRecuoOriginal;
@@ -27,13 +24,13 @@ public class GolemMussarela : Inimigo
         this.DemoraDepoisAtaque = this.DemoraDepoisAtaqueOriginal;
         this.AlcanceAtaque = 1.8f;
 
-        this.VidaTotalOriginal = 20;
+        this.VidaTotalOriginal = 30;
         this.VidaTotal = this.VidaTotalOriginal;
         this.VidaAtual = this.VidaTotalOriginal;
 
         this.DuracaoAtordoamento = 0.3f;
 
-        this.Pontos = 10;
+        this.Pontos = 20;
 
         this.TempoMorte = 0.8f;
     }

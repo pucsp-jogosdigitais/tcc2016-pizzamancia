@@ -10,7 +10,7 @@ public class Pedregulhos : Armadilha {
         this.VidaTotal = 0;
         this.VidaAtual = this.VidaTotal;
 
-        this.Dano = 10;
+        this.Dano = 5;
 		this.IsDestruirToque = true;
 	}
 }

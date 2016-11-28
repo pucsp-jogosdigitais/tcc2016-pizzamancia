@@ -4,7 +4,6 @@ using System.Collections;
 public class RecuperacaoVida : PowerUp
 {
     public AudioSource source;
-    // Use this for initialization
     void Start()
     {
         source = GameObject.Find("Audio ambiente").GetComponent<AudioSource>();

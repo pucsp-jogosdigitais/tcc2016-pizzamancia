@@ -35,7 +35,6 @@ public class TiroBoss : MonoBehaviour
 		posicaoAlvo = GameObject.FindGameObjectWithTag("Player").transform.position;
     }
 
-    // Use this for initialization
     void Start()
     {
         float sentido = posicaoRelativaInicial.x;

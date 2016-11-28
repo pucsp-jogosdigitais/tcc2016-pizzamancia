@@ -17,31 +17,30 @@ public class Jogador : Ator
     public AudioClip skill;
 
     //pulo
-	public float forcaPuloOriginal; //forca do pulo
-	public float forcaPulo; //forca do pulo atual
+    public float forcaPuloOriginal; //forca do pulo
+    public float forcaPulo; //forca do pulo atual
 
     //vida
-	public int chances; //quantas chances o jogador tem no momento
+    public int chances; //quantas chances o jogador tem no momento
 
     //mana
-	public int manaTotalOriginal; //quantos pontos de mana o jogador tem no total
-	public int manaTotal; //quantos pontos de mana o jogador tem no total atual
-	public int manaAtual; //quantos pontos de mana o jogador tem no momento
-	public int taxaRegeneracaoMana; //quantos pontos de mana sao regenerados apos um certo intervalo
-	public float tempoRegeneracaoMana; //intervalo que demora para regenerar pontos de mana
+    public int manaTotalOriginal; //quantos pontos de mana o jogador tem no total
+    public int manaTotal; //quantos pontos de mana o jogador tem no total atual
+    public int manaAtual; //quantos pontos de mana o jogador tem no momento
+    public int taxaRegeneracaoMana; //quantos pontos de mana sao regenerados apos um certo intervalo
+    public float tempoRegeneracaoMana; //intervalo que demora para regenerar pontos de mana
     float tempoPassadoRegeneracao; //quanto tempo passou depois do ultimo intervalo de regeneracao de mana
 
     //magias
-	public int qtdMagiasAlocadas; //quantas magias o jogador pode escolher para um level
-	public Magia[] magias; //magias escolhidas para o level
-	public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
-	public  Magia magiaSelecionada; //magia selecionada no momento pelo jogador
+    public int qtdMagiasAlocadas; //quantas magias o jogador tem
+    public Magia[] magias; //magias do jogador
+    public int posicaoMagiaSelecionada; //posicao da magia no dictionary de magias
+    public Magia magiaSelecionada; //magia selecionada no momento pelo jogador
 
     //respawn
-	float tempoRestanteRespawn; //quanto tempo falta para o jogador respawnar
+    float tempoRestanteRespawn; //quanto tempo falta para o jogador respawnar
     #endregion
 
-    // Use this for initialization
     void Start()
     {
         this.IsControlavel = true;
@@ -65,11 +64,11 @@ public class Jogador : Ator
         this.VidaTotal = this.VidaTotalOriginal;
         this.VidaAtual = this.VidaTotalOriginal;
 
-        manaTotalOriginal = 100;
+        manaTotalOriginal = 50;
         manaTotal = manaTotalOriginal;
         manaAtual = manaTotalOriginal;
-        taxaRegeneracaoMana = 10;
-        tempoRegeneracaoMana = 1;
+        taxaRegeneracaoMana = 1;
+        tempoRegeneracaoMana = 2.5f;
         tempoPassadoRegeneracao = 0;
 
         qtdMagiasAlocadas = 2;
@@ -84,7 +83,6 @@ public class Jogador : Ator
         tempoRestanteRespawn = 0;
     }
 
-    //Update is called once per frame
     void Update()
     {
         this.AnimadorAtor.SetFloat("distanciaChao", this.raycastCentro.distance);
@@ -273,10 +271,6 @@ public class Jogador : Ator
                 alterarMana(-magiaSelecionada.CustoMana);
                 magiaSelecionada.TempoPassado = 0;
                 magiaSelecionada.conjurar();
-            }
-            else
-            {
-            	//this.AudioSourceAtor.PlayOneShot(semMana, 1f); //sem mana
             }
         }
         else
