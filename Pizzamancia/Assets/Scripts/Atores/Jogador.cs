@@ -275,6 +275,7 @@ public class Jogador : Ator
         }
         else
         {
+			//this.AudioSourceAtor.PlayOneShot(semMana, 1f); //sem mana para conjurar
             this.AnimadorAtor.SetBool("conjurar", false);
         }
     }
